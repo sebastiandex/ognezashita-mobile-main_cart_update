@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">983500205495-rbpldh1um2l4n7vek8i0487ln4f3jp1v.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://firedefence-28697.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">983500205495</string>
+    <string name="google_api_key" translatable="false">AIzaSyBQ4EddQez9z3uNTZuYw_nR6Wu_bVFRr-0</string>
+    <string name="google_app_id" translatable="false">1:983500205495:android:842e79ae919ebfef188c32</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBQ4EddQez9z3uNTZuYw_nR6Wu_bVFRr-0</string>
+    <string name="google_storage_bucket" translatable="false">firedefence-28697.appspot.com</string>
+    <string name="project_id" translatable="false">firedefence-28697</string>
+</resources>

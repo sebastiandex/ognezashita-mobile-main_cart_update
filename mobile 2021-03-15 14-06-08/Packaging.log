@@ -1,0 +1,1044 @@
+2021-03-15 11:03:33 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7fadbfb06950; archive(resolved)='<IDEArchive: 0x7fadd71eee20>', distributionTask(resolved)='2', distributionDestination(resolved)='2', distributionMethod(resolved)='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fadd6eeb7b0>', team(resolved)='<IDEProvisioningDisambiguatableBasicTeam: 0x7fadf45bf560; teamID='FYJ9M58TUU', teamName='Ruslan Mekhonohin', teamType='Individual', username='rus.ognezashita@mail.ru', isFreeProvisioningTeam='0'>'>
+	Chain (13, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7fadbfb06950; archive = '<IDEArchive: 0x7fadd71eee20>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fadd6eeb7b0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fadf45bf560; teamID='FYJ9M58TUU', teamName='Ruslan Mekhonohin', teamType='Individual', username='rus.ognezashita@mail.ru', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionProcessingPipelineContext: 0x7fadbf755c90; archive = '<IDEArchive: 0x7fadd71eee20>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fadd6eeb7b0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fadf45bf560; teamID='FYJ9M58TUU', teamName='Ruslan Mekhonohin', teamType='Individual', username='rus.ognezashita@mail.ru', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fadd60ffa60; archive = '<IDEArchive: 0x7fadd71eee20>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fadd6eeb7b0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fadf45bf560; teamID='FYJ9M58TUU', teamName='Ruslan Mekhonohin', teamType='Individual', username='rus.ognezashita@mail.ru', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fadd60eadb0; archive = '<IDEArchive: 0x7fadd71eee20>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fadd6eeb7b0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fadf45bf560; teamID='FYJ9M58TUU', teamName='Ruslan Mekhonohin', teamType='Individual', username='rus.ognezashita@mail.ru', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fadbf73c500; archive = '<IDEArchive: 0x7fadd71eee20>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fadd6eeb7b0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fadf45bf560; teamID='FYJ9M58TUU', teamName='Ruslan Mekhonohin', teamType='Individual', username='rus.ognezashita@mail.ru', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fadbf98e330; archive = '<IDEArchive: 0x7fadd71eee20>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fadd6eeb7b0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fadf45bf560; teamID='FYJ9M58TUU', teamName='Ruslan Mekhonohin', teamType='Individual', username='rus.ognezashita@mail.ru', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fadbf98fa10; archive = '<IDEArchive: 0x7fadd71eee20>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fadd6eeb7b0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fadf45bf560; teamID='FYJ9M58TUU', teamName='Ruslan Mekhonohin', teamType='Individual', username='rus.ognezashita@mail.ru', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fadbf77f730; archive = '<IDEArchive: 0x7fadd71eee20>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fadd6eeb7b0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fadf45bf560; teamID='FYJ9M58TUU', teamName='Ruslan Mekhonohin', teamType='Individual', username='rus.ognezashita@mail.ru', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fadbf77c580; archive = '<IDEArchive: 0x7fadd71eee20>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fadd6eeb7b0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fadf45bf560; teamID='FYJ9M58TUU', teamName='Ruslan Mekhonohin', teamType='Individual', username='rus.ognezashita@mail.ru', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fadbfa92e70; archive = '<IDEArchive: 0x7fadd71eee20>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fadd6eeb7b0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fadf45bf560; teamID='FYJ9M58TUU', teamName='Ruslan Mekhonohin', teamType='Individual', username='rus.ognezashita@mail.ru', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fadf7e36030; archive = '<IDEArchive: 0x7fadd71eee20>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fadd6eeb7b0>', team='(null)'>
+	<IDEDistributionContext: 0x7fadd7523cb0; archive = '<IDEArchive: 0x7fadd71eee20>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fadd6eeb7b0>', team='(null)'>
+	<IDEDistributionContext: 0x7fadbfac7e40; archive = '<IDEArchive: 0x7fadd71eee20>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7fadbfb06950>
+2021-03-15 11:03:33 +0000  Processing step: IDEDistributionCreateDestRootStep
+2021-03-15 11:03:33 +0000  Processing step: IDEDistributionCopyItemStep
+2021-03-15 11:03:33 +0000  Running /usr/bin/ditto '-V' '/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app'
+2021-03-15 11:03:33 +0000  >>> Copying /Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app 
+2021-03-15 11:03:33 +0000  copying file ./_CodeSignature/CodeResources ... 
+2021-03-15 11:03:33 +0000  45002 bytes for ./_CodeSignature/CodeResources
+2021-03-15 11:03:33 +0000  copying file ./Fontisto.ttf ... 
+2021-03-15 11:03:33 +0000  313528 bytes for ./Fontisto.ttf
+2021-03-15 11:03:33 +0000  copying file ./Octicons.ttf ... 
+2021-03-15 11:03:33 +0000  28364 bytes for ./Octicons.ttf
+2021-03-15 11:03:33 +0000  copying file ./Roboto-Medium.ttf ... 
+2021-03-15 11:03:33 +0000  171656 bytes for ./Roboto-Medium.ttf
+2021-03-15 11:03:33 +0000  copying file ./Feather.ttf ... 
+2021-03-15 11:03:33 +0000  56024 bytes for ./Feather.ttf
+2021-03-15 11:03:33 +0000  copying file ./Entypo.ttf ... 
+2021-03-15 11:03:33 +0000  65584 bytes for ./Entypo.ttf
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/de.lproj/QBImagePicker.strings ... 
+2021-03-15 11:03:33 +0000  686 bytes for ./QBImagePicker.bundle/de.lproj/QBImagePicker.strings
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/zh-Hans.lproj/QBImagePicker.strings ... 
+2021-03-15 11:03:33 +0000  738 bytes for ./QBImagePicker.bundle/zh-Hans.lproj/QBImagePicker.strings
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/ja.lproj/QBImagePicker.strings ... 
+2021-03-15 11:03:33 +0000  764 bytes for ./QBImagePicker.bundle/ja.lproj/QBImagePicker.strings
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/en.lproj/QBImagePicker.strings ... 
+2021-03-15 11:03:33 +0000  681 bytes for ./QBImagePicker.bundle/en.lproj/QBImagePicker.strings
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib/runtime.nib ... 
+2021-03-15 11:03:33 +0000  10674 bytes for ./QBImagePicker.bundle/QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib/runtime.nib
+copying file ./QBImagePicker.bundle/QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib/objects-12.3+.nib ... 
+2021-03-15 11:03:33 +0000  10879 bytes for ./QBImagePicker.bundle/QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib/objects-12.3+.nib
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsViewController.nib/runtime.nib ... 
+2021-03-15 11:03:33 +0000  1775 bytes for ./QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsViewController.nib/runtime.nib
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsViewController.nib/objects-12.3+.nib ... 
+2021-03-15 11:03:33 +0000  1775 bytes for ./QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsViewController.nib/objects-12.3+.nib
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/QBImagePicker.storyboardc/QBAssetsViewController.nib/runtime.nib ... 
+2021-03-15 11:03:33 +0000  1368 bytes for ./QBImagePicker.bundle/QBImagePicker.storyboardc/QBAssetsViewController.nib/runtime.nib
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/QBImagePicker.storyboardc/QBAssetsViewController.nib/objects-12.3+.nib ... 
+2021-03-15 11:03:33 +0000  1368 bytes for ./QBImagePicker.bundle/QBImagePicker.storyboardc/QBAssetsViewController.nib/objects-12.3+.nib
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib/runtime.nib ... 
+2021-03-15 11:03:33 +0000  6938 bytes for ./QBImagePicker.bundle/QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib/runtime.nib
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib/objects-12.3+.nib ... 
+2021-03-15 11:03:33 +0000  6932 bytes for ./QBImagePicker.bundle/QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib/objects-12.3+.nib
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsNavigationController.nib/runtime.nib ... 
+2021-03-15 11:03:33 +0000  2584 bytes for ./QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsNavigationController.nib/runtime.nib
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsNavigationController.nib/objects-12.3+.nib ... 
+2021-03-15 11:03:33 +0000  2584 bytes for ./QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsNavigationController.nib/objects-12.3+.nib
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/QBImagePicker.storyboardc/Info.plist ... 
+2021-03-15 11:03:33 +0000  289 bytes for ./QBImagePicker.bundle/QBImagePicker.storyboardc/Info.plist
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/es.lproj/QBImagePicker.strings ... 
+2021-03-15 11:03:33 +0000  685 bytes for ./QBImagePicker.bundle/es.lproj/QBImagePicker.strings
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/ko.lproj/QBImagePicker.strings ... 
+2021-03-15 11:03:33 +0000  716 bytes for ./QBImagePicker.bundle/ko.lproj/QBImagePicker.strings
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/pl.lproj/QBImagePicker.strings ... 
+2021-03-15 11:03:33 +0000  702 bytes for ./QBImagePicker.bundle/pl.lproj/QBImagePicker.strings
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/ru.lproj/QBImagePicker.strings ... 
+2021-03-15 11:03:33 +0000  772 bytes for ./QBImagePicker.bundle/ru.lproj/QBImagePicker.strings
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/fr.lproj/QBImagePicker.strings ... 
+2021-03-15 11:03:33 +0000  702 bytes for ./QBImagePicker.bundle/fr.lproj/QBImagePicker.strings
+2021-03-15 11:03:33 +0000  copying file ./QBImagePicker.bundle/Info.plist ... 
+2021-03-15 11:03:33 +0000  722 bytes for ./QBImagePicker.bundle/Info.plist
+2021-03-15 11:03:33 +0000  copying file ./FontAwesome5_Brands.ttf ... 
+2021-03-15 11:03:33 +0000  132728 bytes for ./FontAwesome5_Brands.ttf
+2021-03-15 11:03:33 +0000  copying file ./MaterialCommunityIcons.ttf ... 
+2021-03-15 11:03:33 +0000  899432 bytes for ./MaterialCommunityIcons.ttf
+2021-03-15 11:03:33 +0000  copying file ./Roboto-Regular.ttf ... 
+2021-03-15 11:03:33 +0000  171272 bytes for ./Roboto-Regular.ttf
+2021-03-15 11:03:33 +0000  copying file ./AntDesign.ttf ... 
+2021-03-15 11:03:33 +0000  70344 bytes for ./AntDesign.ttf
+2021-03-15 11:03:33 +0000  copying file ./Foundation.ttf ... 
+2021-03-15 11:03:33 +0000  56976 bytes for ./Foundation.ttf
+2021-03-15 11:03:33 +0000  copying file ./Ionicons.ttf ... 
+2021-03-15 11:03:33 +0000  247192 bytes for ./Ionicons.ttf
+2021-03-15 11:03:33 +0000  copying file ./FontAwesome5_Solid.ttf ... 
+2021-03-15 11:03:33 +0000  202616 bytes for ./FontAwesome5_Solid.ttf
+2021-03-15 11:03:33 +0000  copying file ./FontAwesome5_Regular.ttf ... 
+2021-03-15 11:03:33 +0000  34092 bytes for ./FontAwesome5_Regular.ttf
+2021-03-15 11:03:33 +0000  copying file ./AccessibilityResources.bundle/en.lproj/Localizable.strings ... 
+2021-03-15 11:03:33 +0000  530 bytes for ./AccessibilityResources.bundle/en.lproj/Localizable.strings
+2021-03-15 11:03:33 +0000  copying file ./AccessibilityResources.bundle/Info.plist ... 
+2021-03-15 11:03:33 +0000  743 bytes for ./AccessibilityResources.bundle/Info.plist
+2021-03-15 11:03:33 +0000  copying file ./FontAwesome.ttf ... 
+2021-03-15 11:03:33 +0000  165548 bytes for ./FontAwesome.ttf
+2021-03-15 11:03:33 +0000  copying file ./Zocial.ttf ... 
+2021-03-15 11:03:33 +0000  25552 bytes for ./Zocial.ttf
+2021-03-15 11:03:33 +0000  copying file ./EvilIcons.ttf ... 
+2021-03-15 11:03:33 +0000  13456 bytes for ./EvilIcons.ttf
+2021-03-15 11:03:33 +0000  copying file ./mobile ... 
+2021-03-15 11:03:33 +0000  53319376 bytes for ./mobile
+2021-03-15 11:03:33 +0000  copying file ./main.jsbundle ... 
+2021-03-15 11:03:33 +0000  1696917 bytes for ./main.jsbundle
+2021-03-15 11:03:33 +0000  copying file ./LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib ... 
+2021-03-15 11:03:33 +0000  4134 bytes for ./LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib
+2021-03-15 11:03:33 +0000  copying file ./LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib ... 
+2021-03-15 11:03:33 +0000  4258 bytes for ./LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib
+2021-03-15 11:03:33 +0000  copying file ./LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib ... 
+2021-03-15 11:03:33 +0000  896 bytes for ./LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib
+2021-03-15 11:03:33 +0000  copying file ./LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib ... 
+2021-03-15 11:03:33 +0000  896 bytes for ./LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib
+2021-03-15 11:03:33 +0000  copying file ./LaunchScreen.storyboardc/Info.plist ... 
+2021-03-15 11:03:33 +0000  258 bytes for ./LaunchScreen.storyboardc/Info.plist
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/de.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  189 bytes for ./TOCropViewControllerBundle.bundle/de.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/ar.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  207 bytes for ./TOCropViewControllerBundle.bundle/ar.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/zh-Hans.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  172 bytes for ./TOCropViewControllerBundle.bundle/zh-Hans.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/ja.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  201 bytes for ./TOCropViewControllerBundle.bundle/ja.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/fa.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  210 bytes for ./TOCropViewControllerBundle.bundle/fa.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/en.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  168 bytes for ./TOCropViewControllerBundle.bundle/en.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/es.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  179 bytes for ./TOCropViewControllerBundle.bundle/es.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/it.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  181 bytes for ./TOCropViewControllerBundle.bundle/it.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/sk.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  176 bytes for ./TOCropViewControllerBundle.bundle/sk.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/ms.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  173 bytes for ./TOCropViewControllerBundle.bundle/ms.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/cs.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  173 bytes for ./TOCropViewControllerBundle.bundle/cs.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/ko.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  187 bytes for ./TOCropViewControllerBundle.bundle/ko.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/Base.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  168 bytes for ./TOCropViewControllerBundle.bundle/Base.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/zh-Hant.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  175 bytes for ./TOCropViewControllerBundle.bundle/zh-Hant.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/fa-IR.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  210 bytes for ./TOCropViewControllerBundle.bundle/fa-IR.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/hu.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  194 bytes for ./TOCropViewControllerBundle.bundle/hu.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/da-DK.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  174 bytes for ./TOCropViewControllerBundle.bundle/da-DK.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/tr.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  183 bytes for ./TOCropViewControllerBundle.bundle/tr.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/pl.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  171 bytes for ./TOCropViewControllerBundle.bundle/pl.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/pt-BR.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  181 bytes for ./TOCropViewControllerBundle.bundle/pt-BR.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/vi.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  178 bytes for ./TOCropViewControllerBundle.bundle/vi.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/ru.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  237 bytes for ./TOCropViewControllerBundle.bundle/ru.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/fr.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  193 bytes for ./TOCropViewControllerBundle.bundle/fr.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/fi.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  179 bytes for ./TOCropViewControllerBundle.bundle/fi.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/id.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  178 bytes for ./TOCropViewControllerBundle.bundle/id.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/nl.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  178 bytes for ./TOCropViewControllerBundle.bundle/nl.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/pt.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  181 bytes for ./TOCropViewControllerBundle.bundle/pt.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/ro.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  181 bytes for ./TOCropViewControllerBundle.bundle/ro.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/Info.plist ... 
+2021-03-15 11:03:33 +0000  749 bytes for ./TOCropViewControllerBundle.bundle/Info.plist
+2021-03-15 11:03:33 +0000  copying file ./TOCropViewControllerBundle.bundle/ca.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:33 +0000  177 bytes for ./TOCropViewControllerBundle.bundle/ca.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:33 +0000  copying file ./Frameworks/libswiftCoreImage.dylib ... 
+2021-03-15 11:03:33 +0000  466576 bytes for ./Frameworks/libswiftCoreImage.dylib
+2021-03-15 11:03:33 +0000  copying file ./Frameworks/libswiftObjectiveC.dylib ... 
+2021-03-15 11:03:33 +0000  679696 bytes for ./Frameworks/libswiftObjectiveC.dylib
+copying file ./Frameworks/libswiftCore.dylib ... 
+2021-03-15 11:03:33 +0000  95497584 bytes for ./Frameworks/libswiftCore.dylib
+copying file ./Frameworks/libswiftCoreGraphics.dylib ... 
+2021-03-15 11:03:33 +0000  2041040 bytes for ./Frameworks/libswiftCoreGraphics.dylib
+copying file ./Frameworks/libswiftUIKit.dylib ... 
+1608816 bytes for ./Frameworks/libswiftUIKit.dylib
+copying file ./Frameworks/libswiftMetal.dylib ... 
+724432 bytes for ./Frameworks/libswiftMetal.dylib
+copying file ./Frameworks/libswiftDispatch.dylib ... 
+2021-03-15 11:03:33 +0000  4056912 bytes for ./Frameworks/libswiftDispatch.dylib
+copying file ./Frameworks/libswiftos.dylib ... 
+857184 bytes for ./Frameworks/libswiftos.dylib
+copying file ./Frameworks/libswiftCoreFoundation.dylib ... 
+2021-03-15 11:03:33 +0000  450400 bytes for ./Frameworks/libswiftCoreFoundation.dylib
+copying file ./Frameworks/libswiftDarwin.dylib ... 
+1091440 bytes for ./Frameworks/libswiftDarwin.dylib
+copying file ./Frameworks/libswiftQuartzCore.dylib ... 
+2021-03-15 11:03:33 +0000  486352 bytes for ./Frameworks/libswiftQuartzCore.dylib
+copying file ./Frameworks/libswiftFoundation.dylib ... 
+2021-03-15 11:03:33 +0000  43094320 bytes for ./Frameworks/libswiftFoundation.dylib
+2021-03-15 11:03:33 +0000  copying file ./SimpleLineIcons.ttf ... 
+2021-03-15 11:03:33 +0000  54056 bytes for ./SimpleLineIcons.ttf
+2021-03-15 11:03:33 +0000  copying file ./embedded.mobileprovision ... 
+2021-03-15 11:03:33 +0000  7780 bytes for ./embedded.mobileprovision
+2021-03-15 11:03:33 +0000  copying file ./assets/app.json ... 
+2021-03-15 11:03:33 +0000  49 bytes for ./assets/app.json
+2021-03-15 11:03:33 +0000  copying file ./assets/node_modules/css-color-keywords/colors.json ... 
+2021-03-15 11:03:33 +0000  3796 bytes for ./assets/node_modules/css-color-keywords/colors.json
+2021-03-15 11:03:33 +0000  copying file ./assets/node_modules/@react-navigation/drawer/src/views/assets/toggle-drawer-icon@3x.png ... 
+2021-03-15 11:03:33 +0000  212 bytes for ./assets/node_modules/@react-navigation/drawer/src/views/assets/toggle-drawer-icon@3x.png
+2021-03-15 11:03:33 +0000  copying file ./assets/node_modules/@react-navigation/drawer/src/views/assets/toggle-drawer-icon@2x.png ... 
+2021-03-15 11:03:33 +0000  163 bytes for ./assets/node_modules/@react-navigation/drawer/src/views/assets/toggle-drawer-icon@2x.png
+2021-03-15 11:03:33 +0000  copying file ./assets/node_modules/@react-navigation/drawer/src/views/assets/toggle-drawer-icon.png ... 
+2021-03-15 11:03:33 +0000  108 bytes for ./assets/node_modules/@react-navigation/drawer/src/views/assets/toggle-drawer-icon.png
+2021-03-15 11:03:33 +0000  copying file ./assets/node_modules/@react-navigation/stack/src/views/assets/back-icon@3x.png ... 
+2021-03-15 11:03:33 +0000  761 bytes for ./assets/node_modules/@react-navigation/stack/src/views/assets/back-icon@3x.png
+2021-03-15 11:03:33 +0000  copying file ./assets/node_modules/@react-navigation/stack/src/views/assets/back-icon@2x.png ... 
+2021-03-15 11:03:33 +0000  405 bytes for ./assets/node_modules/@react-navigation/stack/src/views/assets/back-icon@2x.png
+2021-03-15 11:03:33 +0000  copying file ./assets/node_modules/@react-navigation/stack/src/views/assets/back-icon.png ... 
+2021-03-15 11:03:33 +0000  290 bytes for ./assets/node_modules/@react-navigation/stack/src/views/assets/back-icon.png
+2021-03-15 11:03:33 +0000  copying file ./assets/node_modules/@react-navigation/stack/src/views/assets/back-icon-mask.png ... 
+2021-03-15 11:03:33 +0000  913 bytes for ./assets/node_modules/@react-navigation/stack/src/views/assets/back-icon-mask.png
+2021-03-15 11:03:33 +0000  copying file ./assets/node_modules/react-native-vector-icons/glyphmaps/FontAwesome.json ... 
+2021-03-15 11:03:33 +0000  17437 bytes for ./assets/node_modules/react-native-vector-icons/glyphmaps/FontAwesome.json
+2021-03-15 11:03:33 +0000  copying file ./assets/node_modules/react-native-vector-icons/glyphmaps/MaterialIcons.json ... 
+2021-03-15 11:03:33 +0000  38522 bytes for ./assets/node_modules/react-native-vector-icons/glyphmaps/MaterialIcons.json
+2021-03-15 11:03:33 +0000  copying file ./assets/src/title.png ... 
+2021-03-15 11:03:33 +0000  11956 bytes for ./assets/src/title.png
+2021-03-15 11:03:33 +0000  copying file ./assets/src/user.png ... 
+2021-03-15 11:03:33 +0000  6725 bytes for ./assets/src/user.png
+copying file ./assets/src/left.png ... 
+2021-03-15 11:03:33 +0000  16981 bytes for ./assets/src/left.png
+2021-03-15 11:03:33 +0000  copying file ./assets/src/right.png ... 
+2021-03-15 11:03:33 +0000  16836 bytes for ./assets/src/right.png
+copying file ./Info.plist ... 
+2021-03-15 11:03:33 +0000  3292 bytes for ./Info.plist
+2021-03-15 11:03:33 +0000  copying file ./PkgInfo ... 
+2021-03-15 11:03:33 +0000  8 bytes for ./PkgInfo
+copying file ./MaterialIcons.ttf ... 
+2021-03-15 11:03:33 +0000  230384 bytes for ./MaterialIcons.ttf
+2021-03-15 11:03:33 +0000  /usr/bin/ditto exited with 0
+2021-03-15 11:03:33 +0000  Processing step: IDEDistributionEmbedProfileStep
+2021-03-15 11:03:33 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fade3054890; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fade9144400:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf78d630; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fade1807910; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf6f230c0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fade9144400:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:33 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fadd60e9dd0; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fadbf75aa80:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf784ee0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7faddd85ec90; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf3b2e1f0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fadbf75aa80:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:33 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fadbf779c90; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fadbf7555e0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf77c910; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fade1807910; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadd6e71e10>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fadbf7555e0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:33 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fadbfac17c0; bundleID='com.apple.dt.runtime.swiftCoreImage', path='<DVTFilePath:0x7fadbfa08940:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreImage.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf787090; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadf7c27ba0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf39a9990>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCoreImage', executablePath='<DVTFilePath:0x7fadbfa08940:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreImage.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:33 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fadbf7827b0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fadbf75bcc0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf77ce10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fade1807910; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf45f2d60>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fadbf75bcc0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:33 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fadbf78f700; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fadbf755500:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf78db10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fade1807910; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf6fe5410>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fadbf755500:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:33 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fadd74328a0; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fadbf758880:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadd742d340; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadd60b0690; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf5014310>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fadbf758880:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:33 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fadd7434e50; bundleID='com.apple.dt.runtime.swiftMetal', path='<DVTFilePath:0x7fadbf757720:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftMetal.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadd7433d20; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7faddd85ec90; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf3686cf0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftMetal', executablePath='<DVTFilePath:0x7fadbf757720:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftMetal.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:33 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fadbf787270; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fadbfabe0a0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf787710; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7faddd85ec90; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fade8b1d070>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fadbfabe0a0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:33 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fadbf7885e0; bundleID='com.apple.dt.runtime.swiftQuartzCore', path='<DVTFilePath:0x7fadbf75ce00:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftQuartzCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadd7425d80; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7faddd85ec90; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf66d0560>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftQuartzCore', executablePath='<DVTFilePath:0x7fadbf75ce00:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftQuartzCore.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:33 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fadbf785490; bundleID='com.apple.dt.runtime.swiftUIKit', path='<DVTFilePath:0x7fadbfabfa90:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftUIKit.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadf7e30080; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadf7e62be0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf798f020>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftUIKit', executablePath='<DVTFilePath:0x7fadbfabfa90:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftUIKit.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:33 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fadbf77a4b0; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0x7fadbfabe950:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf779020; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7faddd85ec90; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf3b527a0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0x7fadbfabe950:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:33 +0000  Processing step: IDEDistributionInfoPlistStep
+2021-03-15 11:03:33 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-03-15 11:03:33 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-03-15 11:03:33 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-03-15 11:03:33 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-03-15 11:03:33 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-03-15 11:03:33 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-03-15 11:03:33 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-03-15 11:03:33 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-03-15 11:03:33 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-03-15 11:03:33 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-03-15 11:03:33 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-03-15 11:03:33 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-03-15 11:03:33 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-03-15 11:03:33 +0000  Processing step: IDEDistributionItemRemovalStep
+2021-03-15 11:03:33 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2021-03-15 11:03:33 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2021-03-15 11:03:33 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2021-03-15 11:03:33 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2021-03-15 11:03:33 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2021-03-15 11:03:34 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/mobile' '-l' '-o' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/mobile'
+2021-03-15 11:03:34 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2021-03-15 11:03:34 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2021-03-15 11:03:34 +0000  Running /usr/bin/ditto '-V' '/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/BCSymbolMaps/05C451A5-EF90-372B-B0D0-700197548A9A.bcsymbolmap' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/BCSymbolMaps/05C451A5-EF90-372B-B0D0-700197548A9A.bcsymbolmap'
+2021-03-15 11:03:34 +0000  >>> Copying /Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/BCSymbolMaps/05C451A5-EF90-372B-B0D0-700197548A9A.bcsymbolmap 
+2021-03-15 11:03:34 +0000  copying file ./05C451A5-EF90-372B-B0D0-700197548A9A.bcsymbolmap ... 
+2021-03-15 11:03:34 +0000  2030742 bytes for ./05C451A5-EF90-372B-B0D0-700197548A9A.bcsymbolmap
+2021-03-15 11:03:34 +0000  /usr/bin/ditto exited with 0
+2021-03-15 11:03:34 +0000  Running /usr/bin/ditto '-V' '/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/BCSymbolMaps/5E6DCEAB-5A9D-307E-A005-3E9EF4BB2985.bcsymbolmap' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/BCSymbolMaps/5E6DCEAB-5A9D-307E-A005-3E9EF4BB2985.bcsymbolmap'
+2021-03-15 11:03:34 +0000  >>> Copying /Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/BCSymbolMaps/5E6DCEAB-5A9D-307E-A005-3E9EF4BB2985.bcsymbolmap 
+2021-03-15 11:03:34 +0000  copying file ./5E6DCEAB-5A9D-307E-A005-3E9EF4BB2985.bcsymbolmap ... 
+2021-03-15 11:03:34 +0000  2073656 bytes for ./5E6DCEAB-5A9D-307E-A005-3E9EF4BB2985.bcsymbolmap
+2021-03-15 11:03:34 +0000  /usr/bin/ditto exited with 0
+2021-03-15 11:03:34 +0000  Processing step: IDEDistributionSymbolsStep
+2021-03-15 11:03:35 +0000  Excluding symbols for libswiftCore.dylib
+2021-03-15 11:03:35 +0000  Excluding symbols for libswiftCoreFoundation.dylib
+2021-03-15 11:03:35 +0000  Excluding symbols for libswiftCoreGraphics.dylib
+2021-03-15 11:03:35 +0000  Excluding symbols for libswiftCoreImage.dylib
+2021-03-15 11:03:35 +0000  Excluding symbols for libswiftDarwin.dylib
+2021-03-15 11:03:35 +0000  Excluding symbols for libswiftDispatch.dylib
+2021-03-15 11:03:35 +0000  Excluding symbols for libswiftFoundation.dylib
+2021-03-15 11:03:35 +0000  Excluding symbols for libswiftMetal.dylib
+2021-03-15 11:03:35 +0000  Excluding symbols for libswiftObjectiveC.dylib
+2021-03-15 11:03:35 +0000  Excluding symbols for libswiftQuartzCore.dylib
+2021-03-15 11:03:35 +0000  Excluding symbols for libswiftUIKit.dylib
+2021-03-15 11:03:35 +0000  Excluding symbols for libswiftos.dylib
+2021-03-15 11:03:35 +0000  Excluding symbols for mobile.app
+2021-03-15 11:03:35 +0000  Processing step: IDEDistributionCopyAppleProvidedContentStep
+2021-03-15 11:03:35 +0000  Running /usr/bin/ditto '-V' '/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/SwiftSupport' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/SwiftSupport'
+2021-03-15 11:03:35 +0000  >>> Copying /Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/SwiftSupport 
+2021-03-15 11:03:35 +0000  copying file ./iphoneos/libswiftCoreImage.dylib ... 
+2021-03-15 11:03:35 +0000  533860 bytes for ./iphoneos/libswiftCoreImage.dylib
+2021-03-15 11:03:35 +0000  copying file ./iphoneos/libswiftObjectiveC.dylib ... 
+2021-03-15 11:03:35 +0000  853551 bytes for ./iphoneos/libswiftObjectiveC.dylib
+2021-03-15 11:03:35 +0000  copying file ./iphoneos/libswiftCore.dylib ... 
+2021-03-15 11:03:35 +0000  140528485 bytes for ./iphoneos/libswiftCore.dylib
+2021-03-15 11:03:35 +0000  copying file ./iphoneos/libswiftCoreGraphics.dylib ... 
+2021-03-15 11:03:35 +0000  2727342 bytes for ./iphoneos/libswiftCoreGraphics.dylib
+2021-03-15 11:03:35 +0000  copying file ./iphoneos/libswiftUIKit.dylib ... 
+2021-03-15 11:03:35 +0000  2211578 bytes for ./iphoneos/libswiftUIKit.dylib
+2021-03-15 11:03:35 +0000  copying file ./iphoneos/libswiftMetal.dylib ... 
+2021-03-15 11:03:35 +0000  897158 bytes for ./iphoneos/libswiftMetal.dylib
+2021-03-15 11:03:35 +0000  copying file ./iphoneos/libswiftDispatch.dylib ... 
+2021-03-15 11:03:35 +0000  5501326 bytes for ./iphoneos/libswiftDispatch.dylib
+2021-03-15 11:03:35 +0000  copying file ./iphoneos/libswiftos.dylib ... 
+2021-03-15 11:03:35 +0000  1136720 bytes for ./iphoneos/libswiftos.dylib
+2021-03-15 11:03:35 +0000  copying file ./iphoneos/libswiftCoreFoundation.dylib ... 
+2021-03-15 11:03:35 +0000  503572 bytes for ./iphoneos/libswiftCoreFoundation.dylib
+2021-03-15 11:03:35 +0000  copying file ./iphoneos/libswiftDarwin.dylib ... 
+2021-03-15 11:03:35 +0000  1412282 bytes for ./iphoneos/libswiftDarwin.dylib
+2021-03-15 11:03:35 +0000  copying file ./iphoneos/libswiftQuartzCore.dylib ... 
+2021-03-15 11:03:35 +0000  580069 bytes for ./iphoneos/libswiftQuartzCore.dylib
+2021-03-15 11:03:35 +0000  copying file ./iphoneos/libswiftFoundation.dylib ... 
+2021-03-15 11:03:35 +0000  62290314 bytes for ./iphoneos/libswiftFoundation.dylib
+2021-03-15 11:03:35 +0000  /usr/bin/ditto exited with 0
+2021-03-15 11:03:35 +0000  Processing step: IDEDistributionAppThinningStep
+2021-03-15 11:03:35 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2021-03-15 11:03:35 +0000  Processing step: IDEDistributionArchThinningStep
+2021-03-15 11:03:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCore.dylib' '-verify_arch' 'arm64e'
+2021-03-15 11:03:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCore.dylib' '-remove' 'arm64e' '-output' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCore.dylib'
+2021-03-15 11:03:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:35 +0000  Successfully thinned item "libswiftCore.dylib", arch "arm64e"
+2021-03-15 11:03:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreFoundation.dylib' '-verify_arch' 'arm64e'
+2021-03-15 11:03:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreFoundation.dylib' '-remove' 'arm64e' '-output' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreFoundation.dylib'
+2021-03-15 11:03:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:35 +0000  Successfully thinned item "libswiftCoreFoundation.dylib", arch "arm64e"
+2021-03-15 11:03:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreGraphics.dylib' '-verify_arch' 'arm64e'
+2021-03-15 11:03:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreGraphics.dylib' '-remove' 'arm64e' '-output' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreGraphics.dylib'
+2021-03-15 11:03:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:35 +0000  Successfully thinned item "libswiftCoreGraphics.dylib", arch "arm64e"
+2021-03-15 11:03:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreImage.dylib' '-verify_arch' 'arm64e'
+2021-03-15 11:03:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreImage.dylib' '-remove' 'arm64e' '-output' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreImage.dylib'
+2021-03-15 11:03:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:35 +0000  Successfully thinned item "libswiftCoreImage.dylib", arch "arm64e"
+2021-03-15 11:03:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDarwin.dylib' '-verify_arch' 'arm64e'
+2021-03-15 11:03:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDarwin.dylib' '-remove' 'arm64e' '-output' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDarwin.dylib'
+2021-03-15 11:03:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:35 +0000  Successfully thinned item "libswiftDarwin.dylib", arch "arm64e"
+2021-03-15 11:03:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDispatch.dylib' '-verify_arch' 'arm64e'
+2021-03-15 11:03:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDispatch.dylib' '-remove' 'arm64e' '-output' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDispatch.dylib'
+2021-03-15 11:03:36 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:36 +0000  Successfully thinned item "libswiftDispatch.dylib", arch "arm64e"
+2021-03-15 11:03:36 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftFoundation.dylib' '-verify_arch' 'arm64e'
+2021-03-15 11:03:36 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:36 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftFoundation.dylib' '-remove' 'arm64e' '-output' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftFoundation.dylib'
+2021-03-15 11:03:36 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:36 +0000  Successfully thinned item "libswiftFoundation.dylib", arch "arm64e"
+2021-03-15 11:03:36 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftMetal.dylib' '-verify_arch' 'arm64e'
+2021-03-15 11:03:36 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:36 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftMetal.dylib' '-remove' 'arm64e' '-output' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftMetal.dylib'
+2021-03-15 11:03:36 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:36 +0000  Successfully thinned item "libswiftMetal.dylib", arch "arm64e"
+2021-03-15 11:03:36 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftObjectiveC.dylib' '-verify_arch' 'arm64e'
+2021-03-15 11:03:36 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:36 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftObjectiveC.dylib' '-remove' 'arm64e' '-output' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftObjectiveC.dylib'
+2021-03-15 11:03:36 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:36 +0000  Successfully thinned item "libswiftObjectiveC.dylib", arch "arm64e"
+2021-03-15 11:03:36 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftQuartzCore.dylib' '-verify_arch' 'arm64e'
+2021-03-15 11:03:36 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:36 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftQuartzCore.dylib' '-remove' 'arm64e' '-output' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftQuartzCore.dylib'
+2021-03-15 11:03:36 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:36 +0000  Successfully thinned item "libswiftQuartzCore.dylib", arch "arm64e"
+2021-03-15 11:03:36 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftUIKit.dylib' '-verify_arch' 'arm64e'
+2021-03-15 11:03:36 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:36 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftUIKit.dylib' '-remove' 'arm64e' '-output' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftUIKit.dylib'
+2021-03-15 11:03:36 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:36 +0000  Successfully thinned item "libswiftUIKit.dylib", arch "arm64e"
+2021-03-15 11:03:36 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftos.dylib' '-verify_arch' 'arm64e'
+2021-03-15 11:03:36 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:36 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftos.dylib' '-remove' 'arm64e' '-output' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftos.dylib'
+2021-03-15 11:03:36 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-03-15 11:03:36 +0000  Successfully thinned item "libswiftos.dylib", arch "arm64e"
+2021-03-15 11:03:36 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/mobile' '-verify_arch' 'arm64e'
+2021-03-15 11:03:36 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-03-15 11:03:36 +0000  Skipping architecture thinning for item "mobile" because arch "arm64e" wasn't found
+2021-03-15 11:03:36 +0000  Processing step: IDEDistributionODRStep
+2021-03-15 11:03:36 +0000  Processing step: IDEDistributionStripXattrsStep
+2021-03-15 11:03:36 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fade3054890; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fade9144400:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf78d630; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadd60fbb50; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7e99940>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fade9144400:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:36 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fadd60e9dd0; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fadbf75aa80:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf784ee0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadd6027850; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7e71fb0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fadbf75aa80:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:36 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fadbf779c90; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fadbf7555e0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf77c910; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbfb367d0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7e70e70>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fadbf7555e0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:36 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fadbfac17c0; bundleID='com.apple.dt.runtime.swiftCoreImage', path='<DVTFilePath:0x7fadbfa08940:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreImage.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf787090; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadd60fbb50; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7e9ec40>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCoreImage', executablePath='<DVTFilePath:0x7fadbfa08940:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreImage.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:36 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fadbf7827b0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fadbf75bcc0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf77ce10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf739100; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7765030>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fadbf75bcc0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:36 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fadbf78f700; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fadbf755500:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf78db10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf736610; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7dc8ce0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fadbf755500:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:36 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fadd74328a0; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fadbf758880:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadd742d340; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf74fd20; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf626ec40>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fadbf758880:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:36 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fadd7434e50; bundleID='com.apple.dt.runtime.swiftMetal', path='<DVTFilePath:0x7fadbf757720:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftMetal.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadd7433d20; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbfb284d0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7e80190>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftMetal', executablePath='<DVTFilePath:0x7fadbf757720:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftMetal.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:36 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fadbf787270; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fadbfabe0a0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf787710; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf732b00; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7dcff10>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fadbfabe0a0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:36 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fadbf7885e0; bundleID='com.apple.dt.runtime.swiftQuartzCore', path='<DVTFilePath:0x7fadbf75ce00:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftQuartzCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadd7425d80; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadd6027850; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7e930c0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftQuartzCore', executablePath='<DVTFilePath:0x7fadbf75ce00:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftQuartzCore.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:36 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fadbf785490; bundleID='com.apple.dt.runtime.swiftUIKit', path='<DVTFilePath:0x7fadbfabfa90:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftUIKit.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadf7e30080; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf7344b0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7dc9e70>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftUIKit', executablePath='<DVTFilePath:0x7fadbfabfa90:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftUIKit.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:36 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fadbf77a4b0; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0x7fadbfabe950:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf779020; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf76eac0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7dcff10>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0x7fadbfabe950:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'>
+2021-03-15 11:03:36 +0000  Running /usr/bin/xattr '-crs' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app'
+2021-03-15 11:03:36 +0000  /usr/bin/xattr exited with 0
+2021-03-15 11:03:36 +0000  Processing step: IDEDistributionCodesignStep
+2021-03-15 11:03:36 +0000  Entitlements for <IDEDistributionItem: 0x7fade3054890; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fade9144400:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf78d630; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf7344b0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf63ad3b0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fade9144400:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-03-15 11:03:36 +0000  Entitlements for <IDEDistributionItem: 0x7fade3054890; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fade9144400:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf78d630; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf776450; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf89316d0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fade9144400:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-03-15 11:03:36 +0000  Writing entitlements for <IDEDistributionItem: 0x7fade3054890; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fade9144400:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf78d630; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf7658c0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf894dea0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fade9144400:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'> to: /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~tqCW5k
+2021-03-15 11:03:36 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '8987C97C4ABCC8522F379D534609B3A5520EF04D' '--entitlements' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~tqCW5k' '--preserve-metadata=identifier,flags,runtime' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCore.dylib'
+2021-03-15 11:03:36 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCore.dylib: replacing existing signature
+2021-03-15 11:03:44 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCore]
+2021-03-15 11:03:44 +0000  /usr/bin/codesign exited with 0
+2021-03-15 11:03:44 +0000  Entitlements for <IDEDistributionItem: 0x7fadd60e9dd0; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fadbf75aa80:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf784ee0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadccb5fae0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf88edc40>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fadbf75aa80:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-03-15 11:03:44 +0000  Entitlements for <IDEDistributionItem: 0x7fadd60e9dd0; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fadbf75aa80:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf784ee0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf9bff20; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fade6ad4a10>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fadbf75aa80:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-03-15 11:03:44 +0000  Writing entitlements for <IDEDistributionItem: 0x7fadd60e9dd0; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fadbf75aa80:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf784ee0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadf7a61940; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf562b9a0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fadbf75aa80:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'> to: /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~i6GY6O
+2021-03-15 11:03:44 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '8987C97C4ABCC8522F379D534609B3A5520EF04D' '--entitlements' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~i6GY6O' '--preserve-metadata=identifier,flags,runtime' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreFoundation.dylib'
+2021-03-15 11:03:44 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreFoundation.dylib: replacing existing signature
+2021-03-15 11:03:48 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreFoundation]
+2021-03-15 11:03:48 +0000  /usr/bin/codesign exited with 0
+2021-03-15 11:03:48 +0000  Entitlements for <IDEDistributionItem: 0x7fadbf779c90; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fadbf7555e0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf77c910; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadf7078400; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7c177e0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fadbf7555e0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-03-15 11:03:48 +0000  Entitlements for <IDEDistributionItem: 0x7fadbf779c90; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fadbf7555e0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf77c910; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadf7c27ba0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7c3d390>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fadbf7555e0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-03-15 11:03:48 +0000  Writing entitlements for <IDEDistributionItem: 0x7fadbf779c90; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fadbf7555e0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf77c910; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf736ea0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7faddd830030>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fadbf7555e0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'> to: /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~J6vZa5
+2021-03-15 11:03:48 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '8987C97C4ABCC8522F379D534609B3A5520EF04D' '--entitlements' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~J6vZa5' '--preserve-metadata=identifier,flags,runtime' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreGraphics.dylib'
+2021-03-15 11:03:48 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreGraphics.dylib: replacing existing signature
+2021-03-15 11:03:52 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreGraphics.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreGraphics]
+2021-03-15 11:03:52 +0000  /usr/bin/codesign exited with 0
+2021-03-15 11:03:52 +0000  Entitlements for <IDEDistributionItem: 0x7fadbfac17c0; bundleID='com.apple.dt.runtime.swiftCoreImage', path='<DVTFilePath:0x7fadbfa08940:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreImage.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf787090; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadf7078400; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7ceb0e0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCoreImage', executablePath='<DVTFilePath:0x7fadbfa08940:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreImage.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-03-15 11:03:52 +0000  Entitlements for <IDEDistributionItem: 0x7fadbfac17c0; bundleID='com.apple.dt.runtime.swiftCoreImage', path='<DVTFilePath:0x7fadbfa08940:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreImage.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf787090; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf7937c0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf632a060>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCoreImage', executablePath='<DVTFilePath:0x7fadbfa08940:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreImage.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-03-15 11:03:52 +0000  Writing entitlements for <IDEDistributionItem: 0x7fadbfac17c0; bundleID='com.apple.dt.runtime.swiftCoreImage', path='<DVTFilePath:0x7fadbfa08940:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreImage.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf787090; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fade1807910; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadcde40e20>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftCoreImage', executablePath='<DVTFilePath:0x7fadbfa08940:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftCoreImage.dylib'>', hardenedRuntime='0'>'> to: /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~zdwq6X
+2021-03-15 11:03:52 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '8987C97C4ABCC8522F379D534609B3A5520EF04D' '--entitlements' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~zdwq6X' '--preserve-metadata=identifier,flags,runtime' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreImage.dylib'
+2021-03-15 11:03:52 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreImage.dylib: replacing existing signature
+2021-03-15 11:03:52 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreImage.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreImage]
+2021-03-15 11:03:52 +0000  /usr/bin/codesign exited with 0
+2021-03-15 11:03:52 +0000  Entitlements for <IDEDistributionItem: 0x7fadbf7827b0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fadbf75bcc0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf77ce10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf75f890; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf893b130>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fadbf75bcc0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-03-15 11:03:52 +0000  Entitlements for <IDEDistributionItem: 0x7fadbf7827b0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fadbf75bcc0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf77ce10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf79bac0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fade7beb1b0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fadbf75bcc0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-03-15 11:03:52 +0000  Writing entitlements for <IDEDistributionItem: 0x7fadbf7827b0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fadbf75bcc0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf77ce10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf751c80; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf897ab00>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fadbf75bcc0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'> to: /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~CZYZFU
+2021-03-15 11:03:52 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '8987C97C4ABCC8522F379D534609B3A5520EF04D' '--entitlements' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~CZYZFU' '--preserve-metadata=identifier,flags,runtime' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDarwin.dylib'
+2021-03-15 11:03:52 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDarwin.dylib: replacing existing signature
+2021-03-15 11:03:52 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDarwin.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDarwin]
+2021-03-15 11:03:52 +0000  /usr/bin/codesign exited with 0
+2021-03-15 11:03:52 +0000  Entitlements for <IDEDistributionItem: 0x7fadbf78f700; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fadbf755500:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf78db10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadf7078400; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7c36f70>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fadbf755500:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-03-15 11:03:52 +0000  Entitlements for <IDEDistributionItem: 0x7fadbf78f700; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fadbf755500:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf78db10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fade1831310; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fade92add30>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fadbf755500:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-03-15 11:03:52 +0000  Writing entitlements for <IDEDistributionItem: 0x7fadbf78f700; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fadbf755500:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf78db10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadf74cae50; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf63e4f90>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fadbf755500:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'> to: /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~WVp3QS
+2021-03-15 11:03:52 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '8987C97C4ABCC8522F379D534609B3A5520EF04D' '--entitlements' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~WVp3QS' '--preserve-metadata=identifier,flags,runtime' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDispatch.dylib'
+2021-03-15 11:03:52 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDispatch.dylib: replacing existing signature
+2021-03-15 11:03:52 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDispatch.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDispatch]
+2021-03-15 11:03:52 +0000  /usr/bin/codesign exited with 0
+2021-03-15 11:03:52 +0000  Entitlements for <IDEDistributionItem: 0x7fadd74328a0; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fadbf758880:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadd742d340; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadf74cae50; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf893de70>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fadbf758880:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-03-15 11:03:52 +0000  Entitlements for <IDEDistributionItem: 0x7fadd74328a0; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fadbf758880:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadd742d340; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fade1831310; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fade92add30>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fadbf758880:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-03-15 11:03:52 +0000  Writing entitlements for <IDEDistributionItem: 0x7fadd74328a0; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fadbf758880:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadd742d340; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbfa05250; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7840910>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fadbf758880:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'> to: /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~5duZwX
+2021-03-15 11:03:52 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '8987C97C4ABCC8522F379D534609B3A5520EF04D' '--entitlements' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~5duZwX' '--preserve-metadata=identifier,flags,runtime' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftFoundation.dylib'
+2021-03-15 11:03:52 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftFoundation.dylib: replacing existing signature
+2021-03-15 11:03:53 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftFoundation]
+2021-03-15 11:03:53 +0000  /usr/bin/codesign exited with 0
+2021-03-15 11:03:53 +0000  Entitlements for <IDEDistributionItem: 0x7fadd7434e50; bundleID='com.apple.dt.runtime.swiftMetal', path='<DVTFilePath:0x7fadbf757720:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftMetal.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadd7433d20; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadd60b0840; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadbfb3ecf0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftMetal', executablePath='<DVTFilePath:0x7fadbf757720:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftMetal.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-03-15 11:03:53 +0000  Entitlements for <IDEDistributionItem: 0x7fadd7434e50; bundleID='com.apple.dt.runtime.swiftMetal', path='<DVTFilePath:0x7fadbf757720:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftMetal.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadd7433d20; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadd60e49e0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadbfb3fd90>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftMetal', executablePath='<DVTFilePath:0x7fadbf757720:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftMetal.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-03-15 11:03:53 +0000  Writing entitlements for <IDEDistributionItem: 0x7fadd7434e50; bundleID='com.apple.dt.runtime.swiftMetal', path='<DVTFilePath:0x7fadbf757720:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftMetal.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadd7433d20; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbfb27530; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadbfb2b8f0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftMetal', executablePath='<DVTFilePath:0x7fadbf757720:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftMetal.dylib'>', hardenedRuntime='0'>'> to: /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~VTh1jT
+2021-03-15 11:03:53 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '8987C97C4ABCC8522F379D534609B3A5520EF04D' '--entitlements' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~VTh1jT' '--preserve-metadata=identifier,flags,runtime' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftMetal.dylib'
+2021-03-15 11:03:53 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftMetal.dylib: replacing existing signature
+2021-03-15 11:03:53 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftMetal.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftMetal]
+2021-03-15 11:03:53 +0000  /usr/bin/codesign exited with 0
+2021-03-15 11:03:53 +0000  Entitlements for <IDEDistributionItem: 0x7fadbf787270; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fadbfabe0a0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf787710; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadd60b0840; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadbfb2ace0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fadbfabe0a0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-03-15 11:03:53 +0000  Entitlements for <IDEDistributionItem: 0x7fadbf787270; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fadbfabe0a0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf787710; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadd60e4510; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadbfb14610>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fadbfabe0a0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-03-15 11:03:53 +0000  Writing entitlements for <IDEDistributionItem: 0x7fadbf787270; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fadbfabe0a0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf787710; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fade1807910; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fade5e33140>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fadbfabe0a0:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'> to: /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~H9zV80
+2021-03-15 11:03:53 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '8987C97C4ABCC8522F379D534609B3A5520EF04D' '--entitlements' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~H9zV80' '--preserve-metadata=identifier,flags,runtime' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftObjectiveC.dylib'
+2021-03-15 11:03:53 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftObjectiveC.dylib: replacing existing signature
+2021-03-15 11:03:53 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftObjectiveC.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftObjectiveC]
+2021-03-15 11:03:53 +0000  /usr/bin/codesign exited with 0
+2021-03-15 11:03:53 +0000  Entitlements for <IDEDistributionItem: 0x7fadbf7885e0; bundleID='com.apple.dt.runtime.swiftQuartzCore', path='<DVTFilePath:0x7fadbf75ce00:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftQuartzCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadd7425d80; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbfb14800; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadbfb2ace0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftQuartzCore', executablePath='<DVTFilePath:0x7fadbf75ce00:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftQuartzCore.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-03-15 11:03:53 +0000  Entitlements for <IDEDistributionItem: 0x7fadbf7885e0; bundleID='com.apple.dt.runtime.swiftQuartzCore', path='<DVTFilePath:0x7fadbf75ce00:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftQuartzCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadd7425d80; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fade1831310; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf782eb00>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftQuartzCore', executablePath='<DVTFilePath:0x7fadbf75ce00:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftQuartzCore.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-03-15 11:03:53 +0000  Writing entitlements for <IDEDistributionItem: 0x7fadbf7885e0; bundleID='com.apple.dt.runtime.swiftQuartzCore', path='<DVTFilePath:0x7fadbf75ce00:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftQuartzCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadd7425d80; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf75d7d0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf77f3ee0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftQuartzCore', executablePath='<DVTFilePath:0x7fadbf75ce00:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftQuartzCore.dylib'>', hardenedRuntime='0'>'> to: /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~lwI8Ab
+2021-03-15 11:03:53 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '8987C97C4ABCC8522F379D534609B3A5520EF04D' '--entitlements' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~lwI8Ab' '--preserve-metadata=identifier,flags,runtime' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftQuartzCore.dylib'
+2021-03-15 11:03:53 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftQuartzCore.dylib: replacing existing signature
+2021-03-15 11:03:53 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftQuartzCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftQuartzCore]
+2021-03-15 11:03:53 +0000  /usr/bin/codesign exited with 0
+2021-03-15 11:03:53 +0000  Entitlements for <IDEDistributionItem: 0x7fadbf785490; bundleID='com.apple.dt.runtime.swiftUIKit', path='<DVTFilePath:0x7fadbfabfa90:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftUIKit.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadf7e30080; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadf7078400; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7faddd1bf1e0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftUIKit', executablePath='<DVTFilePath:0x7fadbfabfa90:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftUIKit.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-03-15 11:03:53 +0000  Entitlements for <IDEDistributionItem: 0x7fadbf785490; bundleID='com.apple.dt.runtime.swiftUIKit', path='<DVTFilePath:0x7fadbfabfa90:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftUIKit.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadf7e30080; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fade1831310; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fade92add30>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftUIKit', executablePath='<DVTFilePath:0x7fadbfabfa90:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftUIKit.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-03-15 11:03:53 +0000  Writing entitlements for <IDEDistributionItem: 0x7fadbf785490; bundleID='com.apple.dt.runtime.swiftUIKit', path='<DVTFilePath:0x7fadbfabfa90:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftUIKit.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadf7e30080; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbfa05250; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf782eb00>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftUIKit', executablePath='<DVTFilePath:0x7fadbfabfa90:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftUIKit.dylib'>', hardenedRuntime='0'>'> to: /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~O52025
+2021-03-15 11:03:53 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '8987C97C4ABCC8522F379D534609B3A5520EF04D' '--entitlements' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~O52025' '--preserve-metadata=identifier,flags,runtime' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftUIKit.dylib'
+2021-03-15 11:03:53 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftUIKit.dylib: replacing existing signature
+2021-03-15 11:03:53 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftUIKit.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftUIKit]
+2021-03-15 11:03:53 +0000  /usr/bin/codesign exited with 0
+2021-03-15 11:03:53 +0000  Entitlements for <IDEDistributionItem: 0x7fadbf77a4b0; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0x7fadbfabe950:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf779020; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf75d7d0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf89785e0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0x7fadbfabe950:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-03-15 11:03:53 +0000  Entitlements for <IDEDistributionItem: 0x7fadbf77a4b0; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0x7fadbfabe950:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf779020; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf757050; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf5ae0a50>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0x7fadbfabe950:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-03-15 11:03:53 +0000  Writing entitlements for <IDEDistributionItem: 0x7fadbf77a4b0; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0x7fadbfabe950:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf779020; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadd60af830; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7e6c8d0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='(null)', teamID='FYJ9M58TUU', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0x7fadbfabe950:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'> to: /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~tPTkCj
+2021-03-15 11:03:53 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '8987C97C4ABCC8522F379D534609B3A5520EF04D' '--entitlements' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~tPTkCj' '--preserve-metadata=identifier,flags,runtime' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftos.dylib'
+2021-03-15 11:03:53 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftos.dylib: replacing existing signature
+2021-03-15 11:03:53 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftos.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftos]
+2021-03-15 11:03:53 +0000  /usr/bin/codesign exited with 0
+2021-03-15 11:03:53 +0000  Entitlements for <IDEDistributionItem: 0x7fadd743a630; bundleID='ru.hugsy.firedefenceapp', path='<DVTFilePath:0x7fadd71eda00:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf791cc0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadd60af830; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf7e52d40>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='{
+    "application-identifier" = "FYJ9M58TUU.ru.hugsy.firedefenceapp";
+    "com.apple.developer.team-identifier" = FYJ9M58TUU;
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+        "FYJ9M58TUU.ru.hugsy.firedefenceapp"
+    );
+}', teamID='FYJ9M58TUU', identifier='ru.hugsy.firedefenceapp', executablePath='<DVTFilePath:0x7fadd740b770:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/mobile'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "FYJ9M58TUU.ru.hugsy.firedefenceapp";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = FYJ9M58TUU;
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+        "FYJ9M58TUU.ru.hugsy.firedefenceapp"
+    );
+}
+2021-03-15 11:03:53 +0000  Entitlements for <IDEDistributionItem: 0x7fadd743a630; bundleID='ru.hugsy.firedefenceapp', path='<DVTFilePath:0x7fadd71eda00:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf791cc0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fadbf7344b0; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fadf8966fb0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='{
+    "application-identifier" = "FYJ9M58TUU.ru.hugsy.firedefenceapp";
+    "com.apple.developer.team-identifier" = FYJ9M58TUU;
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+        "FYJ9M58TUU.ru.hugsy.firedefenceapp"
+    );
+}', teamID='FYJ9M58TUU', identifier='ru.hugsy.firedefenceapp', executablePath='<DVTFilePath:0x7fadd740b770:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/mobile'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "FYJ9M58TUU.ru.hugsy.firedefenceapp";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = FYJ9M58TUU;
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+        "FYJ9M58TUU.ru.hugsy.firedefenceapp"
+    );
+}
+2021-03-15 11:03:53 +0000  Writing entitlements for <IDEDistributionItem: 0x7fadd743a630; bundleID='ru.hugsy.firedefenceapp', path='<DVTFilePath:0x7fadd71eda00:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fadbf791cc0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fade1831310; name='Apple Development: Ruslan Mekhonohin (S5MLN2A8CM)', hash='25286DE6A16FA76212B078D3F9787016AF221FDF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fade5e6aa10>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2021-03-12 11:05:39 +0000''>', entitlements='{
+    "application-identifier" = "FYJ9M58TUU.ru.hugsy.firedefenceapp";
+    "com.apple.developer.team-identifier" = FYJ9M58TUU;
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+        "FYJ9M58TUU.ru.hugsy.firedefenceapp"
+    );
+}', teamID='FYJ9M58TUU', identifier='ru.hugsy.firedefenceapp', executablePath='<DVTFilePath:0x7fadd740b770:'/Users/elkornacio/Library/Developer/Xcode/Archives/2021-03-15/mobile 15.03.2021, 14.01.xcarchive/Products/Applications/mobile.app/mobile'>', hardenedRuntime='0'>'> to: /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~nOndsH
+2021-03-15 11:03:53 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '8987C97C4ABCC8522F379D534609B3A5520EF04D' '--entitlements' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/entitlements~~~nOndsH' '--preserve-metadata=identifier,flags,runtime' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app'
+2021-03-15 11:03:54 +0000  /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app: signed app bundle with Mach-O universal (armv7 arm64) [ru.hugsy.firedefenceapp]
+2021-03-15 11:03:54 +0000  /usr/bin/codesign exited with 0
+2021-03-15 11:03:54 +0000  Processing step: IDEDistributionZipODRItemStep
+2021-03-15 11:03:54 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-03-15 11:03:54 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-03-15 11:03:54 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-03-15 11:03:54 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-03-15 11:03:54 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-03-15 11:03:54 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-03-15 11:03:54 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-03-15 11:03:54 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-03-15 11:03:54 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-03-15 11:03:54 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-03-15 11:03:54 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-03-15 11:03:54 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-03-15 11:03:54 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-03-15 11:03:54 +0000  Processing step: IDEDistributionCreateIPAStep
+2021-03-15 11:03:54 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root' '/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Packages/mobile.ipa'
+2021-03-15 11:03:54 +0000  >>> Copying /var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root 
+2021-03-15 11:03:54 +0000  copying file ./BCSymbolMaps/05C451A5-EF90-372B-B0D0-700197548A9A.bcsymbolmap ... 
+2021-03-15 11:03:54 +0000  2030742 bytes for ./BCSymbolMaps/05C451A5-EF90-372B-B0D0-700197548A9A.bcsymbolmap
+copying file ./BCSymbolMaps/5E6DCEAB-5A9D-307E-A005-3E9EF4BB2985.bcsymbolmap ... 
+2021-03-15 11:03:54 +0000  2073656 bytes for ./BCSymbolMaps/5E6DCEAB-5A9D-307E-A005-3E9EF4BB2985.bcsymbolmap
+2021-03-15 11:03:54 +0000  copying file ./Payload/mobile.app/_CodeSignature/CodeResources ... 
+2021-03-15 11:03:54 +0000  45002 bytes for ./Payload/mobile.app/_CodeSignature/CodeResources
+2021-03-15 11:03:54 +0000  copying file ./Payload/mobile.app/Fontisto.ttf ... 
+2021-03-15 11:03:54 +0000  313528 bytes for ./Payload/mobile.app/Fontisto.ttf
+copying file ./Payload/mobile.app/Octicons.ttf ... 
+2021-03-15 11:03:54 +0000  28364 bytes for ./Payload/mobile.app/Octicons.ttf
+copying file ./Payload/mobile.app/Roboto-Medium.ttf ... 
+2021-03-15 11:03:54 +0000  171656 bytes for ./Payload/mobile.app/Roboto-Medium.ttf
+2021-03-15 11:03:54 +0000  copying file ./Payload/mobile.app/Feather.ttf ... 
+2021-03-15 11:03:54 +0000  56024 bytes for ./Payload/mobile.app/Feather.ttf
+2021-03-15 11:03:54 +0000  copying file ./Payload/mobile.app/Entypo.ttf ... 
+2021-03-15 11:03:55 +0000  65584 bytes for ./Payload/mobile.app/Entypo.ttf
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/QBImagePicker.bundle/de.lproj/QBImagePicker.strings ... 
+2021-03-15 11:03:55 +0000  686 bytes for ./Payload/mobile.app/QBImagePicker.bundle/de.lproj/QBImagePicker.strings
+copying file ./Payload/mobile.app/QBImagePicker.bundle/zh-Hans.lproj/QBImagePicker.strings ... 
+738 bytes for ./Payload/mobile.app/QBImagePicker.bundle/zh-Hans.lproj/QBImagePicker.strings
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/QBImagePicker.bundle/ja.lproj/QBImagePicker.strings ... 
+764 bytes for ./Payload/mobile.app/QBImagePicker.bundle/ja.lproj/QBImagePicker.strings
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/QBImagePicker.bundle/en.lproj/QBImagePicker.strings ... 
+681 bytes for ./Payload/mobile.app/QBImagePicker.bundle/en.lproj/QBImagePicker.strings
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib/runtime.nib ... 
+2021-03-15 11:03:55 +0000  10674 bytes for ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib/runtime.nib
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib/objects-12.3+.nib ... 
+2021-03-15 11:03:55 +0000  10879 bytes for ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib/objects-12.3+.nib
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsViewController.nib/runtime.nib ... 
+2021-03-15 11:03:55 +0000  1775 bytes for ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsViewController.nib/runtime.nib
+copying file ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsViewController.nib/objects-12.3+.nib ... 
+2021-03-15 11:03:55 +0000  1775 bytes for ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsViewController.nib/objects-12.3+.nib
+copying file ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAssetsViewController.nib/runtime.nib ... 
+2021-03-15 11:03:55 +0000  1368 bytes for ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAssetsViewController.nib/runtime.nib
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAssetsViewController.nib/objects-12.3+.nib ... 
+1368 bytes for ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAssetsViewController.nib/objects-12.3+.nib
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib/runtime.nib ... 
+2021-03-15 11:03:55 +0000  6938 bytes for ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib/runtime.nib
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib/objects-12.3+.nib ... 
+2021-03-15 11:03:55 +0000  6932 bytes for ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib/objects-12.3+.nib
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsNavigationController.nib/runtime.nib ... 
+2021-03-15 11:03:55 +0000  2584 bytes for ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsNavigationController.nib/runtime.nib
+copying file ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsNavigationController.nib/objects-12.3+.nib ... 
+2021-03-15 11:03:55 +0000  2584 bytes for ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/QBAlbumsNavigationController.nib/objects-12.3+.nib
+copying file ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/Info.plist ... 
+289 bytes for ./Payload/mobile.app/QBImagePicker.bundle/QBImagePicker.storyboardc/Info.plist
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/QBImagePicker.bundle/es.lproj/QBImagePicker.strings ... 
+2021-03-15 11:03:55 +0000  685 bytes for ./Payload/mobile.app/QBImagePicker.bundle/es.lproj/QBImagePicker.strings
+copying file ./Payload/mobile.app/QBImagePicker.bundle/ko.lproj/QBImagePicker.strings ... 
+716 bytes for ./Payload/mobile.app/QBImagePicker.bundle/ko.lproj/QBImagePicker.strings
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/QBImagePicker.bundle/pl.lproj/QBImagePicker.strings ... 
+2021-03-15 11:03:55 +0000  702 bytes for ./Payload/mobile.app/QBImagePicker.bundle/pl.lproj/QBImagePicker.strings
+copying file ./Payload/mobile.app/QBImagePicker.bundle/ru.lproj/QBImagePicker.strings ... 
+2021-03-15 11:03:55 +0000  772 bytes for ./Payload/mobile.app/QBImagePicker.bundle/ru.lproj/QBImagePicker.strings
+copying file ./Payload/mobile.app/QBImagePicker.bundle/fr.lproj/QBImagePicker.strings ... 
+2021-03-15 11:03:55 +0000  702 bytes for ./Payload/mobile.app/QBImagePicker.bundle/fr.lproj/QBImagePicker.strings
+copying file ./Payload/mobile.app/QBImagePicker.bundle/Info.plist ... 
+2021-03-15 11:03:55 +0000  722 bytes for ./Payload/mobile.app/QBImagePicker.bundle/Info.plist
+copying file ./Payload/mobile.app/FontAwesome5_Brands.ttf ... 
+2021-03-15 11:03:55 +0000  132728 bytes for ./Payload/mobile.app/FontAwesome5_Brands.ttf
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/MaterialCommunityIcons.ttf ... 
+2021-03-15 11:03:55 +0000  899432 bytes for ./Payload/mobile.app/MaterialCommunityIcons.ttf
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/Roboto-Regular.ttf ... 
+2021-03-15 11:03:55 +0000  171272 bytes for ./Payload/mobile.app/Roboto-Regular.ttf
+copying file ./Payload/mobile.app/AntDesign.ttf ... 
+2021-03-15 11:03:55 +0000  70344 bytes for ./Payload/mobile.app/AntDesign.ttf
+copying file ./Payload/mobile.app/Foundation.ttf ... 
+2021-03-15 11:03:55 +0000  56976 bytes for ./Payload/mobile.app/Foundation.ttf
+copying file ./Payload/mobile.app/Ionicons.ttf ... 
+2021-03-15 11:03:55 +0000  247192 bytes for ./Payload/mobile.app/Ionicons.ttf
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/FontAwesome5_Solid.ttf ... 
+2021-03-15 11:03:55 +0000  202616 bytes for ./Payload/mobile.app/FontAwesome5_Solid.ttf
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/FontAwesome5_Regular.ttf ... 
+2021-03-15 11:03:55 +0000  34092 bytes for ./Payload/mobile.app/FontAwesome5_Regular.ttf
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/AccessibilityResources.bundle/en.lproj/Localizable.strings ... 
+530 bytes for ./Payload/mobile.app/AccessibilityResources.bundle/en.lproj/Localizable.strings
+copying file ./Payload/mobile.app/AccessibilityResources.bundle/Info.plist ... 
+2021-03-15 11:03:55 +0000  743 bytes for ./Payload/mobile.app/AccessibilityResources.bundle/Info.plist
+copying file ./Payload/mobile.app/FontAwesome.ttf ... 
+2021-03-15 11:03:55 +0000  165548 bytes for ./Payload/mobile.app/FontAwesome.ttf
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/Zocial.ttf ... 
+2021-03-15 11:03:55 +0000  25552 bytes for ./Payload/mobile.app/Zocial.ttf
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/EvilIcons.ttf ... 
+2021-03-15 11:03:55 +0000  13456 bytes for ./Payload/mobile.app/EvilIcons.ttf
+2021-03-15 11:03:55 +0000  copying file ./Payload/mobile.app/mobile ... 
+2021-03-15 11:03:56 +0000  46708256 bytes for ./Payload/mobile.app/mobile
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/main.jsbundle ... 
+2021-03-15 11:03:56 +0000  1696917 bytes for ./Payload/mobile.app/main.jsbundle
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib ... 
+2021-03-15 11:03:56 +0000  4134 bytes for ./Payload/mobile.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib ... 
+2021-03-15 11:03:56 +0000  4258 bytes for ./Payload/mobile.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib ... 
+2021-03-15 11:03:56 +0000  896 bytes for ./Payload/mobile.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib
+copying file ./Payload/mobile.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib ... 
+2021-03-15 11:03:56 +0000  896 bytes for ./Payload/mobile.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib
+copying file ./Payload/mobile.app/LaunchScreen.storyboardc/Info.plist ... 
+2021-03-15 11:03:56 +0000  258 bytes for ./Payload/mobile.app/LaunchScreen.storyboardc/Info.plist
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/de.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  189 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/de.lproj/TOCropViewControllerLocalizable.strings
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/ar.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  207 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/ar.lproj/TOCropViewControllerLocalizable.strings
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/zh-Hans.lproj/TOCropViewControllerLocalizable.strings ... 
+172 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/zh-Hans.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/ja.lproj/TOCropViewControllerLocalizable.strings ... 
+201 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/ja.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/fa.lproj/TOCropViewControllerLocalizable.strings ... 
+210 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/fa.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/en.lproj/TOCropViewControllerLocalizable.strings ... 
+168 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/en.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/es.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  179 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/es.lproj/TOCropViewControllerLocalizable.strings
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/it.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  181 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/it.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/sk.lproj/TOCropViewControllerLocalizable.strings ... 
+176 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/sk.lproj/TOCropViewControllerLocalizable.strings
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/ms.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  173 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/ms.lproj/TOCropViewControllerLocalizable.strings
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/cs.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  173 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/cs.lproj/TOCropViewControllerLocalizable.strings
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/ko.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  187 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/ko.lproj/TOCropViewControllerLocalizable.strings
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/Base.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  168 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/Base.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/zh-Hant.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  175 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/zh-Hant.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/fa-IR.lproj/TOCropViewControllerLocalizable.strings ... 
+210 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/fa-IR.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/hu.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  194 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/hu.lproj/TOCropViewControllerLocalizable.strings
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/da-DK.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  174 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/da-DK.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/tr.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  183 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/tr.lproj/TOCropViewControllerLocalizable.strings
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/pl.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  171 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/pl.lproj/TOCropViewControllerLocalizable.strings
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/pt-BR.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  181 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/pt-BR.lproj/TOCropViewControllerLocalizable.strings
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/vi.lproj/TOCropViewControllerLocalizable.strings ... 
+178 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/vi.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/ru.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  237 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/ru.lproj/TOCropViewControllerLocalizable.strings
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/fr.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  193 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/fr.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/fi.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  179 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/fi.lproj/TOCropViewControllerLocalizable.strings
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/id.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  178 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/id.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/nl.lproj/TOCropViewControllerLocalizable.strings ... 
+178 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/nl.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/pt.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  181 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/pt.lproj/TOCropViewControllerLocalizable.strings
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/ro.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  181 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/ro.lproj/TOCropViewControllerLocalizable.strings
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/Info.plist ... 
+2021-03-15 11:03:56 +0000  749 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/Info.plist
+copying file ./Payload/mobile.app/TOCropViewControllerBundle.bundle/ca.lproj/TOCropViewControllerLocalizable.strings ... 
+2021-03-15 11:03:56 +0000  177 bytes for ./Payload/mobile.app/TOCropViewControllerBundle.bundle/ca.lproj/TOCropViewControllerLocalizable.strings
+copying file ./Payload/mobile.app/Frameworks/libswiftCoreImage.dylib ... 
+2021-03-15 11:03:56 +0000  352368 bytes for ./Payload/mobile.app/Frameworks/libswiftCoreImage.dylib
+copying file ./Payload/mobile.app/Frameworks/libswiftObjectiveC.dylib ... 
+2021-03-15 11:03:56 +0000  500080 bytes for ./Payload/mobile.app/Frameworks/libswiftObjectiveC.dylib
+2021-03-15 11:03:56 +0000  copying file ./Payload/mobile.app/Frameworks/libswiftCore.dylib ... 
+2021-03-15 11:03:59 +0000  69852784 bytes for ./Payload/mobile.app/Frameworks/libswiftCore.dylib
+2021-03-15 11:03:59 +0000  copying file ./Payload/mobile.app/Frameworks/libswiftCoreGraphics.dylib ... 
+2021-03-15 11:03:59 +0000  1535328 bytes for ./Payload/mobile.app/Frameworks/libswiftCoreGraphics.dylib
+2021-03-15 11:03:59 +0000  copying file ./Payload/mobile.app/Frameworks/libswiftUIKit.dylib ... 
+2021-03-15 11:03:59 +0000  1200976 bytes for ./Payload/mobile.app/Frameworks/libswiftUIKit.dylib
+2021-03-15 11:03:59 +0000  copying file ./Payload/mobile.app/Frameworks/libswiftMetal.dylib ... 
+2021-03-15 11:03:59 +0000  544912 bytes for ./Payload/mobile.app/Frameworks/libswiftMetal.dylib
+2021-03-15 11:03:59 +0000  copying file ./Payload/mobile.app/Frameworks/libswiftDispatch.dylib ... 
+2021-03-15 11:03:59 +0000  2993312 bytes for ./Payload/mobile.app/Frameworks/libswiftDispatch.dylib
+2021-03-15 11:03:59 +0000  copying file ./Payload/mobile.app/Frameworks/libswiftos.dylib ... 
+2021-03-15 11:03:59 +0000  644944 bytes for ./Payload/mobile.app/Frameworks/libswiftos.dylib
+2021-03-15 11:03:59 +0000  copying file ./Payload/mobile.app/Frameworks/libswiftCoreFoundation.dylib ... 
+2021-03-15 11:03:59 +0000  335920 bytes for ./Payload/mobile.app/Frameworks/libswiftCoreFoundation.dylib
+2021-03-15 11:03:59 +0000  copying file ./Payload/mobile.app/Frameworks/libswiftDarwin.dylib ... 
+2021-03-15 11:03:59 +0000  813968 bytes for ./Payload/mobile.app/Frameworks/libswiftDarwin.dylib
+copying file ./Payload/mobile.app/Frameworks/libswiftQuartzCore.dylib ... 
+2021-03-15 11:03:59 +0000  355584 bytes for ./Payload/mobile.app/Frameworks/libswiftQuartzCore.dylib
+copying file ./Payload/mobile.app/Frameworks/libswiftFoundation.dylib ... 
+2021-03-15 11:04:00 +0000  31957072 bytes for ./Payload/mobile.app/Frameworks/libswiftFoundation.dylib
+2021-03-15 11:04:00 +0000  copying file ./Payload/mobile.app/SimpleLineIcons.ttf ... 
+2021-03-15 11:04:00 +0000  54056 bytes for ./Payload/mobile.app/SimpleLineIcons.ttf
+2021-03-15 11:04:00 +0000  copying file ./Payload/mobile.app/embedded.mobileprovision ... 
+2021-03-15 11:04:00 +0000  9738 bytes for ./Payload/mobile.app/embedded.mobileprovision
+2021-03-15 11:04:00 +0000  copying file ./Payload/mobile.app/assets/app.json ... 
+2021-03-15 11:04:00 +0000  49 bytes for ./Payload/mobile.app/assets/app.json
+2021-03-15 11:04:00 +0000  copying file ./Payload/mobile.app/assets/node_modules/css-color-keywords/colors.json ... 
+2021-03-15 11:04:00 +0000  3796 bytes for ./Payload/mobile.app/assets/node_modules/css-color-keywords/colors.json
+2021-03-15 11:04:00 +0000  copying file ./Payload/mobile.app/assets/node_modules/@react-navigation/drawer/src/views/assets/toggle-drawer-icon@3x.png ... 
+2021-03-15 11:04:00 +0000  212 bytes for ./Payload/mobile.app/assets/node_modules/@react-navigation/drawer/src/views/assets/toggle-drawer-icon@3x.png
+copying file ./Payload/mobile.app/assets/node_modules/@react-navigation/drawer/src/views/assets/toggle-drawer-icon@2x.png ... 
+2021-03-15 11:04:00 +0000  163 bytes for ./Payload/mobile.app/assets/node_modules/@react-navigation/drawer/src/views/assets/toggle-drawer-icon@2x.png
+copying file ./Payload/mobile.app/assets/node_modules/@react-navigation/drawer/src/views/assets/toggle-drawer-icon.png ... 
+2021-03-15 11:04:00 +0000  108 bytes for ./Payload/mobile.app/assets/node_modules/@react-navigation/drawer/src/views/assets/toggle-drawer-icon.png
+2021-03-15 11:04:00 +0000  copying file ./Payload/mobile.app/assets/node_modules/@react-navigation/stack/src/views/assets/back-icon@3x.png ... 
+2021-03-15 11:04:00 +0000  761 bytes for ./Payload/mobile.app/assets/node_modules/@react-navigation/stack/src/views/assets/back-icon@3x.png
+copying file ./Payload/mobile.app/assets/node_modules/@react-navigation/stack/src/views/assets/back-icon@2x.png ... 
+2021-03-15 11:04:00 +0000  405 bytes for ./Payload/mobile.app/assets/node_modules/@react-navigation/stack/src/views/assets/back-icon@2x.png
+2021-03-15 11:04:00 +0000  copying file ./Payload/mobile.app/assets/node_modules/@react-navigation/stack/src/views/assets/back-icon.png ... 
+2021-03-15 11:04:00 +0000  290 bytes for ./Payload/mobile.app/assets/node_modules/@react-navigation/stack/src/views/assets/back-icon.png
+copying file ./Payload/mobile.app/assets/node_modules/@react-navigation/stack/src/views/assets/back-icon-mask.png ... 
+2021-03-15 11:04:00 +0000  913 bytes for ./Payload/mobile.app/assets/node_modules/@react-navigation/stack/src/views/assets/back-icon-mask.png
+2021-03-15 11:04:00 +0000  copying file ./Payload/mobile.app/assets/node_modules/react-native-vector-icons/glyphmaps/FontAwesome.json ... 
+2021-03-15 11:04:00 +0000  17437 bytes for ./Payload/mobile.app/assets/node_modules/react-native-vector-icons/glyphmaps/FontAwesome.json
+2021-03-15 11:04:00 +0000  copying file ./Payload/mobile.app/assets/node_modules/react-native-vector-icons/glyphmaps/MaterialIcons.json ... 
+2021-03-15 11:04:00 +0000  38522 bytes for ./Payload/mobile.app/assets/node_modules/react-native-vector-icons/glyphmaps/MaterialIcons.json
+2021-03-15 11:04:00 +0000  copying file ./Payload/mobile.app/assets/src/title.png ... 
+2021-03-15 11:04:00 +0000  11956 bytes for ./Payload/mobile.app/assets/src/title.png
+2021-03-15 11:04:00 +0000  copying file ./Payload/mobile.app/assets/src/user.png ... 
+2021-03-15 11:04:00 +0000  6725 bytes for ./Payload/mobile.app/assets/src/user.png
+2021-03-15 11:04:00 +0000  copying file ./Payload/mobile.app/assets/src/left.png ... 
+2021-03-15 11:04:00 +0000  16981 bytes for ./Payload/mobile.app/assets/src/left.png
+2021-03-15 11:04:00 +0000  copying file ./Payload/mobile.app/assets/src/right.png ... 
+2021-03-15 11:04:00 +0000  16836 bytes for ./Payload/mobile.app/assets/src/right.png
+2021-03-15 11:04:00 +0000  copying file ./Payload/mobile.app/Info.plist ... 
+2021-03-15 11:04:00 +0000  3292 bytes for ./Payload/mobile.app/Info.plist
+2021-03-15 11:04:00 +0000  copying file ./Payload/mobile.app/PkgInfo ... 
+2021-03-15 11:04:00 +0000  8 bytes for ./Payload/mobile.app/PkgInfo
+copying file ./Payload/mobile.app/MaterialIcons.ttf ... 
+2021-03-15 11:04:00 +0000  230384 bytes for ./Payload/mobile.app/MaterialIcons.ttf
+2021-03-15 11:04:00 +0000  copying file ./SwiftSupport/iphoneos/libswiftCoreImage.dylib ... 
+2021-03-15 11:04:00 +0000  466448 bytes for ./SwiftSupport/iphoneos/libswiftCoreImage.dylib
+2021-03-15 11:04:00 +0000  copying file ./SwiftSupport/iphoneos/libswiftObjectiveC.dylib ... 
+2021-03-15 11:04:00 +0000  679568 bytes for ./SwiftSupport/iphoneos/libswiftObjectiveC.dylib
+copying file ./SwiftSupport/iphoneos/libswiftCore.dylib ... 
+2021-03-15 11:04:04 +0000  95497472 bytes for ./SwiftSupport/iphoneos/libswiftCore.dylib
+copying file ./SwiftSupport/iphoneos/libswiftCoreGraphics.dylib ... 
+2021-03-15 11:04:04 +0000  2040928 bytes for ./SwiftSupport/iphoneos/libswiftCoreGraphics.dylib
+copying file ./SwiftSupport/iphoneos/libswiftUIKit.dylib ... 
+2021-03-15 11:04:04 +0000  1608688 bytes for ./SwiftSupport/iphoneos/libswiftUIKit.dylib
+2021-03-15 11:04:04 +0000  copying file ./SwiftSupport/iphoneos/libswiftMetal.dylib ... 
+2021-03-15 11:04:04 +0000  724304 bytes for ./SwiftSupport/iphoneos/libswiftMetal.dylib
+2021-03-15 11:04:04 +0000  copying file ./SwiftSupport/iphoneos/libswiftDispatch.dylib ... 
+2021-03-15 11:04:04 +0000  4056784 bytes for ./SwiftSupport/iphoneos/libswiftDispatch.dylib
+copying file ./SwiftSupport/iphoneos/libswiftos.dylib ... 
+2021-03-15 11:04:04 +0000  857072 bytes for ./SwiftSupport/iphoneos/libswiftos.dylib
+copying file ./SwiftSupport/iphoneos/libswiftCoreFoundation.dylib ... 
+2021-03-15 11:04:04 +0000  450272 bytes for ./SwiftSupport/iphoneos/libswiftCoreFoundation.dylib
+copying file ./SwiftSupport/iphoneos/libswiftDarwin.dylib ... 
+2021-03-15 11:04:04 +0000  1091328 bytes for ./SwiftSupport/iphoneos/libswiftDarwin.dylib
+copying file ./SwiftSupport/iphoneos/libswiftQuartzCore.dylib ... 
+2021-03-15 11:04:04 +0000  486224 bytes for ./SwiftSupport/iphoneos/libswiftQuartzCore.dylib
+2021-03-15 11:04:04 +0000  copying file ./SwiftSupport/iphoneos/libswiftFoundation.dylib ... 
+2021-03-15 11:04:06 +0000  43094208 bytes for ./SwiftSupport/iphoneos/libswiftFoundation.dylib
+2021-03-15 11:04:06 +0000  /usr/bin/ditto exited with 0
+2021-03-15 11:04:06 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2021-03-15 11:04:06 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2021-03-15 11:04:06 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2021-03-15 11:04:06 +0000  IDEDistributionItem init <DVTFilePath:0x7fadbf755030:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDispatch.dylib'>
+2021-03-15 11:04:06 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fadbf755030:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDispatch.dylib'>
+2021-03-15 11:04:06 +0000  IDEDistributionItem init <DVTFilePath:0x7fade54a3640:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftUIKit.dylib'>
+2021-03-15 11:04:06 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fade54a3640:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftUIKit.dylib'>
+2021-03-15 11:04:06 +0000  IDEDistributionItem init <DVTFilePath:0x7fadbf758740:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftMetal.dylib'>
+2021-03-15 11:04:06 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fadbf758740:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftMetal.dylib'>
+2021-03-15 11:04:06 +0000  IDEDistributionItem init <DVTFilePath:0x7fadccb30120:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftObjectiveC.dylib'>
+2021-03-15 11:04:06 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fadccb30120:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftObjectiveC.dylib'>
+2021-03-15 11:04:06 +0000  IDEDistributionItem init <DVTFilePath:0x7fadbf754f60:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftFoundation.dylib'>
+2021-03-15 11:04:06 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fadbf754f60:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftFoundation.dylib'>
+2021-03-15 11:04:07 +0000  IDEDistributionItem init <DVTFilePath:0x7fadbf76b9a0:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDarwin.dylib'>
+2021-03-15 11:04:07 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fadbf76b9a0:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftDarwin.dylib'>
+2021-03-15 11:04:07 +0000  IDEDistributionItem init <DVTFilePath:0x7fadbf773f40:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreFoundation.dylib'>
+2021-03-15 11:04:07 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fadbf773f40:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreFoundation.dylib'>
+2021-03-15 11:04:07 +0000  IDEDistributionItem init <DVTFilePath:0x7fadccb3e790:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreImage.dylib'>
+2021-03-15 11:04:07 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fadccb3e790:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreImage.dylib'>
+2021-03-15 11:04:07 +0000  IDEDistributionItem init <DVTFilePath:0x7fadbf9b3ff0:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreGraphics.dylib'>
+2021-03-15 11:04:07 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fadbf9b3ff0:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCoreGraphics.dylib'>
+2021-03-15 11:04:07 +0000  IDEDistributionItem init <DVTFilePath:0x7fadccb517a0:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCore.dylib'>
+2021-03-15 11:04:07 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fadccb517a0:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftCore.dylib'>
+2021-03-15 11:04:07 +0000  IDEDistributionItem init <DVTFilePath:0x7fadbf799f00:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftQuartzCore.dylib'>
+2021-03-15 11:04:07 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fadbf799f00:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftQuartzCore.dylib'>
+2021-03-15 11:04:07 +0000  IDEDistributionItem init <DVTFilePath:0x7fadbf7b2d70:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftos.dylib'>
+2021-03-15 11:04:07 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fadbf7b2d70:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app/Frameworks/libswiftos.dylib'>
+2021-03-15 11:04:07 +0000  IDEDistributionItem init <DVTFilePath:0x7fadbfb18e50:'/var/folders/_5/ywhmtcvn7dzdjr3vdcvh95dm0000gn/T/XcodeDistPipeline.~~~MseCYc/Root/Payload/mobile.app'>
+2021-03-15 11:04:07 +0000  Processing step: IDEDistributionCreateManifestStep
+2021-03-15 11:04:07 +0000  Skipping step: IDEDistributionCreateManifestStep because it said so

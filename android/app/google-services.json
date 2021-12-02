@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "983500205495",
+    "firebase_url": "https://firedefence-28697.firebaseio.com",
+    "project_id": "firedefence-28697",
+    "storage_bucket": "firedefence-28697.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983500205495:android:842e79ae919ebfef188c32",
+        "android_client_info": {
+          "package_name": "ru.hugsy.firedefenceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983500205495-rbpldh1um2l4n7vek8i0487ln4f3jp1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ4EddQez9z3uNTZuYw_nR6Wu_bVFRr-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983500205495-rbpldh1um2l4n7vek8i0487ln4f3jp1v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

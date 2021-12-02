@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mobile.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>bitcode</key>
+			<true/>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>8987C97C4ABCC8522F379D534609B3A5520EF04D</string>
+				<key>dateExpires</key>
+				<string>12.03.2022</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>FYJ9M58TUU.ru.hugsy.firedefenceapp</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>FYJ9M58TUU</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>FYJ9M58TUU.ru.hugsy.firedefenceapp</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>mobile.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>d255e0d8-bac8-4153-ab96-37120ad8f7c4</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: ru.hugsy.firedefenceapp</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>FYJ9M58TUU</string>
+				<key>name</key>
+				<string>Ruslan Mekhonohin</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,118 @@
+[
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-mdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-mdpi/node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/raw_node_modules_reactnativevectoricons_glyphmaps_materialicons.json.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/raw/node_modules_reactnativevectoricons_glyphmaps_materialicons.json"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-mdpi_node_modules_reactnavigation_stack_src_views_assets_backiconmask.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-mdpi/node_modules_reactnavigation_stack_src_views_assets_backiconmask.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_stat_ic_notification.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-xxhdpi/ic_stat_ic_notification.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-mdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-mdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_stat_ic_notification.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-xxxhdpi/ic_stat_ic_notification.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-xxxhdpi/node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-mdpi_src_left.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-mdpi/src_left.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-xxxhdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-mdpi_src_right.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-mdpi/src_right.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-mdpi_src_title.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-mdpi/src_title.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-mdpi_src_user.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-mdpi/src_user.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-xxhdpi/node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-xhdpi/node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/raw_node_modules_reactnativevectoricons_glyphmaps_fontawesome.json.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/raw/node_modules_reactnativevectoricons_glyphmaps_fontawesome.json"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-xxhdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/raw_app.json.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/raw/app.json"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_stat_ic_notification.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-mdpi/ic_stat_ic_notification.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-xhdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_stat_ic_notification.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-xhdpi/ic_stat_ic_notification.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-hdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-hdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-hdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-hdpi/node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/raw_node_modules_csscolorkeywords_colors.json.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/raw/node_modules_csscolorkeywords_colors.json"
+    },
+    {
+        "merged": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_stat_ic_notification.png.flat",
+        "source": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/src/main/res/drawable-hdpi/ic_stat_ic_notification.png"
+    }
+]
