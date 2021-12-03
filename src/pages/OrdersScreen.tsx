@@ -6,7 +6,7 @@ import { Text, View } from "react-native";
 import { MainLight, MainBackground, MainMuted, MainHeader, MainText } from "../colors";
 
 import moment from 'moment';
-
+import _ from 'lodash';
 import gstore, { stateDesc } from "../stores/gstore";
 import { observable } from "mobx";
 import { IOrdersListNavigation, IOrdersListRoute } from "./OrderRouterScreen";
@@ -95,14 +95,18 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
 		const { mode } = this.props;
 
 		const states = ['created', 'executing', 'done', 'cancelled'];
-
-		const ods = this.orders.slice();
-		ods.sort((a, b) => {
-			const ai = states.indexOf(a.state);
-			const bi = states.indexOf(b.state);
-			return ai - bi;
-		});
-
+		let ods;
+		if (gstore.me?.role === 'admin') {
+			ods = _.sortBy(this.orders.slice(), 'createdAt');
+			ods.reverse()
+		} else {
+			ods = this.orders.slice();
+			ods.sort((a, b) => {
+				const ai = states.indexOf(a.state);
+					const bi = states.indexOf(b.state);
+					return ai - bi;
+					});
+		}
 		return (
 			<View style={{ flexGrow: 1, backgroundColor: MainBackground, }}>
 				{(gstore.me!.role === 'admin' && this.props.mode !== 'mine') ? (
@@ -136,6 +140,7 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
 						marginBottom: 20,
 					}}>
 						{ods.length ? (
+							// _.sortBy(users, [function(o) { return o.user; }]);
 							ods.map((ord, idx) => (
 								<TouchableOpacity key={idx} onPress={() => {
 									gstore.selectedOrderId = ord.id;

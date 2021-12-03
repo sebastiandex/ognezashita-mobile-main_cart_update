@@ -59,10 +59,6 @@ class HeaderRight extends PureComponent<{ navigation: any }> {
 function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>) {
 
 	const { state, navigation, descriptors, progress } = props;
-		console.log('----------------------------');
-		console.log('GS STORE', gstore.me);
-		console.log('----------------------------');
-
 	const newDescriptors: any = {};
 	const newState = {
 		...state,
