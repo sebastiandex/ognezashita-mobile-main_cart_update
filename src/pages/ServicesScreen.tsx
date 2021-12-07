@@ -287,7 +287,7 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 	renderItem({ item, index }: ListRenderItemInfo<any>) {
 		// const navigation = this.props.navigation;
 		return (
-			<View key={index} style={{ paddingHorizontal: 20, paddingTop: 18, paddingBottom: 10, backgroundColor: 'white' }}>
+			<View key={index} style={{ paddingHorizontal: 20, paddingTop: 5, paddingBottom: 15, backgroundColor: 'white' }}>
 				<TouchableOpacity
 					key={index}
 					onPress={() => this.showHideCategory(item.title)}
