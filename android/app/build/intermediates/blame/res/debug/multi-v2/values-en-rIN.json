@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "/Users/fullmetal/.gradle/caches/transforms-2/files-2.1/c4cc5dd8d2c0ace1f3832bf91a54830e/appcompat-1.1.0/res/values-en-rIN/values-en-rIN.xml",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf0afc3d25ae3930420d228297842c37/core-1.1.0/res/values-en-rIN/values-en-rIN.xml",
+                    "source": "/Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bc69a75a9736b044aec92e8a94e1b02d/core-1.2.0/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

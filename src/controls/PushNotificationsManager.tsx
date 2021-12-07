@@ -31,33 +31,59 @@ class PushNotificationsManager extends PureComponent {
 	}
 
 	async registerDevice(user: { id: string; deviceToken: string | null }) {
+		const hasPermissions: boolean = await Notifications.isRegisteredForRemoteNotifications();
+		console.log('hasPermissions?')
+		console.log(hasPermissions)
+		Notifications.ios.checkPermissions().then((response) => {
+        console.log('Response:')
+        console.log(response)
+        console.info('=================================')
+    })
+    .catch(err => console.error(err));
+	Notifications.ios.getDeliveredNotifications().then((response) => {
+        console.log('getDeliveredNotifications:')
+        console.log(response)
+        console.info('=================================')
+    });
+	Notifications.ios.getBadgeCount().then((response) => {
+        console.log('getBadgeCount:')
+        console.log(response)
+        console.info('=================================')
+    });
 		// await gstore.api.log('registerDevice');
 		// await gstore.api.log('await Notifications.isRegisteredForRemoteNotifications(): ' + (await Notifications.isRegisteredForRemoteNotifications()));
 		Notifications.events().registerRemoteNotificationsRegistered(async event => {
-			// await gstore.api.log('Device Token Received, saving... ' + event.deviceToken);
+			await gstore.api.log('Device Token Received, saving... ' + event.deviceToken);
 			if (event.deviceToken && event.deviceToken !== user.deviceToken) {
 				const result = await gstore.api.updateDeviceToken(event.deviceToken);
-				// await gstore.api.log('New device token was sent to user account: ' + JSON.stringify(result));
+				await gstore.api.log('New device token was sent to user account: ' + JSON.stringify(result));
 			}
 		});
 		Notifications.events().registerRemoteNotificationsRegistrationFailed(async (event) => {
-			// await gstore.api.log(JSON.stringify(event));
+			await gstore.api.log(JSON.stringify(event));
 		});
 
 		Notifications.registerRemoteNotifications();
 	}
 
 	async registerNotificationEvents() {
+		Notifications.events().registerRemoteNotificationsRegistrationFailed((event) => {
+			console.log('registerRemoteNotificationsRegistrationFailed')
+  		console.log(event.code, event.localizedDescription, event.domain);
+});
 		console.log('PushManager registered');
 		Notifications.events().registerNotificationReceivedForeground(async (notification, completion) => {
 			console.log('Notification Received - Foreground', notification);
 			// Calling completion on iOS with `alert: true` will present the native iOS inApp notification.
 			const rr = await gstore.api.getNewOrders();
+			console.log('loggingResult')
+			console.log(rr)
 			if (rr.result) {
+				console.log('We have rr.result')
 				gstore.newOrdersCount = rr.data.newOrdersCount;
 				gstore.ordersInWorkCount = rr.data.ordersInWorkCount;
 			}
-			completion({ alert: false, sound: false, badge: false });
+			completion({ alert: true, sound: false, badge: false });
 		});
 	  
 		// User clicked on foreground or background notification
@@ -81,7 +107,8 @@ class PushNotificationsManager extends PureComponent {
 				gstore.ordersInWorkCount = rr.data.ordersInWorkCount;
 			}
 			//@ts-ignore
-			completion({ alert: true, sound: true, badge: false });
+			completion({ alert: true, sound: true, badge: true });
+			// completion({ alert: true, sound: true, badge: false });
 		});
 	  
 		try {

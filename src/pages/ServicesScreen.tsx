@@ -5,14 +5,14 @@ import { computed, observable } from "mobx";
 import { observer } from "mobx-react";
 import React, { PureComponent } from "react";
 import { Text, View, SectionList, ListRenderItemInfo, Image, ActivityIndicator, ScrollView, TouchableOpacity, TextInput, Button } from "react-native";
-import Icon from 'react-native-vector-icons/FontAwesome';
 import { MainBackground, MainHeader, MainLight, MainMuted, MainText } from "../colors";
 import AmountSelector from "../controls/AmountSelector";
 import FButton from "../controls/FButton";
 import FRadio from "../controls/FRadio";
 import { IServiceItem } from "../network/api";
-import Accordion from 'react-native-collapsible/Accordion';
 import gstore from "../stores/gstore";
+import { FlatList } from "react-native-gesture-handler";
+import _ from 'lodash';
 
 const Stack = createStackNavigator();
 
@@ -24,6 +24,7 @@ type RootStackParamList = {
 type IListNavigation = StackNavigationProp<RootStackParamList, 'ServiceList'>;
 
 interface IServiceCategory {
+	id: any;
 	title: string;
 	data: IServiceItem[];
 }
@@ -52,7 +53,7 @@ class ItemModal extends PureComponent<{ item: IServiceItem, onCart: (amount: num
 							</TouchableOpacity>
 						</View>
 						<View style={{ alignItems: 'center', justifyContent: 'center', flexBasis: 150, flexGrow: 0, flexShrink: 0, marginBottom: 15 }}>
-							<Image source={{ uri: gstore.api.fileLink(item.imageId) }} style={{ width: 150, height: 150, borderRadius: 10, resizeMode: 'contain' }}  />
+							<Image source={{ uri: gstore.api.fileLink(item.imageId) }} style={{ width: 150, height: 150, borderRadius: 10, resizeMode: 'contain' }} />
 						</View>
 						<View style={{ flexGrow: 1, flexShrink: 1 }}>
 							<View style={{ alignItems: 'center', justifyContent: 'center' }}>
@@ -112,7 +113,7 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number }> {
 									text={`${address}`}
 									selected={this.selectedIdx === idx}
 									onPress={() => this.selectedIdx = idx}
-								/>	
+								/>
 							))}
 							<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, marginBottom: 15 }}>Адрес доставки</Text>
 							{gstore.places.map((place, idx) => (
@@ -120,14 +121,14 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number }> {
 									text={`${place.name}, ${place.address}`}
 									selected={this.selectedIdx === gstore.selfAddresses.length + idx}
 									onPress={() => this.selectedIdx = gstore.selfAddresses.length + idx}
-								/>	
+								/>
 							))}
 							{gstore.savedAddresses.map((address, idx) => (
 								<FRadio
 									text={`${address}`}
 									selected={this.selectedIdx === gstore.selfAddresses.length + gstore.places.length + idx}
 									onPress={() => this.selectedIdx = gstore.selfAddresses.length + gstore.places.length + idx}
-								/>	
+								/>
 							))}
 							<FRadio
 								style={{ marginTop: 7 }}
@@ -148,15 +149,15 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number }> {
 									if (this.selectedIdx === -1) {
 										address = this.newAddress;
 									} else
-									if (this.selectedIdx < gstore.selfAddresses.length) {
-										address = gstore.selfAddresses[this.selectedIdx];
-									} else
-									if (this.selectedIdx - gstore.selfAddresses.length < gstore.places.length) {
-										address = gstore.places[this.selectedIdx - gstore.selfAddresses.length].address;
-										placeId = gstore.places[this.selectedIdx - gstore.selfAddresses.length].id;
-									} else {
-										address = gstore.savedAddresses[this.selectedIdx - gstore.places.length - gstore.selfAddresses.length];
-									}
+										if (this.selectedIdx < gstore.selfAddresses.length) {
+											address = gstore.selfAddresses[this.selectedIdx];
+										} else
+											if (this.selectedIdx - gstore.selfAddresses.length < gstore.places.length) {
+												address = gstore.places[this.selectedIdx - gstore.selfAddresses.length].address;
+												placeId = gstore.places[this.selectedIdx - gstore.selfAddresses.length].id;
+											} else {
+												address = gstore.savedAddresses[this.selectedIdx - gstore.places.length - gstore.selfAddresses.length];
+											}
 									gstore.cart.push({
 										itemId: item.id,
 										itemTitle: item.title,
@@ -177,8 +178,24 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number }> {
 }
 
 @observer
-class ServicesList extends PureComponent<{ navigation: IListNavigation, route: any }> {
+class ServicesList extends PureComponent<{ navigation: IListNavigation, route: any, openedCategories: any }> {
 
+	constructor(props: { navigation: IListNavigation; route: any; openedCategories: any } | Readonly<{ navigation: IListNavigation; route: any; openedCategories: any }>) {
+		super(props);
+		this.state = { openedCategories: [] };
+		this.showHideCategory = this.showHideCategory.bind(this);
+	}
+
+	showHideCategory(element: { id: string }) {
+		const data = _.clone(this.state.openedCategories);
+		const index = _.findIndex(data, function (o) { return o === element });
+		if (index === -1) {
+			data.push(element)
+		} else {
+			data.splice(index, 1)
+		}
+		this.setState({ openedCategories: data })
+	};
 	@observable error = '';
 	@observable loading = true;
 	@observable type: 'services' | 'goods' = 'goods';
@@ -265,24 +282,52 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 	}
 
 	@autobind
+
+	// renderItem(item: { data: object; id: string, category: string, title: string }) {
 	renderItem({ item, index }: ListRenderItemInfo<any>) {
-		const navigation = this.props.navigation;
+		// const navigation = this.props.navigation;
 		return (
-			<TouchableOpacity onPress={() => {
-				this.showModalItem(item);
-				// navigation.push('ServiceEntity', { title: item.key, description: item.description, date: item.date });
-			}}>
-				<View style={{ flexDirection: 'row', marginHorizontal: 20, paddingVertical: 18, paddingHorizontal: 20, backgroundColor: MainBackground, borderBottomColor: '#e0e0e0', borderBottomWidth: 1 }}>
-					<View style={{ flexBasis: 100, height: 100, borderRadius: 10, borderWidth: 1, overflow: 'hidden', borderColor: '#e0e0e0', alignItems: 'center', justifyContent: 'center', flexGrow: 0, flexShrink: 0, marginRight: 15 }}>
-						<Image source={{ uri: gstore.api.fileLink(item.imageId) }} style={{ width: 100, height: 100, resizeMode: 'contain' }}  />
-					</View>
-					<View style={{ flexGrow: 1, flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start' }}>
-						<View><Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, }}>{item.title}</Text></View>
-						<View style={{ marginBottom: 12, marginTop: 6 }}><Text style={{ fontSize: 12, color: MainMuted }}>Цена: <Text style={{ color: MainHeader, fontWeight: 'bold' }}>{parseFloat(String(item.price || 0)) ? `${parseFloat(String(item.price))} руб.` : '-'}</Text></Text></View>
-						<View><Text style={{ color: MainText }}>{item.description.substring(0, 100) + (item.description.length > 100 ? '...' : '')}</Text></View>
-					</View>
-				</View>
-			</TouchableOpacity>
+			<View key={index} style={{ paddingHorizontal: 20, paddingTop: 18, paddingBottom: 10, backgroundColor: 'white' }}>
+				<TouchableOpacity
+					key={index}
+					onPress={() => this.showHideCategory(item.title)}
+				>
+					<Text style={{ fontSize: 26, fontWeight: 'bold', color: MainHeader }}>{item.title}
+						<Image
+							style={{ width: 40, height: 30, resizeMode: 'contain', marginTop: -5 }}
+							source={
+								_.findIndex(this.state.openedCategories, function (o) { return o === item.title }) !== -1 ?
+									require('./../../src/more_black_24.png') : require('./../../src/list.png')
+							}
+						/></Text>
+					{/* <Image source={require('./../../src/more_	')} style={{ width: 100, height: 100, resizeMode: 'contain' }} /> */}
+
+
+				</TouchableOpacity>
+				{_.findIndex(this.state.openedCategories, function (o) { return o === item.title }) !== -1 ? (
+					item.data.map((item: any) => {
+						{
+							return (
+								<TouchableOpacity key={item.id} onPress={() => {
+									this.showModalItem(item);
+									// navigation.push('ServiceEntity', { title: item.key, description: item.description, date: item.date });
+								}}>
+									<View style={{ flexDirection: 'row', marginHorizontal: 20, paddingVertical: 18, paddingHorizontal: 20, backgroundColor: MainBackground, borderBottomColor: '#e0e0e0', borderBottomWidth: 1 }}>
+										<View style={{ flexBasis: 100, height: 100, borderRadius: 10, borderWidth: 1, overflow: 'hidden', borderColor: '#e0e0e0', alignItems: 'center', justifyContent: 'center', flexGrow: 0, flexShrink: 0, marginRight: 15 }}>
+											<Image source={{ uri: gstore.api.fileLink(item.imageId) }} style={{ width: 100, height: 100, resizeMode: 'contain' }} />
+										</View>
+										<View style={{ flexGrow: 1, flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start' }}>
+											<View><Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, }}>{item.title}</Text></View>
+											<View style={{ marginBottom: 12, marginTop: 6 }}><Text style={{ fontSize: 12, color: MainMuted }}>Цена: <Text style={{ color: MainHeader, fontWeight: 'bold' }}>{parseFloat(String(item.price || 0)) ? `${parseFloat(String(item.price))} руб.` : '-'}</Text></Text></View>
+											<View><Text style={{ color: MainText }}>{item.description.substring(0, 100) + (item.description.length > 100 ? '...' : '')}</Text></View>
+										</View>
+									</View>
+								</TouchableOpacity>
+							);
+						}
+					})
+				) : null}
+			</View>
 		);
 	}
 
@@ -329,7 +374,7 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 						/>
 					</View>
 				</View>
-				{this.loading ? <ActivityIndicator style={{ marginTop: 50}} size="large" color={MainLight} /> : (
+				{this.loading ? <ActivityIndicator style={{ marginTop: 50 }} size="large" color={MainLight} /> : (
 					// <Accordion
 					// 	activeSections={[0]}
 					// 	sections={this.list}
@@ -338,23 +383,29 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 					// 	renderHeader={(section) => (
 					// 	<View style={{ paddingHorizontal: 20, paddingTop: 18, paddingBottom: 10, backgroundColor: 'white' }}>
 					// 		<Text style={{ fontSize: 26, fontWeight: 'bold', color: MainHeader }}>{section.title}</Text>
-							
+
 					// 	</View>
 					// 	)}
 					// 	renderContent={(section) => this.renderItem(section)}
 					// 	// onChange={this._updateSections}
 					// />
-					<SectionList
-						sections={this.list}
-						keyExtractor={(item, index) => item.id + index}
+					<FlatList
+						data={this.list}
+						// extraData={this.state.openedCategories}
 						renderItem={this.renderItem}
-						renderSectionHeader={({ section: { title } }) => (
-						<View style={{ paddingHorizontal: 20, paddingTop: 18, paddingBottom: 10, backgroundColor: 'white' }}>
-							<Text style={{ fontSize: 26, fontWeight: 'bold', color: MainHeader }}>{title}</Text>
-							
-						</View>
-						)}
+						keyExtractor={(item) => item.id}
+					// keyExtractor={(item, index) => item.id + index}
 					/>
+					// <SectionList
+					// 	sections={this.list}
+					// 	keyExtractor={(item, index) => item.id + index}
+					// 	renderItem={this.renderItem}
+					// 	renderSectionHeader={({ section: { title } }) => (
+					// 	<View style={{ paddingHorizontal: 20, paddingTop: 18, paddingBottom: 10, backgroundColor: 'white' }}>
+					// 		<Text style={{ fontSize: 26, fontWeight: 'bold', color: MainHeader }}>{title}</Text>
+					// 	</View>
+					// 	)}
+					// />
 				)}
 			</View>
 		);

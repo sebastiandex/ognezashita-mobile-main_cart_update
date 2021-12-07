@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/fullmetal/.gradle/caches/transforms-2/files-2.1/68d6050b4218f62a686b14bb790c0d5d/material-1.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",

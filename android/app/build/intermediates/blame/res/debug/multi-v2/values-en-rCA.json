@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
-                    "source": "/Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf0afc3d25ae3930420d228297842c37/core-1.1.0/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "/Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bc69a75a9736b044aec92e8a94e1b02d/core-1.2.0/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

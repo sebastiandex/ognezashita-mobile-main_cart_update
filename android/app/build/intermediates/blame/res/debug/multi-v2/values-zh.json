@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/fullmetal/Developer/ognezashita-mobile-main/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+            "outputFile": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
             "map": [
                 {
                     "source": "/Users/fullmetal/.gradle/caches/transforms-2/files-2.1/b09a5c29a316dd418affe70e1e001e97/jetified-ucrop-2.2.6-native/res/values-zh/values-zh.xml",
