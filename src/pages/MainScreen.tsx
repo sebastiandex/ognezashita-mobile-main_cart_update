@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React, { PureComponent } from "react";
-import { Text, View, TouchableOpacity, TextStyle } from "react-native";
+import { Text, View, TouchableOpacity, TextStyle, Image } from "react-native";
 
 import { NavigationContainer, RouteProp } from '@react-navigation/native';
 import { createDrawerNavigator, DrawerNavigationProp, DrawerContentScrollView, DrawerItemList, DrawerItem, DrawerContentComponentProps, DrawerContentOptions } from '@react-navigation/drawer';
@@ -79,7 +79,12 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 	}
 	return (
 		<DrawerContentScrollView {...props} style={{ flexGrow: 1 }} contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-between' }}>
-			<View><DrawerItemList {...props} state={newState} descriptors={newDescriptors} />
+			<View style={{ marginLeft: 20 }}>
+				<Image
+					source={require('./../assets/mainLogo.png')}
+					style={{ resizeMode: 'contain', marginTop: 80, marginLeft: 10, marginBottom: 40 }}
+				/>
+				<DrawerItemList {...props} state={newState} descriptors={newDescriptors} />
 				{gstore.me!.role === 'admin' ? (
 					<DrawerItem
 						icon={({ focused, color, size }) => <Icon color={focused ? MainOrange : MainGrey} size={24} name={'home'} />}
@@ -99,6 +104,10 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 						label="Лицензии"
 						focused={descriptors[licenseKey].navigation.isFocused()}
 						onPress={() => navigation.jumpTo('License')}
+						activeBackgroundColor={'white'}
+						activeTintColor={MainOrange}
+						inactiveTintColor={'#282828'}
+						labelStyle={{ fontSize: 15 }}
 					/>
 					// </View>
 				) : null}
@@ -107,6 +116,10 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 					label="Связаться с нами"
 					focused={descriptors[contactKey].navigation.isFocused()}
 					onPress={() => navigation.jumpTo('Contact')}
+					activeBackgroundColor={'white'}
+					activeTintColor={MainOrange}
+					inactiveTintColor={'#282828'}
+					labelStyle={{ fontSize: 15 }}
 				/>
 			</View>
 		</DrawerContentScrollView>
@@ -168,7 +181,9 @@ class MainScreen extends PureComponent {
 	render() {
 		return (
 			<Animated.View style={{ zIndex: 0, flexGrow: 1, opacity: this.test, backgroundColor: 'white', width: '100%', height: '100%' }}>
+
 				<NavigationContainer>
+
 					<Drawer.Navigator
 						initialRouteName="Home"
 						screenOptions={({ navigation }) => {
@@ -176,7 +191,7 @@ class MainScreen extends PureComponent {
 								headerShown: true,
 								headerTintColor: MainHeader,
 								headerStyle: {
-									backgroundColor: MainBackgroundLight,
+									backgroundColor: 'MainBackgroundLight',
 									borderBottomColor: 'white',
 									elevation: 4,
 								},
@@ -187,8 +202,19 @@ class MainScreen extends PureComponent {
 						}}
 						drawerContent={DrawerContent}
 					>
+
+						{/* <Image
+							source={mainLogo}
+							style={{
+								width: 196,
+								height: 196,
+								resizeMode: 'cover'
+							}}
+						/> */}
+
 						{/* <Icon name="shopping-cart" size={24} color={gstore.cart.length ? 'black' : '#d0d0d0'} /> */}
 						<Drawer.Screen name="Home" component={HomeScreen} options={{ title: 'Главная' }} />
+
 						{gstore.me!.role === 'user' ? (
 							<>
 								<Drawer.Screen
