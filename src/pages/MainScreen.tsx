@@ -10,7 +10,7 @@ import HomeScreen from "./HomeScreen";
 import PlacesScreen from "./PlacesScreen";
 import NotificationsScreen from "./NotificationsScreen";
 import ProfileScreen from "./ProfileScreen";
-import { MainBackgroundLight, MainHeader } from "../colors";
+import { MainBackgroundLight, MainGrey, MainHeader, MainOrange } from "../colors";
 import ServicesScreen from "./ServicesScreen";
 import Icon from "react-native-vector-icons/FontAwesome";
 import { observer } from "mobx-react";
@@ -70,33 +70,40 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 		if (!key.startsWith('Contact') && !key.startsWith('License')) {
 			newDescriptors[key] = descriptors[key];
 		} else
-		if (key.startsWith('Contact')) {
-			contactKey = key;
-		} else
-		if (key.startsWith('License')) {
-			licenseKey = key;
-		}
+			if (key.startsWith('Contact')) {
+				contactKey = key;
+			} else
+				if (key.startsWith('License')) {
+					licenseKey = key;
+				}
 	}
 	return (
 		<DrawerContentScrollView {...props} style={{ flexGrow: 1 }} contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-between' }}>
 			<View><DrawerItemList {...props} state={newState} descriptors={newDescriptors} />
-			{gstore.me!.role === 'admin' ? (
-				<DrawerItem
-					label="Лицензии"
-					focused={descriptors[licenseKey].navigation.isFocused()}
-					onPress={() => navigation.jumpTo('License')}
-				/>
-			) : null }
+				{gstore.me!.role === 'admin' ? (
+					<DrawerItem
+						icon={({ focused, color, size }) => <Icon color={focused ? MainOrange : MainGrey} size={24} name={'home'} />}
+						label="Лицензии"
+						focused={descriptors[licenseKey].navigation.isFocused()}
+						onPress={() => navigation.jumpTo('License')}
+					/>
+				) : null}
 			</View>
 			<View style={{ marginBottom: 20 }}>
 				{gstore.me!.role !== 'admin' ? (
+					// <View style={{ display: 'flex' }}>
+					// 	<Icon name="home" size={24} color={gstore.cart.length ? 'black' : '#d0d0d0'} />
+
+					<DrawerItem
+						icon={({ focused, color, size }) => <Icon color={focused ? MainOrange : MainGrey} size={24} name={'home'} />}
+						label="Лицензии"
+						focused={descriptors[licenseKey].navigation.isFocused()}
+						onPress={() => navigation.jumpTo('License')}
+					/>
+					// </View>
+				) : null}
 				<DrawerItem
-					label="Лицензии"
-					focused={descriptors[licenseKey].navigation.isFocused()}
-					onPress={() => navigation.jumpTo('License')}
-				/>
-			) : null }
-				<DrawerItem
+					icon={({ focused, color, size }) => <Icon color={focused ? MainOrange : MainGrey} size={24} name={'home'} />}
 					label="Связаться с нами"
 					focused={descriptors[contactKey].navigation.isFocused()}
 					onPress={() => navigation.jumpTo('Contact')}
@@ -113,7 +120,8 @@ class DrawerLabelBadge extends PureComponent<({ color: TextStyle['color'], text:
 
 		const c = typeof count === 'function' ? count() : count;
 		return (
-			<View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+			<View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-evenly', width: '50%' }}>
+				<Icon color={MainGrey} size={24} name={'home'} />
 				<Text style={{ color }}>{text}</Text>
 				{c ? (
 					<View style={{
@@ -151,7 +159,12 @@ class MainScreen extends PureComponent {
 			easing: Easing.ease,
 		}).start();
 	}
-	
+	menuItemRenderer = ({ navigation, route }) => {
+		console.log(route.params.post)
+		return (
+			<Text>{route.params.post}</Text>
+		)
+	}
 	render() {
 		return (
 			<Animated.View style={{ zIndex: 0, flexGrow: 1, opacity: this.test, backgroundColor: 'white', width: '100%', height: '100%' }}>
@@ -174,12 +187,32 @@ class MainScreen extends PureComponent {
 						}}
 						drawerContent={DrawerContent}
 					>
+						{/* <Icon name="shopping-cart" size={24} color={gstore.cart.length ? 'black' : '#d0d0d0'} /> */}
 						<Drawer.Screen name="Home" component={HomeScreen} options={{ title: 'Главная' }} />
 						{gstore.me!.role === 'user' ? (
 							<>
-								<Drawer.Screen name="Notifications" component={NotificationsScreen} options={{ title: 'Уведомления', drawerLabel: ({ focused, color }) => (
-									<DrawerLabelBadge text="Уведомления" color={color} count={() => gstore.unreadNotifications.length} />
-								) }} />
+								<Drawer.Screen
+
+									name="Notifications"
+									component={NotificationsScreen}
+									options={{
+										title: 'Уведомления', drawerLabel: ({ focused, color }) => (
+											<View style={{
+												display: 'flex', flex: 1,
+												flexDirection: 'row',
+												justifyContent: 'space-between'
+											}}
+											>
+												{/* <Icon color={focused ? MainOrange : MainGrey} size={24} name={'home'} /> */}
+												<DrawerLabelBadge
+													text="Уведомления"
+													color={focused ? MainOrange : '#282828'}
+													count={() => gstore.unreadNotifications.length}
+												/>
+											</View>
+										)
+									}}
+								/>
 								<Drawer.Screen name="Services" component={ServicesScreen} options={{ title: 'Товары и услуги' }} />
 								<Drawer.Screen name="Places" component={PlacesScreen} options={{ title: 'Мои объекты' }} />
 							</>
@@ -196,24 +229,30 @@ class MainScreen extends PureComponent {
 						/>
 						{gstore.me!.role === 'executor' ? (
 							<>
-								<Drawer.Screen name="NewOrderRouter" component={NewOrdersScreen} options={{ title: 'Новые заявки', drawerLabel: ({ color }) => (
-									<DrawerLabelBadge text="Новые заявки" count={() => gstore.newOrdersCount} color={color} />
-								) }} />
+								<Drawer.Screen name="NewOrderRouter" component={NewOrdersScreen} options={{
+									title: 'Новые заявки', drawerLabel: ({ color }) => (
+										<DrawerLabelBadge text="Новые заявки" count={() => gstore.newOrdersCount} color={color} />
+									)
+								}} />
 								<Drawer.Screen name="MyOrderRouter" component={MineOrdersScreen} options={{ title: 'Созданные мной заявки' }} />
 							</>
 						) : null}
 						{gstore.me!.role === 'admin' ? (
 							<>
-								<Drawer.Screen name="NewOrderRouter" component={NewOrdersScreen} options={{ title: 'Заявки в ожидании', drawerLabel: ({ color }) => (
-									<DrawerLabelBadge text="Новые заявки" count={() => gstore.newOrdersCount} color={color} />
-								) }} />
+								<Drawer.Screen name="NewOrderRouter" component={NewOrdersScreen} options={{
+									title: 'Заявки в ожидании', drawerLabel: ({ color }) => (
+										<DrawerLabelBadge text="Новые заявки" count={() => gstore.newOrdersCount} color={color} />
+									)
+								}} />
 								<Drawer.Screen name="ExecsOrderRouter" component={ExecsOrdersScreen} options={{ title: 'Заявки от исполнителей' }} />
 								<Drawer.Screen name="FinishedOrderRouter" component={FinishedOrdersScreen} options={{ title: 'Завершенные заявки' }} />
 							</>
 						) : (
-							<Drawer.Screen name="Cart" component={CartScreen} options={{ title: gstore.me!.role === 'user' ? 'Корзина' : 'Создать заявку', drawerLabel: gstore.me!.role === 'user' ? ({ focused, color }) => (
-								<DrawerLabelBadge text="Корзина" color={color} count={() => gstore.cart.length} />
-							) : void 0 }} />
+							<Drawer.Screen name="Cart" component={CartScreen} options={{
+								title: gstore.me!.role === 'user' ? 'Корзина' : 'Создать заявку', drawerLabel: gstore.me!.role === 'user' ? ({ focused, color }) => (
+									<DrawerLabelBadge text="Корзина" color={color} count={() => gstore.cart.length} />
+								) : void 0
+							}} />
 						)}
 
 						<Drawer.Screen name="Profile" component={ProfileScreen} options={{ title: 'Профиль' }} />

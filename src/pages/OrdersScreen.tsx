@@ -39,46 +39,46 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
 				await gstore.init();
 				this.orders = gstore.orders.filter(m => m.activeExecutor?.id === gstore.me!.id);
 			} else
-			if (gstore.me!.role === 'admin') {
-				const res = await gstore.api.getOrders('default', this.search);
+				if (gstore.me!.role === 'admin') {
+					const res = await gstore.api.getOrders('default', this.search);
+					if (res.result) {
+						this.orders = res.data;
+					} else {
+						this.orders = [];
+					}
+				} else {
+					await gstore.init();
+					this.orders = gstore.orders;
+				}
+		} else
+			if (mode === 'new') {
+				const res = await gstore.api.getOrders('new', this.search);
 				if (res.result) {
 					this.orders = res.data;
+					gstore.newOrdersCount = this.orders.length;
 				} else {
 					this.orders = [];
 				}
-			} else {
-				await gstore.init();
-				this.orders = gstore.orders;
-			}
-		} else
-		if (mode === 'new') {
-			const res = await gstore.api.getOrders('new', this.search);
-			if (res.result) {
-				this.orders = res.data;
-				gstore.newOrdersCount = this.orders.length;
-			} else {
-				this.orders = [];
-			}
-		} else
-		if (mode === 'execs') {
-			const res = await gstore.api.getOrders('execs', this.search);
-			if (res.result) {
-				this.orders = res.data;
-			} else {
-				this.orders = [];
-			}
-		} else
-		if (mode === 'finished') {
-			const res = await gstore.api.getOrders('finished', this.search);
-			if (res.result) {
-				this.orders = res.data;
-			} else {
-				this.orders = [];
-			}
-		} else
-		if (mode === 'mine') {
-			this.orders = gstore.orders.filter(m => m.createdByUser!.id === gstore.me!.id)
-		}
+			} else
+				if (mode === 'execs') {
+					const res = await gstore.api.getOrders('execs', this.search);
+					if (res.result) {
+						this.orders = res.data;
+					} else {
+						this.orders = [];
+					}
+				} else
+					if (mode === 'finished') {
+						const res = await gstore.api.getOrders('finished', this.search);
+						if (res.result) {
+							this.orders = res.data;
+						} else {
+							this.orders = [];
+						}
+					} else
+						if (mode === 'mine') {
+							this.orders = gstore.orders.filter(m => m.createdByUser!.id === gstore.me!.id)
+						}
 
 		this.loading = false;
 	}
@@ -103,9 +103,9 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
 			ods = this.orders.slice();
 			ods.sort((a, b) => {
 				const ai = states.indexOf(a.state);
-					const bi = states.indexOf(b.state);
-					return ai - bi;
-					});
+				const bi = states.indexOf(b.state);
+				return ai - bi;
+			});
 		}
 		return (
 			<View style={{ flexGrow: 1, backgroundColor: MainBackground, }}>
@@ -158,16 +158,16 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
 								<Text style={{ textAlign: 'center', fontSize: 16, color: '#606060', lineHeight: 26 }}>
 									{
 										this.search ? 'Ничего не найдено' :
-										gstore.me!.role === 'user' ? 'Здесь будут отображаться ваши заявки.\n\nДля создания заявки, перейдите к товарам и услугам и соберите новый заказ.' : (
-											mode === 'new' ? 'Здесь будут отображаться новые заявки, в которых вы можете стать исполнителем.' :
-											(
-												mode === 'mine' ? 'Здесь будут отображаться созданные вами заявки.' :
-												(mode === 'execs' ? 'Здесь будут отображаться заявки от исполнителей в сторону администрации.' : (
-													mode === 'finished' ? 'Здесь будут отображаться успешно завершенные заявки.' :
-													'Здесь будут отображаться заявки, по которым вы в данный момент выполняете работу.'
-												))
+											gstore.me!.role === 'user' ? 'Здесь будут отображаться ваши заявки.\n\nДля создания заявки, перейдите к товарам и услугам и соберите новый заказ.' : (
+												mode === 'new' ? 'Здесь будут отображаться новые заявки, в которых вы можете стать исполнителем.' :
+													(
+														mode === 'mine' ? 'Здесь будут отображаться созданные вами заявки.' :
+															(mode === 'execs' ? 'Здесь будут отображаться заявки от исполнителей в сторону администрации.' : (
+																mode === 'finished' ? 'Здесь будут отображаться успешно завершенные заявки.' :
+																	'Здесь будут отображаться заявки, по которым вы в данный момент выполняете работу.'
+															))
+													)
 											)
-										)
 									}
 								</Text>
 							</View>
