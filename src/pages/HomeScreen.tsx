@@ -3,7 +3,7 @@ import React, { PureComponent } from "react";
 import { Image, ScrollView, Text, TouchableOpacity, View, ActivityIndicator } from "react-native";
 
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { MainBackground, MainBorder, MainHeader, MainLight, MainMuted, MainText } from "../colors";
+import { MainBackground, MainBlack, MainBorder, MainHeader, MainLight, MainMuted, MainText, MainWhite } from "../colors";
 import FlatText from "../controls/FlatText";
 
 import gstore, { stateDesc } from "../stores/gstore";
@@ -52,14 +52,14 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 		if (c === 0 || (c >= 5 && c <= 9) || b >= 10 && a < 20) {
 			return 'непрочитанных оповещений';
 		} else
-		if (c === 1) {
-			return 'непрочитанное оповещение';
-		} else
-		if (c >= 2 && c <= 4) {
-			return 'непрочитанных оповещения';
-		} else {
-			return 'непрочитанных оповещения';
-		}
+			if (c === 1) {
+				return 'непрочитанное оповещение';
+			} else
+				if (c >= 2 && c <= 4) {
+					return 'непрочитанных оповещения';
+				} else {
+					return 'непрочитанных оповещения';
+				}
 	}
 
 	render() {
@@ -72,7 +72,7 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 					paddingTop: 20,
 					flexGrow: 1,
 					flexShrink: 1,
-					backgroundColor: MainBackground,
+					backgroundColor: gstore.me!.role === 'admin' ? MainBlack : MainBackground,
 				}}>
 					{gstore.unreadNotifications.length ? (
 						<TouchableOpacity onPress={() => {
@@ -98,33 +98,34 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 					{(gstore.me!.role === 'admin') ? (
 						<View style={{ marginBottom: 25 }}>
 							<View style={{ marginBottom: 5 }}>
-								<Text style={{ fontSize: 30, fontWeight: 'bold', color: MainLight }}>Состояние системы</Text>
+								<Text style={{ fontSize: 30, fontWeight: 'bold', color: gstore.me!.role === 'admin' ? MainWhite : MainLight }}>Состояние системы</Text>
 							</View>
-							<TouchableOpacity onPress={() => {
-								//@ts-ignore
-								this.props.navigation.jumpTo('OrderRouter');
-							}}>
-								<View style={{ marginTop: 18, borderRadius: 5, backgroundColor: '#64AD4B', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 10, paddingHorizontal: 20 }}>
-									<View><Text style={{ fontSize: 16, color: 'white', }}>Заявки в работе</Text></View>
-									<View><Text style={{ fontSize: 16, color: 'white' }}>{gstore.ordersInWorkCount}</Text></View>
-								</View>
-							</TouchableOpacity>
 							<TouchableOpacity onPress={() => {
 								//@ts-ignore
 								this.props.navigation.jumpTo('NewOrderRouter');
 							}}>
-								<View style={{ marginTop: 18, borderRadius: 5, backgroundColor: '#4E74AC', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 10, paddingHorizontal: 20 }}>
-									<View><Text style={{ fontSize: 16, color: 'white', }}>Новые заявки</Text></View>
-									<View><Text style={{ fontSize: 16, color: 'white' }}>{gstore.ordersWaitingAnswerCount}</Text></View>
+								<View style={{ marginTop: 18, borderRadius: 8, backgroundColor: '#4CBD57', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 13, paddingHorizontal: 20 }}>
+									<View><Text style={{ fontSize: 18, color: 'white', letterSpacing: 0.02, fontWeight: '600' }}>Новые заявки</Text></View>
+									<View><Text style={{ fontSize: 18, color: 'white', fontWeight: '600' }}>{gstore.ordersWaitingAnswerCount}</Text></View>
 								</View>
 							</TouchableOpacity>
 							<TouchableOpacity onPress={() => {
 								//@ts-ignore
+								this.props.navigation.jumpTo('OrderRouter');
+							}}>
+								<View style={{ marginTop: 18, borderRadius: 8, backgroundColor: '#2A5EE4', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 13, paddingHorizontal: 20 }}>
+									<View><Text style={{ fontSize: 18, color: 'white', letterSpacing: 0.02, fontWeight: '600' }}>Заявки в работе</Text></View>
+									<View><Text style={{ fontSize: 18, color: 'white', fontWeight: '600' }}>{gstore.ordersInWorkCount}</Text></View>
+								</View>
+							</TouchableOpacity>
+
+							<TouchableOpacity onPress={() => {
+								//@ts-ignore
 								this.props.navigation.jumpTo('ExecsOrderRouter');
 							}}>
-								<View style={{ marginTop: 18, borderRadius: 5, backgroundColor: '#D49537', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 10, paddingHorizontal: 20 }}>
-									<View><Text style={{ fontSize: 16, color: 'white', }}>Заявки от исполнителей</Text></View>
-									<View><Text style={{ fontSize: 16, color: 'white' }}>{gstore.ordersFromExecutorsCount}</Text></View>
+								<View style={{ marginTop: 18, borderRadius: 8, backgroundColor: '#F48E39', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 13, paddingHorizontal: 20 }}>
+									<View><Text style={{ fontSize: 18, color: 'white', letterSpacing: 0.02, fontWeight: '600' }}>Заявки от исполнителей</Text></View>
+									<View><Text style={{ fontSize: 18, color: 'white', fontWeight: '600' }}>{gstore.ordersFromExecutorsCount}</Text></View>
 								</View>
 							</TouchableOpacity>
 						</View>
@@ -173,7 +174,7 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 											</View>) : null}
 											<View style={{ flexDirection: 'column' }}>
 												<View><Text style={{ fontSize: 16, fontWeight: 'bold', color: MainHeader, marginBottom: 5 }}>{p.name}</Text></View>
-												<View style={{ }}><Text style={{ fontSize: 12, color: MainMuted }}>Адрес: {p.address}</Text></View>
+												<View style={{}}><Text style={{ fontSize: 12, color: MainMuted }}>Адрес: {p.address}</Text></View>
 											</View>
 										</View>
 									</TouchableOpacity>

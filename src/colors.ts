@@ -7,6 +7,7 @@
 // export const MainMuted = '#808080';
 
 export const MainBackground = 'white';
+export const MainBackgroundNav = '#38393A';
 export const MainBackgroundDark = 'black';
 export const MainBackgroundLight = 'white';
 export const MainText = 'black';
@@ -16,4 +17,8 @@ export const MainHighlight = 'yellow';
 export const MainMuted = '#808080';
 export const MainBorder = '#e0e0e0';
 export const MainOrange = '#F48E39';
-export const MainGrey = '#A3A3A3';
+export const IconGrey = '#A3A3A3';
+export const MainBlack = '#191919';
+// export const MainBlack = '#FFFFFF';
+export const MainGrey = '#38393A';
+export const MainWhite = '#FFFFFF';

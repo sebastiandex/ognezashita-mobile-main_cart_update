@@ -10,7 +10,7 @@ import HomeScreen from "./HomeScreen";
 import PlacesScreen from "./PlacesScreen";
 import NotificationsScreen from "./NotificationsScreen";
 import ProfileScreen from "./ProfileScreen";
-import { MainBackgroundLight, MainGrey, MainHeader, MainOrange } from "../colors";
+import { MainBackgroundLight, MainGrey, MainHeader, MainOrange, MainBlack, MainWhite, MainBackgroundDark, MainBackgroundNav, IconGrey } from "../colors";
 import ServicesScreen from "./ServicesScreen";
 import Icon from "react-native-vector-icons/FontAwesome";
 import { observer } from "mobx-react";
@@ -78,11 +78,11 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 				}
 	}
 	return (
-		<DrawerContentScrollView {...props} style={{ flexGrow: 1 }} contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-between' }}>
-			<View style={{ marginLeft: 20 }}>
+		<DrawerContentScrollView {...props} style={{ flexGrow: 1, backgroundColor: MainBackgroundNav }} contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-between' }}>
+			<View style={{ marginLeft: 15 }}>
 				<Image
 					source={require('./../assets/mainLogo.png')}
-					style={{ resizeMode: 'contain', marginTop: 80, marginLeft: 10, marginBottom: 40 }}
+					style={{ resizeMode: 'contain', marginTop: 80, marginLeft: 5, marginBottom: 40 }}
 				/>
 				<DrawerItemList {...props} state={newState} descriptors={newDescriptors} />
 				{gstore.me!.role === 'admin' ? (
@@ -104,9 +104,9 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 						label="Лицензии"
 						focused={descriptors[licenseKey].navigation.isFocused()}
 						onPress={() => navigation.jumpTo('License')}
-						activeBackgroundColor={'white'}
+						activeBackgroundColor={MainGrey}
 						activeTintColor={MainOrange}
-						inactiveTintColor={'#282828'}
+						inactiveTintColor={MainWhite}
 						labelStyle={{ fontSize: 15 }}
 					/>
 					// </View>
@@ -116,9 +116,9 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 					label="Связаться с нами"
 					focused={descriptors[contactKey].navigation.isFocused()}
 					onPress={() => navigation.jumpTo('Contact')}
-					activeBackgroundColor={'white'}
+					activeBackgroundColor={MainGrey}
 					activeTintColor={MainOrange}
-					inactiveTintColor={'#282828'}
+					inactiveTintColor={MainWhite}
 					labelStyle={{ fontSize: 15 }}
 				/>
 			</View>
@@ -133,9 +133,9 @@ class DrawerLabelBadge extends PureComponent<({ color: TextStyle['color'], text:
 
 		const c = typeof count === 'function' ? count() : count;
 		return (
-			<View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-evenly', width: '50%' }}>
-				<Icon color={MainGrey} size={24} name={'home'} />
-				<Text style={{ color }}>{text}</Text>
+			<View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}>
+				<Icon color={IconGrey} size={24} name={'home'} />
+				<Text style={{ color: MainWhite }}>{text}</Text>
 				{c ? (
 					<View style={{
 						backgroundColor: '#c00000',
@@ -143,10 +143,10 @@ class DrawerLabelBadge extends PureComponent<({ color: TextStyle['color'], text:
 						height: 24,
 						width: 24,
 						alignItems: 'center',
-						justifyContent: 'center',
-						marginRight: -30,
+						justifyContent: 'center'
+						// marginRight: -30,
 					}}>
-						<Text style={{ color: 'white' }}>{c}</Text>
+						<Text style={{ color: MainWhite }}>{c}</Text>
 					</View>
 				) : null}
 			</View>
@@ -189,11 +189,15 @@ class MainScreen extends PureComponent {
 						screenOptions={({ navigation }) => {
 							return {
 								headerShown: true,
-								headerTintColor: MainHeader,
+								headerTintColor: gstore.me!.role === 'admin' ? MainWhite : MainBlack,
 								headerStyle: {
-									backgroundColor: 'MainBackgroundLight',
+									backgroundColor: gstore.me!.role === 'admin' ? MainBlack : MainWhite,
+									// backgroundColor: 'MainBackgroundLight',
 									borderBottomColor: 'white',
 									elevation: 4,
+								},
+								bottomStyle: {
+									backgroundColor: gstore.me!.role === 'admin' ? MainBlack : MainWhite,
 								},
 								headerRight: gstore.me!.role === 'user' ? (() => (
 									<HeaderRight navigation={navigation} />
@@ -249,7 +253,7 @@ class MainScreen extends PureComponent {
 							options={{
 								title: gstore.me!.role === 'user' ? 'Мои заявки' : 'Заявки в работе',
 								drawerLabel: gstore.me!.role === 'executor' ? (({ color }) => (
-									<DrawerLabelBadge text={gstore.me!.role === 'user' ? 'Мои заявки' : 'Заявки в работе'} count={() => gstore.ordersInWorkCount} color={color} />
+									<DrawerLabelBadge color={MainWhite} text={gstore.me!.role === 'user' ? 'Мои заявки' : 'Заявки в работе'} count={() => gstore.ordersInWorkCount} color={color} />
 								)) : void 0
 							}}
 						/>
@@ -276,7 +280,7 @@ class MainScreen extends PureComponent {
 						) : (
 							<Drawer.Screen name="Cart" component={CartScreen} options={{
 								title: gstore.me!.role === 'user' ? 'Корзина' : 'Создать заявку', drawerLabel: gstore.me!.role === 'user' ? ({ focused, color }) => (
-									<DrawerLabelBadge text="Корзина" color={color} count={() => gstore.cart.length} />
+									<DrawerLabelBadge text="Корзина" color={focused ? MainOrange : MainWhite} count={() => gstore.cart.length} />
 								) : void 0
 							}} />
 						)}
