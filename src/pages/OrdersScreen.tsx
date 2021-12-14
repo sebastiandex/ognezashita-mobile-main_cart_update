@@ -3,7 +3,7 @@ import React, { PureComponent } from "react";
 import { ActivityIndicator, ScrollView } from "react-native";
 import { TouchableOpacity } from "react-native";
 import { Text, View } from "react-native";
-import { MainLight, MainBackground, MainMuted, MainHeader, MainText } from "../colors";
+import { MainLight, MainBackground, MainMuted, MainHeader, MainText, createdColor, executingColor, doneColor, cancelledColor } from "../colors";
 
 import moment from 'moment';
 import _ from 'lodash';
@@ -107,6 +107,21 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
 				return ai - bi;
 			});
 		}
+		const statusColor = (status: any) => {
+			switch (status) {
+				case "Поиск исполнителя":
+					return createdColor;
+				case "В процессе выполнения":
+					return executingColor;
+				case "Завершена":
+					return doneColor;
+				case "Отменена":
+					return cancelledColor
+				default:
+					return MainText;
+			}
+		}
+
 		return (
 			<View style={{ flexGrow: 1, backgroundColor: MainBackground, }}>
 				{(gstore.me!.role === 'admin' && this.props.mode !== 'mine') ? (
@@ -149,7 +164,7 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
 									<View style={{ opacity: (ord.state === 'cancelled' || ord.state === 'done') ? 0.5 : 1, paddingVertical: 18, paddingHorizontal: 0, backgroundColor: MainBackground, borderBottomColor: '#e0e0e0', borderBottomWidth: 1 }}>
 										<View><Text style={{ fontSize: 16, fontWeight: 'bold', color: MainHeader }}>{ord.title}</Text></View>
 										<View style={{ marginBottom: 12 }}><Text style={{ fontSize: 12, color: MainMuted }}>{moment(ord.createdAt).format('DD.MM.YYYY HH:mm')}</Text></View>
-										<View><Text style={{ color: MainText }}>{stateDesc[ord.state]}</Text></View>
+										<View><Text style={{ color: statusColor(stateDesc[ord.state]) }}>{stateDesc[ord.state]}</Text></View>
 									</View>
 								</TouchableOpacity>
 							))

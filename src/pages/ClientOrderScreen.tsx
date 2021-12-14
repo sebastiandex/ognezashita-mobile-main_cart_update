@@ -35,7 +35,7 @@ function UserRow({ text, user }: { text: string, user: { id: string; name: strin
 			<View style={{ flexDirection: 'row', backgroundColor: MainBackground }}>
 				{link ? (
 					<View style={{ flexBasis: 100, height: 100, borderRadius: 10, borderWidth: 1, overflow: 'hidden', borderColor: '#e0e0e0', alignItems: 'center', justifyContent: 'center', flexGrow: 0, flexShrink: 0, marginRight: 15 }}>
-						<Image source={{ uri: link }} style={{ width: 100, height: 100, resizeMode: 'contain' }}  />
+						<Image source={{ uri: link }} style={{ width: 100, height: 100, resizeMode: 'contain' }} />
 					</View>
 				) : null}
 				<View style={{ flexGrow: 1, flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start' }}>
@@ -305,7 +305,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 									marginBottom: 20,
 								}}
 							>
-								<TouchableOpacity onPress={_ => {this.reportImageIds.splice(idx, 1)}} style={{ width: 26, height: 26, paddingBottom: 4, alignItems: 'center', justifyContent: 'center', borderRadius: 13, backgroundColor: 'white', borderWidth: 1, borderColor: '#e0e0e0', position: 'absolute', left: -13, top: -13, zIndex: 10 }}>
+								<TouchableOpacity onPress={_ => { this.reportImageIds.splice(idx, 1) }} style={{ width: 26, height: 26, paddingBottom: 4, alignItems: 'center', justifyContent: 'center', borderRadius: 13, backgroundColor: 'white', borderWidth: 1, borderColor: '#e0e0e0', position: 'absolute', left: -13, top: -13, zIndex: 10 }}>
 									<Text style={{ fontSize: 20, fontWeight: 'bold', color: '#a0a0a0' }}>x</Text>
 								</TouchableOpacity>
 							</ImageBackground>
@@ -316,14 +316,14 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 							if (!gstore.me) {
 								return;
 							}
-				
+
 							try {
 								const res = await gstore.api.uploadFile(
 									'order',
 									this.order.id,
 									files[0],
 								);
-				
+
 								if (res.result) {
 									this.reportImageIds.push(res.data.id);
 								}
@@ -393,7 +393,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 					</View>) : null}
 					<View style={{ flexDirection: 'column', marginTop: 30, alignItems: 'center' }}>
 						<View><Text style={{ fontSize: 20, fontWeight: 'bold', color: MainHeader, marginBottom: 15 }}>{p.name}</Text></View>
-						<View style={{ }}><Text style={{ fontSize: 14, color: MainHeader }}>Адрес: {p.address}</Text></View>
+						<View style={{}}><Text style={{ fontSize: 14, color: MainHeader }}>Адрес: {p.address}</Text></View>
 						<FButton onPress={() => this.viewPlace = null} style={{ marginTop: 30 }}>Назад</FButton>
 					</View>
 				</View>
@@ -457,10 +457,10 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 				{this.renderPlaceContent()}
 				<Modal visible={this.imagesForView.length !== 0} transparent={true}>
 					<ImageViewer
-						loadingRender={() => <ActivityIndicator size="large"/>}
+						loadingRender={() => <ActivityIndicator size="large" />}
 						renderHeader={() =>
 							<CloseButton onPress={() => this.imagesForView = ([])}>
-								<Icon size={30} name="clear" color="#fff"/>
+								<Icon size={30} name="clear" color="#fff" />
 							</CloseButton>
 						}
 						index={this.idx}
@@ -470,42 +470,102 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 					/>
 				</Modal>
 				{this.reportScreen ? (this.renderReportScreen()) : (
-				<>
-					<Section text={this.order.title}>
-						<Text style={{ color: MainText }}>{this.order.content.description}</Text>
-					</Section>
+					<>
+						<Section text={this.order.title}>
+							<Text style={{ color: MainText }}>{this.order.content.description}</Text>
+						</Section>
 
-					{this.order.content.type === 'cart' ? this.renderCartContent() : null}
+						{this.order.content.type === 'cart' ? this.renderCartContent() : null}
 
-					<Section text="Статус">
-						<View style={{ height: 30, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row' }}>
-							<View>
-								<Text style={{ color: MainText }}>{stateDesc[this.order.state]}</Text>
+						<Section text="Статус">
+							<View style={{ height: 30, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row' }}>
+								<View>
+									<Text style={{ color: MainText }}>{stateDesc[this.order.state]}</Text>
+								</View>
 							</View>
-						</View>
-						{gstore.me!.role === 'admin' ? (
-							<View style={{ height: 30, marginTop: 10, alignItems: 'center', justifyContent: 'space-around', flexDirection: 'row' }}>
-								{this.order.state !== 'executing' ? (
-									<FButton
-										style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
-										buttonStyle={{  }}
-										onPress={(this.order.content.type as string) === 'simple' ? this.handleAccept : this.handleChangeExecutor}
-										small
-									>
-										{(this.order.content.type as string) === 'simple' ? 'В работу' : (this.order.state !== 'created' ? 'Смена исполнителя' : 'Выбор исполнителя')}
-									</FButton>
-								) : null}
-								{this.order.state !== 'done' ? (
-									<FButton
-										style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
-										buttonStyle={{ backgroundColor: '#00a000' }}
-										onPress={this.handleFinished}
-										small
-									>
-										Выполнена
-									</FButton>
-								) : null}
-								{this.order.state !== 'cancelled' ? (
+							{gstore.me!.role === 'admin' ? (
+								<View style={{ height: 30, marginTop: 10, alignItems: 'center', justifyContent: 'space-around', flexDirection: 'row' }}>
+									{this.order.state !== 'executing' ? (
+										<FButton
+											style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
+											buttonStyle={{}}
+											onPress={(this.order.content.type as string) === 'simple' ? this.handleAccept : this.handleChangeExecutor}
+											small
+										>
+											{(this.order.content.type as string) === 'simple' ? 'В работу' : (this.order.state !== 'created' ? 'Смена исполнителя' : 'Выбор исполнителя')}
+										</FButton>
+									) : null}
+									{this.order.state !== 'done' ? (
+										<FButton
+											style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
+											buttonStyle={{ backgroundColor: '#00a000' }}
+											onPress={this.handleFinished}
+											small
+										>
+											Выполнена
+										</FButton>
+									) : null}
+									{this.order.state !== 'cancelled' ? (
+										<FButton
+											style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
+											buttonStyle={{ backgroundColor: '#a00000' }}
+											onPress={this.handleCancel}
+											small
+										>
+											Отменить
+										</FButton>
+									) : null}
+								</View>
+							) : null}
+						</Section>
+
+						{((gstore.me!.role === 'user' || gstore.me!.role === 'admin') && this.order.activeExecutor) ? (
+							<UserRow text="Исполнитель" user={this.order.activeExecutor} />
+						) : null}
+
+						{((gstore.me!.role === 'executor' || gstore.me!.role === 'admin') && this.order.createdByUser && !this.isNew) ? (
+							<UserRow text="Заказчик" user={this.order.createdByUser} />
+						) : null}
+
+						{(this.order.report && ((gstore.me!.role === 'executor' && this.order.activeExecutorId === gstore.me!.id) || gstore.me!.role === 'admin')) ? (
+							<>
+								<Section text="Текст отчёта о работах">
+									<Text>{this.order.report.text}</Text>
+								</Section>
+								<Section text="Фотографии отчёта">
+									{this.order.report.imageIds.map((id, idx) => (
+										<TouchableOpacity onPress={_ => {
+											this.idx = idx;
+											this.imagesForView = this.order.report!.imageIds.map(i => ({ url: gstore.api.fileLink(i) }));
+										}}>
+											<ImageBackground
+												source={{ uri: gstore.api.fileLink(id) }}
+												style={{
+													alignItems: 'center',
+													justifyContent: 'center',
+													borderRadius: 10,
+													overflow: 'hidden',
+													borderWidth: 1,
+													borderColor: '#c0c0c0',
+													width: 100,
+													height: 100,
+													flexBasis: 100,
+													flexGrow: 0,
+													flexShrink: 0,
+													marginRight: 20,
+													marginBottom: 20,
+												}}
+											>
+											</ImageBackground>
+										</TouchableOpacity>
+									))}
+								</Section>
+							</>
+						) : null}
+
+						{gstore.me!.role !== 'admin' ? (
+							<View style={{ height: 30, marginTop: 10, marginBottom: 30, alignItems: 'center', justifyContent: 'space-around', flexDirection: 'row' }}>
+								{(this.order.state === 'created' && this.order.createdByUserId === gstore.me!.id) ? (
 									<FButton
 										style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
 										buttonStyle={{ backgroundColor: '#a00000' }}
@@ -515,101 +575,41 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 										Отменить
 									</FButton>
 								) : null}
-							</View>
-						) : null}
-					</Section>
 
-					{((gstore.me!.role === 'user' || gstore.me!.role === 'admin') && this.order.activeExecutor) ? (
-						<UserRow text="Исполнитель" user={this.order.activeExecutor} />
-					) : null}
-
-					{((gstore.me!.role === 'executor' || gstore.me!.role === 'admin') && this.order.createdByUser && !this.isNew) ? (
-						<UserRow text="Заказчик" user={this.order.createdByUser} />
-					) : null}
-
-					{(this.order.report && ((gstore.me!.role === 'executor' && this.order.activeExecutorId === gstore.me!.id) || gstore.me!.role === 'admin')) ? (
-						<>
-						<Section text="Текст отчёта о работах">
-							<Text>{this.order.report.text}</Text>
-						</Section>
-						<Section text="Фотографии отчёта">
-							{this.order.report.imageIds.map((id, idx) => (
-								<TouchableOpacity onPress={_ => {
-									this.idx = idx;
-									this.imagesForView = this.order.report!.imageIds.map(i => ({ url: gstore.api.fileLink(i) }));
-								}}>
-									<ImageBackground
-										source={{ uri: gstore.api.fileLink(id) }}
-										style={{
-											alignItems: 'center',
-											justifyContent: 'center',
-											borderRadius: 10,
-											overflow: 'hidden',
-											borderWidth: 1,
-											borderColor: '#c0c0c0',
-											width: 100,
-											height: 100,
-											flexBasis: 100,
-											flexGrow: 0,
-											flexShrink: 0,
-											marginRight: 20,
-											marginBottom: 20,
-										}}
-									>
-									</ImageBackground>
-								</TouchableOpacity>
-							))}
-						</Section>
-						</>
-					) : null}
-
-					{gstore.me!.role !== 'admin' ? (
-						<View style={{ height: 30, marginTop: 10, marginBottom: 30, alignItems: 'center', justifyContent: 'space-around', flexDirection: 'row' }}>
-							{(this.order.state === 'created' && this.order.createdByUserId === gstore.me!.id) ? (
-								<FButton
-									style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
-									buttonStyle={{ backgroundColor: '#a00000' }}
-									onPress={this.handleCancel}
-									small
-								>
-									Отменить
-								</FButton>
-							) : null}
-
-							{(this.order.state === 'executing' && this.order.activeExecutorId === gstore.me!.id) ? (
-								<FButton
-									style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
-									buttonStyle={{ backgroundColor: '#00a000' }}
-									onPress={this.handleFinished}
-									small
-								>
-									Завершить
-								</FButton>
-							) : null}
-							
-							{(gstore.me!.role === 'executor' && this.isNew) ? (
-								<>
+								{(this.order.state === 'executing' && this.order.activeExecutorId === gstore.me!.id) ? (
 									<FButton
 										style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
 										buttonStyle={{ backgroundColor: '#00a000' }}
-										onPress={this.handleAccept}
+										onPress={this.handleFinished}
 										small
 									>
-										Взять в работу
+										Завершить
 									</FButton>
-									<FButton
-										style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
-										buttonStyle={{ backgroundColor: '#a00000' }}
-										onPress={this.handleDecline}
-										small
-									>
-										Отказаться
-									</FButton>
-								</>
-							) : null}
-						</View>
-					) : null}
-				</>)}
+								) : null}
+
+								{(gstore.me!.role === 'executor' && this.isNew) ? (
+									<>
+										<FButton
+											style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
+											buttonStyle={{ backgroundColor: '#00a000' }}
+											onPress={this.handleAccept}
+											small
+										>
+											Взять в работу
+										</FButton>
+										<FButton
+											style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
+											buttonStyle={{ backgroundColor: '#a00000' }}
+											onPress={this.handleDecline}
+											small
+										>
+											Отказаться
+										</FButton>
+									</>
+								) : null}
+							</View>
+						) : null}
+					</>)}
 			</ScrollView>
 		);
 	}

@@ -13,6 +13,7 @@ import ProfileScreen from "./ProfileScreen";
 import { MainBackgroundLight, MainGrey, MainHeader, MainOrange, MainBlack, MainWhite, MainBackgroundDark, MainBackgroundNav, IconGrey, MainBackground } from "../colors";
 import ServicesScreen from "./ServicesScreen";
 import Icon from "react-native-vector-icons/FontAwesome";
+import CustomIcon from "../CustomIcon";
 import { observer } from "mobx-react";
 import CartScreen from "./CartScreen";
 import Animated, { Easing } from "react-native-reanimated";

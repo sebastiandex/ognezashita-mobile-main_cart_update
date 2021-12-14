@@ -22,3 +22,7 @@ export const MainBlack = '#191919';
 // export const MainBlack = '#FFFFFF';
 export const MainGrey = '#38393A';
 export const MainWhite = '#FFFFFF';
+export const createdColor = '#F48E39';
+export const executingColor = MainText;
+export const doneColor = '#4CBD57';
+export const cancelledColor = '#E73838';
