@@ -228,7 +228,7 @@ class MainScreen extends PureComponent {
 								<Text style={{ marginLeft: -20, color: focused ? MainOrange : gstore.me!.role === 'admin' ? MainWhite : MainBlack }}>Главная</Text>
 							),
 							drawerIcon: ({ focused }) => (
-								<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+								<CustomIcon color={focused ? MainOrange : IconGrey} size={24} name={'main'} />
 							)
 						}} />
 
