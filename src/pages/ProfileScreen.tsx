@@ -24,7 +24,7 @@ class ProfileScreen extends PureComponent {
 	@observable passChanged = false;
 
 	prompt(title: string, defaultValue: string): Promise<string | null> {
-		return new Promise((resolve, reject) => {
+		return new Promise((resolve) => {
 			this.promptTitle = title;
 			this.promptValue = defaultValue;
 			this.promptCallback = resolve;
@@ -146,18 +146,26 @@ class ProfileScreen extends PureComponent {
 					}}
 				/>
 				<View style={{ alignItems: 'stretch', justifyContent: 'flex-start' }}>
-					<View style={{ height: 120, backgroundColor: '#312D2C' }}>
+					{/*<View style={{ height: 120, backgroundColor: '#312D2C' }}>*/}
 
-					</View>
+					{/*</View>*/}
 					<View style={{ backgroundColor: 'transparent' }}>
 						<View style={{ alignItems: 'center' }}>
-							<View style={{ marginTop: -100, alignItems: 'center', justifyContent: 'center', overflow: 'hidden', borderWidth: 4, borderColor: 'white', width: 200, height: 200, borderRadius: 100, backgroundColor: 'white' }}>
+							<View style={{ marginTop: 20,
+								alignItems: 'center',
+								justifyContent: 'center',
+								overflow: 'hidden',
+								borderWidth: 1,
+								borderColor: 'white',
+								width: 160, height: 160,
+								borderRadius: 32,
+								backgroundColor: 'white' }}>
 								<TouchableOpacity onPress={this.openGallery}>
 									<Image
 										source={fm.photoId ? { uri: gstore.api.fileLink(fm.photoId) } : photoPlaceholder}
 										style={{
-											width: 196,
-											height: 196,
+											width: 160,
+											height: 160,
 											resizeMode: 'cover'
 										}}
 									/>
@@ -165,41 +173,50 @@ class ProfileScreen extends PureComponent {
 							</View>
 							<View style={{ marginTop: 15 }}>
 								<TouchableOpacity onPress={this.handleName}>
-									<Text style={{ fontSize: 24, fontWeight: '800', textAlign: 'center' }}>{fm.name || '[Нажмите для ввода имени]'}</Text>
+									<Text style={{ fontSize: 24, fontWeight: '600', textAlign: 'center' }}>{fm.name || '[Нажмите для ввода имени]'}</Text>
 								</TouchableOpacity>
 							</View>
 						</View>
-						<ScrollView style={{ borderTopWidth: 1, borderTopColor: '#d0d0d0', marginTop: 30 }}>
-							<View style={{ height: 60, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#d0d0d0', paddingHorizontal: 30, paddingVertical: 10 }}>
+						<ScrollView style={{ borderTopWidth: 1, borderTopColor: '#d0d0d0', marginTop: 25 }}>
+							<View style={{ height: 70, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#d0d0d0', paddingHorizontal: 30, paddingVertical: 10 }}>
 								<View>
-									<Text>Номер телефона</Text>
+								<Text style={{ justifyContent: 'flex-start', fontWeight: 'normal', marginRight: 'auto' }}>{fm.phone || 'Номер телефона'}</Text>
 								</View>
-								<View style={{ alignItems: 'center', justifyContent: 'flex-end', flexDirection: 'row' }}>
-									<Text style={{ fontWeight: 'bold' }}>{fm.phone}</Text>
-									<FButton onPress={this.handlePhone} style={{ marginBottom: 0, marginLeft: 20, }} tiny>{fm.phone ? 'Изменить' : 'Добавить'}</FButton>
+								<View style={{ alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row' }}>
+
+									<FButton
+										onPress={this.handlePhone}
+										style={{ marginBottom: 0, marginLeft: 20, fontSize: 15}}
+										tiny
+									>
+										{fm.phone ? 'Изменить' : 'Добавить'}
+									</FButton>
 								</View>
 							</View>
 							<View style={{ height: 60, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#d0d0d0', paddingHorizontal: 30, paddingVertical: 10 }}>
 								<View>
-									<Text>Email</Text>
+									<Text style={{ justifyContent: 'flex-start', fontWeight: 'normal', marginRight: 'auto' }}>{fm.email || 'Эл. почта'}</Text>
 								</View>
 								<View style={{ alignItems: 'center', justifyContent: 'flex-end', flexDirection: 'row' }}>
-									<Text style={{ fontWeight: 'bold' }}>{fm.email}</Text>
 									<FButton onPress={this.handleEmail} style={{ marginBottom: 0, marginLeft: 20, }} tiny>{fm.email ? 'Изменить' : 'Добавить'}</FButton>
 								</View>
 							</View>
 							<View style={{ height: 60, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#d0d0d0', paddingHorizontal: 30, paddingVertical: 10 }}>
 								<View>
-									<Text>Пароль</Text>
+									<Text style={{ justifyContent: 'flex-start', fontWeight: 'normal', marginRight: 'auto' }}>************{this.passChanged ? ' (изменён)' : ''}</Text>
 								</View>
 								<View style={{ alignItems: 'center', justifyContent: 'flex-end', flexDirection: 'row' }}>
-									<Text>*********{this.passChanged ? ' (изменён)' : ''}</Text>
+									{/*<Text>*********{this.passChanged ? ' (изменён)' : ''}</Text>*/}
 									<FButton onPress={this.handlePassword} style={{ marginBottom: 0, marginLeft: 20, }} tiny>Изменить</FButton>
 								</View>
 							</View>
 						</ScrollView>
 					</View>
-					<FButton style={{ marginTop: 60 }} buttonStyle={{ backgroundColor: '#a00000' }} onPress={this.handleLogout}>Выйти</FButton>
+					<FButton
+						style={{ marginTop: 35 }}
+						buttonStyle={{ backgroundColor: '#E73838' }}
+						onPress={this.handleLogout} tiny>Выйти</FButton>
+
 				</View>
 			</>
 		);

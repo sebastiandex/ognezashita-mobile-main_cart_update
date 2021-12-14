@@ -10,10 +10,10 @@ import HomeScreen from "./HomeScreen";
 import PlacesScreen from "./PlacesScreen";
 import NotificationsScreen from "./NotificationsScreen";
 import ProfileScreen from "./ProfileScreen";
-import { MainBackgroundLight, MainGrey, MainHeader, MainOrange, MainBlack, MainWhite, MainBackgroundDark, MainBackgroundNav, IconGrey, MainBackground } from "../colors";
+import { MainOrange, MainBlack, MainWhite, MainBackgroundNav, IconGrey, MainBackground } from "../colors";
 import ServicesScreen from "./ServicesScreen";
 import Icon from "react-native-vector-icons/FontAwesome";
-import CustomIcon from "../CustomIcon";
+// import CustomIcon from "../CustomIcon";
 import { observer } from "mobx-react";
 import CartScreen from "./CartScreen";
 import Animated, { Easing } from "react-native-reanimated";
@@ -59,7 +59,7 @@ class HeaderRight extends PureComponent<{ navigation: any }> {
 
 function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>) {
 
-	const { state, navigation, descriptors, progress } = props;
+	const { state, navigation, descriptors } = props;
 	const newDescriptors: any = {};
 	const newState = {
 		...state,
@@ -88,7 +88,7 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 				<DrawerItemList {...props} state={newState} descriptors={newDescriptors} activeBackgroundColor={'transparent'} />
 				{gstore.me!.role === 'admin' ? (
 					<DrawerItem
-						icon={({ focused, color, size }) => <Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />}
+						icon={({ focused }) => <Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />}
 						label="Лицензии"
 						focused={descriptors[licenseKey].navigation.isFocused()}
 						onPress={() => navigation.jumpTo('License')}
@@ -104,7 +104,7 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 					// 	<Icon name="home" size={24} color={gstore.cart.length ? 'black' : '#d0d0d0'} />
 
 					<DrawerItem
-						icon={({ focused, color, size }) => <Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />}
+						icon={({ focused}) => <Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />}
 						label="Лицензии"
 						focused={descriptors[licenseKey].navigation.isFocused()}
 						onPress={() => navigation.jumpTo('License')}
@@ -116,7 +116,7 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 					// </View>
 				) : null}
 				<DrawerItem
-					icon={({ focused, color, size }) => <Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />}
+					icon={({ focused }) => <Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />}
 					label="Связаться с нами"
 					focused={descriptors[contactKey].navigation.isFocused()}
 					onPress={() => navigation.jumpTo('Contact')}
@@ -133,7 +133,7 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 @observer
 class DrawerLabelBadge extends PureComponent<({ focused: boolean, color: TextStyle['color'], text: string, count: number | (() => number) })> {
 	render() {
-		const { color, text, count, focused } = this.props;
+		const { text, count, focused } = this.props;
 
 		const c = typeof count === 'function' ? count() : count;
 		return (
@@ -228,7 +228,7 @@ class MainScreen extends PureComponent {
 								<Text style={{ marginLeft: -20, color: focused ? MainOrange : gstore.me!.role === 'admin' ? MainWhite : MainBlack }}>Главная</Text>
 							),
 							drawerIcon: ({ focused }) => (
-								<CustomIcon color={focused ? MainOrange : IconGrey} size={24} name={'main'} />
+								<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
 							)
 						}} />
 

@@ -7,7 +7,7 @@ const FButton = ({ onPress, children, style, buttonStyle, loading, small, tiny }
     <Button small={small} tiny={tiny} style={style}>
       <Clickable onPress={onPress}>
         <Content style={buttonStyle} small={small} tiny={tiny}>
-          {loading ? (<ActivityIndicator size="small" color="white" />) : (<Text style={{ fontSize: tiny ? 12 : 14 }}>{children}</Text>)}
+          {loading ? (<ActivityIndicator size="small" color="white" />) : (<Text style={{ fontSize: tiny ? 15 : 14 }}>{children}</Text>)}
         </Content>
       </Clickable>
     </Button>
@@ -26,12 +26,13 @@ const Button = styled.View`
 
 //@ts-ignore
 const Content = styled.View`
-  width: auto;
+  width: 106px;
+  height: 36px;
   padding-left: ${({ small, tiny }: { small: boolean, tiny: boolean }) => small ? '12px' : (tiny ? '8px' : '28px')};
   padding-right: ${({ small, tiny }: { small: boolean, tiny: boolean }) => small ? '12px' : (tiny ? '8px' : '28px')};
-  background: #17bc8d;
-  border-radius: 2px;
-  height: ${({ small, tiny }: { small: boolean, tiny: boolean }) => small ? '28px' : (tiny ? '22px' : '40px')};
+  background: #F48E39;
+  border-radius: 8px;
+  font-size: 15px;
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
