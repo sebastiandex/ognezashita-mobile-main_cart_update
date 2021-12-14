@@ -244,7 +244,7 @@ class GlobalStore {
 				this.fullMe = null;
 				// this.globalError = 'Server error';
 			}
-		} catch (err) {
+		} catch (err: any) {
 			Alert.alert(err.message);
 			Alert.alert(JSON.stringify(err));
 			throw err;

@@ -176,8 +176,7 @@ class MainScreen extends PureComponent {
 			easing: Easing.ease,
 		}).start();
 	}
-	menuItemRenderer = ({ navigation, route }) => {
-		console.log(route.params.post)
+	menuItemRenderer = ({ route }) => {
 		return (
 			<Text>{route.params.post}</Text>
 		)
