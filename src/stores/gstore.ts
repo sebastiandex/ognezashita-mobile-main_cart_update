@@ -8,6 +8,7 @@ export interface ICartItem {
 	itemId: string;
 	itemTitle: string;
 	itemImageId: string | null;
+	isService: boolean,
 	amount: number;
 	address: string;
 	placeId: string | null;
@@ -99,7 +100,7 @@ export interface IFullUser {
 
 class GlobalStore {
 
-	api: API = new API('https://admin.rus-ognezashita.ru/api'); // new API('http://64.225.101.7/api'); // new API('http://10.0.2.2/api'); // 
+	api: API = new API('https://admin.rus-ognezashita.ru/api'); // new API('http://64.225.101.7/api'); // new API('http://10.0.2.2/api'); //
 
 	@observable globalError: string = '';
 	@observable me: null | { id: string; email: string; role: string; name: string } = null;

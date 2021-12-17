@@ -163,6 +163,7 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number }> {
 										itemTitle: item.title,
 										itemImageId: item.imageId,
 										amount: amount,
+										isService: item.isService,
 										address,
 										placeId,
 									});

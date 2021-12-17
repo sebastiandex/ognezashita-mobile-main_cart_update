@@ -2,7 +2,16 @@ import { autobind } from "core-decorators";
 import { getObserverTree, observable } from "mobx";
 import { observer } from "mobx-react";
 import React, { PureComponent } from "react";
-import { ActivityIndicator, FlatList, ListRenderItemInfo, Text, TextInput, TouchableOpacity, View } from "react-native";
+import {
+	ActivityIndicator,
+	FlatList,
+	Image,
+	ListRenderItemInfo,
+	Text,
+	TextInput,
+	TouchableOpacity,
+	View
+} from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import { MainBackground, MainHeader, MainLight, MainMuted, MainText } from "../colors";
 import FButton from "../controls/FButton";
@@ -23,7 +32,10 @@ class CartScreen extends PureComponent<{ navigation: any }> {
 		return (
 			<View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 18, paddingHorizontal: 20, backgroundColor: MainBackground, borderBottomColor: '#e0e0e0', borderBottomWidth: 1 }}>
 				<View style={{ flexGrow: 1, flexShrink: 1 }}>
-					<View><Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, }}>{item.itemTitle}</Text></View>
+					<View>
+						{/*<Image source={{ uri: item.itemImageId }} style={{ width: 100, height: 100, resizeMode: 'contain' }} />*/}
+						<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, }}>{item.itemTitle}</Text>
+					</View>
 					<View style={{ marginBottom: 12 }}><Text style={{ fontSize: 12, color: MainMuted }}>Количество: {item.amount}</Text></View>
 					<View><Text style={{ color: MainText }}>Адрес: {item.address}</Text></View>
 				</View>
@@ -39,6 +51,7 @@ class CartScreen extends PureComponent<{ navigation: any }> {
 	}
 
 	renderCart() {
+		console.log('CART_MAP', gstore.cart);
 		return (
 			<View>
 				{gstore.cart.length ? (<>
