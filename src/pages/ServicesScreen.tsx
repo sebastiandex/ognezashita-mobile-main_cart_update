@@ -82,7 +82,7 @@ class ItemModal extends PureComponent<{ item: IServiceItem, onCart: (amount: num
 }
 
 @observer
-class CartModal extends PureComponent<{ item: IServiceItem, amount: number }> {
+class CartModal extends PureComponent<{ item: IServiceItem, amount: number, price: number }> {
 
 	@observable selectedIdx = 0;
 	@observable newAddress = '';
@@ -91,7 +91,17 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number }> {
 		const { item, amount } = this.props;
 
 		return (
-			<ScrollView style={{ left: 0, top: 0, right: 0, bottom: 0, zIndex: 10, position: 'absolute', backgroundColor: 'rgba(0, 0, 0, 0.5)' }} contentContainerStyle={{ flexGrow: 1, flexShrink: 0, flexDirection: 'column', padding: 30, alignItems: 'stretch', justifyContent: 'center' }}>
+			<ScrollView
+				style={{
+					left: 0,
+					top: 0,
+					right: 0,
+					bottom: 0,
+					zIndex: 10,
+					position: 'absolute',
+					backgroundColor: 'rgba(0, 0, 0, 0.5)'
+				}}
+				contentContainerStyle={{ flexGrow: 1, flexShrink: 0, flexDirection: 'column', padding: 30, alignItems: 'stretch', justifyContent: 'center' }}>
 				<View style={{ flexGrow: 1, flexShrink: 0, alignItems: 'stretch', justifyContent: 'center' }}>
 					<View style={{ alignItems: 'stretch', padding: 30, borderRadius: 20, backgroundColor: MainBackground }}>
 						<View style={{ alignItems: 'center', justifyContent: 'center', position: 'absolute', right: 10, top: 10, zIndex: 30, width: 24, height: 24, borderRadius: 12, backgroundColor: '#f0f0f0' }}>
@@ -164,6 +174,7 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number }> {
 										itemImageId: item.imageId,
 										amount: amount,
 										isService: item.isService,
+										price: item.price,
 										address,
 										placeId,
 									});
