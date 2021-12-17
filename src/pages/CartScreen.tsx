@@ -70,23 +70,25 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                     {/*<View><Text style={{ color: MainText }}>{item.description.substring(0, 100) + (item.description.length > 100 ? '...' : '')}</Text></View>*/}
                 </View>
                 <View style={{
-                    flexBasis: 45,
-                    marginLeft: 10,
+                    flexBasis: 85,
+                    // marginLeft: 10,
+                    flexDirection: 'column',
                     alignItems: 'flex-end',
                     justifyContent: 'flex-start',
                     flexShrink: 0,
                     flexGrow: 0
                 }}>
-                <TouchableOpacity onPress={() => {
-                    gstore.cart.splice(index, 1);
-                }}>
+                    <TouchableOpacity onPress={() => {
+                        gstore.cart.splice(index, 1);
+                    }}>
 
                         <Icon name="times" size={24} color="#c0c0c0"/>
 
-                </TouchableOpacity>
+                    </TouchableOpacity>
 
-                    <Text style={{color: MainHeader, fontWeight: '600', fontSize: 18, marginTop: 15}}>
+                    <Text style={{justifyContent: 'flex-end', alignItems: 'flex-end',color: '#585858', fontWeight: '600', fontSize: 18, marginTop: 15, marginLeft: 'auto'}}>
                         {parseFloat(String(item.price || 0)) ? `${parseFloat(String(item.price))}₽` : null}
+                        {/*{parseFloat(String(item.price || 0)) ? `999999₽` : null}*/}
                     </Text>
                 </View>
             </View>
@@ -130,31 +132,49 @@ class CartScreen extends PureComponent<{ navigation: any }> {
         return (
             <View style={{backgroundColor: MainBackground}}>
                 {gstore.cart.length ? (<>
-                    <View style={{width: '100%', justifyContent: 'flex-start', alignItems: 'flex-start', marginTop: 24, marginLeft: 20}}>
-                        <Text
-                            style={{
-                                color: '#282828',
-                                fontSize: 24,
-                                fontWeight: '600'
-                            }}>Инвентарь</Text>
-                    </View>
+
                     <FlatList
                         data={goods.map(d => d)}
                         keyExtractor={(item, index) => String(index)}
                         renderItem={this.renderItem}
-                    />
-                    <View style={{width: '100%', justifyContent: 'flex-start', alignItems: 'flex-start', marginTop: 24, marginLeft: 20}}>
-                        <Text
+                        ListHeaderComponent={
+                            <>
+                            <View style={{
+                            width: '100%',
+                            justifyContent: 'flex-start',
+                            alignItems: 'flex-start',
+                            marginTop: 24,
+                            marginLeft: 20
+                        }}>
+                            <Text
                             style={{
-                                color: '#282828',
-                                fontSize: 24,
-                                fontWeight: '600'
-                            }}>Услуги</Text>
-                    </View>
+                            color: '#282828',
+                            fontSize: 24,
+                            fontWeight: '600'
+                        }}>Инвентарь</Text>
+                            </View>
+                            </>
+                        }
+                    />
+
                     <FlatList
                         data={services.map(d => d)}
                         keyExtractor={(item, index) => String(index)}
                         renderItem={this.renderItem}
+                        ListHeaderComponent={<View style={{
+                            width: '100%',
+                            justifyContent: 'flex-start',
+                            alignItems: 'flex-start',
+                            marginTop: 24,
+                            marginLeft: 20
+                        }}>
+                            <Text
+                                style={{
+                                    color: '#282828',
+                                    fontSize: 24,
+                                    fontWeight: '600'
+                                }}>Услуги</Text>
+                        </View>}
                     />
                     <View style={{width: '100%', justifyContent: 'center', alignItems: 'center', marginTop: 45}}>
                         <FButton onPress={() => {
@@ -200,113 +220,123 @@ class CartScreen extends PureComponent<{ navigation: any }> {
         );
     }
 
-    @observable selectedIdx = 0;
-    @observable title = '';
-    @observable description = '';
+@observable selectedIdx = 0;
+@observable title = '';
+@observable description = '';
 
-    @observable cartLoading = false;
+@observable cartLoading = false;
 
-    renderOrder() {
-        return (
-            <View style={{backgroundColor: '#f0f0f0', flexGrow: 1}}>
-                <Section text="Название" contentStyle={{paddingVertical: 10}}>
-                    <TextInput
-                        style={{height: 40, width: '100%', paddingVertical: 0}}
-                        placeholder="Название заявки"
-                        value={this.title}
-                        onChangeText={text => this.title = text}
-                    />
-                </Section>
+renderOrder() {
+    return(
 
-                <Section text="Описание" contentStyle={{paddingVertical: 10}}>
-                    <TextInput
-                        style={{
-                            height: 100,
-                            width: '100%',
-                            paddingVertical: 0,
-                            paddingTop: 5,
-                            alignItems: 'flex-start',
-                            justifyContent: 'flex-start',
-                            textAlignVertical: 'top'
-                        }}
-                        placeholder="Описание"
-                        multiline={true}
-                        value={this.description}
-                        onChangeText={text => this.description = text}
-                    />
-                </Section>
+<View style= { {
+    backgroundColor: '#f0f0f0'
+,
+    flexGrow: 1
+}
+}>
+<Section text="Название" contentStyle={{paddingVertical: 10}}>
+    <TextInput
+        style={{height: 40, width: '100%', paddingVertical: 0}}
+        placeholder="Название заявки"
+        value={this.title}
+        onChangeText={text => this.title = text}
+    />
+</Section>
 
-                {gstore.me!.role === 'user' ? (
-                    <Section text="Позиции">
-                        {gstore.cart.map((c, idx) => (
-                            <View key={idx} style={{marginBottom: 5}}>
-                                <Text>{c.amount} x {c.itemTitle}</Text>
-                            </View>
-                        ))}
-                    </Section>
-                ) : null}
+<Section text="Описание" contentStyle={{paddingVertical: 10}}>
+    <TextInput
+        style={{
+            height: 100,
+            width: '100%',
+            paddingVertical: 0,
+            paddingTop: 5,
+            alignItems: 'flex-start',
+            justifyContent: 'flex-start',
+            textAlignVertical: 'top'
+        }}
+        placeholder="Описание"
+        multiline={true}
+        value={this.description}
+        onChangeText={text => this.description = text}
+    />
+</Section>
 
-                <View style={{width: '100%', justifyContent: 'center', alignItems: 'center', marginTop: 20}}>
-                    <FButton
-                        onPress={async () => {
-                            // this.mode = 'cart';
-                            this.cartLoading = true;
-                            if (gstore.me!.role === 'user') {
-                                await gstore.api.addOrder({
-                                    title: this.title,
-                                    content: {
-                                        type: 'cart',
-                                        cart: gstore.cart,
-                                        description: this.description,
-                                    },
-                                    state: 'created',
-                                });
-                            } else {
-                                await gstore.api.addOrder({
-                                    title: this.title,
-                                    content: {
-                                        type: 'simple',
-                                        description: this.description,
-                                    },
-                                    state: 'created',
-                                });
-                            }
-                            await gstore.updateOrders();
-                            this.title = '';
-                            this.description = '';
-                            if (gstore.me!.role === 'user') {
-                                const newAddresses = [];
-                                for (let item of gstore.cart) {
-                                    if (!item.placeId && !gstore.savedAddresses.includes(item.address) && !gstore.selfAddresses.includes(item.address)) {
-                                        newAddresses.push(item.address);
-                                    }
-                                }
-                                if (newAddresses.length) {
-                                    const unqiueNewSavedAddresses = ([] as string[]).concat(gstore.savedAddresses, newAddresses.filter((e, i, a) => a.indexOf(e) === i));
-                                    await gstore.api.updateSavedAddresses(gstore.me!.id, unqiueNewSavedAddresses);
-                                    gstore.savedAddresses = unqiueNewSavedAddresses;
-                                }
-                            }
-                            this.cartLoading = false;
-                            gstore.cart = [];
-                            if (gstore.me!.role === 'user') {
-                                this.mode = 'cart';
-                            }
-                            this.props.navigation.jumpTo('Home');
-                        }}
-                        loading={this.cartLoading}
-                    >
-                        Создать заявку
-                    </FButton>
+{
+    gstore.me!.role === 'user' ? (
+        <Section text="Позиции">
+            {gstore.cart.map((c, idx) => (
+                <View key={idx} style={{marginBottom: 5}}>
+                    <Text>{c.amount} x {c.itemTitle}</Text>
                 </View>
+            ))}
+        </Section>
+    ) : null
+}
 
-            </View>
-        );
-    }
+<View style={{width: '100%', justifyContent: 'center', alignItems: 'center', marginTop: 20}}>
+    <FButton
+        onPress={async () => {
+            // this.mode = 'cart';
+            this.cartLoading = true;
+            if (gstore.me!.role === 'user') {
+                await gstore.api.addOrder({
+                    title: this.title,
+                    content: {
+                        type: 'cart',
+                        cart: gstore.cart,
+                        description: this.description,
+                    },
+                    state: 'created',
+                });
+            } else {
+                await gstore.api.addOrder({
+                    title: this.title,
+                    content: {
+                        type: 'simple',
+                        description: this.description,
+                    },
+                    state: 'created',
+                });
+            }
+            await gstore.updateOrders();
+            this.title = '';
+            this.description = '';
+            if (gstore.me!.role === 'user') {
+                const newAddresses = [];
+                for (let item of gstore.cart) {
+                    if (!item.placeId && !gstore.savedAddresses.includes(item.address) && !gstore.selfAddresses.includes(item.address)) {
+                        newAddresses.push(item.address);
+                    }
+                }
+                if (newAddresses.length) {
+                    const unqiueNewSavedAddresses = ([] as string[]).concat(gstore.savedAddresses, newAddresses.filter((e, i, a) => a.indexOf(e) === i));
+                    await gstore.api.updateSavedAddresses(gstore.me!.id, unqiueNewSavedAddresses);
+                    gstore.savedAddresses = unqiueNewSavedAddresses;
+                }
+            }
+            this.cartLoading = false;
+            gstore.cart = [];
+            if (gstore.me!.role === 'user') {
+                this.mode = 'cart';
+            }
+            this.props.navigation.jumpTo('Home');
+        }}
+        loading={this.cartLoading}
+    >
+        Создать заявку
+    </FButton>
+</View>
 
-    render() {
-        return this.mode === 'cart' ? this.renderCart() : this.renderOrder();
-    }
+</View>
+)
+;
+}
+
+render()
+{
+    return this.mode === 'cart' ? this.renderCart() : this.renderOrder();
+}
 }
 
 export default CartScreen;
