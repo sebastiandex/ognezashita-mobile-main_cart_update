@@ -89,7 +89,6 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number, pric
 
 	render() {
 		const { item, amount } = this.props;
-
 		return (
 			<ScrollView
 				style={{
@@ -175,6 +174,7 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number, pric
 										amount: amount,
 										isService: item.isService,
 										price: item.price,
+										category: item.category,
 										address,
 										placeId,
 									});
@@ -298,6 +298,7 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 	// renderItem(item: { data: object; id: string, category: string, title: string }) {
 	renderItem({ item, index }: ListRenderItemInfo<any>) {
 		// const navigation = this.props.navigation;
+		console.log(11111111111, item)
 		return (
 			<View key={index} style={{ paddingHorizontal: 20, paddingTop: 5, paddingBottom: 15, backgroundColor: 'white' }}>
 				<TouchableOpacity

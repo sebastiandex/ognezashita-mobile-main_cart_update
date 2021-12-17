@@ -6,7 +6,7 @@ import {
     ActivityIndicator,
     FlatList,
     Image,
-    ListRenderItemInfo,
+    ListRenderItemInfo, SafeAreaView, ScrollView,
     Text,
     TextInput,
     TouchableOpacity,
@@ -126,8 +126,8 @@ class CartScreen extends PureComponent<{ navigation: any }> {
         })
         console.log('goods', goods)
         console.log('services', services)
-        return (
 
+        return (
             <View style={{backgroundColor: MainBackground}}>
                 {gstore.cart.length ? (<>
                     <View style={{width: '100%', justifyContent: 'flex-start', alignItems: 'flex-start', marginTop: 24, marginLeft: 20}}>
@@ -156,23 +156,23 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                         keyExtractor={(item, index) => String(index)}
                         renderItem={this.renderItem}
                     />
-                    <View style={{width: '100%', justifyContent: 'center', alignItems: 'center', marginTop: 20}}>
+                    <View style={{width: '100%', justifyContent: 'center', alignItems: 'center', marginTop: 45}}>
                         <FButton onPress={() => {
                             this.mode = 'order';
-                        }} style={{marginTop: 20}}>Создать заявку по этим позициям</FButton>
+                        }} big>Создать заявку</FButton>
                     </View>
                     <View style={{width: '100%', justifyContent: 'center', alignItems: 'center', marginTop: 0}}>
                         <TouchableOpacity onPress={() => {
                             gstore.cart = [];
                         }}>
                             <View style={{
-                                marginTop: 20,
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 borderRadius: 5
                             }}>
-                                <Text style={{color: '#505050', borderBottomColor: '#a0a0a0', borderBottomWidth: 1}}>Очистить
-                                    корзину</Text>
+                                <Text style={{fontWeight: '400', color: '#949494'}}>
+                                    Очистить корзину
+                                </Text>
                             </View>
                         </TouchableOpacity>
                     </View>
@@ -196,6 +196,7 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                     </>
                 )}
             </View>
+
         );
     }
 
