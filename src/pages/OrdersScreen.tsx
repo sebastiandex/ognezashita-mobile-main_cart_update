@@ -44,6 +44,7 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
 
         this.loading = true;
         console.log('onLoad mode: ', mode);
+
         if (mode === 'default') {
             if (gstore.me!.role === 'executor') {
                 await gstore.init();
@@ -126,36 +127,48 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                     return MainText;
             }
         }
-        console.log('ORDER', ods)
+
+        const getPlaceImage = async (placeID: string) => {
+                const pRes = await gstore.api.getPlace(placeID)
+                if (pRes.result) {
+                    console.log('PLACE_RESULT22222', pRes.data.mainPhotoId);
+                    return pRes.data.mainPhotoId
+                } else {
+                    console.log(423642378467823642384284)
+                    return;
+                }
+        }
+
         return (
             <View style={{flexGrow: 1, backgroundColor: MainBackground,}}>
-                {(gstore.me!.role === 'admin' && this.props.mode !== 'mine') ? (
-                    <View style={{
-                        paddingLeft: '6%',
-                        paddingRight: '6%',
-                        marginTop: 20,
-                    }}>
-                        <TextInput
-                            value={this.search}
-                            onChangeText={e => {
-                                this.search = e;
-                                this.onLoad();
-                            }}
-                            placeholder="Запрос для поиска..."
-                            style={{
-                                borderWidth: 1,
-                                borderColor: '#e0e0e0',
-                                borderRadius: 3,
-                                height: 36,
-                                paddingHorizontal: 10,
-                                paddingVertical: 2
-                            }}
-                        />
-                    </View>
-                ) : null}
+                {/*{(gstore.me!.role === 'admin' && this.props.mode !== 'mine') ? (*/}
+                {/*    <View style={{*/}
+                {/*        paddingLeft: '6%',*/}
+                {/*        paddingRight: '6%',*/}
+                {/*        marginTop: 20,*/}
+                {/*    }}>*/}
+
+                {/*        <TextInput*/}
+                {/*            value={this.search}*/}
+                {/*            onChangeText={e => {*/}
+                {/*                this.search = e;*/}
+                {/*                this.onLoad();*/}
+                {/*            }}*/}
+                {/*            placeholder="Запрос для поиска..."*/}
+                {/*            style={{*/}
+                {/*                borderWidth: 1,*/}
+                {/*                borderColor: '#e0e0e0',*/}
+                {/*                borderRadius: 3,*/}
+                {/*                height: 36,*/}
+                {/*                paddingHorizontal: 10,*/}
+                {/*                paddingVertical: 2*/}
+                {/*            }}*/}
+                {/*        />*/}
+                {/*    </View>*/}
+                {/*) : null}*/}
                 {this.loading ?
-                    <View style={{flexGrow: 1,}}><ActivityIndicator color={MainLight} style={{marginTop: 40}}
-                                                                    size="large"/></View> : (
+                    <View style={{flexGrow: 1}}><ActivityIndicator color={MainLight} style={{marginTop: 40}}
+                                                                   size="large"/></View> : (
                         <ScrollView style={{
                             // paddingLeft: '6%',
                             // paddingRight: '6%',
@@ -164,9 +177,31 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                             flexGrow: 1,
                             marginBottom: 20,
                         }}>
+                            <View style={{
+                                alignSelf: "center",
+                                marginTop: 10,
+                                width: '90%',
+                            }}>
+                                <TextInput
+                                    value={this.search}
+                                    onChangeText={e => {
+                                        this.search = e
+                                    }}
+                                    placeholder="Запрос для поиска..."
+                                    style={{
+                                        borderWidth: 1,
+                                        borderColor: '#e0e0e0',
+                                        borderRadius: 3,
+                                        height: 36,
+                                        width: '100%',
+                                        paddingHorizontal: 10,
+                                        paddingVertical: 2
+                                    }}
+                                />
+                            </View>
                             {ods.length ? (
                                 // _.sortBy(users, [function(o) { return o.user; }]);
-                                ods.map((ord, idx) => (
+                                ods.map(async (ord, idx) => (
                                     <TouchableOpacity key={idx} onPress={() => {
                                         gstore.selectedOrderId = ord.id;
                                         this.props.navigation.navigate('Order', {orderId: ord.id});
@@ -178,15 +213,27 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                                         }}>
                                             <View style={{flexDirection: 'row'}}>
                                                 <View style={{marginTop: 20, marginRight: 20, marginLeft: 15}}>
-                                                    <Image
-                                                        source={{uri: gstore.api.fileLink(ord.createdByUser.photoId)}}
-                                                        style={{
-                                                            width: 70,
-                                                            height: 70,
-                                                            resizeMode: 'contain',
-                                                            borderRadius: 18
-                                                        }}
-                                                    />
+                                                    {ord.content.cart && ord.content.cart[0] && ord.content.cart[0].placeId ? (
+                                                        <Image
+                                                            source={{uri: gstore.api.fileLink(await getPlaceImage(ord.content.cart[0].placeId))}}
+                                                            style={{
+                                                                width: 70,
+                                                                height: 70,
+                                                                resizeMode: 'contain',
+                                                                borderRadius: 18
+                                                            }}
+                                                        />
+                                                    ) : (
+                                                        <Image
+                                                            source={{uri: gstore.api.fileLink(ord.createdByUser.photoId)}}
+                                                            style={{
+                                                                width: 70,
+                                                                height: 70,
+                                                                resizeMode: 'contain',
+                                                                borderRadius: 18
+                                                            }}
+                                                        />
+                                                    )}
                                                 </View>
 
                                                 <View style={{
@@ -195,20 +242,20 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                                                 }}>
                                                     <View>
                                                         <Text style={{
-                                                        fontSize: 16,
-                                                        fontWeight: 'bold',
-                                                        color: MainHeader
-                                                    }}
+                                                            fontSize: 16,
+                                                            fontWeight: 'bold',
+                                                            color: MainHeader
+                                                        }}
                                                         >
                                                             {ord.title}
                                                         </Text>
                                                     </View>
                                                     <View>
                                                         <Text style={{
-                                                        fontSize: 14,
-                                                        fontWeight: 'normal',
-                                                        color: '#A3A3A3'
-                                                    }}
+                                                            fontSize: 14,
+                                                            fontWeight: 'normal',
+                                                            color: '#A3A3A3'
+                                                        }}
                                                         >
                                                             {ord.content.description}
                                                         </Text>
@@ -222,8 +269,14 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                                                 marginRight: 20,
                                                 marginBottom: 25
                                             }}>
-                                                <Text style={{ fontSize: 15, color: statusColor(stateDesc[ord.state]) }}>{stateDesc[ord.state]}</Text>
-                                                <View style={{ marginLeft: 10 }}><Text style={{ fontSize: 14, color: '#949494' }}>{moment(ord.createdAt).format('DD.MM.YYYY')}</Text></View>
+                                                <Text style={{
+                                                    fontSize: 15,
+                                                    color: statusColor(stateDesc[ord.state])
+                                                }}>{stateDesc[ord.state]}</Text>
+                                                <View style={{marginLeft: 10}}><Text style={{
+                                                    fontSize: 14,
+                                                    color: '#949494'
+                                                }}>{moment(ord.createdAt).format('DD.MM.YYYY')}</Text></View>
                                             </View>
                                         </View>
 
