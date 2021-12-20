@@ -9,7 +9,7 @@ import {
     ListRenderItemInfo, SafeAreaView, ScrollView,
     Text,
     TextInput,
-    TouchableOpacity,
+    TouchableOpacity, TouchableWithoutFeedback,
     View
 } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
@@ -30,6 +30,7 @@ class CartScreen extends PureComponent<{ navigation: any }> {
     renderItem({item, index}: ListRenderItemInfo<ICartItem>) {
         const navigation = this.props.navigation;
         return (
+            <TouchableWithoutFeedback onPress={()=>{}}>
             <View style={{
                 flexDirection: 'row',
                 // marginHorizontal: 20,
@@ -55,7 +56,7 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                     <Image source={{uri: gstore.api.fileLink(item.itemImageId)}}
                            style={{width: 70, height: 70, resizeMode: 'contain'}}/>
                 </View>
-                <View style={{flexGrow: 1, flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start'}}>
+                <View style={{flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start'}}>
                     <View><Text
                         style={{fontSize: 14, fontWeight: '400', color: MainHeader,}}>{item.itemTitle}</Text></View>
 
@@ -75,8 +76,8 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                     flexDirection: 'column',
                     alignItems: 'flex-end',
                     justifyContent: 'flex-start',
-                    flexShrink: 0,
-                    flexGrow: 0
+                    flexShrink: 0
+                    // flexGrow: 0
                 }}>
                     <TouchableOpacity onPress={() => {
                         gstore.cart.splice(index, 1);
@@ -92,26 +93,7 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                     </Text>
                 </View>
             </View>
-            // <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 18, paddingHorizontal: 20, backgroundColor: MainBackground, borderBottomColor: '#e0e0e0', borderBottomWidth: 1 }}>
-            // 	<View style={{ flexGrow: 1, flexShrink: 1 }}>
-            // 		{/*<View style={{ alignItems: 'center', justifyContent: 'center', flexBasis: 150, flexGrow: 0, flexShrink: 0, marginBottom: 15 }}>*/}
-            // 		{/*	<Image source={{ uri: gstore.api.fileLink(item.itemImageId) }} style={{ width: 150, height: 150, borderRadius: 10, resizeMode: 'contain' }} />*/}
-            // 		{/*</View>*/}
-            // 		<View>
-            // 			{/*<Image source={{ uri: item.itemImageId }} style={{ width: 100, height: 100, resizeMode: 'contain' }} />*/}
-            // 			<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, }}>{item.itemTitle}</Text>
-            // 		</View>
-            // 		<View style={{ marginBottom: 12 }}><Text style={{ fontSize: 12, color: MainMuted }}>Количество: {item.amount}</Text></View>
-            // 		<View><Text style={{ color: MainText }}>Адрес: {item.address}</Text></View>
-            // 	</View>
-            // 	<TouchableOpacity onPress={() => {
-            // 		gstore.cart.splice(index, 1);
-            // 	}}>
-            // 		<View style={{ flexBasis: 20, marginLeft: 10, alignItems: 'center', justifyContent: 'center', flexShrink: 0, flexGrow: 0 }}>
-            // 			<Icon name="times" size={20} color="#c0c0c0" />
-            // 		</View>
-            // 	</TouchableOpacity>
-            // </View>
+            </TouchableWithoutFeedback>
         );
     }
 
@@ -130,92 +112,75 @@ class CartScreen extends PureComponent<{ navigation: any }> {
         console.log('services', services)
 
         return (
-            <View style={{backgroundColor: MainBackground}}>
-                {gstore.cart.length ? (<>
-
-                    <FlatList
-                        data={goods.map(d => d)}
+            //
+            // <View style={{backgroundColor: MainBackground}}>
+            // <View style={{ backgroundColor: MainBackground, flexGrow: 1 }}>
+            //     {gstore.cart.length ? (
+                 <FlatList
+                        style={{flex: 1}}
+                        data={gstore.cart.map(d => d)}
                         keyExtractor={(item, index) => String(index)}
                         renderItem={this.renderItem}
-                        ListHeaderComponent={
-                            <>
-                            <View style={{
-                            width: '100%',
-                            justifyContent: 'flex-start',
-                            alignItems: 'flex-start',
-                            marginTop: 24,
-                            marginLeft: 20
-                        }}>
-                            <Text
-                            style={{
-                            color: '#282828',
-                            fontSize: 24,
-                            fontWeight: '600'
-                        }}>Инвентарь</Text>
-                            </View>
-                            </>
+                        // ListHeaderComponent={<View style={{
+                        //     width: '100%',
+                        //     justifyContent: 'flex-start',
+                        //     alignItems: 'flex-start',
+                        //     marginTop: 24,
+                        //     marginLeft: 20
+                        // }}>
+                        //     <Text
+                        //         style={{
+                        //             color: '#282828',
+                        //             fontSize: 24,
+                        //             fontWeight: '600'
+                        //         }}>Услуги</Text>
+                        // </View>}
+                        ListFooterComponent={
+                                <View style={{width: '100%', justifyContent: 'center', alignItems: 'center', paddingTop: 45, paddingBottom: 120, backgroundColor: MainBackground}}>
+                                    <FButton onPress={() => {
+                                        this.mode = 'order';
+                                    }} big>Создать заявку</FButton>
+
+                                <View style={{width: '100%', justifyContent: 'center', alignItems: 'center', marginTop: 0, backgroundColor: MainBackground}}>
+                                    <TouchableOpacity onPress={() => {
+                                        gstore.cart = [];
+                                    }}>
+                                        <View style={{
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            borderRadius: 5,
+                                            backgroundColor: MainBackground
+                                        }}>
+                                            <Text style={{fontWeight: '400', color: '#949494'}}>
+                                                Очистить корзину
+                                            </Text>
+                                        </View>
+                                    </TouchableOpacity>
+                                </View>
+                                </View>
                         }
                     />
-
-                    <FlatList
-                        data={services.map(d => d)}
-                        keyExtractor={(item, index) => String(index)}
-                        renderItem={this.renderItem}
-                        ListHeaderComponent={<View style={{
-                            width: '100%',
-                            justifyContent: 'flex-start',
-                            alignItems: 'flex-start',
-                            marginTop: 24,
-                            marginLeft: 20
-                        }}>
-                            <Text
-                                style={{
-                                    color: '#282828',
-                                    fontSize: 24,
-                                    fontWeight: '600'
-                                }}>Услуги</Text>
-                        </View>}
-                    />
-                    <View style={{width: '100%', justifyContent: 'center', alignItems: 'center', marginTop: 45}}>
-                        <FButton onPress={() => {
-                            this.mode = 'order';
-                        }} big>Создать заявку</FButton>
-                    </View>
-                    <View style={{width: '100%', justifyContent: 'center', alignItems: 'center', marginTop: 0}}>
-                        <TouchableOpacity onPress={() => {
-                            gstore.cart = [];
-                        }}>
-                            <View style={{
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                borderRadius: 5
-                            }}>
-                                <Text style={{fontWeight: '400', color: '#949494'}}>
-                                    Очистить корзину
-                                </Text>
-                            </View>
-                        </TouchableOpacity>
-                    </View>
-                </>) : (
-                    <>
-                        <View style={{
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            marginTop: 50,
-                            width: '70%',
-                            alignSelf: 'center'
-                        }}>
-                            <Text style={{textAlign: 'center', fontSize: 16, color: '#606060', lineHeight: 26}}>Добавьте
-                                товары или услуги в корзину для создания заявки.</Text>
-                        </View>
-                        <View style={{width: '100%', justifyContent: 'center', alignItems: 'center', marginTop: 40}}>
-                            <FButton onPress={() => {
-                                this.props.navigation.jumpTo('Services');
-                            }}>Перейти к товарам и услугам</FButton>
-                        </View>
-                    </>
-                )}
-            </View>
+    //             ) : (
+    //                 <>
+    //                     <View style={{
+    //                         alignItems: 'center',
+    //                         justifyContent: 'center',
+    //                         marginTop: 50,
+    //                         width: '70%',
+    //                         alignSelf: 'center'
+    //                     }}>
+    //                         <Text style={{textAlign: 'center', fontSize: 16, color: '#606060', lineHeight: 26}}>Добавьте
+    //                             товары или услуги в корзину для создания заявки.</Text>
+    //                     </View>
+    //                     <View style={{width: '100%', justifyContent: 'center', alignItems: 'center', marginTop: 40}}>
+    //                         <FButton onPress={() => {
+    //                             this.props.navigation.jumpTo('Services');
+    //                         }}>Перейти к товарам и услугам</FButton>
+    //                     </View>
+    //                 </>
+    //             )
+    // }
+    //         </View>
 
         );
     }
