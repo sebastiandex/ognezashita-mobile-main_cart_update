@@ -54,7 +54,8 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                         marginRight: 15
                     }}>
                     <Image source={{uri: gstore.api.fileLink(item.itemImageId)}}
-                           style={{width: 70, height: 70, resizeMode: 'contain'}}/>
+                           style={{width: 70, height: 70, resizeMode: 'contain'}}
+                    />
                 </View>
                 <View style={{flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start'}}>
                     <View><Text
