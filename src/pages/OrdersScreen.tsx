@@ -201,7 +201,7 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                             </View>
                             {ods.length ? (
                                 // _.sortBy(users, [function(o) { return o.user; }]);
-                                ods.map(async (ord, idx) => (
+                                ods.map((ord, idx) => (
                                     <TouchableOpacity key={idx} onPress={() => {
                                         gstore.selectedOrderId = ord.id;
                                         this.props.navigation.navigate('Order', {orderId: ord.id});
@@ -215,7 +215,7 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                                                 <View style={{marginTop: 20, marginRight: 20, marginLeft: 15}}>
                                                     {ord.content.cart && ord.content.cart[0] && ord.content.cart[0].placeId ? (
                                                         <Image
-                                                            source={{uri: gstore.api.fileLink(await getPlaceImage(ord.content.cart[0].placeId))}}
+                                                            source={{uri: gstore.api.fileLink(ord.createdByUser.photoId)}}
                                                             style={{
                                                                 width: 70,
                                                                 height: 70,
