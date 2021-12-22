@@ -27,13 +27,14 @@ import SearchInput, { createFilter } from 'react-native-search-filter';
 
 const searchStyle = {
     searchSection: {
-        flex: 1,
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#fff',
         width: '90%',
-        marginLeft: '4%'
+        marginLeft: '4%',
+        marginTop: 10,
+        borderTop: 1
     },
     searchIcon: {
         marginLeft: -30,
@@ -216,40 +217,41 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                             size="large"
                         />
                     </View> : (
+                        <>
+                        <View style={searchStyle.searchSection}>
+
+                            <TextInput
+                                value={this.state.searchValue}
+                                placeholderTextColor={'#A3A3A3'}
+                                onChangeText={e => {
+                                    searchUpdated( e)
+                                }}
+                                placeholder="поиск"
+                                // style={{
+                                //     color: 'black',
+                                //     backgroundColor: '#E5E5E5',
+                                //     borderColor: '#e0e0e0',
+                                //     borderRadius: 8,
+                                //     height: 36,
+                                //     width: '100%',
+                                //     paddingHorizontal: 10,
+                                //     paddingVertical: 2
+                                // }}
+                                style={searchStyle.input}
+                            >
+
+                            </TextInput>
+                            <Icon style={searchStyle.searchIcon} name="search" size={20} color="#A3A3A3"/>
+                        </View>
                         <ScrollView style={{
                             // paddingLeft: '6%',
                             // paddingRight: '6%',
                             marginTop: 10,
                             paddingTop: 0,
                             flexGrow: 1,
-                            marginBottom: 20,
-                            borderTop: 1
+                            marginBottom: 20
                         }}>
-                            <View style={searchStyle.searchSection}>
 
-                                <TextInput
-                                    value={this.state.searchValue}
-                                    placeholderTextColor={'#A3A3A3'}
-                                    onChangeText={e => {
-                                        searchUpdated( e)
-                                    }}
-                                    placeholder="поиск"
-                                    // style={{
-                                    //     color: 'black',
-                                    //     backgroundColor: '#E5E5E5',
-                                    //     borderColor: '#e0e0e0',
-                                    //     borderRadius: 8,
-                                    //     height: 36,
-                                    //     width: '100%',
-                                    //     paddingHorizontal: 10,
-                                    //     paddingVertical: 2
-                                    // }}
-                                    style={searchStyle.input}
-                                >
-
-                                </TextInput>
-                                <Icon style={searchStyle.searchIcon} name="search" size={20} color="#A3A3A3"/>
-                            </View>
                             {ods.length ? (
                                 // _.sortBy(users, [function(o) { return o.user; }]);
                                 _.sortBy(filteredOds, 'createdAt').reverse().map((ord, idx) => (
@@ -392,6 +394,7 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                                 )
                             )}
                         </ScrollView>
+                        </>
                     )}
             </View>
         );
