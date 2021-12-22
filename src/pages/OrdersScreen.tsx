@@ -22,6 +22,37 @@ import {observable} from "mobx";
 import {IOrdersListNavigation, IOrdersListRoute} from "./OrderRouterScreen";
 import FButton from "../controls/FButton";
 import {TextInput} from "react-native-gesture-handler";
+import Icon from "react-native-vector-icons/FontAwesome";
+
+const searchStyle = {
+    searchSection: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#fff',
+        width: '90%',
+        marginLeft: '4%'
+    },
+    searchIcon: {
+        marginLeft: -30,
+    },
+    input: {
+        flex: 1,
+        paddingTop: 10,
+        paddingRight: 10,
+        paddingBottom: 10,
+        paddingLeft: 10,
+        color: 'black',
+            backgroundColor: '#E5E5E5',
+            borderColor: '#e0e0e0',
+            borderRadius: 8,
+            height: 36,
+            width: '90%',
+            paddingHorizontal: 10,
+            paddingVertical: 2
+    }
+}
 
 @observer
 class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'execs' | 'finished', navigation: IOrdersListNavigation, route: IOrdersListRoute }> {
@@ -138,7 +169,7 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                     return;
                 }
         }
-
+        console.log('ODS', ods)
         return (
             <View style={{flexGrow: 1, backgroundColor: MainBackground,}}>
                 {/*{(gstore.me!.role === 'admin' && this.props.mode !== 'mine') ? (*/}
@@ -167,41 +198,50 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                 {/*    </View>*/}
                 {/*) : null}*/}
                 {this.loading ?
-                    <View style={{flexGrow: 1}}><ActivityIndicator color={MainLight} style={{marginTop: 40}}
-                                                                   size="large"/></View> : (
+                    <View style={{flexGrow: 1}}>
+                        <ActivityIndicator
+                            color={MainLight}
+                            style={{marginTop: 40}}
+                            size="large"
+                        />
+                    </View> : (
                         <ScrollView style={{
                             // paddingLeft: '6%',
                             // paddingRight: '6%',
-                            marginTop: 0,
+                            marginTop: 10,
                             paddingTop: 0,
                             flexGrow: 1,
                             marginBottom: 20,
+                            borderTop: 1
                         }}>
-                            <View style={{
-                                alignSelf: "center",
-                                marginTop: 10,
-                                width: '90%',
-                            }}>
+                            <View style={searchStyle.searchSection}>
+
                                 <TextInput
                                     value={this.search}
+                                    placeholderTextColor={'#A3A3A3'}
                                     onChangeText={e => {
                                         this.search = e
                                     }}
-                                    placeholder="Запрос для поиска..."
-                                    style={{
-                                        borderWidth: 1,
-                                        borderColor: '#e0e0e0',
-                                        borderRadius: 3,
-                                        height: 36,
-                                        width: '100%',
-                                        paddingHorizontal: 10,
-                                        paddingVertical: 2
-                                    }}
-                                />
+                                    placeholder="поиск"
+                                    // style={{
+                                    //     color: 'black',
+                                    //     backgroundColor: '#E5E5E5',
+                                    //     borderColor: '#e0e0e0',
+                                    //     borderRadius: 8,
+                                    //     height: 36,
+                                    //     width: '100%',
+                                    //     paddingHorizontal: 10,
+                                    //     paddingVertical: 2
+                                    // }}
+                                    style={searchStyle.input}
+                                >
+
+                                </TextInput>
+                                <Icon style={searchStyle.searchIcon} name="search" size={20} color="#A3A3A3"/>
                             </View>
                             {ods.length ? (
                                 // _.sortBy(users, [function(o) { return o.user; }]);
-                                ods.map((ord, idx) => (
+                                _.sortBy(ods, 'createdAt').reverse().map((ord, idx) => (
                                     <TouchableOpacity key={idx} onPress={() => {
                                         gstore.selectedOrderId = ord.id;
                                         this.props.navigation.navigate('Order', {orderId: ord.id});
@@ -237,7 +277,7 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                                                 </View>
 
                                                 <View style={{
-                                                    opacity: (ord.state === 'cancelled' || ord.state === 'done') ? 0.5 : 1,
+                                                    // opacity: (ord.state === 'cancelled' || ord.state === 'done') ? 0.5 : 1,
                                                     paddingVertical: 18, backgroundColor: MainBackground, width: '70%'
                                                 }}>
                                                     <View>

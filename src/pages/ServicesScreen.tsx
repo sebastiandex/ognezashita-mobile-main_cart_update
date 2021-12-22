@@ -227,7 +227,7 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 		return this.mapCategories(this.rawServices.filter(t => t.title.toLocaleLowerCase().includes(this.search.toLocaleLowerCase()) || t.description.toLocaleLowerCase().includes(this.search.toLocaleLowerCase())))
 	}
 
-	mapCategories(data: IServiceItem[]): IServiceCategory[] {
+	mapCategories(data: IServiceItem[]): { data: IServiceItem[]; title: string }[] {
 		const cats = data.map(d => d.category || '').filter((e, i, a) => a.indexOf(e) === i);
 		return cats.map(cat => ({
 			title: cat || 'Без категории',

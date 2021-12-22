@@ -1443,7 +1443,6 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable ic_stat_ic_notification
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1454,9 +1453,6 @@ drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
-drawable node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon
-drawable node_modules_reactnavigation_stack_src_views_assets_backicon
-drawable node_modules_reactnavigation_stack_src_views_assets_backiconmask
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1470,10 +1466,6 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable redbox_top_border_background
-drawable src_left
-drawable src_right
-drawable src_title
-drawable src_user
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
