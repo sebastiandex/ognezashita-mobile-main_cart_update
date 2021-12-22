@@ -1,5 +1,5 @@
 import {observer} from "mobx-react";
-import React, {PureComponent} from "react";
+import React, {PureComponent, useState} from "react";
 import {ActivityIndicator, Image, ScrollView} from "react-native";
 import {TouchableOpacity} from "react-native";
 import {Text, View} from "react-native";
@@ -23,6 +23,7 @@ import {IOrdersListNavigation, IOrdersListRoute} from "./OrderRouterScreen";
 import FButton from "../controls/FButton";
 import {TextInput} from "react-native-gesture-handler";
 import Icon from "react-native-vector-icons/FontAwesome";
+import SearchInput, { createFilter } from 'react-native-search-filter';
 
 const searchStyle = {
     searchSection: {
@@ -56,7 +57,11 @@ const searchStyle = {
 
 @observer
 class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'execs' | 'finished', navigation: IOrdersListNavigation, route: IOrdersListRoute }> {
-
+    constructor(props: { searchValue: string } ) {
+        super(props);
+        this.state = { searchValue: '' };
+        // this.showHideCategory = this.showHideCategory.bind(this);
+    }
     @observable orders = gstore.orders;
     @observable loading = true;
     @observable search = '';
@@ -170,6 +175,12 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                 }
         }
         console.log('ODS', ods)
+        const KEYS_TO_FILTERS = ['title', 'description'];
+
+        const filteredOds = ods.filter(createFilter(this.state.searchValue, KEYS_TO_FILTERS))
+        const searchUpdated = (term: string) => {
+            this.setState({ searchValue: term })
+        }
         return (
             <View style={{flexGrow: 1, backgroundColor: MainBackground,}}>
                 {/*{(gstore.me!.role === 'admin' && this.props.mode !== 'mine') ? (*/}
@@ -217,10 +228,10 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                             <View style={searchStyle.searchSection}>
 
                                 <TextInput
-                                    value={this.search}
+                                    value={this.state.searchValue}
                                     placeholderTextColor={'#A3A3A3'}
                                     onChangeText={e => {
-                                        this.search = e
+                                        searchUpdated( e)
                                     }}
                                     placeholder="поиск"
                                     // style={{
@@ -241,7 +252,7 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                             </View>
                             {ods.length ? (
                                 // _.sortBy(users, [function(o) { return o.user; }]);
-                                _.sortBy(ods, 'createdAt').reverse().map((ord, idx) => (
+                                _.sortBy(filteredOds, 'createdAt').reverse().map((ord, idx) => (
                                     <TouchableOpacity key={idx} onPress={() => {
                                         gstore.selectedOrderId = ord.id;
                                         this.props.navigation.navigate('Order', {orderId: ord.id});
