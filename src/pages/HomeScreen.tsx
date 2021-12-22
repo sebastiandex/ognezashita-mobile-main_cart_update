@@ -3,7 +3,18 @@ import React, { PureComponent } from "react";
 import { Image, ScrollView, Text, TouchableOpacity, View, ActivityIndicator } from "react-native";
 
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { MainBackground, MainBlack, MainBorder, MainHeader, MainLight, MainMuted, MainText, MainWhite } from "../colors";
+import {
+	cancelledColor,
+	createdColor, doneColor, executingColor,
+	MainBackground,
+	MainBlack,
+	MainBorder,
+	MainHeader,
+	MainLight,
+	MainMuted,
+	MainText,
+	MainWhite
+} from "../colors";
 import FlatText from "../controls/FlatText";
 
 import gstore, { stateDesc } from "../stores/gstore";
@@ -12,6 +23,7 @@ import { IHomeRoute, IHomeNavigation } from "./MainScreen";
 import moment from 'moment';
 import { observable } from "mobx";
 import FButton from "../controls/FButton";
+import _ from "lodash";
 
 @observer
 class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNavigation }> {
@@ -63,6 +75,21 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 	}
 
 	render() {
+		console.log('gstore.activeOrders', gstore.activeOrders)
+		const statusColor = (status: any) => {
+			switch (status) {
+				case "Поиск исполнителя":
+					return createdColor;
+				case "В процессе выполнения":
+					return executingColor;
+				case "Завершена":
+					return doneColor;
+				case "Отменена":
+					return cancelledColor
+				default:
+					return MainText;
+			}
+		}
 		return (
 			this.loading ? (<ActivityIndicator color={MainLight} style={{ marginTop: 40 }} size="large" />) : (
 				<ScrollView style={{
@@ -137,17 +164,87 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 									<Text style={{ fontSize: 22, fontWeight: 'bold', color: MainLight }}>Ваши заявки</Text>
 								</View>
 								{gstore.activeOrders.length ? (
-									gstore.activeOrders.map((ord, idx) => (
+									_.sortBy(gstore.activeOrders, 'createdAt').reverse().map((ord, idx) => (
 										<TouchableOpacity key={idx} onPress={() => {
-											gstore.selectedOrderId = ord.id;
-											this.props.navigation.jumpTo('OrderRouter', { screen: 'Order', orderId: ord.id });
-										}}>
-											<View style={{ paddingVertical: 18, paddingHorizontal: 0, backgroundColor: MainBackground, borderBottomColor: MainBorder, borderBottomWidth: 1 }}>
-												<View><Text style={{ fontSize: 16, fontWeight: 'bold', color: MainHeader }}>{ord.title}</Text></View>
-												<View style={{ marginBottom: 12 }}><Text style={{ fontSize: 12, color: MainMuted }}>{moment(ord.createdAt).format('DD.MM.YYYY HH:mm')}</Text></View>
-												<View><Text style={{ color: MainText }}>{stateDesc[ord.state]}</Text></View>
+												gstore.selectedOrderId = ord.id;
+												this.props.navigation.jumpTo('OrderRouter', { screen: 'Order', orderId: ord.id });
+											}}
+										>
+											<View style={{
+												flexDirection: 'column',
+												borderBottomColor: '#e0e0e0',
+												borderBottomWidth: 1
+											}}>
+												<View style={{flexDirection: 'row'}}>
+													<View style={{marginTop: 20, marginRight: 20}}>
+															<Image
+																// source={{uri: gstore.api.fileLink(ord.createdByUser.photoId)}}
+																source={require('../../assets/defaultPic.png')}
+																style={{
+																	width: 70,
+																	height: 70,
+																	resizeMode: 'contain',
+																	borderRadius: 18
+																}}
+															/>
+													</View>
+
+													<View style={{
+														// opacity: (ord.state === 'cancelled' || ord.state === 'done') ? 0.5 : 1,
+														paddingVertical: 18, backgroundColor: MainBackground, width: '70%'
+													}}>
+														<View>
+															<Text style={{
+																fontSize: 16,
+																fontWeight: 'bold',
+																color: MainHeader
+															}}
+															>
+																{ord.title}
+															</Text>
+														</View>
+														<View>
+															<Text style={{
+																fontSize: 14,
+																fontWeight: 'normal',
+																color: '#A3A3A3'
+															}}
+															>
+																{ord.content.description}
+															</Text>
+														</View>
+													</View>
+												</View>
+												<View style={{
+													flexDirection: 'row',
+													justifyContent: 'space-between',
+													marginLeft: 90,
+													marginRight: 20,
+													marginBottom: 25
+												}}>
+													<Text style={{
+														fontSize: 15,
+														color: statusColor(stateDesc[ord.state])
+													}}>{stateDesc[ord.state]}</Text>
+													<View style={{marginLeft: 10}}><Text style={{
+														fontSize: 14,
+														color: '#949494'
+													}}>{moment(ord.createdAt).format('DD.MM.YYYY')}</Text></View>
+												</View>
 											</View>
+
 										</TouchableOpacity>
+										// <TouchableOpacity key={idx} onPress={() => {
+										// 	gstore.selectedOrderId = ord.id;
+										// 	this.props.navigation.jumpTo('OrderRouter', { screen: 'Order', orderId: ord.id });
+										// }}>
+										// 	<View style={{ paddingVertical: 18, paddingHorizontal: 0, backgroundColor: MainBackground, borderBottomColor: MainBorder, borderBottomWidth: 1 }}>
+										// 		<View><Text style={{ fontSize: 16, fontWeight: 'bold', color: MainHeader }}>{ord.title}</Text></View>
+										// 		<View style={{ marginBottom: 12 }}><Text style={{ fontSize: 12, color: MainMuted }}>{moment(ord.createdAt).format('DD.MM.YYYY HH:mm')}</Text></View>
+										// 		<View><Text style={{ color: MainText }}>{stateDesc[ord.state]}</Text></View>
+										// 	</View>
+										// </TouchableOpacity>
+
 									))
 								) : (
 									<View style={{ alignItems: 'center', justifyContent: 'center', marginTop: 30, marginBottom: 30, width: '90%', alignSelf: 'center' }}>

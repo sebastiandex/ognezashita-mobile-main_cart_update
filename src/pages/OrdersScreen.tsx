@@ -175,7 +175,6 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                     return;
                 }
         }
-        console.log('ODS', ods)
         const KEYS_TO_FILTERS = ['title', 'description'];
 
         const filteredOds = ods.filter(createFilter(this.state.searchValue, KEYS_TO_FILTERS))
