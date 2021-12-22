@@ -19,7 +19,7 @@ import ImageViewer from "react-native-image-zoom-viewer";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import styled from "styled-components";
 
-import { pickImageAsync } from "../utils/mediaUtils";
+import {pickImageAsync, statusColor} from "../utils/mediaUtils";
 
 //@ts-ignore
 const CloseButton = styled.TouchableOpacity`
@@ -31,15 +31,18 @@ function UserRow({ text, user }: { text: string, user: { id: string; name: strin
 	const link = gstore.api.fileLink(user.photoId);
 
 	return (
-		<Section text={text}>
+		<Section>
 			<View style={{ flexDirection: 'row', backgroundColor: MainBackground }}>
 				{link ? (
-					<View style={{ flexBasis: 100, height: 100, borderRadius: 10, borderWidth: 1, overflow: 'hidden', borderColor: '#e0e0e0', alignItems: 'center', justifyContent: 'center', flexGrow: 0, flexShrink: 0, marginRight: 15 }}>
-						<Image source={{ uri: link }} style={{ width: 100, height: 100, resizeMode: 'contain' }} />
+					<View style={{ flexBasis: 72, height: 72, borderRadius: 18, overflow: 'hidden', alignItems: 'center', justifyContent: 'center', flexGrow: 0, flexShrink: 0, marginRight: 15 }}>
+						<Image source={{ uri: link }} style={{ width: 72, height: 72, resizeMode: 'contain' }} />
 					</View>
 				) : null}
 				<View style={{ flexGrow: 1, flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start' }}>
-					<View><Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, }}>{user.name}</Text></View>
+					<View>
+						<Text style={{ color: '#949494', fontSize: 14  }}>{text}</Text>
+						<Text style={{ fontSize: 16, fontWeight: '600', color: MainHeader, }}>{user.name}</Text>
+					</View>
 					{user.phone ? (
 						<View style={{ marginBottom: 12, marginTop: 6 }}>
 							<FButton onPress={() => {
@@ -453,7 +456,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 
 	renderOrder() {
 		return (
-			<ScrollView style={{ backgroundColor: '#f0f0f0', flexGrow: 1 }}>
+			<ScrollView style={{ backgroundColor: 'white', flexGrow: 1 }}>
 				{this.renderPlaceContent()}
 				<Modal visible={this.imagesForView.length !== 0} transparent={true}>
 					<ImageViewer
@@ -470,17 +473,29 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 					/>
 				</Modal>
 				{this.reportScreen ? (this.renderReportScreen()) : (
-					<>
-						<Section text={this.order.title}>
-							<Text style={{ color: MainText }}>{this.order.content.description}</Text>
+					<View style={{backgroundColor: 'white'}}>
+						<Section>
+							<Text style={{ color: '#949494', fontSize: 14 }}>Название:</Text>
+							<Text style={{ color: MainText, fontWeight: '600', fontSize: 16, marginBottom: 18 }}>{this.order.title}</Text>
+							<Text style={{ color: '#949494', fontSize: 14 }}>Текс заявки:</Text>
+							<Text style={{ color: MainText, fontWeight: '600', fontSize: 16 }}>{this.order.content.description}</Text>
 						</Section>
 
 						{this.order.content.type === 'cart' ? this.renderCartContent() : null}
 
-						<Section text="Статус">
-							<View style={{ height: 30, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row' }}>
-								<View>
-									<Text style={{ color: MainText }}>{stateDesc[this.order.state]}</Text>
+						<Section noBorder text="Статус:">
+							<View style={{ marginTop: -10, height: 30, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row' }}>
+								<View style={{borderStyle: 'solid', borderWidth: 1, borderRadius: 8, borderColor: statusColor(stateDesc[this.order.state]) }}>
+									<Text
+										style={{
+											paddingHorizontal: 20,
+											paddingBottom: 10,
+											paddingTop: 5,
+											alignItems: 'center',
+											textAlignVertical: 'center',
+											color: statusColor(stateDesc[this.order.state])
+										}}
+									>{stateDesc[this.order.state]}</Text>
 								</View>
 							</View>
 							{gstore.me!.role === 'admin' ? (
@@ -508,7 +523,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 									{this.order.state !== 'cancelled' ? (
 										<FButton
 											style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
-											buttonStyle={{ backgroundColor: '#a00000' }}
+											buttonStyle={{ backgroundColor: '#E73838' }}
 											onPress={this.handleCancel}
 											small
 										>
@@ -564,11 +579,11 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 						) : null}
 
 						{gstore.me!.role !== 'admin' ? (
-							<View style={{ height: 30, marginTop: 10, marginBottom: 30, alignItems: 'center', justifyContent: 'space-around', flexDirection: 'row' }}>
+							<View style={{ height: 30, marginTop: 20, marginBottom: 30, alignItems: 'center', justifyContent: 'space-around', flexDirection: 'row' }}>
 								{(this.order.state === 'created' && this.order.createdByUserId === gstore.me!.id) ? (
 									<FButton
 										style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
-										buttonStyle={{ backgroundColor: '#a00000' }}
+										buttonStyle={{ backgroundColor: '#E73838' }}
 										onPress={this.handleCancel}
 										small
 									>
@@ -609,7 +624,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 								) : null}
 							</View>
 						) : null}
-					</>)}
+					</View>)}
 			</ScrollView>
 		);
 	}

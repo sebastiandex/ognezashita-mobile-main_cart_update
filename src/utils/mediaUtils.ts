@@ -2,14 +2,15 @@ import RNPermissions, { PERMISSIONS, RESULTS, Permission } from 'react-native-pe
 
 import { Alert, NativeModules } from 'react-native';
 import { Platform } from 'react-native';
+import {cancelledColor, createdColor, doneColor, executingColor, MainText} from "../colors";
 
 const ImagePicker = NativeModules.ImageCropPicker;
 
 export default async function getPermissionAsync(permission: Permission) {
 	const status = await RNPermissions.check(permission);
-  
+
 	console.log(status);
-  
+
 	if (
 		status === RESULTS.DENIED ||
 		status === RESULTS.BLOCKED ||
@@ -28,7 +29,7 @@ export default async function getPermissionAsync(permission: Permission) {
 			return false;
 		}
 	}
-  
+
 	return true;
 }
 
@@ -48,7 +49,7 @@ export async function pickImageAsync(onSend: (images: {uri: string, type: string
 	  })
 		.then((image: any) => {
 		  console.log('received image', image);
-  
+
 		  return onSend([
 			{
 			  uri: image.path,
@@ -62,6 +63,20 @@ export async function pickImageAsync(onSend: (images: {uri: string, type: string
 		  // Alert.alert(e.message ? e.message : e);
 		});
 	}
-  
+
 	// Alert.alert('pick image async false');
+}
+export const statusColor = (status: any) => {
+	switch (status) {
+		case "Поиск исполнителя":
+			return createdColor;
+		case "В процессе выполнения":
+			return executingColor;
+		case "Завершена":
+			return doneColor;
+		case "Отменена":
+			return cancelledColor
+		default:
+			return MainText;
+	}
 }

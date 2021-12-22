@@ -24,6 +24,7 @@ import moment from 'moment';
 import { observable } from "mobx";
 import FButton from "../controls/FButton";
 import _ from "lodash";
+import {statusColor} from "../utils/mediaUtils";
 
 @observer
 class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNavigation }> {
@@ -75,21 +76,6 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 	}
 
 	render() {
-		console.log('gstore.activeOrders', gstore.activeOrders)
-		const statusColor = (status: any) => {
-			switch (status) {
-				case "Поиск исполнителя":
-					return createdColor;
-				case "В процессе выполнения":
-					return executingColor;
-				case "Завершена":
-					return doneColor;
-				case "Отменена":
-					return cancelledColor
-				default:
-					return MainText;
-			}
-		}
 		return (
 			this.loading ? (<ActivityIndicator color={MainLight} style={{ marginTop: 40 }} size="large" />) : (
 				<ScrollView style={{

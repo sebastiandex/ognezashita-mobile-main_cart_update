@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 
 import { MainBackground, MainHeader } from "../colors";
 
-function Section({ text, children, contentStyle }: { text?: string, children: ReactNode, contentStyle?: any }) {
+function Section({ text, children, contentStyle, noBorder }: { text?: string, children: ReactNode, contentStyle?: any, noBorder?: boolean }) {
 	return (
 		<>
 			<View style={{ marginBottom: 10 }}>
@@ -14,13 +14,13 @@ function Section({ text, children, contentStyle }: { text?: string, children: Re
 				) : null}
 				<View
 					style={Object.assign({
-						paddingHorizontal: 25,
+						paddingHorizontal: 20,
 						paddingVertical: 20,
 						backgroundColor: MainBackground,
 						borderBottomColor: '#e0e0e0',
-						borderBottomWidth: 1,
+						borderBottomWidth: noBorder ? 0 : 1,
 						borderTopColor: '#e0e0e0',
-						borderTopWidth: 1,
+						borderTopWidth: noBorder ? 0 : 1,
 					}, contentStyle || {})}
 				>
 					{children}
