@@ -484,56 +484,62 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 						{this.order.content.type === 'cart' ? this.renderCartContent() : null}
 
 						<Section noBorder text="Статус:">
-							<View style={{ marginTop: -10, height: 30, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row' }}>
+							<View style={{ marginTop: -10, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row' }}>
+								{gstore.me!.role !== 'admin' ? (
 								<View style={{borderStyle: 'solid', borderWidth: 1, borderRadius: 8, borderColor: statusColor(stateDesc[this.order.state]) }}>
 									<Text
 										style={{
 											paddingHorizontal: 20,
-											paddingBottom: 10,
+											paddingBottom: 5,
 											paddingTop: 5,
 											alignItems: 'center',
 											textAlignVertical: 'center',
 											color: statusColor(stateDesc[this.order.state])
 										}}
-									>{stateDesc[this.order.state]}</Text>
+									>
+										{stateDesc[this.order.state]}
+									</Text>
 								</View>
+									) : null }
 							</View>
 							{gstore.me!.role === 'admin' ? (
-								<View style={{ height: 30, marginTop: 10, alignItems: 'center', justifyContent: 'space-around', flexDirection: 'row' }}>
+								<View style={{ alignItems: 'flex-start', justifyContent: 'flex-start', flexDirection: 'row' }}>
 									{this.order.state !== 'executing' ? (
 										<FButton
-											style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
-											buttonStyle={{}}
+											style={{ marginBottom: 0, marginRight: 10 }}
+											buttonStyle={{backgroundColor: '#2A5EE4', width: 106}}
 											onPress={(this.order.content.type as string) === 'simple' ? this.handleAccept : this.handleChangeExecutor}
-											small
+											big
 										>
 											{(this.order.content.type as string) === 'simple' ? 'В работу' : (this.order.state !== 'created' ? 'Смена исполнителя' : 'Выбор исполнителя')}
 										</FButton>
 									) : null}
+
 									{this.order.state !== 'done' ? (
 										<FButton
-											style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
-											buttonStyle={{ backgroundColor: '#00a000' }}
+											style={{ marginBottom: 0, marginRight: 5 }}
+											buttonStyle={{ backgroundColor: '#4CBD57', width: 108 }}
 											onPress={this.handleFinished}
-											small
+											big
 										>
 											Выполнена
 										</FButton>
 									) : null}
 									{this.order.state !== 'cancelled' ? (
 										<FButton
-											style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
-											buttonStyle={{ backgroundColor: '#E73838' }}
+											style={{ marginBottom: 0, marginRight: 5 }}
+											buttonStyle={{ backgroundColor: '#E73838', width: 106 }}
 											onPress={this.handleCancel}
-											small
+											big
 										>
 											Отменить
 										</FButton>
 									) : null}
+
 								</View>
 							) : null}
 						</Section>
-
+						<Text style={{marginLeft: 20, fontSize: 18, fontWeight: '600', marginBottom: 20}}>Пользователи:</Text>
 						{((gstore.me!.role === 'user' || gstore.me!.role === 'admin') && this.order.activeExecutor) ? (
 							<UserRow text="Исполнитель" user={this.order.activeExecutor} />
 						) : null}
@@ -606,15 +612,15 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 									<>
 										<FButton
 											style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
-											buttonStyle={{ backgroundColor: '#00a000' }}
+											buttonStyle={{ backgroundColor: '#2A5EE4' }}
 											onPress={this.handleAccept}
 											small
 										>
-											Взять в работу
+											В работу
 										</FButton>
 										<FButton
 											style={{ marginBottom: 0, marginLeft: 5, marginRight: 5 }}
-											buttonStyle={{ backgroundColor: '#a00000' }}
+											buttonStyle={{ backgroundColor: '#E73838' }}
 											onPress={this.handleDecline}
 											small
 										>
