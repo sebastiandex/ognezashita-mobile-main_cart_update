@@ -39,7 +39,12 @@ const Drawer = createDrawerNavigator();
 @observer
 class HeaderRight extends PureComponent<{ navigation: any }> {
 	render() {
+		console.log('GSTORE', gstore)
 		return (
+			<>
+			{/*<View style={{ alignItems: 'center', justifyContent: 'center', position: 'absolute', right: 50, top: 0, zIndex: 99999 }}>*/}
+			{/*	<Text>123</Text>*/}
+			{/*</View>*/}
 			<TouchableOpacity onPress={() => {
 				if (gstore.cart.length) {
 					this.props.navigation.jumpTo('Cart');
@@ -53,6 +58,7 @@ class HeaderRight extends PureComponent<{ navigation: any }> {
 					) : null}<Icon name="shopping-cart" size={24} color={gstore.cart.length ? 'black' : '#d0d0d0'} />
 				</View>
 			</TouchableOpacity>
+			</>
 		);
 	}
 }

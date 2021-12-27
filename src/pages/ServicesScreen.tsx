@@ -370,6 +370,8 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 		// const navigation = this.props.navigation;
 		console.log(11111111111, item)
 		return (
+			<>
+
 			<View key={index} style={{ paddingHorizontal: 20, paddingTop: 5, paddingBottom: 15, backgroundColor: 'white' }}>
 				<TouchableOpacity
 					key={index}
@@ -436,6 +438,7 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 					})
 				) : null}
 			</View>
+			</>
 		);
 	}
 
@@ -518,6 +521,8 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 					// 	renderContent={(section) => this.renderItem(section)}
 					// 	// onChange={this._updateSections}
 					// />
+					<>
+
 					<FlatList
 						data={this.list}
 						// extraData={this.state.openedCategories}
@@ -525,6 +530,7 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 						keyExtractor={(item) => item.id}
 					// keyExtractor={(item, index) => item.id + index}
 					/>
+					</>
 					// <SectionList
 					// 	sections={this.list}
 					// 	keyExtractor={(item, index) => item.id + index}
