@@ -5,14 +5,14 @@ export default function AmountSelector({ value, onValue }: { value: number, onVa
 	return (
 		<View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
 			<TouchableOpacity onPress={() => value > 1 ? onValue(value - 1) : null}>
-				<View style={{ marginRight: 20, backgroundColor: '#f0f0f0', width: 24, height: 24, alignItems: 'center', justifyContent: 'center', borderRadius: 12 }}>
-					<Text style={{ fontSize: 15, marginTop: -1, fontWeight: 'bold' }}>-</Text>
+				<View style={{ marginRight: 20, borderColor: '#2A5EE4', borderWidth: 2, width: 36, height: 36, alignItems: 'center', justifyContent: 'center', borderRadius: 8 }}>
+					<Text style={{ fontSize: 18, marginTop: -1, fontWeight: 'bold', color: '#2A5EE4' }}>-</Text>
 				</View>
 			</TouchableOpacity>
-			<View><Text style={{ fontSize: 24, fontWeight: 'bold' }}>{value}</Text></View>
+			<View><Text style={{ fontSize: 24, fontWeight: '600' }}>{value}</Text></View>
 			<TouchableOpacity onPress={() => onValue(value + 1)}>
-				<View style={{ marginLeft: 20, backgroundColor: '#f0f0f0', width: 24, height: 24, alignItems: 'center', justifyContent: 'center', borderRadius: 12 }}>
-					<Text style={{ fontSize: 15, marginTop: -1, fontWeight: 'bold' }}>+</Text>
+				<View style={{ marginLeft: 20, borderColor: '#2A5EE4', borderWidth: 2, width: 36, height: 36, alignItems: 'center', justifyContent: 'center', borderRadius: 8 }}>
+					<Text style={{ fontSize: 18, marginTop: -1, fontWeight: 'bold', color: '#2A5EE4' }}>+</Text>
 				</View>
 			</TouchableOpacity>
 		</View>

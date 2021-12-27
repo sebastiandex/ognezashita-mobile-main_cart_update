@@ -18,6 +18,7 @@ MERGED from [:react-native-permissions] /Users/fullmetal/WebstormProjects/ogneza
 MERGED from [:react-native-reanimated] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-svg] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-vector-icons] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.63.3] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/fbd76b87d2732dd2a4a7829ad31f380e/jetified-react-native-0.63.3/AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/178d78ea9d284a2855ee4ee6cc62b043/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -259,6 +260,8 @@ MERGED from [:react-native-safe-area-context] /Users/fullmetal/WebstormProjects/
 MERGED from [:react-native-safe-area-context] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-screens] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-vector-icons] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.63.3] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/fbd76b87d2732dd2a4a7829ad31f380e/jetified-react-native-0.63.3/AndroidManifest.xml:7:5-9:41

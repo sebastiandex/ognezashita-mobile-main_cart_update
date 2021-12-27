@@ -4,15 +4,25 @@ import { autobind } from "core-decorators";
 import { computed, observable } from "mobx";
 import { observer } from "mobx-react";
 import React, { PureComponent } from "react";
-import { Text, View, SectionList, ListRenderItemInfo, Image, ActivityIndicator, ScrollView, TouchableOpacity, TextInput, Button } from "react-native";
-import { MainBackground, MainHeader, MainLight, MainMuted, MainText } from "../colors";
+import {
+	Text,
+	View,
+	ListRenderItemInfo,
+	Image,
+	ActivityIndicator,
+	ScrollView,
+	TouchableOpacity,
+	TextInput,
+	TouchableHighlight
+} from "react-native";
+import {MainBackground, MainHeader, MainLight, MainMuted, MainOrange, MainText} from "../colors";
 import AmountSelector from "../controls/AmountSelector";
-import FButton from "../controls/FButton";
 import FRadio from "../controls/FRadio";
 import { IServiceItem } from "../network/api";
 import gstore from "../stores/gstore";
 import { FlatList } from "react-native-gesture-handler";
 import _ from 'lodash';
+import Icon from "react-native-vector-icons/FontAwesome";
 
 const Stack = createStackNavigator();
 
@@ -40,38 +50,57 @@ class ItemModal extends PureComponent<{ item: IServiceItem, onCart: (amount: num
 		const desc = item.description;
 
 		return (
-			<ScrollView style={{ left: 0, top: 0, right: 0, bottom: 0, zIndex: 10, position: 'absolute', backgroundColor: 'rgba(0, 0, 0, 0.5)' }} contentContainerStyle={{ flexGrow: 1, flexShrink: 0, flexDirection: 'column', padding: 30, alignItems: 'stretch', justifyContent: 'center' }}>
+			<ScrollView style={{ left: 0, top: 0, right: 0, bottom: 0, zIndex: 10, position: 'absolute', backgroundColor: 'rgba(0, 0, 0, 0.5)' }} contentContainerStyle={{ flexGrow: 1, flexShrink: 0, flexDirection: 'column', padding: 15, alignItems: 'stretch', justifyContent: 'center' }}>
 				<View style={{ flexGrow: 1, flexShrink: 0, alignItems: 'stretch', justifyContent: 'center' }}>
-					<View style={{ alignItems: 'stretch', padding: 30, borderRadius: 20, backgroundColor: MainBackground }}>
-						<View style={{ alignItems: 'center', justifyContent: 'center', position: 'absolute', right: 10, top: 10, zIndex: 30, width: 24, height: 24, borderRadius: 12, backgroundColor: '#f0f0f0' }}>
+					<View style={{ alignItems: 'stretch', padding: 20, borderRadius: 18, backgroundColor: MainBackground }}>
+						<View style={{ alignItems: 'center', justifyContent: 'center', position: 'absolute', left: 10, top: 10, zIndex: 30 }}>
 							<TouchableOpacity onPress={() => {
 								gstore.setGlobalModal(null);
 							}}>
-								<View style={{ alignItems: 'center', justifyContent: 'center', width: 24, height: 24 }}>
-									<Text style={{ fontWeight: 'bold', marginTop: -2, fontSize: 14 }}>x</Text>
+								<View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', marginLeft: 10, marginTop: 5 }}>
+									{/*<Text style={{ fontWeight: '600', fontSize: 16 }}>&lt;</Text>*/}
+									<Icon style={{fontWeight: '100', marginTop: 2}} name={'chevron-left'} size={15}/>
+									<Text style={{ fontWeight: '600', fontSize: 16, marginLeft: 5 }}>Назад</Text>
 								</View>
 							</TouchableOpacity>
 						</View>
-						<View style={{ alignItems: 'center', justifyContent: 'center', flexBasis: 150, flexGrow: 0, flexShrink: 0, marginBottom: 15 }}>
-							<Image source={{ uri: gstore.api.fileLink(item.imageId) }} style={{ width: 150, height: 150, borderRadius: 10, resizeMode: 'contain' }} />
+						<View style={{ alignItems: 'center', justifyContent: 'center', flexBasis: '100%', flexGrow: 0, flexShrink: 0, marginBottom: 15, marginTop: 30, borderRadius: 8 }}>
+							<Image source={{ uri: gstore.api.fileLink(item.imageId) }} style={{ width: '100%', height: 220, borderRadius: 8, resizeMode: 'cover'}} />
 						</View>
 						<View style={{ flexGrow: 1, flexShrink: 1 }}>
-							<View style={{ alignItems: 'center', justifyContent: 'center' }}>
-								<Text style={{ textAlign: 'center', fontSize: 18, fontWeight: 'bold', color: MainHeader, }}>{item.title}</Text>
+							<View style={{ alignItems: 'flex-start', justifyContent: 'flex-start' }}>
+								<Text style={{ textAlign: 'left', fontSize: 20, fontWeight: '600', color: MainHeader, }}>{item.title}</Text>
 							</View>
-							{parseFloat(String(item.price || 0)) ? (<View style={{ marginBottom: 0, marginTop: 30 }}><Text style={{ fontSize: 12, color: MainMuted }}>Цена: <Text style={{ color: MainHeader, fontWeight: 'bold' }}>{parseFloat(String(item.price || 0)) ? `${parseFloat(String(item.price))} руб.` : '-'}</Text></Text></View>) : null}
+
 							<View style={{ marginTop: 40 }}>
 								{desc.split("\n").map((t, idx) => (
-									<Text key={idx} style={{ color: MainText, marginBottom: 10 }}>
+									<Text key={idx} style={{ fontSize: 14, fontWeight: '400', color: '#575757', marginBottom: 10 }}>
 										{t}
 									</Text>
 								))}
 							</View>
-							<View style={{ marginTop: 30, alignItems: 'center', justifyContent: 'center' }}>
+							<View style={{ marginTop: 30, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row' }}>
+
 								<AmountSelector value={this.amount} onValue={a => this.amount = a} />
-								<FButton style={{ marginTop: 30, marginBottom: 10 }} onPress={() => {
+								{parseFloat(String(item.price || 0)) ? (
+									<View style={{marginRight: -30 }}>
+											<Text style={{ fontSize: 18, fontWeight: '600', color: MainText }}>
+												{parseFloat(String(item.price || 0)) ? `${parseFloat(String(item.price))}₽` : '-'}
+											</Text>
+									</View>) : null}
+								{/*<FButton style={{ marginTop: 30, marginBottom: 10 }} onPress={() => {*/}
+								{/*	onCart(this.amount);*/}
+								{/*}}>В корзину</FButton>*/}
+								<TouchableHighlight onPress={() => {
 									onCart(this.amount);
-								}}>В корзину</FButton>
+								}}>
+									<View style={{backgroundColor: '#2A5EE4', width: 72, height: 36, borderRadius: 8, justifyContent: "center"}}>
+										<Image
+											style={{ resizeMode: 'contain', justifyContent: 'center', alignSelf: 'center' }}
+											source={require('./../../assets/cartIcon.png')}
+										/>
+									</View>
+								</TouchableHighlight>
 							</View>
 						</View>
 					</View>
@@ -100,23 +129,27 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number, pric
 					position: 'absolute',
 					backgroundColor: 'rgba(0, 0, 0, 0.5)'
 				}}
-				contentContainerStyle={{ flexGrow: 1, flexShrink: 0, flexDirection: 'column', padding: 30, alignItems: 'stretch', justifyContent: 'center' }}>
+				contentContainerStyle={{ flexGrow: 1, flexShrink: 0, flexDirection: 'column', padding: 15, alignItems: 'stretch', justifyContent: 'center' }}>
 				<View style={{ flexGrow: 1, flexShrink: 0, alignItems: 'stretch', justifyContent: 'center' }}>
-					<View style={{ alignItems: 'stretch', padding: 30, borderRadius: 20, backgroundColor: MainBackground }}>
-						<View style={{ alignItems: 'center', justifyContent: 'center', position: 'absolute', right: 10, top: 10, zIndex: 30, width: 24, height: 24, borderRadius: 12, backgroundColor: '#f0f0f0' }}>
+					<View style={{ alignItems: 'stretch', padding: 20, borderRadius: 20, backgroundColor: MainBackground }}>
+						<View style={{ alignItems: 'center', justifyContent: 'center', position: 'absolute', left: 10, top: 10, zIndex: 30 }}>
 							<TouchableOpacity onPress={() => {
 								gstore.setGlobalModal(null);
 							}}>
-								<View style={{ alignItems: 'center', justifyContent: 'center', width: 24, height: 24 }}>
-									<Text style={{ fontWeight: 'bold', marginTop: -2, fontSize: 14 }}>x</Text>
+								<View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', marginLeft: 10, marginTop: 5 }}>
+									{/*<Text style={{ fontWeight: '600', fontSize: 16 }}>&lt;</Text>*/}
+									<Icon style={{fontWeight: '100', marginTop: 2}} name={'chevron-left'} size={15}/>
+									<Text style={{ fontWeight: '600', fontSize: 16, marginLeft: 5 }}>Назад</Text>
 								</View>
 							</TouchableOpacity>
 						</View>
 						<View style={{ flexGrow: 1, flexShrink: 1 }}>
-							<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, marginBottom: 15 }}>Позиция</Text>
-							<Text style={{ fontSize: 14, fontWeight: 'bold', color: MainText, marginBottom: 10 }}>{item.title}</Text>
-							<Text style={{ fontSize: 14, fontWeight: 'bold', color: MainText, marginBottom: 35 }}>Количество: {amount}</Text>
-							<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, marginBottom: 15 }}>Адрес самовывоза</Text>
+							<Text style={{ fontSize: 14, fontWeight: '400', color: '#949494', marginTop: 40 }}>Название:</Text>
+							<Text style={{ fontSize: 16, fontWeight: '600', color: MainText, marginBottom: 5 }}>{item.title}</Text>
+							<Text style={{ fontSize: 14, fontWeight: '400', color: '#949494', marginTop: 10 }}>Количество:</Text>
+							<Text style={{ fontSize: 16, fontWeight: '600', color: MainText}}>{amount}</Text>
+							<View style={{marginTop: 20, marginBottom: 20, borderBottomWidth: 1, borderBottomColor: '#E5E5E5'}}/>
+							<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, marginBottom: 15 }}>Адрес самовывоза:</Text>
 							{gstore.selfAddresses.map((address, idx) => (
 								<FRadio
 									text={`${address}`}
@@ -145,28 +178,30 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number, pric
 									value={this.newAddress}
 									onChangeText={newText => this.newAddress = newText}
 									onFocus={() => this.selectedIdx = -1}
-									style={{ height: 28, width: '90%', paddingVertical: 0, borderWidth: 1, borderColor: '#e0e0e0' }}
-									placeholder="Добавить новый адрес"
+									style={{ height: 34, width: '90%', padding: 10, borderWidth: 1, borderColor: '#e0e0e0', backgroundColor: '#E3E3E3', borderRadius: 8 }}
+									placeholder={"Добавить новый адрес"}
+									placeholderTextColor={'#949494'}
 								/>}
 								selected={this.selectedIdx === -1}
 								onPress={() => this.selectedIdx = -1}
 							/>
+							<View style={{marginTop: 20, marginBottom: 20, borderBottomWidth: 1, borderBottomColor: '#E5E5E5'}}/>
 							<View style={{ marginTop: 30, alignItems: 'center', justifyContent: 'center' }}>
-								<FButton style={{ marginTop: 30, marginBottom: 10 }} onPress={() => {
+								<TouchableHighlight onPress={() => {
 									let address;
 									let placeId = null;
 									if (this.selectedIdx === -1) {
 										address = this.newAddress;
 									} else
-										if (this.selectedIdx < gstore.selfAddresses.length) {
-											address = gstore.selfAddresses[this.selectedIdx];
-										} else
-											if (this.selectedIdx - gstore.selfAddresses.length < gstore.places.length) {
-												address = gstore.places[this.selectedIdx - gstore.selfAddresses.length].address;
-												placeId = gstore.places[this.selectedIdx - gstore.selfAddresses.length].id;
-											} else {
-												address = gstore.savedAddresses[this.selectedIdx - gstore.places.length - gstore.selfAddresses.length];
-											}
+									if (this.selectedIdx < gstore.selfAddresses.length) {
+										address = gstore.selfAddresses[this.selectedIdx];
+									} else
+									if (this.selectedIdx - gstore.selfAddresses.length < gstore.places.length) {
+										address = gstore.places[this.selectedIdx - gstore.selfAddresses.length].address;
+										placeId = gstore.places[this.selectedIdx - gstore.selfAddresses.length].id;
+									} else {
+										address = gstore.savedAddresses[this.selectedIdx - gstore.places.length - gstore.selfAddresses.length];
+									}
 									gstore.cart.push({
 										itemId: item.id,
 										itemTitle: item.title,
@@ -179,7 +214,42 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number, pric
 										placeId,
 									});
 									gstore.setGlobalModal(null);
-								}}>В корзину</FButton>
+								}}>
+									<View style={{backgroundColor: '#2A5EE4', width: 72, height: 36, borderRadius: 8, justifyContent: "center"}}>
+										<Image
+											style={{ resizeMode: 'contain', justifyContent: 'center', alignSelf: 'center' }}
+											source={require('./../../assets/cartIcon.png')}
+										/>
+									</View>
+								</TouchableHighlight>
+								{/*<FButton style={{ marginTop: 30, marginBottom: 10 }} onPress={() => {*/}
+								{/*	let address;*/}
+								{/*	let placeId = null;*/}
+								{/*	if (this.selectedIdx === -1) {*/}
+								{/*		address = this.newAddress;*/}
+								{/*	} else*/}
+								{/*		if (this.selectedIdx < gstore.selfAddresses.length) {*/}
+								{/*			address = gstore.selfAddresses[this.selectedIdx];*/}
+								{/*		} else*/}
+								{/*			if (this.selectedIdx - gstore.selfAddresses.length < gstore.places.length) {*/}
+								{/*				address = gstore.places[this.selectedIdx - gstore.selfAddresses.length].address;*/}
+								{/*				placeId = gstore.places[this.selectedIdx - gstore.selfAddresses.length].id;*/}
+								{/*			} else {*/}
+								{/*				address = gstore.savedAddresses[this.selectedIdx - gstore.places.length - gstore.selfAddresses.length];*/}
+								{/*			}*/}
+								{/*	gstore.cart.push({*/}
+								{/*		itemId: item.id,*/}
+								{/*		itemTitle: item.title,*/}
+								{/*		itemImageId: item.imageId,*/}
+								{/*		amount: amount,*/}
+								{/*		isService: item.isService,*/}
+								{/*		price: item.price,*/}
+								{/*		category: item.category,*/}
+								{/*		address,*/}
+								{/*		placeId,*/}
+								{/*	});*/}
+								{/*	gstore.setGlobalModal(null);*/}
+								{/*}}>В корзину</FButton>*/}
 							</View>
 						</View>
 					</View>
@@ -277,8 +347,8 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 		gstore.setGlobalModal(this.renderAddToCartModal(item, amount));
 	}
 
-	renderAddToCartModal(item: IServiceItem, amount: number) {
-		return (<CartModal item={item} amount={amount} />)
+	renderAddToCartModal(item: IServiceItem, amount: number, price: number) {
+		return (<CartModal item={item} amount={amount}  price={price}/>)
 	}
 
 	renderModal() {
@@ -305,14 +375,19 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 					key={index}
 					onPress={() => this.showHideCategory(item.title)}
 				>
-					<Text style={{ fontSize: 26, fontWeight: 'bold', color: MainHeader }}>{item.title}
+					<View style={{flexDirection: 'row', height: 50, justifyContent: 'space-between', borderBottomColor: '#E5E5E5',
+						borderBottomWidth: _.findIndex(this.state.openedCategories, function (o) { return o === item.title }) !== -1 ? 0 : 1}}>
+					<Text style={{ fontSize: 24, fontWeight: '600', color: MainHeader }}>
+						{item.title}
+					</Text>
 						<Image
-							style={{ width: 40, height: 30, resizeMode: 'contain', marginTop: -5 }}
+							style={{ width: 20, height: 20, resizeMode: 'contain', marginTop: 5, marginRight: 5 }}
 							source={
 								_.findIndex(this.state.openedCategories, function (o) { return o === item.title }) !== -1 ?
-									require('./../../src/more_black_24.png') : require('./../../src/list.png')
+									require('./../../assets/crossIcon.png') : require('./../../assets/plusIcon.png')
 							}
-						/></Text>
+						/>
+					</View>
 					{/* <Image source={require('./../../src/more_	')} style={{ width: 100, height: 100, resizeMode: 'contain' }} /> */}
 
 
@@ -321,21 +396,41 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 					item.data.map((item: any) => {
 						{
 							return (
-								<TouchableOpacity key={item.id} onPress={() => {
-									this.showModalItem(item);
-									// navigation.push('ServiceEntity', { title: item.key, description: item.description, date: item.date });
-								}}>
-									<View style={{ flexDirection: 'row', marginHorizontal: 20, paddingVertical: 18, paddingHorizontal: 20, backgroundColor: MainBackground, borderBottomColor: '#e0e0e0', borderBottomWidth: 1 }}>
-										<View style={{ flexBasis: 100, height: 100, borderRadius: 10, borderWidth: 1, overflow: 'hidden', borderColor: '#e0e0e0', alignItems: 'center', justifyContent: 'center', flexGrow: 0, flexShrink: 0, marginRight: 15 }}>
-											<Image source={{ uri: gstore.api.fileLink(item.imageId) }} style={{ width: 100, height: 100, resizeMode: 'contain' }} />
+
+									<View style={{ flexDirection: 'row', marginHorizontal: 0, paddingVertical: 18, backgroundColor: MainBackground, borderBottomColor: '#e0e0e0', borderBottomWidth: 1 }}>
+										<TouchableOpacity style={{flexDirection: 'row', width: '80%'}} key={item.id} onPress={() => {
+											this.showModalItem(item);
+											// navigation.push('ServiceEntity', { title: item.key, description: item.description, date: item.date });
+										}}>
+										<View style={{ flexBasis: 72, height: 72, borderRadius: 18, borderWidth: 1, overflow: 'hidden', borderColor: '#e0e0e0', alignItems: 'center', justifyContent: 'center', flexGrow: 0, flexShrink: 0, marginRight: 15 }}>
+											<Image source={{ uri: gstore.api.fileLink(item.imageId) }} style={{ width: 72, height: 72, resizeMode: 'contain' }} />
 										</View>
 										<View style={{ flexGrow: 1, flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start' }}>
-											<View><Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, }}>{item.title}</Text></View>
-											<View style={{ marginBottom: 12, marginTop: 6 }}><Text style={{ fontSize: 12, color: MainMuted }}>Цена: <Text style={{ color: MainHeader, fontWeight: 'bold' }}>{parseFloat(String(item.price || 0)) ? `${parseFloat(String(item.price))} руб.` : '-'}</Text></Text></View>
-											<View><Text style={{ color: MainText }}>{item.description.substring(0, 100) + (item.description.length > 100 ? '...' : '')}</Text></View>
+											<View style={{width: '80%'}}>
+												<Text style={{ fontSize: 14, fontWeight: '400', color: '#949494' }}>Наклейка</Text>
+												<Text style={{ fontSize: 14, fontWeight: '400', color: MainHeader, }}>{item.title}</Text>
+											</View>
+
+											{/*<View><Text style={{ color: MainText }}>{item.description.substring(0, 100) + (item.description.length > 100 ? '...' : '')}</Text></View>*/}
+										</View>
+										</TouchableOpacity>
+										<View style={{ marginBottom: 12}}>
+											<Text style={{ textAlign: 'center', fontSize: 18, fontWeight: '600', color: MainMuted, justifyContent: 'center' }}><Text style={{ color: MainHeader, fontWeight: 'bold' }}>
+												{parseFloat(String(item.price || 0)) ? `${parseFloat(String(item.price))}₽` : '-'}</Text>
+											</Text>
+											<TouchableHighlight onPress={() => {
+													this.handleCart(1);
+											}}>
+												<View style={{backgroundColor: '#2A5EE4', width: 72, height: 36, borderRadius: 8, marginTop: 10, justifyContent: "center"}}>
+													<Image
+														style={{ resizeMode: 'contain', justifyContent: 'center', alignSelf: 'center' }}
+														source={require('./../../assets/cartIcon.png')}
+													/>
+												</View>
+											</TouchableHighlight>
 										</View>
 									</View>
-								</TouchableOpacity>
+
 							);
 						}
 					})
@@ -350,22 +445,43 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 		return (
 			<View style={{ backgroundColor: MainBackground, flexGrow: 1, }}>
 				<View style={{ width: '100%', paddingTop: 15, paddingBottom: 15, alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', elevation: 4 }}>
-					<View style={{ flexDirection: 'row', width: '90%', borderRadius: 5, overflow: 'hidden', borderWidth: 1, borderColor: '#d0d0d0', alignItems: 'stretch', justifyContent: 'center', height: 40, }}>
+					<View style={{ flexDirection: 'row', width: '90%', borderRadius: 8, overflow: 'hidden', borderWidth: 1, borderColor: '#d0d0d0', alignItems: 'stretch', justifyContent: 'center', height: 40, }}>
 						<TouchableOpacity style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'goods'}>
-							<View style={{ flexGrow: 1, flexShrink: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: this.type !== 'goods' ? '#f0f0f0' : 'white', borderRightWidth: 1, borderRightColor: '#d0d0d0' }}>
-								<Text>Товары</Text>
+							<View style={{
+								flexGrow: 1,
+								flexShrink: 1,
+								alignItems: 'center',
+								justifyContent: 'center',
+								backgroundColor: this.type !== 'goods' ? 'white' : MainOrange,
+								borderRightWidth: 1, borderRightColor: '#d0d0d0',
+								borderRadius: 8
+							}}>
+								<Text style={{color: this.type !== 'goods' ? MainText : 'white'}}>Товары</Text>
 							</View>
 						</TouchableOpacity>
-						<TouchableOpacity style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'services'}>
-							<View style={{ flexGrow: 1, flexShrink: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: this.type !== 'services' ? '#f0f0f0' : 'white' }}>
-								<Text>Услуги</Text>
-							</View>
-						</TouchableOpacity>
-						<TouchableOpacity style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'services'}>
-							<View style={{ flexGrow: 1, flexShrink: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: this.type !== 'services' ? '#f0f0f0' : 'white' }}>
+						<TouchableOpacity disabled style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'services'}>
+							<View style={{
+								flexGrow: 1,
+								flexShrink: 1,
+								alignItems: 'center',
+								justifyContent: 'center',
+								backgroundColor: this.type !== 'services' ? '#f0f0f0' : 'MainOrange'
+							}}>
 								<Text>Товары от партнёров</Text>
 							</View>
 						</TouchableOpacity>
+						<TouchableOpacity style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'services'}>
+							<View style={{
+								flexGrow: 1,
+								flexShrink: 1,
+								alignItems: 'center',
+								justifyContent: 'center',
+								backgroundColor: this.type !== 'services' ? 'white' : MainOrange
+							}}>
+								<Text style={{color: this.type !== 'services' ? MainText : 'white'}}>Услуги</Text>
+							</View>
+						</TouchableOpacity>
+
 					</View>
 					<View style={{
 						marginTop: 10,
