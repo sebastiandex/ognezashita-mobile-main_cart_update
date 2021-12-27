@@ -17,9 +17,9 @@ function Section({ text, children, contentStyle, noBorder }: { text?: string, ch
 						paddingHorizontal: 20,
 						paddingVertical: 20,
 						backgroundColor: MainBackground,
-						borderBottomColor: '#e0e0e0',
+						borderBottomColor: '#E5E5E5',
 						borderBottomWidth: noBorder ? 0 : 1,
-						borderTopColor: '#e0e0e0',
+						borderTopColor: '#E5E5E5',
 						borderTopWidth: noBorder ? 0 : 1,
 					}, contentStyle || {})}
 				>

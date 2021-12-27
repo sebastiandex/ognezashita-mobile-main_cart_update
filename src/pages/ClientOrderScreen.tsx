@@ -3,7 +3,18 @@ import { autobind } from "core-decorators";
 import { observable, toJS } from "mobx";
 import { observer } from "mobx-react";
 import React, { PureComponent, ReactElement } from "react";
-import { ActivityIndicator, Image, Linking, Text, ScrollView, View, TouchableOpacity, ImageBackground, Modal } from "react-native";
+import {
+	ActivityIndicator,
+	Image,
+	Linking,
+	Text,
+	ScrollView,
+	View,
+	TouchableOpacity,
+	ImageBackground,
+	Modal,
+	Button, TouchableHighlight
+} from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 
 import { MainBackground, MainHeader, MainLight, MainMuted, MainText } from "../colors";
@@ -31,24 +42,38 @@ function UserRow({ text, user }: { text: string, user: { id: string; name: strin
 	const link = gstore.api.fileLink(user.photoId);
 
 	return (
-		<Section>
+		<Section noBorder>
 			<View style={{ flexDirection: 'row', backgroundColor: MainBackground }}>
 				{link ? (
 					<View style={{ flexBasis: 72, height: 72, borderRadius: 18, overflow: 'hidden', alignItems: 'center', justifyContent: 'center', flexGrow: 0, flexShrink: 0, marginRight: 15 }}>
-						<Image source={{ uri: link }} style={{ width: 72, height: 72, resizeMode: 'contain' }} />
+						<Image source={{ uri: link }} style={{ width: 72, height: 72}} />
 					</View>
 				) : null}
-				<View style={{ flexGrow: 1, flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start' }}>
+				<View style={{ flexGrow: 1, flexDirection: 'row', flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start' }}>
 					<View>
 						<Text style={{ color: '#949494', fontSize: 14  }}>{text}</Text>
 						<Text style={{ fontSize: 16, fontWeight: '600', color: MainHeader, }}>{user.name}</Text>
 					</View>
 					{user.phone ? (
-						<View style={{ marginBottom: 12, marginTop: 6 }}>
-							<FButton onPress={() => {
+						<View style={{marginLeft: 'auto', marginRight: 20, marginTop: 15, justifyContent: 'flex-end'}}>
+							<TouchableHighlight onPress={() => {
 								Linking.openURL('tel:' + user!.phone);
-							}} small>Позвонить</FButton>
+							}}>
+								<View>
+									<Image source={require('./../../assets/phoneIcon.png')} style={{ width: 45, height: 45, resizeMode: 'contain' }} />
+								</View>
+							</TouchableHighlight>
 						</View>
+						// 	style={{ marginBottom: 12, marginTop: 6 }}>
+						// 	<Button title={''} onPress={() => {
+						// 		Linking.openURL('tel:' + user!.phone);
+						// 	}} >
+						// 		<Image source={require('./../../assets/phoneIcon.png')} style={{ width: 40, height: 40, resizeMode: 'contain' }} />
+						// 	</Button>
+						// 	{/*<FButton onPress={() => {*/}
+						// 	{/*	Linking.openURL('tel:' + user!.phone);*/}
+						// 	{/*}} small>Позвонить</FButton>*/}
+						// </View>
 					) : null}
 				</View>
 			</View>
@@ -380,6 +405,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 	}
 
 	@observable viewPlace: IPlace | null = null;
+	// private pRes: any;
 
 	renderPlaceContent() {
 		if (!this.viewPlace) {
@@ -389,7 +415,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 		const p = this.viewPlace;
 
 		return (
-			<Modal visible={true}>
+			// <Modal visible={true}>
 				<View style={{ flexDirection: 'column', paddingVertical: 30, paddingHorizontal: 30, backgroundColor: MainBackground, alignItems: 'center' }}>
 					{gstore.api.fileLink(p.mainPhotoId) ? (<View style={{ flexDirection: 'column', flexBasis: 320, borderRadius: 6, overflow: 'hidden', flexGrow: 0, flexShrink: 0, marginRight: 15, }}>
 						<Image source={{ uri: gstore.api.fileLink(p.mainPhotoId) }} style={{ width: 320, height: 320, resizeMode: 'cover' }} />
@@ -400,30 +426,91 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 						<FButton onPress={() => this.viewPlace = null} style={{ marginTop: 30 }}>Назад</FButton>
 					</View>
 				</View>
-			</Modal>
+			// </Modal>
+		);
+	}
+
+	renderPlaceContentNew() {
+		if (!this.viewPlace) {
+			return null;
+		}
+
+		const p = this.viewPlace;
+
+		return (
+			// <Modal visible={true}>
+				<View style={{ flexDirection: 'column', backgroundColor: MainBackground, alignItems: 'flex-start' }}>
+					{/*{gstore.api.fileLink(p.mainPhotoId) ? (<View style={{ flexDirection: 'column', flexBasis: 320, borderRadius: 6, overflow: 'hidden', flexGrow: 0, flexShrink: 0, marginRight: 15, }}>*/}
+					{/*	<Image source={{ uri: gstore.api.fileLink(p.mainPhotoId) }} style={{ width: 72, height: 72, resizeMode: 'cover' }} />*/}
+					{/*</View>) : null}*/}
+					<View style={{ flexDirection: 'column', marginTop: 30, alignItems: 'flex-start' }}>
+						<View>
+							<Text style={{ fontSize: 20, fontWeight: 'bold', color: MainHeader, marginBottom: 15 }}>Название объекта:</Text>
+							<Text style={{ fontSize: 20, fontWeight: 'bold', color: MainHeader, marginBottom: 15 }}>{p.name}</Text>
+						</View>
+						{/*<View style={{}}><Text style={{ fontSize: 14, color: MainHeader }}>Адрес: {p.address}</Text></View>*/}
+						{/*<FButton onPress={() => this.viewPlace = null} style={{ marginTop: 30 }}>Назад</FButton>*/}
+					</View>
+				</View>
+			// </Modal>
 		);
 	}
 
 	renderCartContent() {
+
 		return (
-			<Section text="Состав заявки" contentStyle={{ paddingVertical: 10 }}>
+
+			<Section noBorder text="Состав заявки" contentStyle={{ paddingVertical: 10 }}>
+				{this.renderPlaceContentNew()}
 				{this.order.content.cart.map((item, index) => (
-					<View key={item.itemId} style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 12, backgroundColor: MainBackground, borderBottomColor: '#e0e0e0', borderBottomWidth: (this.order.content.cart.length === index + 1) ? 0 : 1 }}>
+					<View key={item.itemId}
+						  style={{
+						  	flexDirection: 'column',
+							  alignItems: 'flex-start',
+							  justifyContent: 'space-between',
+							  paddingVertical: 12,
+							  backgroundColor: MainBackground,
+							  borderBottomColor: '#E5E5E5',
+							  borderBottomWidth: (this.order.content.cart.length === index + 1) ? 0 : 1 }}
+					>
+						{(gstore.me!.role !== 'user' && item.placeId && !this.isNew) ? (
+							<View style={{ alignSelf: 'flex-start' }} onLayout={async () => {
+								if (!item.placeId) {
+									return;
+								}
+								const pRes = await gstore.api.getPlace(item.placeId);
+								if (pRes.result) {
+									this.viewPlace = pRes.data;
+									console.log('PRESDATA', pRes.data)
+								}}}
+								>
+
+							{/*	<TouchableOpacity style={{ marginBottom: 0, marginTop: 10 }} onPress={async () => {*/}
+							{/*	if (!item.placeId) {*/}
+							{/*		return;*/}
+							{/*	}*/}
+							{/*	const pRes = await gstore.api.getPlace(item.placeId);*/}
+							{/*	if (pRes.result) {*/}
+							{/*		this.viewPlace = pRes.data;*/}
+							{/*		console.log('PRESDATA', pRes.data)*/}
+							{/*	}*/}
+							{/*}}>*/}
+							{/*		<Text>{2222}</Text>*/}
+							{/*	</TouchableOpacity>*/}
+
+							</View>
+						) : null}
 						<View style={{ flexGrow: 1, flexShrink: 1 }}>
-							<View><Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, }}>{item.itemTitle}</Text></View>
-							<View style={{ marginBottom: 12 }}><Text style={{ fontSize: 12, color: MainMuted }}>Количество: {item.amount}</Text></View>
-							<View><Text style={{ color: MainText }}>Адрес: {item.address}</Text></View>
-							{(gstore.me!.role !== 'user' && item.placeId && !this.isNew) ? (
-								<View style={{ alignSelf: 'flex-start' }}><FButton style={{ marginBottom: 0, marginTop: 10 }} tiny onPress={async () => {
-									if (!item.placeId) {
-										return;
-									}
-									const pRes = await gstore.api.getPlace(item.placeId);
-									if (pRes.result) {
-										this.viewPlace = pRes.data;
-									}
-								}}>Посмотреть объект</FButton></View>
-							) : null}
+							<View style={{flexDirection: 'row'}}>
+								<Image source={{ uri: gstore.api.fileLink(item.itemImageId) }} style={{ borderRadius: 18, width: 72, height: 72 }} />
+								<View style={{marginLeft: 15, width: '75%'}}>
+									<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, flexWrap: 'wrap'}}>{item.itemTitle}</Text>
+									<Text style={{ fontSize: 12, color: MainMuted }}>Количество: {item.amount}</Text>
+									<Text style={{ color: MainText }}>Адрес: {item.address}</Text>
+								</View>
+							</View>
+							{/*<View style={{ marginBottom: 12 }}><Text style={{ fontSize: 12, color: MainMuted }}>Количество: {item.amount}</Text></View>*/}
+							{/*<View><Text style={{ color: MainText }}>Адрес: {item.address}</Text></View>*/}
 						</View>
 					</View>
 				))}
@@ -457,7 +544,6 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 	renderOrder() {
 		return (
 			<ScrollView style={{ backgroundColor: 'white', flexGrow: 1 }}>
-				{this.renderPlaceContent()}
 				<Modal visible={this.imagesForView.length !== 0} transparent={true}>
 					<ImageViewer
 						loadingRender={() => <ActivityIndicator size="large" />}
@@ -483,31 +569,44 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 
 						{this.order.content.type === 'cart' ? this.renderCartContent() : null}
 
+
+						<Text style={{marginLeft: 20, marginTop: 20, fontSize: 18, fontWeight: '600', marginBottom: 10}}>Пользователи:</Text>
+						{((gstore.me!.role === 'user' || gstore.me!.role === 'admin') && this.order.activeExecutor) ? (
+							<UserRow text="Исполнитель" user={this.order.activeExecutor} />
+						) : null}
+
+						{((gstore.me!.role === 'executor' || gstore.me!.role === 'admin') && this.order.createdByUser && !this.isNew) ? (
+							<>
+								<View style={{width: '90%', marginLeft: '5%', borderBottomWidth: 1, borderBottomColor: '#E5E5E5', marginBottom: 15}}/>
+								<UserRow text="Заказчик" user={this.order.createdByUser} />
+							</>
+						) : null}
+						<View style={{borderBottomWidth: 1, borderBottomColor: '#E5E5E5', marginBottom: 15}}/>
 						<Section noBorder text="Статус:">
 							<View style={{ marginTop: -10, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row' }}>
 								{gstore.me!.role !== 'admin' ? (
-								<View style={{borderStyle: 'solid', borderWidth: 1, borderRadius: 8, borderColor: statusColor(stateDesc[this.order.state]) }}>
-									<Text
-										style={{
-											paddingHorizontal: 20,
-											paddingBottom: 5,
-											paddingTop: 5,
-											alignItems: 'center',
-											textAlignVertical: 'center',
-											color: statusColor(stateDesc[this.order.state])
-										}}
-									>
-										{stateDesc[this.order.state]}
-									</Text>
-								</View>
-									) : null }
+									<View style={{borderStyle: 'solid', borderWidth: 1, borderRadius: 8, borderColor: statusColor(stateDesc[this.order.state]) }}>
+										<Text
+											style={{
+												paddingHorizontal: 20,
+												paddingBottom: 5,
+												paddingTop: 5,
+												alignItems: 'center',
+												textAlignVertical: 'center',
+												color: statusColor(stateDesc[this.order.state])
+											}}
+										>
+											{stateDesc[this.order.state]}
+										</Text>
+									</View>
+								) : null }
 							</View>
 							{gstore.me!.role === 'admin' ? (
-								<View style={{ alignItems: 'flex-start', justifyContent: 'flex-start', flexDirection: 'row' }}>
+								<View style={{ alignItems: 'flex-start', flexWrap: 'wrap', justifyContent: 'flex-start', flexDirection: 'row' }}>
 									{this.order.state !== 'executing' ? (
 										<FButton
-											style={{ marginBottom: 0, marginRight: 10 }}
-											buttonStyle={{backgroundColor: '#2A5EE4', width: 106}}
+											style={{ marginBottom: 0, marginRight: 10, marginTop: 5 }}
+											buttonStyle={{backgroundColor: '#F48E39', width: 176}}
 											onPress={(this.order.content.type as string) === 'simple' ? this.handleAccept : this.handleChangeExecutor}
 											big
 										>
@@ -517,17 +616,17 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 
 									{this.order.state !== 'done' ? (
 										<FButton
-											style={{ marginBottom: 0, marginRight: 5 }}
+											style={{ marginBottom: 0, marginRight: 10, marginTop: 5 }}
 											buttonStyle={{ backgroundColor: '#4CBD57', width: 108 }}
 											onPress={this.handleFinished}
 											big
 										>
-											Выполнена
+											Выполнено
 										</FButton>
 									) : null}
 									{this.order.state !== 'cancelled' ? (
 										<FButton
-											style={{ marginBottom: 0, marginRight: 5 }}
+											style={{ marginBottom: 0, marginRight: 10, marginTop: 5 }}
 											buttonStyle={{ backgroundColor: '#E73838', width: 106 }}
 											onPress={this.handleCancel}
 											big
@@ -539,15 +638,6 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 								</View>
 							) : null}
 						</Section>
-						<Text style={{marginLeft: 20, fontSize: 18, fontWeight: '600', marginBottom: 20}}>Пользователи:</Text>
-						{((gstore.me!.role === 'user' || gstore.me!.role === 'admin') && this.order.activeExecutor) ? (
-							<UserRow text="Исполнитель" user={this.order.activeExecutor} />
-						) : null}
-
-						{((gstore.me!.role === 'executor' || gstore.me!.role === 'admin') && this.order.createdByUser && !this.isNew) ? (
-							<UserRow text="Заказчик" user={this.order.createdByUser} />
-						) : null}
-
 						{(this.order.report && ((gstore.me!.role === 'executor' && this.order.activeExecutorId === gstore.me!.id) || gstore.me!.role === 'admin')) ? (
 							<>
 								<Section text="Текст отчёта о работах">
