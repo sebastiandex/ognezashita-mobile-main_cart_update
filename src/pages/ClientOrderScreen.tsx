@@ -415,7 +415,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 		const p = this.viewPlace;
 
 		return (
-			// <Modal visible={true}>
+			<Modal visible={true}>
 				<View style={{ flexDirection: 'column', paddingVertical: 30, paddingHorizontal: 30, backgroundColor: MainBackground, alignItems: 'center' }}>
 					{gstore.api.fileLink(p.mainPhotoId) ? (<View style={{ flexDirection: 'column', flexBasis: 320, borderRadius: 6, overflow: 'hidden', flexGrow: 0, flexShrink: 0, marginRight: 15, }}>
 						<Image source={{ uri: gstore.api.fileLink(p.mainPhotoId) }} style={{ width: 320, height: 320, resizeMode: 'cover' }} />
@@ -426,7 +426,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 						<FButton onPress={() => this.viewPlace = null} style={{ marginTop: 30 }}>Назад</FButton>
 					</View>
 				</View>
-			// </Modal>
+			</Modal>
 		);
 	}
 
@@ -438,30 +438,31 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 		const p = this.viewPlace;
 
 		return (
-			// <Modal visible={true}>
-				<View style={{ flexDirection: 'column', backgroundColor: MainBackground, alignItems: 'flex-start' }}>
+            // <TouchableOpacity style={{ marginBottom: 0, marginTop: 10 }} onPress={() => this.renderPlaceContent()}>
+				<View style={{ flexDirection: 'column', paddingLeft: 20, borderBottomWidth: 1, borderBottomColor: '#E5E5E5', backgroundColor: MainBackground, alignItems: 'flex-start' }}>
 					{/*{gstore.api.fileLink(p.mainPhotoId) ? (<View style={{ flexDirection: 'column', flexBasis: 320, borderRadius: 6, overflow: 'hidden', flexGrow: 0, flexShrink: 0, marginRight: 15, }}>*/}
 					{/*	<Image source={{ uri: gstore.api.fileLink(p.mainPhotoId) }} style={{ width: 72, height: 72, resizeMode: 'cover' }} />*/}
 					{/*</View>) : null}*/}
-					<View style={{ flexDirection: 'column', marginTop: 30, alignItems: 'flex-start' }}>
+					<View style={{ flexDirection: 'column',  alignItems: 'flex-start' }}>
 						<View>
-							<Text style={{ fontSize: 20, fontWeight: 'bold', color: MainHeader, marginBottom: 15 }}>Название объекта:</Text>
-							<Text style={{ fontSize: 20, fontWeight: 'bold', color: MainHeader, marginBottom: 15 }}>{p.name}</Text>
+							<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, marginBottom: 15 }}>Название объекта:</Text>
+							<Text style={{ fontSize: 16, color: '#A3A3A3', marginBottom: 15 }}>{p.name}</Text>
 						</View>
 						{/*<View style={{}}><Text style={{ fontSize: 14, color: MainHeader }}>Адрес: {p.address}</Text></View>*/}
 						{/*<FButton onPress={() => this.viewPlace = null} style={{ marginTop: 30 }}>Назад</FButton>*/}
 					</View>
 				</View>
-			// </Modal>
+            // </TouchableOpacity>
 		);
 	}
 
 	renderCartContent() {
 
 		return (
-
+    <>
+	{this.renderPlaceContentNew()}
 			<Section noBorder text="Состав заявки" contentStyle={{ paddingVertical: 10 }}>
-				{this.renderPlaceContentNew()}
+
 				{this.order.content.cart.map((item, index) => (
 					<View key={item.itemId}
 						  style={{
@@ -502,7 +503,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 						) : null}
 						<View style={{ flexGrow: 1, flexShrink: 1 }}>
 							<View style={{flexDirection: 'row'}}>
-								<Image source={{ uri: gstore.api.fileLink(item.itemImageId) }} style={{ borderRadius: 18, width: 72, height: 72 }} />
+								<Image source={{ uri: gstore.api.fileLink(item.itemImageId) }} style={{ borderRadius: 18, width: 72, height: 72, backgroundColor: '#E5E5E5', resizeMode: 'contain' }} />
 								<View style={{marginLeft: 15, width: '75%'}}>
 									<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, flexWrap: 'wrap'}}>{item.itemTitle}</Text>
 									<Text style={{ fontSize: 12, color: MainMuted }}>Количество: {item.amount}</Text>
@@ -515,6 +516,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 					</View>
 				))}
 			</Section>
+    </>
 		);
 	}
 
