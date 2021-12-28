@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/raw_node_modules_reactnativevectoricons_glyphmaps_materialicons.json.flat",
+        "source": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/res/raw/node_modules_reactnativevectoricons_glyphmaps_materialicons.json"
+    },
+    {
+        "merged": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/raw_node_modules_reactnativevectoricons_glyphmaps_fontawesome.json.flat",
+        "source": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/res/raw/node_modules_reactnativevectoricons_glyphmaps_fontawesome.json"
+    },
+    {
+        "merged": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/raw_app.json.flat",
+        "source": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/res/raw/app.json"
+    },
+    {
+        "merged": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/raw_node_modules_csscolorkeywords_colors.json.flat",
+        "source": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/res/raw/node_modules_csscolorkeywords_colors.json"
+    },
+    {
+        "merged": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]

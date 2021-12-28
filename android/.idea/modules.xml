@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ru.hugsy.firedefenceapp.iml" filepath="$PROJECT_DIR$/.idea/modules/ru.hugsy.firedefenceapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2088319753/ru.hugsy.firedefenceapp.@react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/-2088319753/ru.hugsy.firedefenceapp.@react-native-community_async-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ru.hugsy.firedefenceapp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ru.hugsy.firedefenceapp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2088319753/ru.hugsy.firedefenceapp.react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/-2088319753/ru.hugsy.firedefenceapp.react-native-community_async-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-52496972/ru.hugsy.firedefenceapp.react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/-52496972/ru.hugsy.firedefenceapp.react-native-community_masked-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1178150214/ru.hugsy.firedefenceapp.react-native-firebase_app.iml" filepath="$PROJECT_DIR$/.idea/modules/1178150214/ru.hugsy.firedefenceapp.react-native-firebase_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/430117283/ru.hugsy.firedefenceapp.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/430117283/ru.hugsy.firedefenceapp.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1353726570/ru.hugsy.firedefenceapp.react-native-image-crop-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/-1353726570/ru.hugsy.firedefenceapp.react-native-image-crop-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1622158707/ru.hugsy.firedefenceapp.react-native-notifications.iml" filepath="$PROJECT_DIR$/.idea/modules/-1622158707/ru.hugsy.firedefenceapp.react-native-notifications.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1196527647/ru.hugsy.firedefenceapp.react-native-permissions.iml" filepath="$PROJECT_DIR$/.idea/modules/-1196527647/ru.hugsy.firedefenceapp.react-native-permissions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1206922599/ru.hugsy.firedefenceapp.react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/-1206922599/ru.hugsy.firedefenceapp.react-native-reanimated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1677217100/ru.hugsy.firedefenceapp.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/1677217100/ru.hugsy.firedefenceapp.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/887725156/ru.hugsy.firedefenceapp.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/887725156/ru.hugsy.firedefenceapp.react-native-screens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1814159085/ru.hugsy.firedefenceapp.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/-1814159085/ru.hugsy.firedefenceapp.react-native-vector-icons.iml" />
+    </modules>
+  </component>
+</project>

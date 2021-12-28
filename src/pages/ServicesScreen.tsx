@@ -264,7 +264,7 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 
 	constructor(props: { navigation: IListNavigation; route: any; openedCategories: any } | Readonly<{ navigation: IListNavigation; route: any; openedCategories: any }>) {
 		super(props);
-		this.state = { openedCategories: [] };
+		this.state = { openedCategories: [], searchOpened: false };
 		this.showHideCategory = this.showHideCategory.bind(this);
 	}
 
@@ -445,66 +445,83 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 	@observable search = '';
 
 	render() {
+		console.log('THISPROPS', this.props.route.name)
 		return (
+			<>
+				<TouchableOpacity
+					style={{ alignItems: 'center', justifyContent: 'center', position: 'absolute', right: 60, top: 13, zIndex: 99999 }}
+					onPress={() => this.setState({searchOpened: !this.state.searchOpened})}
+				>
+					<Image source={this.state.searchOpened ? require('./../../assets/filterIcon.png') : require('./../../assets/searchIcon.png')}
+						   style={{width: 20, height: 20, resizeMode: 'contain'}}
+					/>
+				</TouchableOpacity>
+
 			<View style={{ backgroundColor: MainBackground, flexGrow: 1, }}>
 				<View style={{ width: '100%', paddingTop: 15, paddingBottom: 15, alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', elevation: 4 }}>
-					<View style={{ flexDirection: 'row', width: '90%', borderRadius: 8, overflow: 'hidden', borderWidth: 1, borderColor: '#d0d0d0', alignItems: 'stretch', justifyContent: 'center', height: 40, }}>
-						<TouchableOpacity style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'goods'}>
-							<View style={{
-								flexGrow: 1,
-								flexShrink: 1,
-								alignItems: 'center',
-								justifyContent: 'center',
-								backgroundColor: this.type !== 'goods' ? 'white' : MainOrange,
-								borderRightWidth: 1, borderRightColor: '#d0d0d0',
-								borderRadius: 8
-							}}>
-								<Text style={{color: this.type !== 'goods' ? MainText : 'white'}}>Товары</Text>
-							</View>
-						</TouchableOpacity>
-						<TouchableOpacity disabled style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'services'}>
-							<View style={{
-								flexGrow: 1,
-								flexShrink: 1,
-								alignItems: 'center',
-								justifyContent: 'center',
-								backgroundColor: this.type !== 'services' ? '#f0f0f0' : 'MainOrange'
-							}}>
-								<Text>Товары от партнёров</Text>
-							</View>
-						</TouchableOpacity>
-						<TouchableOpacity style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'services'}>
-							<View style={{
-								flexGrow: 1,
-								flexShrink: 1,
-								alignItems: 'center',
-								justifyContent: 'center',
-								backgroundColor: this.type !== 'services' ? 'white' : MainOrange
-							}}>
-								<Text style={{color: this.type !== 'services' ? MainText : 'white'}}>Услуги</Text>
-							</View>
-						</TouchableOpacity>
+					{this.state.searchOpened ? (
+						<View style={{
+							// marginTop: 10,
+							width: '90%'
+						}}>
+							<TextInput
+								value={this.search}
+								onChangeText={e => { this.search = e }}
+								placeholder="Поиск"
+								placeholderTextColor={'#A3A3A3'}
+								style={{
+									fontSize: 15,
+									borderWidth: 1,
+									borderColor: '#e0e0e0',
+									backgroundColor: '#E5E5E5',
+									borderRadius: 8,
+									height: 36,
+									width: '100%',
+									paddingHorizontal: 20,
+									paddingVertical: 2
+								}}
+							/>
+						</View>
+					) : (
+						<View style={{ flexDirection: 'row', width: '90%', borderRadius: 8, overflow: 'hidden', borderWidth: 1, borderColor: '#d0d0d0', alignItems: 'stretch', justifyContent: 'center', height: 36, }}>
+							<TouchableOpacity style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'goods'}>
+								<View style={{
+									flexGrow: 1,
+									flexShrink: 1,
+									alignItems: 'center',
+									justifyContent: 'center',
+									backgroundColor: this.type !== 'goods' ? 'white' : MainOrange,
+									borderRightWidth: 1, borderRightColor: '#d0d0d0',
+									borderRadius: 8
+								}}>
+									<Text style={{color: this.type !== 'goods' ? MainText : 'white'}}>Товары</Text>
+								</View>
+							</TouchableOpacity>
+							<TouchableOpacity disabled style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'services'}>
+								<View style={{
+									flexGrow: 1,
+									flexShrink: 1,
+									alignItems: 'center',
+									justifyContent: 'center',
+									backgroundColor: this.type !== 'services' ? '#f0f0f0' : 'MainOrange'
+								}}>
+									<Text>Товары от партнёров</Text>
+								</View>
+							</TouchableOpacity>
+							<TouchableOpacity style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'services'}>
+								<View style={{
+									flexGrow: 1,
+									flexShrink: 1,
+									alignItems: 'center',
+									justifyContent: 'center',
+									backgroundColor: this.type !== 'services' ? 'white' : MainOrange
+								}}>
+									<Text style={{color: this.type !== 'services' ? MainText : 'white'}}>Услуги</Text>
+								</View>
+							</TouchableOpacity>
 
-					</View>
-					<View style={{
-						marginTop: 10,
-						width: '90%',
-					}}>
-						<TextInput
-							value={this.search}
-							onChangeText={e => { this.search = e }}
-							placeholder="Запрос для поиска..."
-							style={{
-								borderWidth: 1,
-								borderColor: '#e0e0e0',
-								borderRadius: 3,
-								height: 36,
-								width: '100%',
-								paddingHorizontal: 10,
-								paddingVertical: 2
-							}}
-						/>
-					</View>
+						</View>
+					)}
 				</View>
 				{this.loading ? <ActivityIndicator style={{ marginTop: 50 }} size="large" color={MainLight} /> : (
 					// <Accordion
@@ -543,6 +560,7 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 					// />
 				)}
 			</View>
+			</>
 		);
 	}
 }

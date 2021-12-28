@@ -21,6 +21,7 @@ import LicenseScreen from "./LicenseScreen";
 import ContactScreen from "./ContactScreen";
 import OrderRouterScreen from "./OrderRouterScreen";
 import { IServiceItem } from "../network/api";
+import {useRoute} from '@react-navigation/native';
 
 type RootStackParamList = {
 	Notifications: undefined;
@@ -39,12 +40,9 @@ const Drawer = createDrawerNavigator();
 @observer
 class HeaderRight extends PureComponent<{ navigation: any }> {
 	render() {
-		console.log('GSTORE', gstore)
 		return (
 			<>
-			{/*<View style={{ alignItems: 'center', justifyContent: 'center', position: 'absolute', right: 50, top: 0, zIndex: 99999 }}>*/}
-			{/*	<Text>123</Text>*/}
-			{/*</View>*/}
+
 			<TouchableOpacity onPress={() => {
 				if (gstore.cart.length) {
 					this.props.navigation.jumpTo('Cart');
@@ -66,6 +64,7 @@ class HeaderRight extends PureComponent<{ navigation: any }> {
 function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>) {
 
 	const { state, navigation, descriptors } = props;
+
 	const newDescriptors: any = {};
 	const newState = {
 		...state,
@@ -84,6 +83,7 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 					licenseKey = key;
 				}
 	}
+
 	return (
 		<DrawerContentScrollView {...props} style={{ width: 280, flexGrow: 1, backgroundColor: gstore.me!.role === 'admin' ? MainBackgroundNav : MainBackground }} contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-between' }}>
 			<View style={{ marginLeft: 0 }}>
@@ -187,8 +187,11 @@ class MainScreen extends PureComponent {
 			<Text>{route.params.post}</Text>
 		)
 	}
+
 	render() {
+
 		return (
+
 			<Animated.View style={{ zIndex: 0, flexGrow: 1, opacity: this.test, backgroundColor: 'white', width: '100%', height: '100%' }}>
 
 				<NavigationContainer>

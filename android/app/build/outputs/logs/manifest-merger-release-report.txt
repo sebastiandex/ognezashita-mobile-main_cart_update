@@ -1,0 +1,618 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:1:1-37:12
+INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:1:1-37:12
+INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:1:1-37:12
+INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:1:1-37:12
+MERGED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:2:1-27:12
+MERGED from [:react-native-community_async-storage] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_masked-view] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-29:12
+MERGED from [:react-native-gesture-handler] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-34:12
+MERGED from [:react-native-permissions] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-permissions/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-reanimated] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-safe-area-context] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-screens/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.63.3] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/fbd76b87d2732dd2a4a7829ad31f380e/jetified-react-native-0.63.3/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/178d78ea9d284a2855ee4ee6cc62b043/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:17:1-58:12
+MERGED from [org.webkit:android-jsc:r245459] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/b4b92f75c5203b0ee717acc1bea65b27/jetified-android-jsc-r245459/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/adee2c28d912defdd37e60b804f839c0/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:15:1-40:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:15:1-41:12
+MERGED from [com.github.yalantis:ucrop:2.2.6-native] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/b09a5c29a316dd418affe70e1e001e97/jetified-ucrop-2.2.6-native/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.material:material:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/68d6050b4218f62a686b14bb790c0d5d/material-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/c4cc5dd8d2c0ace1f3832bf91a54830e/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ecfcba6dd6d11276244ccff6eaed4a87/jetified-fresco-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/a42f798ddc7689efbd4e1369185510a9/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/a8153f5afbe0313e758e8513788952bb/jetified-drawee-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/742aafaec5d8587e51f12e011b1370fb/jetified-nativeimagefilters-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d71620cc901308a527ec0892f2545a22/jetified-imagepipeline-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/6a2bc84ce82dd8a28be4b61e6f289a4e/jetified-nativeimagetranscoder-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ff8b13de737ca3ae51b9dafa88f4211f/jetified-imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/0b22969ceeb4848cccda3a5149617629/jetified-soloader-0.8.2/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8b23bfc770fc2ed9275d785bb18ad21/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/24b43882adeb376bb022263c25fa0766/jetified-play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/50fcb58094390825be978de9e132f641/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/1471d0a36fa85e5b1d82615947e754b3/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d5d53d349ee8e81bf786102e27635da9/jetified-play-services-auth-api-phone-17.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/513c0eb65a025567187199e3f4c1b90b/jetified-play-services-auth-base-17.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/1ed21ace220b34a93fff33aa516e02fc/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/cb2b0692d6181d79a262db15ff34df2b/jetified-play-services-tasks-17.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/033cae4819aa31af92f8000de6b27bdd/jetified-play-services-basement-17.5.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/eda0cfcb20d064fa0da1920675d27abe/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/38b055fe7216df9606689765c13e4b08/fragment-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2c93ecc3af827300d127c46730092c6b/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e05a36c827b0ab0ed2851ef7d72aa85f/jetified-transport-api-3.0.0/AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/a8d3873a3531841389fc1c0bac9bf954/jetified-firebase-components-17.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ae9a0b8df95997842601c8a69385fb9f/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/cf0a7be5556a2184096706368ac52262/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/1f8aa2a1fd25930a254ce029736fd441/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/a20a4b3c6e28b16030ab92fdbad6df70/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/0ca0b7ce21546e1fad98dcb305951310/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7e2696e002480c0b94d58b4bfd8ff8e8/exifinterface-1.1.0-beta01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9329d590182945e2e0ded12d418c171f/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/745187d485f686b5748ff53d463cecdd/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/53b4a0da9d3dcb929bbb9cc9f1a53d5d/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9743d08c07ed8e8cc8222022ca6ba1f3/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/4d26d609a067d29d3ca28b70ce31603d/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/f4a654174909049efd9ababb66e8b6fa/jetified-activity-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/179dbac08bb17ffd8f661eeaca87c4d8/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bb7a8c4b1f684644f81cc87bb2f2bf9c/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bc69a75a9736b044aec92e8a94e1b02d/core-1.2.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/f996f5ae79bd7ea61d7e2423920beba4/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8b674410055c6978d8fbd8c43c807e2/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fb97f9420590af5ba52e5afb979eef6/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/5289a7e8ac0295cbf7ea195dc6568a7f/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/551283c8e1138f34b1c6dab500d26281/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/452c7f4f2fddab524f6a686f0c43a5b9/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/b3300370143f92c43782164d3bd2ea62/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/37f360810592c600ee0c13d2d91b8729/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/15836fa35f825c8f2c25ae5d6e9d3134/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/b0ade6fb1e5eba540a91167c81a1e711/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/4eb218e9fd71ec88aec9c21467f10c16/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d423c019f88e39fad8a0f94a1aaa58e6/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7e2cef188f5c2698b3bf9aaa32adb053/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8627a06620afa5637e0bc89fefb8e05/jetified-annotation-0.8.2/AndroidManifest.xml:2:1-13:12
+INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:1:1-37:12
+INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:1:1-37:12
+INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:1:1-37:12
+	package
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:2:3-36
+		INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:1:1-37:12
+		INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:1:1-37:12
+		INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8b23bfc770fc2ed9275d785bb18ad21/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8b23bfc770fc2ed9275d785bb18ad21/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:4:22-64
+meta-data#com.google.firebase.messaging.default_notification_icon
+ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:6:5-8:64
+	android:resource
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:8:9-61
+	android:name
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:7:9-79
+meta-data#com.google.firebase.messaging.default_notification_color
+ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:11:5-13:53
+	android:resource
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:13:13-50
+	android:name
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:12:13-84
+application
+ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:15:5-35:19
+MERGED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:11:5-25:19
+MERGED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:11:5-25:19
+MERGED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-27:19
+MERGED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-27:19
+MERGED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:18:5-32:19
+MERGED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:18:5-32:19
+MERGED from [com.facebook.react:react-native:0.63.3] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/fbd76b87d2732dd2a4a7829ad31f380e/jetified-react-native-0.63.3/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.63.3] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/fbd76b87d2732dd2a4a7829ad31f380e/jetified-react-native-0.63.3/AndroidManifest.xml:11:5-20
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.material:material:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/68d6050b4218f62a686b14bb790c0d5d/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/68d6050b4218f62a686b14bb790c0d5d/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/0b22969ceeb4848cccda3a5149617629/jetified-soloader-0.8.2/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/0b22969ceeb4848cccda3a5149617629/jetified-soloader-0.8.2/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/24b43882adeb376bb022263c25fa0766/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/24b43882adeb376bb022263c25fa0766/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/50fcb58094390825be978de9e132f641/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/50fcb58094390825be978de9e132f641/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/1471d0a36fa85e5b1d82615947e754b3/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/1471d0a36fa85e5b1d82615947e754b3/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/cb2b0692d6181d79a262db15ff34df2b/jetified-play-services-tasks-17.2.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/cb2b0692d6181d79a262db15ff34df2b/jetified-play-services-tasks-17.2.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/033cae4819aa31af92f8000de6b27bdd/jetified-play-services-basement-17.5.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/033cae4819aa31af92f8000de6b27bdd/jetified-play-services-basement-17.5.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bc69a75a9736b044aec92e8a94e1b02d/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bc69a75a9736b044aec92e8a94e1b02d/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/f996f5ae79bd7ea61d7e2423920beba4/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/f996f5ae79bd7ea61d7e2423920beba4/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8627a06620afa5637e0bc89fefb8e05/jetified-annotation-0.8.2/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8627a06620afa5637e0bc89fefb8e05/jetified-annotation-0.8.2/AndroidManifest.xml:11:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bc69a75a9736b044aec92e8a94e1b02d/core-1.2.0/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:17:7-39
+	android:icon
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:18:7-41
+	android:allowBackup
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:19:7-34
+	android:theme
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:20:7-38
+	android:usesCleartextTraffic
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:21:9-44
+	android:name
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:16:7-38
+activity#ru.hugsy.firedefenceapp.MainActivity
+ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:23:7-33:18
+	android:label
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:25:9-41
+	android:launchMode
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:27:9-40
+	android:windowSoftInputMode
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:28:9-51
+	android:configChanges
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:26:9-86
+	android:name
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:24:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:29:9-32:25
+action#android.intent.action.MAIN
+ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:30:13-65
+	android:name
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:30:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:31:13-73
+	android:name
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:31:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:34:7-84
+	android:name
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:34:17-81
+uses-sdk
+INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_async-storage] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:6:5-8:41
+MERGED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:6:5-8:41
+MERGED from [:react-native-permissions] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-permissions/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-permissions] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-permissions/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-reanimated] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-safe-area-context] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-screens/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-screens/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.63.3] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/fbd76b87d2732dd2a4a7829ad31f380e/jetified-react-native-0.63.3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.63.3] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/fbd76b87d2732dd2a4a7829ad31f380e/jetified-react-native-0.63.3/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/178d78ea9d284a2855ee4ee6cc62b043/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/178d78ea9d284a2855ee4ee6cc62b043/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:20:5-44
+MERGED from [org.webkit:android-jsc:r245459] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/b4b92f75c5203b0ee717acc1bea65b27/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/b4b92f75c5203b0ee717acc1bea65b27/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/adee2c28d912defdd37e60b804f839c0/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/adee2c28d912defdd37e60b804f839c0/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.github.yalantis:ucrop:2.2.6-native] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/b09a5c29a316dd418affe70e1e001e97/jetified-ucrop-2.2.6-native/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.6-native] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/b09a5c29a316dd418affe70e1e001e97/jetified-ucrop-2.2.6-native/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/68d6050b4218f62a686b14bb790c0d5d/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/68d6050b4218f62a686b14bb790c0d5d/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/c4cc5dd8d2c0ace1f3832bf91a54830e/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/c4cc5dd8d2c0ace1f3832bf91a54830e/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ecfcba6dd6d11276244ccff6eaed4a87/jetified-fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ecfcba6dd6d11276244ccff6eaed4a87/jetified-fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/a42f798ddc7689efbd4e1369185510a9/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/a42f798ddc7689efbd4e1369185510a9/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/a8153f5afbe0313e758e8513788952bb/jetified-drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/a8153f5afbe0313e758e8513788952bb/jetified-drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/742aafaec5d8587e51f12e011b1370fb/jetified-nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/742aafaec5d8587e51f12e011b1370fb/jetified-nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d71620cc901308a527ec0892f2545a22/jetified-imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d71620cc901308a527ec0892f2545a22/jetified-imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/6a2bc84ce82dd8a28be4b61e6f289a4e/jetified-nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/6a2bc84ce82dd8a28be4b61e6f289a4e/jetified-nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ff8b13de737ca3ae51b9dafa88f4211f/jetified-imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ff8b13de737ca3ae51b9dafa88f4211f/jetified-imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/0b22969ceeb4848cccda3a5149617629/jetified-soloader-0.8.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.8.2] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/0b22969ceeb4848cccda3a5149617629/jetified-soloader-0.8.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8b23bfc770fc2ed9275d785bb18ad21/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8b23bfc770fc2ed9275d785bb18ad21/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/24b43882adeb376bb022263c25fa0766/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/24b43882adeb376bb022263c25fa0766/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/50fcb58094390825be978de9e132f641/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/50fcb58094390825be978de9e132f641/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/1471d0a36fa85e5b1d82615947e754b3/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/1471d0a36fa85e5b1d82615947e754b3/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d5d53d349ee8e81bf786102e27635da9/jetified-play-services-auth-api-phone-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d5d53d349ee8e81bf786102e27635da9/jetified-play-services-auth-api-phone-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/513c0eb65a025567187199e3f4c1b90b/jetified-play-services-auth-base-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/513c0eb65a025567187199e3f4c1b90b/jetified-play-services-auth-base-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/1ed21ace220b34a93fff33aa516e02fc/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/1ed21ace220b34a93fff33aa516e02fc/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/cb2b0692d6181d79a262db15ff34df2b/jetified-play-services-tasks-17.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/cb2b0692d6181d79a262db15ff34df2b/jetified-play-services-tasks-17.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/033cae4819aa31af92f8000de6b27bdd/jetified-play-services-basement-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/033cae4819aa31af92f8000de6b27bdd/jetified-play-services-basement-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/eda0cfcb20d064fa0da1920675d27abe/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/eda0cfcb20d064fa0da1920675d27abe/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/38b055fe7216df9606689765c13e4b08/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/38b055fe7216df9606689765c13e4b08/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2c93ecc3af827300d127c46730092c6b/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2c93ecc3af827300d127c46730092c6b/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e05a36c827b0ab0ed2851ef7d72aa85f/jetified-transport-api-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e05a36c827b0ab0ed2851ef7d72aa85f/jetified-transport-api-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/a8d3873a3531841389fc1c0bac9bf954/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/a8d3873a3531841389fc1c0bac9bf954/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ae9a0b8df95997842601c8a69385fb9f/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ae9a0b8df95997842601c8a69385fb9f/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/cf0a7be5556a2184096706368ac52262/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/cf0a7be5556a2184096706368ac52262/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/1f8aa2a1fd25930a254ce029736fd441/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/1f8aa2a1fd25930a254ce029736fd441/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/a20a4b3c6e28b16030ab92fdbad6df70/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/a20a4b3c6e28b16030ab92fdbad6df70/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/0ca0b7ce21546e1fad98dcb305951310/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/0ca0b7ce21546e1fad98dcb305951310/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7e2696e002480c0b94d58b4bfd8ff8e8/exifinterface-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7e2696e002480c0b94d58b4bfd8ff8e8/exifinterface-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9329d590182945e2e0ded12d418c171f/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9329d590182945e2e0ded12d418c171f/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/745187d485f686b5748ff53d463cecdd/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/745187d485f686b5748ff53d463cecdd/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/53b4a0da9d3dcb929bbb9cc9f1a53d5d/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/53b4a0da9d3dcb929bbb9cc9f1a53d5d/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9743d08c07ed8e8cc8222022ca6ba1f3/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9743d08c07ed8e8cc8222022ca6ba1f3/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/4d26d609a067d29d3ca28b70ce31603d/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/4d26d609a067d29d3ca28b70ce31603d/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/f4a654174909049efd9ababb66e8b6fa/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/f4a654174909049efd9ababb66e8b6fa/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/179dbac08bb17ffd8f661eeaca87c4d8/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/179dbac08bb17ffd8f661eeaca87c4d8/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bb7a8c4b1f684644f81cc87bb2f2bf9c/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bb7a8c4b1f684644f81cc87bb2f2bf9c/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bc69a75a9736b044aec92e8a94e1b02d/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bc69a75a9736b044aec92e8a94e1b02d/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/f996f5ae79bd7ea61d7e2423920beba4/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/f996f5ae79bd7ea61d7e2423920beba4/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8b674410055c6978d8fbd8c43c807e2/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8b674410055c6978d8fbd8c43c807e2/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fb97f9420590af5ba52e5afb979eef6/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fb97f9420590af5ba52e5afb979eef6/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/5289a7e8ac0295cbf7ea195dc6568a7f/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/5289a7e8ac0295cbf7ea195dc6568a7f/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/551283c8e1138f34b1c6dab500d26281/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/551283c8e1138f34b1c6dab500d26281/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/452c7f4f2fddab524f6a686f0c43a5b9/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/452c7f4f2fddab524f6a686f0c43a5b9/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/b3300370143f92c43782164d3bd2ea62/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/b3300370143f92c43782164d3bd2ea62/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/37f360810592c600ee0c13d2d91b8729/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/37f360810592c600ee0c13d2d91b8729/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/15836fa35f825c8f2c25ae5d6e9d3134/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/15836fa35f825c8f2c25ae5d6e9d3134/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/b0ade6fb1e5eba540a91167c81a1e711/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/b0ade6fb1e5eba540a91167c81a1e711/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/4eb218e9fd71ec88aec9c21467f10c16/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/4eb218e9fd71ec88aec9c21467f10c16/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d423c019f88e39fad8a0f94a1aaa58e6/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d423c019f88e39fad8a0f94a1aaa58e6/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7e2cef188f5c2698b3bf9aaa32adb053/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7e2cef188f5c2698b3bf9aaa32adb053/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8627a06620afa5637e0bc89fefb8e05/jetified-annotation-0.8.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:annotation:0.8.2] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8627a06620afa5637e0bc89fefb8e05/jetified-annotation-0.8.2/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml
+service#com.wix.reactnativenotifications.core.ProxyService
+ADDED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:14:9-86
+	android:name
+		ADDED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:14:18-83
+service#com.wix.reactnativenotifications.fcm.FcmInstanceIdListenerService
+ADDED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:15:9-20:19
+	android:name
+		ADDED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:15:18-98
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT+action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:16:13-19:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:17:17-78
+	android:name
+		ADDED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:17:25-75
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:18:17-80
+	android:name
+		ADDED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:18:25-77
+service#com.wix.reactnativenotifications.fcm.FcmInstanceIdRefreshHandlerService
+ADDED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:21:9-24:72
+	android:exported
+		ADDED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:23:13-37
+	android:permission
+		ADDED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:24:13-69
+	android:name
+		ADDED from [:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Release/AndroidManifest.xml:22:13-99
+meta-data#app_data_collection_default_enabled
+ADDED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:9-14:36
+	android:value
+		ADDED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-33
+	android:name
+		ADDED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-63
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:9-20:19
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:51:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:18-89
+meta-data#com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar
+ADDED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:18:17-120
+provider#io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider
+ADDED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:22:9-26:38
+	android:authorities
+		ADDED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:13-86
+	android:exported
+		ADDED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:25:13-37
+	android:initOrder
+		ADDED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:26:13-35
+	android:name
+		ADDED from [:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/release/AndroidManifest.xml:23:13-88
+queries
+ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:5-14:15
+intent
+ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:9-13:18
+action#android.media.action.IMAGE_CAPTURE
+ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:13-73
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:21-70
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:22-78
+provider#androidx.core.content.FileProvider
+ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:19:9-27:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:23:13-47
+	android:authorities
+		ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:21:13-60
+	android:exported
+		ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:22:13-37
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:20:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:13-26:58
+	android:resource
+		ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:26:17-55
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:25:17-67
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:29:9-31:72
+	android:theme
+		ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:31:13-69
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:30:13-60
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8b23bfc770fc2ed9275d785bb18ad21/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8b23bfc770fc2ed9275d785bb18ad21/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:22:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:23:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8b23bfc770fc2ed9275d785bb18ad21/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8b23bfc770fc2ed9275d785bb18ad21/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:9:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:23:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8b23bfc770fc2ed9275d785bb18ad21/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/e8b23bfc770fc2ed9275d785bb18ad21/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:11:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:22-79
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:28:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:30:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:31:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:29:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:32:13-34:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:33:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:33:25-78
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:41:9-48:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:44:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:43:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:42:13-82
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:45:13-47:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:45:28-51
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:52:13-54:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:54:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:53:17-119
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/033cae4819aa31af92f8000de6b27bdd/jetified-play-services-basement-17.5.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/033cae4819aa31af92f8000de6b27bdd/jetified-play-services-basement-17.5.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/033cae4819aa31af92f8000de6b27bdd/jetified-play-services-basement-17.5.0/AndroidManifest.xml:24:13-58
