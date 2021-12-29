@@ -1,8 +1,17 @@
 import { computed, observable, reaction } from "mobx";
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import AsyncStorage from '@react-native-community/async-storage';
 import API from "../network/api";
 import { Alert } from "react-native";
+import { Appearance } from 'react-native';
+
+export const ThemeContext = React.createContext({
+	isDark: false,
+	setColorScheme: () => {},
+
+});
+export const colorScheme = Appearance.getColorScheme();
+
 
 export interface ICartItem {
 	itemId: string;
@@ -130,6 +139,7 @@ class GlobalStore {
 
 	selectedOrderId!: string;
 	ordersMode: 'default' | 'mine' | 'execs' | 'new' = 'default';
+	colorScheme: string | undefined;
 
 	constructor() {
 		this.loadCart();

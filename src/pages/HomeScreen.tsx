@@ -183,7 +183,7 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 															<Text style={{
 																fontSize: 16,
 																fontWeight: 'bold',
-																color: MainHeader
+																color: MainText
 															}}
 															>
 																{ord.title}
@@ -256,7 +256,7 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 												<Image source={{ uri: gstore.api.fileLink(p.mainPhotoId) }} style={{ width: 70, height: 70, resizeMode: 'cover' }} />
 											</View>) : null}
 											<View style={{ flexDirection: 'column' }}>
-												<View><Text style={{ fontSize: 16, fontWeight: 'bold', color: MainHeader, marginBottom: 5 }}>{p.name}</Text></View>
+												<View><Text style={{ fontSize: 16, fontWeight: 'bold', color: MainText, marginBottom: 5 }}>{p.name}</Text></View>
 												<View style={{}}><Text style={{ fontSize: 12, color: MainMuted }}>Адрес: {p.address}</Text></View>
 											</View>
 										</View>

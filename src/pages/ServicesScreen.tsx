@@ -372,14 +372,14 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 		return (
 			<>
 
-			<View key={index} style={{ paddingHorizontal: 20, paddingTop: 5, paddingBottom: 15, backgroundColor: 'white' }}>
+			<View key={index} style={{ paddingHorizontal: 20, paddingTop: 5, paddingBottom: 15, backgroundColor: MainBackground }}>
 				<TouchableOpacity
 					key={index}
 					onPress={() => this.showHideCategory(item.title)}
 				>
 					<View style={{flexDirection: 'row', height: 50, justifyContent: 'space-between', borderBottomColor: '#E5E5E5',
 						borderBottomWidth: _.findIndex(this.state.openedCategories, function (o) { return o === item.title }) !== -1 ? 0 : 1}}>
-					<Text style={{ fontSize: 24, fontWeight: '600', color: MainHeader }}>
+					<Text style={{ fontSize: 24, fontWeight: '600', color: MainText }}>
 						{item.title}
 					</Text>
 						<Image
@@ -457,7 +457,7 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 					/>
 				</TouchableOpacity>
 			<View style={{ backgroundColor: MainBackground, flexGrow: 1 }}>
-				<View style={{ width: '100%', paddingTop: 15, paddingBottom: 15, alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', elevation: 4 }}>
+				<View style={{ width: '100%', paddingTop: 15, paddingBottom: 15, alignItems: 'center', justifyContent: 'center', backgroundColor: MainBackground, elevation: 4 }}>
 					{this.state.searchOpened ? (
 						<View style={{
 							// marginTop: 10,
@@ -482,14 +482,14 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 							/>
 						</View>
 					) : (
-						<View style={{ flexDirection: 'row', width: '90%', borderRadius: 8, overflow: 'hidden', borderWidth: 1, borderColor: '#d0d0d0', alignItems: 'stretch', justifyContent: 'center', height: 36, }}>
+						<View style={{ backgroundColor: MainBackground, flexDirection: 'row', width: '90%', borderRadius: 8, overflow: 'hidden', alignItems: 'stretch', justifyContent: 'center', height: 36, }}>
 							<TouchableOpacity style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'goods'}>
 								<View style={{
 									flexGrow: 1,
 									flexShrink: 1,
 									alignItems: 'center',
 									justifyContent: 'center',
-									backgroundColor: this.type !== 'goods' ? 'white' : MainOrange,
+									backgroundColor: this.type !== 'goods' ? MainBackground : MainOrange,
 									borderRightWidth: 1, borderRightColor: '#d0d0d0',
 									borderRadius: 8
 								}}>
@@ -502,9 +502,9 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 									flexShrink: 1,
 									alignItems: 'center',
 									justifyContent: 'center',
-									backgroundColor: this.type !== 'services' ? '#f0f0f0' : 'MainOrange'
+									backgroundColor: this.type !== 'services' ? MainBackground : 'MainOrange'
 								}}>
-									<Text>Товары от партнёров</Text>
+									<Text style={{color: MainText}}>Товары от партнёров</Text>
 								</View>
 							</TouchableOpacity>
 							<TouchableOpacity style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'services'}>
@@ -513,7 +513,7 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 									flexShrink: 1,
 									alignItems: 'center',
 									justifyContent: 'center',
-									backgroundColor: this.type !== 'services' ? 'white' : MainOrange
+									backgroundColor: this.type !== 'services' ? MainBackground : MainOrange
 								}}>
 									<Text style={{color: this.type !== 'services' ? MainText : 'white'}}>Услуги</Text>
 								</View>

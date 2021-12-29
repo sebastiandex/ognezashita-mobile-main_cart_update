@@ -6,11 +6,14 @@
 // export const MainHighlight = '#FEED01';
 // export const MainMuted = '#808080';
 
-export const MainBackground = 'white';
+
+import gstore from "./stores/gstore";
+
+export const MainBackground = gstore.colorScheme === 'dark' ? '#191919' : 'white';
 export const MainBackgroundNav = '#38393A';
-export const MainBackgroundDark = 'black';
+export const MainBackgroundDark = '#191919';
 export const MainBackgroundLight = 'white';
-export const MainText = 'black';
+export const MainText = gstore.colorScheme === 'dark' ? 'white' : 'black';
 export const MainHeader = 'black';
 export const MainLight = '#D59C0D';
 export const MainHighlight = 'yellow';
