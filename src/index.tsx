@@ -9,6 +9,11 @@ import AuthScreen from "./pages/AuthScreen";
 import MainScreen from "./pages/MainScreen";
 import { MainLight } from "./colors";
 import PushNotificationsManager from "./controls/PushNotificationsManager";
+// import { useColorScheme } from 'react-native';
+// import { ThemeProvider } from 'styled-components';
+// const scheme = useColorScheme();
+//
+// console.log('scheme22345', scheme)
 
 @observer
 class App extends PureComponent {

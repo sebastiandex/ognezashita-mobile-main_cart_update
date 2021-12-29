@@ -456,8 +456,7 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 						   style={{width: 20, height: 20, resizeMode: 'contain'}}
 					/>
 				</TouchableOpacity>
-
-			<View style={{ backgroundColor: MainBackground, flexGrow: 1, }}>
+			<View style={{ backgroundColor: MainBackground, flexGrow: 1 }}>
 				<View style={{ width: '100%', paddingTop: 15, paddingBottom: 15, alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', elevation: 4 }}>
 					{this.state.searchOpened ? (
 						<View style={{

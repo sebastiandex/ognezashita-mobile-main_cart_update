@@ -13,7 +13,7 @@ import ProfileScreen from "./ProfileScreen";
 import { MainOrange, MainBlack, MainWhite, MainBackgroundNav, IconGrey, MainBackground } from "../colors";
 import ServicesScreen from "./ServicesScreen";
 import Icon from "react-native-vector-icons/FontAwesome";
-// import CustomIcon from "../CustomIcon";
+import CustomIcon from "../CustomIcon";
 import { observer } from "mobx-react";
 import CartScreen from "./CartScreen";
 import Animated, { Easing } from "react-native-reanimated";
@@ -21,7 +21,6 @@ import LicenseScreen from "./LicenseScreen";
 import ContactScreen from "./ContactScreen";
 import OrderRouterScreen from "./OrderRouterScreen";
 import { IServiceItem } from "../network/api";
-import {useRoute} from '@react-navigation/native';
 
 type RootStackParamList = {
 	Notifications: undefined;
@@ -50,10 +49,10 @@ class HeaderRight extends PureComponent<{ navigation: any }> {
 			}}>
 				<View style={{ marginRight: 20, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end' }}>
 					{gstore.cart.length ? (
-						<View style={{ marginRight: 10, width: 20, height: 20, borderRadius: 10, backgroundColor: '#f0f0f0', alignItems: 'center', justifyContent: 'center' }}>
-							<Text style={{ fontSize: 12, fontWeight: 'bold', marginTop: -1 }}>{gstore.cart.length}</Text>
+						<View style={{ zIndex: 9999, position: "absolute", right: -8, top: -5, width: 20, height: 20, borderRadius: 10, backgroundColor: '#E73838', alignItems: 'center', justifyContent: 'center' }}>
+							<Text style={{ fontSize: 11, fontWeight: '600', color: '#FFFFFF' }}>{gstore.cart.length}</Text>
 						</View>
-					) : null}<Icon name="shopping-cart" size={24} color={gstore.cart.length ? 'black' : '#d0d0d0'} />
+					) : null}<Icon name="shopping-cart" size={24} color={gstore.cart.length ? '#A3A3A3' : '#d0d0d0'} />
 				</View>
 			</TouchableOpacity>
 			</>
