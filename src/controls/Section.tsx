@@ -1,7 +1,6 @@
 import React, { ReactNode } from "react";
 import { Text, View } from "react-native";
-
-import {MainBackground, MainHeader, MainText} from "../colors";
+import gstore from "../stores/gstore";
 
 function Section({ text, children, contentStyle, noBorder }: { text?: string, children: ReactNode, contentStyle?: any, noBorder?: boolean }) {
 	return (
@@ -9,14 +8,14 @@ function Section({ text, children, contentStyle, noBorder }: { text?: string, ch
 			<View style={{ marginBottom: 10 }}>
 				{text ? (
 					<View style={{ paddingHorizontal: 20, paddingTop: 10, paddingBottom: 10 }}>
-						<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainText }}>{text}</Text>
+						<Text style={{ fontSize: 18, fontWeight: 'bold', color: gstore.colorSheme === 'dark' ? 'white' : 'black' }}>{text}</Text>
 					</View>
 				) : null}
 				<View
 					style={Object.assign({
 						paddingHorizontal: 20,
 						paddingVertical: 20,
-						backgroundColor: MainBackground,
+						backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white',
 						borderBottomColor: '#E5E5E5',
 						borderBottomWidth: noBorder ? 0 : 1,
 						borderTopColor: '#E5E5E5',

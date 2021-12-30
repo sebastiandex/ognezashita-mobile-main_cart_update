@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import { createStackNavigator, StackNavigationProp } from "@react-navigation/stack";
+import { StackNavigationProp } from "@react-navigation/stack";
 import { autobind } from "core-decorators";
 import { computed, observable } from "mobx";
 import { observer } from "mobx-react";
@@ -16,14 +16,9 @@ import {
 	TouchableHighlight
 } from "react-native";
 import {
-	descriptionText,
-	MainBackground,
-	MainHeader,
 	MainLight,
 	MainMuted,
-	MainOrange,
-	MainText,
-	searchBackGround
+	MainOrange
 } from "../colors";
 import AmountSelector from "../controls/AmountSelector";
 import FRadio from "../controls/FRadio";
@@ -62,15 +57,15 @@ class ItemModal extends PureComponent<{ item: IServiceItem, onCart: (amount: num
 			<ScrollView style={{ left: 0, top: 0, right: 0, bottom: 0, zIndex: 10, position: 'absolute', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
 						contentContainerStyle={{ flexGrow: 1, flexShrink: 0, flexDirection: 'column', padding: 15, alignItems: 'stretch', justifyContent: 'center' }}>
 				<View style={{ flexGrow: 1, flexShrink: 0, alignItems: 'stretch', justifyContent: 'center' }}>
-					<View style={{ alignItems: 'stretch', padding: 20, borderRadius: 18, backgroundColor: MainBackground, borderWidth: 1, borderColor: 'rgba(255, 255, 255, 0.2)' }}>
+					<View style={{ alignItems: 'stretch', padding: 20, borderRadius: 18, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', borderWidth: 1, borderColor: 'rgba(255, 255, 255, 0.2)' }}>
 						<View style={{ alignItems: 'center', justifyContent: 'center', position: 'absolute', left: 10, top: 10, zIndex: 30 }}>
 							<TouchableOpacity onPress={() => {
 								gstore.setGlobalModal(null);
 							}}>
 								<View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', marginLeft: 10, marginTop: 5 }}>
 									{/*<Text style={{ fontWeight: '600', fontSize: 16 }}>&lt;</Text>*/}
-									<Icon style={{fontWeight: '100', marginTop: 2}} color={MainText} name={'chevron-left'} size={15}/>
-									<Text style={{ fontWeight: '600', fontSize: 16, marginLeft: 5, color: MainText }}>Назад</Text>
+									<Icon style={{fontWeight: '100', marginTop: 2}} color={gstore.colorSheme === 'dark' ? 'white' : 'black'} name={'chevron-left'} size={15}/>
+									<Text style={{ fontWeight: '600', fontSize: 16, marginLeft: 5, color: gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Назад</Text>
 								</View>
 							</TouchableOpacity>
 						</View>
@@ -79,12 +74,12 @@ class ItemModal extends PureComponent<{ item: IServiceItem, onCart: (amount: num
 						</View>
 						<View style={{ flexGrow: 1, flexShrink: 1 }}>
 							<View style={{ alignItems: 'flex-start', justifyContent: 'flex-start' }}>
-								<Text style={{ textAlign: 'left', fontSize: 20, fontWeight: '600', color: MainText, }}>{item.title}</Text>
+								<Text style={{ textAlign: 'left', fontSize: 20, fontWeight: '600', color: gstore.colorSheme === 'dark' ? 'white' : 'black', }}>{item.title}</Text>
 							</View>
 
 							<View style={{ marginTop: 40 }}>
 								{desc.split("\n").map((t, idx) => (
-									<Text key={idx} style={{ fontSize: 14, fontWeight: '400', color: descriptionText, marginBottom: 10 }}>
+									<Text key={idx} style={{ fontSize: 14, fontWeight: '400', color: gstore.colorSheme === 'dark' ? '#949494' : '#575757', marginBottom: 10 }}>
 										{t}
 									</Text>
 								))}
@@ -94,7 +89,7 @@ class ItemModal extends PureComponent<{ item: IServiceItem, onCart: (amount: num
 								<AmountSelector value={this.amount} onValue={a => this.amount = a} />
 								{parseFloat(String(item.price || 0)) ? (
 									<View style={{marginRight: -30 }}>
-											<Text style={{ fontSize: 18, fontWeight: '600', color: MainText }}>
+											<Text style={{ fontSize: 18, fontWeight: '600', color: gstore.colorSheme === 'dark' ? 'white' : 'black' }}>
 												{parseFloat(String(item.price || 0)) ? `${parseFloat(String(item.price))}₽` : '-'}
 											</Text>
 									</View>) : null}
@@ -141,25 +136,25 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number, pric
 				}}
 				contentContainerStyle={{ flexGrow: 1, flexShrink: 0, flexDirection: 'column', padding: 15, alignItems: 'stretch', justifyContent: 'center' }}>
 				<View style={{ flexGrow: 1, flexShrink: 0, alignItems: 'stretch', justifyContent: 'center' }}>
-					<View style={{ alignItems: 'stretch', padding: 20, borderRadius: 20, backgroundColor: MainBackground , borderWidth: 1, borderColor: 'rgba(255, 255, 255, 0.2)'}}>
+					<View style={{ alignItems: 'stretch', padding: 20, borderRadius: 20, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white' , borderWidth: 1, borderColor: 'rgba(255, 255, 255, 0.2)'}}>
 						<View style={{ alignItems: 'center', justifyContent: 'center', position: 'absolute', left: 10, top: 10, zIndex: 30 }}>
 							<TouchableOpacity onPress={() => {
 								gstore.setGlobalModal(null);
 							}}>
 								<View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', marginLeft: 10, marginTop: 5 }}>
 									{/*<Text style={{ fontWeight: '600', fontSize: 16 }}>&lt;</Text>*/}
-									<Icon style={{fontWeight: '100', marginTop: 2}} color={MainText} name={'chevron-left'} size={15}/>
-									<Text style={{ fontWeight: '600', fontSize: 16, marginLeft: 5, color: MainText }}>Назад</Text>
+									<Icon style={{fontWeight: '100', marginTop: 2}} color={gstore.colorSheme === 'dark' ? 'white' : 'black'} name={'chevron-left'} size={15}/>
+									<Text style={{ fontWeight: '600', fontSize: 16, marginLeft: 5, color: gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Назад</Text>
 								</View>
 							</TouchableOpacity>
 						</View>
 						<View style={{ flexGrow: 1, flexShrink: 1 }}>
 							<Text style={{ fontSize: 14, fontWeight: '400', color: '#949494', marginTop: 40 }}>Название:</Text>
-							<Text style={{ fontSize: 16, fontWeight: '600', color: MainText, marginBottom: 5 }}>{item.title}</Text>
+							<Text style={{ fontSize: 16, fontWeight: '600', color: gstore.colorSheme === 'dark' ? 'white' : 'black', marginBottom: 5 }}>{item.title}</Text>
 							<Text style={{ fontSize: 14, fontWeight: '400', color: '#949494', marginTop: 10 }}>Количество:</Text>
-							<Text style={{ fontSize: 16, fontWeight: '600', color: MainText}}>{amount}</Text>
+							<Text style={{ fontSize: 16, fontWeight: '600', color: gstore.colorSheme === 'dark' ? 'white' : 'black'}}>{amount}</Text>
 							<View style={{marginTop: 20, marginBottom: 20, borderBottomWidth: 1, borderBottomColor: '#E5E5E5'}}/>
-							<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainText, marginBottom: 15 }}>Адрес самовывоза:</Text>
+							<Text style={{ fontSize: 18, fontWeight: 'bold', color: gstore.colorSheme === 'dark' ? 'white' : 'black', marginBottom: 15 }}>Адрес самовывоза:</Text>
 							{gstore.selfAddresses.map((address, idx) => (
 								<FRadio
 									text={`${address}`}
@@ -167,7 +162,7 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number, pric
 									onPress={() => this.selectedIdx = idx}
 								/>
 							))}
-							<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainText, marginBottom: 15 }}>Адрес доставки</Text>
+							<Text style={{ fontSize: 18, fontWeight: 'bold', color: gstore.colorSheme === 'dark' ? 'white' : 'black', marginBottom: 15 }}>Адрес доставки</Text>
 							{gstore.places.map((place, idx) => (
 								<FRadio
 									text={`${place.name}, ${place.address}`}
@@ -378,18 +373,17 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 	// renderItem(item: { data: object; id: string, category: string, title: string }) {
 	renderItem({ item, index }: ListRenderItemInfo<any>) {
 		// const navigation = this.props.navigation;
-		console.log(11111111111, item)
 		return (
 			<>
 
-			<View key={index} style={{ paddingHorizontal: 20, paddingTop: 5, paddingBottom: 15, backgroundColor: MainBackground }}>
+			<View key={index} style={{ paddingHorizontal: 20, paddingTop: 5, paddingBottom: 15, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white' }}>
 				<TouchableOpacity
 					key={index}
 					onPress={() => this.showHideCategory(item.title)}
 				>
 					<View style={{flexDirection: 'row', height: 50, justifyContent: 'space-between', borderBottomColor: '#E5E5E5',
 						borderBottomWidth: _.findIndex(this.state.openedCategories, function (o) { return o === item.title }) !== -1 ? 0 : 1}}>
-					<Text style={{ fontSize: 24, fontWeight: '600', color: MainText }}>
+					<Text style={{ fontSize: 24, fontWeight: '600', color: gstore.colorSheme === 'dark' ? 'white' : 'black' }}>
 						{item.title}
 					</Text>
 						<Text
@@ -397,7 +391,7 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 								marginTop: _.findIndex(this.state.openedCategories, function (o) { return o === item.title }) !== -1 ? -8 : -10,
 								height: 35,
 								justifyContent: 'flex-start',
-								color: MainText,
+								color: gstore.colorSheme === 'dark' ? 'white' : 'black',
 								fontSize: 36,
 								transform: _.findIndex(this.state.openedCategories, function (o) { return o === item.title }) !== -1 ? [{ rotate: "45deg" }] : [{ rotate: "0deg" }]
 								}}
@@ -421,7 +415,7 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 						{
 							return (
 
-									<View style={{ flexDirection: 'row', marginHorizontal: 0, paddingVertical: 18, backgroundColor: MainBackground, borderBottomColor: '#e0e0e0', borderBottomWidth: 1 }}>
+									<View style={{ flexDirection: 'row', marginHorizontal: 0, paddingVertical: 18, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', borderBottomColor: '#e0e0e0', borderBottomWidth: 1 }}>
 										<TouchableOpacity style={{flexDirection: 'row', width: '80%'}} key={item.id} onPress={() => {
 											this.showModalItem(item);
 											// navigation.push('ServiceEntity', { title: item.key, description: item.description, date: item.date });
@@ -434,15 +428,15 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 										<View style={{ flexGrow: 1, flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start' }}>
 											<View style={{width: '80%'}}>
 												<Text style={{ fontSize: 14, fontWeight: '400', color: '#949494' }}>Наклейка</Text>
-												<Text style={{ fontSize: 14, fontWeight: '400', color: MainText, }}>{item.title}</Text>
+												<Text style={{ fontSize: 14, fontWeight: '400', color: gstore.colorSheme === 'dark' ? 'white' : 'black', }}>{item.title}</Text>
 											</View>
 
-											{/*<View><Text style={{ color: MainText }}>{item.description.substring(0, 100) + (item.description.length > 100 ? '...' : '')}</Text></View>*/}
+											{/*<View><Text style={{ color: gstore.colorSheme === 'dark' ? 'white' : 'black' }}>{item.description.substring(0, 100) + (item.description.length > 100 ? '...' : '')}</Text></View>*/}
 										</View>
 										</TouchableOpacity>
 										<View style={{ marginBottom: 12}}>
 											<Text style={{ textAlign: 'center', fontSize: 18, fontWeight: '600', color: MainMuted, justifyContent: 'center' }}>
-												<Text style={{ color: MainText, fontWeight: 'bold' }}>
+												<Text style={{ color: gstore.colorSheme === 'dark' ? 'white' : 'black', fontWeight: 'bold' }}>
 												{parseFloat(String(item.price || 0)) ? `${parseFloat(String(item.price))}₽` : '-'}</Text>
 											</Text>
 											<TouchableHighlight onPress={() => {
@@ -470,7 +464,6 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 	@observable search = '';
 
 	render() {
-		console.log('THISPROPS', this.props.route.name)
 		return (
 			<>
 				<TouchableOpacity
@@ -481,12 +474,12 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 						   style={{width: 20, height: 20, resizeMode: 'contain'}}
 					/>
 				</TouchableOpacity>
-			<View style={{ backgroundColor: MainBackground, flexGrow: 1 }}>
-				<View style={{ width: '100%', paddingTop: 15, paddingBottom: 15, alignItems: 'center', justifyContent: 'center', backgroundColor: MainBackground, elevation: 4 }}>
+			<View style={{ backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', flexGrow: 1 }}>
+				<View style={{ width: '100%', paddingTop: 15, paddingBottom: 15, alignItems: 'center', justifyContent: 'center', backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', elevation: 4 }}>
 					{this.state.searchOpened ? (
 						<View style={{
 							// marginTop: 10,
-							backgroundColor: searchBackGround,
+							backgroundColor: gstore.colorSheme === 'dark' ? '#2B2B2B' : '#E5E5E5',
 							borderRadius: 8,
 							width: '90%',
 							flexDirection: 'row'
@@ -500,7 +493,7 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 									fontSize: 15,
 									// borderWidth: 1,
 									// borderColor: '#e0e0e0',
-									backgroundColor: searchBackGround,
+									backgroundColor: gstore.colorSheme === 'dark' ? '#2B2B2B' : '#E5E5E5',
 									borderRadius: 8,
 									height: 36,
 									width: '87%',
@@ -522,18 +515,18 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 							}} name="search" size={20} color="#A3A3A3"/>
 						</View>
 					) : (
-						<View style={{ backgroundColor: searchBackGround, flexDirection: 'row', width: '90%', borderRadius: 8, overflow: 'hidden', alignItems: 'stretch', justifyContent: 'center', height: 36, }}>
+						<View style={{ backgroundColor: gstore.colorSheme === 'dark' ? '#2B2B2B' : '#E5E5E5', flexDirection: 'row', width: '90%', borderRadius: 8, overflow: 'hidden', alignItems: 'stretch', justifyContent: 'center', height: 36, }}>
 							<TouchableOpacity style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'goods'}>
 								<View style={{
 									flexGrow: 1,
 									flexShrink: 1,
 									alignItems: 'center',
 									justifyContent: 'center',
-									backgroundColor: this.type !== 'goods' ? searchBackGround : MainOrange,
+									backgroundColor: this.type !== 'goods' ? gstore.colorSheme === 'dark' ? '#2B2B2B' : '#E5E5E5' : MainOrange,
 									// borderRightWidth: 1, borderRightColor: '#d0d0d0',
 									borderRadius: 8
 								}}>
-									<Text style={{color: this.type !== 'goods' ? MainText : 'white'}}>Товары</Text>
+									<Text style={{color: this.type !== 'goods' ? gstore.colorSheme === 'dark' ? 'white' : 'black' : 'white'}}>Товары</Text>
 								</View>
 							</TouchableOpacity>
 							<TouchableOpacity disabled style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'services'}>
@@ -542,13 +535,13 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 									flexShrink: 1,
 									alignItems: 'center',
 									justifyContent: 'center',
-									backgroundColor: this.type !== 'services' ? searchBackGround : 'MainOrange',
+									backgroundColor: this.type !== 'services' ? gstore.colorSheme === 'dark' ? '#2B2B2B' : '#E5E5E5' : 'MainOrange',
 									borderRightWidth: this.type !== 'services' ? 1 : 0,
 									borderLeftWidth: this.type !== 'goods' ? 1 : 0,
 									borderColor: '#5A5A5A',
 									marginVertical: 5
 								}}>
-									<Text style={{color: MainText}}>Товары от партнёров</Text>
+									<Text style={{color: gstore.colorSheme === 'dark' ? 'white' : 'black'}}>Товары от партнёров</Text>
 								</View>
 							</TouchableOpacity>
 							<TouchableOpacity style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'services'}>
@@ -558,9 +551,9 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 									flexShrink: 1,
 									alignItems: 'center',
 									justifyContent: 'center',
-									backgroundColor: this.type !== 'services' ? searchBackGround : MainOrange
+									backgroundColor: this.type !== 'services' ? gstore.colorSheme === 'dark' ? '#2B2B2B' : '#E5E5E5' : MainOrange
 								}}>
-									<Text style={{color: this.type !== 'services' ? MainText : 'white'}}>Услуги</Text>
+									<Text style={{color: this.type !== 'services' ? gstore.colorSheme === 'dark' ? 'white' : 'black' : 'white'}}>Услуги</Text>
 								</View>
 							</TouchableOpacity>
 

@@ -5,7 +5,7 @@ import { observable } from "mobx";
 import { observer } from "mobx-react";
 import React, { PureComponent } from "react";
 import { ScrollView, TouchableHighlight, TouchableOpacity, Text, View, FlatList, ListRenderItemInfo, ActivityIndicator, Image } from "react-native";
-import { MainBackground, MainHeader, MainLight, MainMuted, MainText } from "../colors";
+import { MainHeader, MainLight, MainMuted } from "../colors";
 import FlatText from "../controls/FlatText";
 import moment from 'moment';
 
@@ -78,14 +78,14 @@ class Notification extends PureComponent<{ navigation: IEntityNavigation, route:
 				//@ts-ignore
 				navigation.jumpTo('Services', { openService: item });
 			}}>
-				<View style={{ flexDirection: 'row', paddingVertical: 18, backgroundColor: MainBackground, borderBottomColor: '#e0e0e0', borderBottomWidth: 1 }}>
+				<View style={{ flexDirection: 'row', paddingVertical: 18, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', borderBottomColor: '#e0e0e0', borderBottomWidth: 1 }}>
 					<View style={{ flexBasis: 100, height: 100, borderRadius: 10, borderWidth: 1, overflow: 'hidden', borderColor: '#e0e0e0', alignItems: 'center', justifyContent: 'center', flexGrow: 0, flexShrink: 0, marginRight: 15 }}>
 						<Image source={{ uri: gstore.api.fileLink(item.imageId) }} style={{ width: 100, height: 100, resizeMode: 'contain' }}  />
 					</View>
 					<View style={{ flexGrow: 1, flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start' }}>
-						<View><Text style={{ fontSize: 18, fontWeight: 'bold', color: MainText, }}>{item.title}</Text></View>
+						<View><Text style={{ fontSize: 18, fontWeight: 'bold', color: gstore.colorSheme === 'dark' ? 'white' : 'black', }}>{item.title}</Text></View>
 						<View style={{ marginBottom: 12, marginTop: 6 }}><Text style={{ fontSize: 12, color: MainMuted }}>Цена: <Text style={{ color: MainHeader, fontWeight: 'bold' }}>{parseFloat(String(item.price || 0)) ? `${parseFloat(String(item.price))} руб.` : '-'}</Text></Text></View>
-						<View><Text style={{ color: MainText }}>{item.description.substring(0, 100) + (item.description.length > 100 ? '...' : '')}</Text></View>
+						<View><Text style={{ color: gstore.colorSheme === 'dark' ? 'white' : 'black' }}>{item.description.substring(0, 100) + (item.description.length > 100 ? '...' : '')}</Text></View>
 					</View>
 				</View>
 			</TouchableOpacity>
@@ -102,14 +102,14 @@ class Notification extends PureComponent<{ navigation: IEntityNavigation, route:
 		const aGoods: IServiceItem[] = goods.map(g => this.goods.find(t => t.id === g)!).filter(g => !!g);
 		return (
 			<View>
-				<View style={{ height: '100%', paddingVertical: 16, paddingHorizontal: 30, backgroundColor: MainBackground, borderBottomColor: '#e0e0e0', borderBottomWidth: 1 }}>
-					<View><Text style={{ fontSize: 18, color: MainText, fontWeight: 'bold' }}>{title}</Text></View>
+				<View style={{ height: '100%', paddingVertical: 16, paddingHorizontal: 30, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', borderBottomColor: '#e0e0e0', borderBottomWidth: 1 }}>
+					<View><Text style={{ fontSize: 18, color: gstore.colorSheme === 'dark' ? 'white' : 'black', fontWeight: 'bold' }}>{title}</Text></View>
 					<View style={{ marginBottom: 12 }}><Text style={{ fontSize: 12, color: MainMuted }}>{date}</Text></View>
-					<View><Text style={{ color: MainText }}>{text}</Text></View>
+					<View><Text style={{ color: gstore.colorSheme === 'dark' ? 'white' : 'black' }}>{text}</Text></View>
 					{goods.length ? (
 						<>
 							<View style={{ marginTop: 50, marginBottom: 20 }}>
-								<Text style={{ fontSize: 18, color: MainText, fontWeight: 'bold' }}>Подходящие товары и услуги</Text>
+								<Text style={{ fontSize: 18, color: gstore.colorSheme === 'dark' ? 'white' : 'black', fontWeight: 'bold' }}>Подходящие товары и услуги</Text>
 							</View>
 							{this.loadingGoods ? (
 								<ActivityIndicator size="large" color={MainLight} />
@@ -172,10 +172,10 @@ class NotificationsList extends PureComponent<{ navigation: IListNavigation }> {
 					}
 				}}
 			>
-				<View style={{ opacity: item.isRead ? 0.9 : 1, paddingVertical: 18, paddingHorizontal: 20, backgroundColor: MainBackground, borderBottomColor: '#e0e0e0', borderBottomWidth: 1 }}>
-					<View><Text style={{ fontSize: 18, fontWeight: 'bold', color: MainText, }}>{title}</Text></View>
+				<View style={{ opacity: item.isRead ? 0.9 : 1, paddingVertical: 18, paddingHorizontal: 20, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', borderBottomColor: '#e0e0e0', borderBottomWidth: 1 }}>
+					<View><Text style={{ fontSize: 18, fontWeight: 'bold', color: gstore.colorSheme === 'dark' ? 'white' : 'black', }}>{title}</Text></View>
 					<View style={{ marginBottom: 12 }}><Text style={{ fontSize: 12, color: MainMuted }}>{date}</Text></View>
-					<View><Text style={{ color: MainText }}>{text}</Text></View>
+					<View><Text style={{ color: gstore.colorSheme === 'dark' ? 'white' : 'black' }}>{text}</Text></View>
 				</View>
 			</TouchableOpacity>
 		);
@@ -200,7 +200,7 @@ class NotificationsList extends PureComponent<{ navigation: IListNavigation }> {
 					<ActivityIndicator color={MainLight} size="large" style={{ marginTop: 50 }} />
 				) : (
 					sortedNots.length ? (
-						<ScrollView style={{height: '100%', backgroundColor: MainBackground}}>
+						<ScrollView style={{height: '100%', backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white'}}>
 							{sortedNots.map(item => this.renderItem({ item }))}
 						</ScrollView>
 					) : (

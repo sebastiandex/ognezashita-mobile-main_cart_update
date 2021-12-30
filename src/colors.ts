@@ -9,12 +9,12 @@
 
 import gstore from "./stores/gstore";
 
-export const MainBackground = gstore.colorScheme === 'dark' ? '#191919' : 'white';
+// export let MainBackground = gstore.colorSheme === 'dark' ? '#191919' : 'white';
 export const MainBackgroundNav = '#38393A';
 export const MainBackgroundDark = '#191919';
 export const MainBackgroundLight = 'white';
-export const MainText = gstore.colorScheme === 'dark' ? 'white' : 'black';
-export const descriptionText = gstore.colorScheme === 'dark' ? '#949494' : '#575757';
+// export const MainText = gstore.colorSheme === 'dark' ? 'white' : 'black';
+// export let descriptionText = gstore.colorSheme === 'dark' ? '#949494' : '#575757';
 export const MainHeader = 'black';
 export const MainLight = '#D59C0D';
 export const MainHighlight = 'yellow';
@@ -27,10 +27,9 @@ export const MainBlack = '#191919';
 export const MainGrey = '#38393A';
 export const MainWhite = '#FFFFFF';
 export const createdColor = '#F48E39';
-export const executingColor = MainText;
+// export let executingColor = gstore.colorSheme === 'dark' ? 'white' : 'black';
 export const doneColor = '#4CBD57';
 export const cancelledColor = '#E73838';
-export const searchBackGround = gstore.colorScheme === 'dark' ? '#2B2B2B' : '#E5E5E5';
-export const cartColor = gstore.colorScheme === 'dark' ? '#FFFFFF' : 'rgba(40, 40, 40, 0.4)';
-export const borderColor = gstore.colorScheme === 'dark' ? 'rgba(255, 255, 255, 0.1)' : '#E5E5E5';
-export const inputColor = gstore.colorScheme === 'dark' ? '#262626' : '#E3E3E3';
+// export const searchBackGround = gstore.colorSheme === 'dark' ? '#2B2B2B' : '#E5E5E5';
+// export const borderColor = gstore.colorSheme === 'dark' ? 'rgba(255, 255, 255, 0.1)' : '#E5E5E5';
+// export const inputColor = gstore.colorSheme === 'dark' ? '#262626' : '#E3E3E3';

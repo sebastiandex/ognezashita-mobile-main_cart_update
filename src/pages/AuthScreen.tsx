@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { Dimensions, Image, Text, View, TouchableOpacity } from "react-native";
+import { Dimensions, Text, View, TouchableOpacity } from "react-native";
 
 import { observable } from "mobx";
 import { observer } from "mobx-react";
@@ -165,7 +165,7 @@ class AuthScreen extends PureComponent {
 					duration: 500,
 					easing: Easing.ease
 				}).start(() => {
-		
+
 				});
 			}, 500);
 		});

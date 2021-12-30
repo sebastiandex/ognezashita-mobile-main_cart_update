@@ -5,20 +5,14 @@ import { Text, View, TouchableOpacity, TextStyle, Image } from "react-native";
 import { NavigationContainer, RouteProp } from '@react-navigation/native';
 import { createDrawerNavigator, DrawerNavigationProp, DrawerContentScrollView, DrawerItemList, DrawerItem, DrawerContentComponentProps, DrawerContentOptions } from '@react-navigation/drawer';
 
-import gstore, {colorScheme} from "../stores/gstore";
+import gstore from "../stores/gstore";
 import HomeScreen from "./HomeScreen";
 import PlacesScreen from "./PlacesScreen";
 import NotificationsScreen from "./NotificationsScreen";
 import ProfileScreen from "./ProfileScreen";
 import {
 	MainOrange,
-	MainBlack,
-	MainWhite,
-	MainBackgroundNav,
-	IconGrey,
-	MainBackground,
-	MainText,
-	cartColor
+	IconGrey
 } from "../colors";
 import ServicesScreen from "./ServicesScreen";
 import Icon from "react-native-vector-icons/FontAwesome";
@@ -62,7 +56,7 @@ class HeaderRight extends PureComponent<{ navigation: any }> {
 							<Text style={{ fontSize: 11, fontWeight: '600', color: '#FFFFFF' }}>{gstore.cart.length}</Text>
 						</View>
 					) : null}
-					<Icon name="shopping-cart" size={24} color={cartColor} />
+					<Icon name="shopping-cart" size={24} color={gstore.colorSheme === 'dark' ? '#FFFFFF' : 'rgba(40, 40, 40, 0.4)'} />
 					{/*<Icon name="shopping-cart" size={24} color={gstore.cart.length ? '#A3A3A3' : '#d0d0d0'} />*/}
 				</View>
 			</TouchableOpacity>
@@ -74,7 +68,6 @@ class HeaderRight extends PureComponent<{ navigation: any }> {
 function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>) {
 
 	const { state, navigation, descriptors } = props;
-	console.log('COLORCHEMEGS', gstore.colorScheme)
 	const newDescriptors: any = {};
 	const newState = {
 		...state,
@@ -95,10 +88,10 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 	}
 
 	return (
-		<DrawerContentScrollView {...props} style={{ width: 280, flexGrow: 1, backgroundColor: MainBackground }} contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-between' }}>
+		<DrawerContentScrollView {...props} style={{ width: 280, flexGrow: 1, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white' }} contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-between' }}>
 			<View style={{ marginLeft: 0 }}>
 				<Image
-					source={gstore.colorScheme === 'dark' ? require('./../assets/mainLogo.png') : require('./../assets/mainLogoLight.png')}
+					source={gstore.colorSheme === 'dark' ? require('./../assets/mainLogo.png') : require('./../assets/mainLogoLight.png')}
 					style={{ resizeMode: 'contain', marginTop: 60, marginLeft: 5, marginBottom: 40, height: 60, width: 240 }}
 				/>
 				<DrawerItemList {...props} state={newState} descriptors={newDescriptors} activeBackgroundColor={'transparent'} />
@@ -110,7 +103,7 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 						onPress={() => navigation.jumpTo('License')}
 						activeBackgroundColor={'transparent'}
 						activeTintColor={MainOrange}
-						inactiveTintColor={MainText}
+						inactiveTintColor={gstore.colorSheme === 'dark' ? 'white' : 'black'}
 					/>
 				) : null}
 			</View>
@@ -126,7 +119,7 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 						onPress={() => navigation.jumpTo('License')}
 						activeBackgroundColor={'transparent'}
 						activeTintColor={MainOrange}
-						inactiveTintColor={MainText}
+						inactiveTintColor={gstore.colorSheme === 'dark' ? 'white' : 'black'}
 						labelStyle={{ fontSize: 15 }}
 					/>
 					// </View>
@@ -138,7 +131,7 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 					onPress={() => navigation.jumpTo('Contact')}
 					activeBackgroundColor={'transparent'}
 					activeTintColor={MainOrange}
-					inactiveTintColor={MainText}
+					inactiveTintColor={gstore.colorSheme === 'dark' ? 'white' : 'black'}
 					labelStyle={{ fontSize: 15 }}
 				/>
 			</View>
@@ -155,7 +148,7 @@ class DrawerLabelBadge extends PureComponent<({ focused: boolean, color: TextSty
 		return (
 			<View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}>
 				{/* <Icon color={IconGrey} size={24} name={'home'} /> */}
-				<Text style={{ color: focused ? MainOrange : MainText, marginRight: 10 }}>{text}</Text>
+				<Text style={{ color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black', marginRight: 10 }}>{text}</Text>
 				{c ? (
 					<View style={{
 						backgroundColor: '#c00000',
@@ -200,11 +193,9 @@ class MainScreen extends PureComponent {
 	}
 
 	render() {
-		console.log('PROPPPS', this.props)
-
 		return (
 
-			<Animated.View style={{ zIndex: 0, flexGrow: 1, opacity: this.test, backgroundColor: MainBackground, width: '100%', height: '100%' }}>
+			<Animated.View style={{ zIndex: 0, flexGrow: 1, opacity: this.test, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', width: '100%', height: '100%' }}>
 
 				<NavigationContainer>
 
@@ -214,16 +205,16 @@ class MainScreen extends PureComponent {
 						screenOptions={({ navigation }) => {
 							return {
 								headerShown: true,
-								backgroundColor: MainBackground,
-								headerTintColor: MainText,
+								backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white',
+								headerTintColor: gstore.colorSheme === 'dark' ? 'white' : 'black',
 								headerStyle: {
-									backgroundColor: MainBackground,
+									backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white',
 									// backgroundColor: 'MainBackgroundLight',
 									borderBottomColor: 'white',
 									elevation: 4,
 								},
 								bottomStyle: {
-									backgroundColor: MainBackground,
+									backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white',
 								},
 								headerRight: gstore.me!.role === 'user' ? (() => (
 									<HeaderRight navigation={navigation} />
@@ -246,7 +237,7 @@ class MainScreen extends PureComponent {
 						<Drawer.Screen name="Home" component={HomeScreen} options={{
 							title: 'Главная',
 							drawerLabel: ({ focused }) => (
-								<Text style={{ marginLeft: -20, color: focused ? MainOrange : MainText }}>Главная</Text>
+								<Text style={{ marginLeft: -20, color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Главная</Text>
 							),
 							drawerIcon: ({ focused }) => (
 								<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
@@ -287,7 +278,7 @@ class MainScreen extends PureComponent {
 										title: 'Товары и услуги',
 										drawerLabel: ({ focused }) => (
 											<Text
-												style={{ marginLeft: -20, color: focused ? MainOrange : MainText }}
+												style={{ marginLeft: -20, color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}
 											>
 												Товары и услуги
 											</Text>
@@ -303,7 +294,7 @@ class MainScreen extends PureComponent {
 										title: 'Мои объекты',
 										drawerLabel: ({ focused }) => (
 											<Text
-												style={{ marginLeft: -20, color: focused ? MainOrange : MainText }}
+												style={{ marginLeft: -20, color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}
 											>
 												Мои объекты
 											</Text>
@@ -323,12 +314,12 @@ class MainScreen extends PureComponent {
 								drawerLabel: ({ focused }) => (
 									<View style={{ marginLeft: -20 }}>
 										{/* <Text
-											style={{ color: focused ? MainOrange : MainText }}
+											style={{ color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}
 										>{gstore.me!.role === 'user' ? 'Мои заявки' : 'Заявки в работе'}
 										</Text> */}
 										<DrawerLabelBadge
 											focused={focused}
-											color={focused ? MainOrange : MainText}
+											color={focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black'}
 											text={gstore.me!.role === 'user' ? 'Мои заявки' : 'Заявки в работе'}
 											count={() => gstore.ordersInWorkCount}
 										/>
@@ -358,7 +349,7 @@ class MainScreen extends PureComponent {
 								<Drawer.Screen name="MyOrderRouter" component={MineOrdersScreen} options={{
 									title: 'Созданные мной заявки',
 									drawerLabel: ({ focused }) => (
-										<Text style={{ marginLeft: -20, justifyContent: 'flex-start', color: focused ? MainOrange : MainText }}>Созданные мной заявки</Text>
+										<Text style={{ marginLeft: -20, justifyContent: 'flex-start', color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Созданные мной заявки</Text>
 									),
 									drawerIcon: ({ focused }) => (
 										<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
@@ -379,7 +370,7 @@ class MainScreen extends PureComponent {
 								<Drawer.Screen name="ExecsOrderRouter" component={ExecsOrdersScreen} options={{
 									title: 'Заявки от исполнителей',
 									drawerLabel: ({ focused }) => (
-										<Text style={{ marginLeft: -20, justifyContent: 'flex-start', color: focused ? MainOrange : MainText }}>Заявки от исполнителей</Text>
+										<Text style={{ marginLeft: -20, justifyContent: 'flex-start', color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Заявки от исполнителей</Text>
 									),
 									drawerIcon: ({ focused }) => (
 										<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
@@ -388,7 +379,7 @@ class MainScreen extends PureComponent {
 								<Drawer.Screen name="FinishedOrderRouter" component={FinishedOrdersScreen} options={{
 									title: 'Завершенные заявки',
 									drawerLabel: ({ focused }) => (
-										<Text style={{ marginLeft: -20, color: focused ? MainOrange : MainText }}>Завершенные заявки</Text>
+										<Text style={{ marginLeft: -20, color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Завершенные заявки</Text>
 									),
 									drawerIcon: ({ focused }) => (
 										<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
@@ -401,7 +392,7 @@ class MainScreen extends PureComponent {
 								drawerLabel: gstore.me!.role === 'user' ? ({ focused, color }) => (
 									<DrawerLabelBadge text="Корзина" focused={focused} color={color} count={() => gstore.cart.length} />
 								) : ({ focused }) => (
-									<Text style={{ color: focused ? MainOrange : MainText }}>Создать заявку</Text>
+									<Text style={{ color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Создать заявку</Text>
 								),
 								drawerIcon: ({ focused }) => (
 									<Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
@@ -412,7 +403,7 @@ class MainScreen extends PureComponent {
 						<Drawer.Screen name="Profile" component={ProfileScreen} options={{
 							title: 'Профиль',
 							drawerLabel: ({ focused }) => (
-								<Text style={{ marginLeft: -20, color: focused ? MainOrange : MainText }}>Профиль</Text>
+								<Text style={{ marginLeft: -20, color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Профиль</Text>
 							),
 							drawerIcon: ({ focused }) => (
 								<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
@@ -421,7 +412,7 @@ class MainScreen extends PureComponent {
 						<Drawer.Screen name="License" component={LicenseScreen} options={{
 							title: 'Лицензии',
 							drawerLabel: ({ focused }) => (
-								<Text style={{ marginLeft: -20, color: focused ? MainOrange : MainText }}>Лицензии</Text>
+								<Text style={{ marginLeft: -20, color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Лицензии</Text>
 							),
 							drawerIcon: ({ focused }) => (
 								<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
@@ -431,7 +422,7 @@ class MainScreen extends PureComponent {
 							title: 'Контакты',
 							drawerLabel: ({ focused }) => (
 								<Text
-									style={{ marginLeft: -20, color: focused ? MainOrange : MainText }}
+									style={{ marginLeft: -20, color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}
 								>
 									Связаться с нами
 								</Text>

@@ -8,7 +8,6 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 import styled from "styled-components";
 
 import gstore from "../stores/gstore";
-import {MainBackground, MainText} from "../colors";
 
 @observer
 class LicenseScreen extends PureComponent {
@@ -26,13 +25,13 @@ class LicenseScreen extends PureComponent {
 		const width = Dimensions.get('window').width;
 		const height = Dimensions.get('window').height;
 		return (
-			<ScrollView style={{ flexGrow: 1}} contentContainerStyle={{ height: '100%', alignItems: 'stretch', justifyContent: 'flex-start', backgroundColor: MainBackground }}>
+			<ScrollView style={{ flexGrow: 1}} contentContainerStyle={{ height: '100%', alignItems: 'stretch', justifyContent: 'flex-start', backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white' }}>
 				<View style={{ alignItems: 'center', justifyContent: 'center', marginTop: 50, marginBottom: 50, width: '70%', alignSelf: 'center' }}>
-					<Text style={{ textAlign: 'center', fontSize: 16, color: MainText, lineHeight: 24 }}>Вы можете ознакомиться с нашими действующими лицензиями на проведение всех регламентных работ</Text>
+					<Text style={{ textAlign: 'center', fontSize: 16, color: gstore.colorSheme === 'dark' ? 'white' : 'black', lineHeight: 24 }}>Вы можете ознакомиться с нашими действующими лицензиями на проведение всех регламентных работ</Text>
 				</View>
 				<View style={{ paddingHorizontal: 20, flexDirection: 'row', justifyContent: 'space-around', alignItems: 'flex-start' }}>
 					{gstore.licenses.map((l, idx) => (
-						<View key={l.id} style={{ alignItems: 'center', justifyContent: 'center', overflow: 'hidden', flexGrow: 0, flexShrink: 1, flexBasis: (width - 100) / 2, height: height * 0.28, borderRadius: 10, borderWidth: 1, borderColor: MainBackground, backgroundColor: MainBackground }}>
+						<View key={l.id} style={{ alignItems: 'center', justifyContent: 'center', overflow: 'hidden', flexGrow: 0, flexShrink: 1, flexBasis: (width - 100) / 2, height: height * 0.28, borderRadius: 10, borderWidth: 1, borderColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white' }}>
 							<TouchableOpacity onPress={() => { this.imagesForView = gstore.licenses.map(t => ({ url: gstore.api.fileLink(t.mainPhotoId) })); this.idx = idx; }} style={{ width: '100%', height: '100%' }}>
 								<Image
 									source={{ uri: gstore.api.fileLink(l.mainPhotoId) }}

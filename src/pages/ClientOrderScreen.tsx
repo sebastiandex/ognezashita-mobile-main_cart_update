@@ -17,7 +17,7 @@ import {
 } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 
-import { MainBackground, MainHeader, MainLight, MainMuted, MainText } from "../colors";
+import { MainHeader, MainLight, MainMuted } from "../colors";
 import Centroid from "../controls/Centroid";
 import FButton from "../controls/FButton";
 import Section from "../controls/Section";
@@ -43,7 +43,7 @@ function UserRow({ text, user }: { text: string, user: { id: string; name: strin
 
 	return (
 		<Section noBorder>
-			<View style={{ flexDirection: 'row', backgroundColor: MainBackground }}>
+			<View style={{ flexDirection: 'row', backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white' }}>
 				{link ? (
 					<View style={{ flexBasis: 72, height: 72, borderRadius: 18, overflow: 'hidden', alignItems: 'center', justifyContent: 'center', flexGrow: 0, flexShrink: 0, marginRight: 15 }}>
 						<Image source={{ uri: link }} style={{ width: 72, height: 72}} />
@@ -52,7 +52,7 @@ function UserRow({ text, user }: { text: string, user: { id: string; name: strin
 				<View style={{ flexGrow: 1, flexDirection: 'row', flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start' }}>
 					<View>
 						<Text style={{ color: '#949494', fontSize: 14  }}>{text}</Text>
-						<Text style={{ fontSize: 16, fontWeight: '600', color: MainText, }}>{user.name}</Text>
+						<Text style={{ fontSize: 16, fontWeight: '600', color: gstore.colorSheme === 'dark' ? 'white' : 'black', }}>{user.name}</Text>
 					</View>
 					{user.phone ? (
 						<View style={{marginLeft: 'auto', marginRight: 20, marginTop: 15, justifyContent: 'flex-end'}}>
@@ -113,7 +113,7 @@ class ExecutorsModal extends PureComponent<{ onSelect: (a: { id: string; name: s
 				contentContainerStyle={{ flexGrow: 1, flexShrink: 0, flexDirection: 'column', padding: 30, alignItems: 'stretch', justifyContent: 'center' }}
 			>
 				<View style={{ flexGrow: 1, flexShrink: 0, alignItems: 'stretch', justifyContent: 'center' }}>
-					<View style={{ alignItems: 'stretch', padding: 30, borderRadius: 20, backgroundColor: MainBackground }}>
+					<View style={{ alignItems: 'stretch', padding: 30, borderRadius: 20, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white' }}>
 						<View style={{ alignItems: 'center', justifyContent: 'center', position: 'absolute', right: 10, top: 10, zIndex: 30, width: 24, height: 24, borderRadius: 12, backgroundColor: '#f0f0f0' }}>
 							<TouchableOpacity onPress={() => {
 								gstore.setGlobalModal(null);
@@ -416,7 +416,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 
 		return (
 			<Modal visible={true}>
-				<View style={{ flexDirection: 'column', paddingVertical: 30, paddingHorizontal: 30, backgroundColor: MainBackground, alignItems: 'center' }}>
+				<View style={{ flexDirection: 'column', paddingVertical: 30, paddingHorizontal: 30, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', alignItems: 'center' }}>
 					{gstore.api.fileLink(p.mainPhotoId) ? (<View style={{ flexDirection: 'column', flexBasis: 320, borderRadius: 6, overflow: 'hidden', flexGrow: 0, flexShrink: 0, marginRight: 15, }}>
 						<Image source={{ uri: gstore.api.fileLink(p.mainPhotoId) }} style={{ width: 320, height: 320, resizeMode: 'cover' }} />
 					</View>) : null}
@@ -439,13 +439,13 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 
 		return (
             // <TouchableOpacity style={{ marginBottom: 0, marginTop: 10 }} onPress={() => this.renderPlaceContent()}>
-				<View style={{ flexDirection: 'column', paddingLeft: 20, borderBottomWidth: 1, borderBottomColor: '#E5E5E5', backgroundColor: MainBackground, alignItems: 'flex-start' }}>
+				<View style={{ flexDirection: 'column', paddingLeft: 20, borderBottomWidth: 1, borderBottomColor: '#E5E5E5', backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', alignItems: 'flex-start' }}>
 					{/*{gstore.api.fileLink(p.mainPhotoId) ? (<View style={{ flexDirection: 'column', flexBasis: 320, borderRadius: 6, overflow: 'hidden', flexGrow: 0, flexShrink: 0, marginRight: 15, }}>*/}
 					{/*	<Image source={{ uri: gstore.api.fileLink(p.mainPhotoId) }} style={{ width: 72, height: 72, resizeMode: 'cover' }} />*/}
 					{/*</View>) : null}*/}
 					<View style={{ flexDirection: 'column',  alignItems: 'flex-start' }}>
 						<View>
-							<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainText, marginBottom: 15 }}>Название объекта:</Text>
+							<Text style={{ fontSize: 18, fontWeight: 'bold', color: gstore.colorSheme === 'dark' ? 'white' : 'black', marginBottom: 15 }}>Название объекта:</Text>
 							<Text style={{ fontSize: 16, color: '#A3A3A3', marginBottom: 15 }}>{p.name}</Text>
 						</View>
 						{/*<View style={{}}><Text style={{ fontSize: 14, color: MainHeader }}>Адрес: {p.address}</Text></View>*/}
@@ -470,7 +470,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 							  alignItems: 'flex-start',
 							  justifyContent: 'space-between',
 							  paddingVertical: 12,
-							  backgroundColor: MainBackground,
+							  backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white',
 							  borderBottomColor: '#E5E5E5',
 							  borderBottomWidth: (this.order.content.cart.length === index + 1) ? 0 : 1 }}
 					>
@@ -505,13 +505,13 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 							<View style={{flexDirection: 'row'}}>
 								<Image source={{ uri: gstore.api.fileLink(item.itemImageId) }} style={{ borderRadius: 18, width: 72, height: 72, backgroundColor: '#E5E5E5', resizeMode: 'contain' }} />
 								<View style={{marginLeft: 15, width: '75%'}}>
-									<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainText, flexWrap: 'wrap'}}>{item.itemTitle}</Text>
+									<Text style={{ fontSize: 18, fontWeight: 'bold', color: gstore.colorSheme === 'dark' ? 'white' : 'black', flexWrap: 'wrap'}}>{item.itemTitle}</Text>
 									<Text style={{ fontSize: 12, color: MainMuted }}>Количество: {item.amount}</Text>
-									<Text style={{ color: MainText }}>Адрес: {item.address}</Text>
+									<Text style={{ color: gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Адрес: {item.address}</Text>
 								</View>
 							</View>
 							{/*<View style={{ marginBottom: 12 }}><Text style={{ fontSize: 12, color: MainMuted }}>Количество: {item.amount}</Text></View>*/}
-							{/*<View><Text style={{ color: MainText }}>Адрес: {item.address}</Text></View>*/}
+							{/*<View><Text style={{ color: gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Адрес: {item.address}</Text></View>*/}
 						</View>
 					</View>
 				))}
@@ -545,7 +545,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 
 	renderOrder() {
 		return (
-			<ScrollView style={{ backgroundColor: MainBackground, flexGrow: 1 }}>
+			<ScrollView style={{ backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', flexGrow: 1 }}>
 				<Modal visible={this.imagesForView.length !== 0} transparent={true}>
 					<ImageViewer
 						loadingRender={() => <ActivityIndicator size="large" />}
@@ -561,18 +561,18 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 					/>
 				</Modal>
 				{this.reportScreen ? (this.renderReportScreen()) : (
-					<View style={{backgroundColor: MainBackground}}>
+					<View style={{backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white'}}>
 						<Section>
 							<Text style={{ color: '#949494', fontSize: 14 }}>Название:</Text>
-							<Text style={{ color: MainText, fontWeight: '600', fontSize: 16, marginBottom: 18 }}>{this.order.title}</Text>
+							<Text style={{ color: gstore.colorSheme === 'dark' ? 'white' : 'black', fontWeight: '600', fontSize: 16, marginBottom: 18 }}>{this.order.title}</Text>
 							<Text style={{ color: '#949494', fontSize: 14 }}>Текс заявки:</Text>
-							<Text style={{ color: MainText, fontWeight: '600', fontSize: 16 }}>{this.order.content.description}</Text>
+							<Text style={{ color: gstore.colorSheme === 'dark' ? 'white' : 'black', fontWeight: '600', fontSize: 16 }}>{this.order.content.description}</Text>
 						</Section>
 
 						{this.order.content.type === 'cart' ? this.renderCartContent() : null}
 
 
-						<Text style={{marginLeft: 20, marginTop: 20, fontSize: 18, fontWeight: '600', marginBottom: 10, color: MainText}}>Пользователи:</Text>
+						<Text style={{marginLeft: 20, marginTop: 20, fontSize: 18, fontWeight: '600', marginBottom: 10, color: gstore.colorSheme === 'dark' ? 'white' : 'black'}}>Пользователи:</Text>
 						{((gstore.me!.role === 'user' || gstore.me!.role === 'admin') && this.order.activeExecutor) ? (
 							<UserRow text="Исполнитель" user={this.order.activeExecutor} />
 						) : null}
@@ -643,7 +643,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 						{(this.order.report && ((gstore.me!.role === 'executor' && this.order.activeExecutorId === gstore.me!.id) || gstore.me!.role === 'admin')) ? (
 							<>
 								<Section text="Текст отчёта о работах">
-									<Text style={{color: MainText}}>{this.order.report.text}</Text>
+									<Text style={{color: gstore.colorSheme === 'dark' ? 'white' : 'black'}}>{this.order.report.text}</Text>
 								</Section>
 								<Section text="Фотографии отчёта">
 									{this.order.report.imageIds.map((id, idx) => (

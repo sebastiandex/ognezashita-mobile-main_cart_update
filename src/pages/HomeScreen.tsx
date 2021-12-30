@@ -4,16 +4,9 @@ import { Image, ScrollView, Text, TouchableOpacity, View, ActivityIndicator } fr
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {
-	cancelledColor,
-	createdColor, doneColor, executingColor,
-	MainBackground,
-	MainBlack,
 	MainBorder,
-	MainHeader,
 	MainLight,
-	MainMuted,
-	MainText,
-	MainWhite
+	MainMuted
 } from "../colors";
 import FlatText from "../controls/FlatText";
 
@@ -85,7 +78,7 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 					paddingTop: 20,
 					flexGrow: 1,
 					flexShrink: 1,
-					backgroundColor: MainBackground,
+					backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white',
 				}}>
 					{gstore.unreadNotifications.length ? (
 						<TouchableOpacity onPress={() => {
@@ -111,7 +104,7 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 					{(gstore.me!.role === 'admin') ? (
 						<View style={{ marginBottom: 25 }}>
 							<View style={{ marginBottom: 5 }}>
-								<Text style={{ fontSize: 30, fontWeight: 'bold', color: MainText }}>Состояние системы</Text>
+								<Text style={{ fontSize: 30, fontWeight: 'bold', color: gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Состояние системы</Text>
 							</View>
 							<TouchableOpacity onPress={() => {
 								//@ts-ignore
@@ -177,13 +170,13 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 
 													<View style={{
 														// opacity: (ord.state === 'cancelled' || ord.state === 'done') ? 0.5 : 1,
-														paddingVertical: 18, backgroundColor: MainBackground, width: '70%'
+														paddingVertical: 18, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', width: '70%'
 													}}>
 														<View>
 															<Text style={{
 																fontSize: 16,
 																fontWeight: 'bold',
-																color: MainText
+																color: gstore.colorSheme === 'dark' ? 'white' : 'black'
 															}}
 															>
 																{ord.title}
@@ -227,7 +220,7 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 										// 	<View style={{ paddingVertical: 18, paddingHorizontal: 0, backgroundColor: MainBackground, borderBottomColor: MainBorder, borderBottomWidth: 1 }}>
 										// 		<View><Text style={{ fontSize: 16, fontWeight: 'bold', color: MainHeader }}>{ord.title}</Text></View>
 										// 		<View style={{ marginBottom: 12 }}><Text style={{ fontSize: 12, color: MainMuted }}>{moment(ord.createdAt).format('DD.MM.YYYY HH:mm')}</Text></View>
-										// 		<View><Text style={{ color: MainText }}>{stateDesc[ord.state]}</Text></View>
+										// 		<View><Text style={{ color: gstore.colorSheme === 'dark' ? 'white' : 'black' }}>{stateDesc[ord.state]}</Text></View>
 										// 	</View>
 										// </TouchableOpacity>
 
@@ -251,12 +244,12 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 							{gstore.places.length ? (
 								gstore.places.map((p, idx) => (
 									<TouchableOpacity key={idx}>
-										<View style={{ flexDirection: 'row', paddingVertical: 18, paddingHorizontal: 0, backgroundColor: MainBackground, borderBottomColor: MainBorder, borderBottomWidth: idx === gstore.places.length - 1 ? 0 : 1 }}>
+										<View style={{ flexDirection: 'row', paddingVertical: 18, paddingHorizontal: 0, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', borderBottomColor: MainBorder, borderBottomWidth: idx === gstore.places.length - 1 ? 0 : 1 }}>
 											{gstore.api.fileLink(p.mainPhotoId) ? (<View style={{ flexDirection: 'column', flexBasis: 70, borderRadius: 6, overflow: 'hidden', flexGrow: 0, flexShrink: 0, marginRight: 15, }}>
 												<Image source={{ uri: gstore.api.fileLink(p.mainPhotoId) }} style={{ width: 70, height: 70, resizeMode: 'cover' }} />
 											</View>) : null}
 											<View style={{ flexDirection: 'column' }}>
-												<View><Text style={{ fontSize: 16, fontWeight: 'bold', color: MainText, marginBottom: 5 }}>{p.name}</Text></View>
+												<View><Text style={{ fontSize: 16, fontWeight: 'bold', color: gstore.colorSheme === 'dark' ? 'white' : 'black', marginBottom: 5 }}>{p.name}</Text></View>
 												<View style={{}}><Text style={{ fontSize: 12, color: MainMuted }}>Адрес: {p.address}</Text></View>
 											</View>
 										</View>

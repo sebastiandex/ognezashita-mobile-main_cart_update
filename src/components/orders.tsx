@@ -1,16 +1,11 @@
 import {observer} from "mobx-react";
-import React, {PureComponent, useState} from "react";
-import {ActivityIndicator, Image, ScrollView} from "react-native";
+import React, {PureComponent} from "react";
+import {Image} from "react-native";
 import {TouchableOpacity} from "react-native";
 import {Text, View} from "react-native";
 import {
-    MainLight,
-    MainBackground,
-    MainMuted,
     MainHeader,
-    MainText,
     createdColor,
-    executingColor,
     doneColor,
     cancelledColor
 } from "../colors";
@@ -20,41 +15,7 @@ import _ from 'lodash';
 import gstore, {stateDesc} from "../stores/gstore";
 import {observable} from "mobx";
 import {IOrdersListNavigation, IOrdersListRoute} from "./OrderRouterScreen";
-import FButton from "../controls/FButton";
-import {TextInput} from "react-native-gesture-handler";
-import Icon from "react-native-vector-icons/FontAwesome";
-import SearchInput, { createFilter } from 'react-native-search-filter';
-
-const searchStyle = {
-    searchSection: {
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#fff',
-        width: '90%',
-        marginLeft: '4%',
-        marginTop: 10,
-        borderTop: 1
-    },
-    searchIcon: {
-        marginLeft: -30,
-    },
-    input: {
-        flex: 1,
-        paddingTop: 10,
-        paddingRight: 10,
-        paddingBottom: 10,
-        paddingLeft: 10,
-        color: 'black',
-        backgroundColor: '#E5E5E5',
-        borderColor: '#e0e0e0',
-        borderRadius: 8,
-        height: 36,
-        width: '90%',
-        paddingHorizontal: 10,
-        paddingVertical: 2
-    }
-}
+import { createFilter } from 'react-native-search-filter';
 
 @observer
 class orders extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'execs' | 'finished', navigation: IOrdersListNavigation, route: IOrdersListRoute }> {
@@ -87,27 +48,24 @@ class orders extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'execs' 
                 case "Поиск исполнителя":
                     return createdColor;
                 case "В процессе выполнения":
-                    return executingColor;
+                    return gstore.colorSheme === 'dark' ? 'white' : 'black';
                 case "Завершена":
                     return doneColor;
                 case "Отменена":
                     return cancelledColor
                 default:
-                    return MainText;
+                    return gstore.colorSheme === 'dark' ? 'white' : 'black';
             }
         }
 
         const getPlaceImage = async (placeID: string) => {
             const pRes = await gstore.api.getPlace(placeID)
             if (pRes.result) {
-                console.log('PLACE_RESULT22222', pRes.data.mainPhotoId);
                 return pRes.data.mainPhotoId
             } else {
-                console.log(423642378467823642384284)
                 return;
             }
         }
-        console.log('ODS', ods)
         const KEYS_TO_FILTERS = ['title', 'description'];
 
         const filteredOds = ods.filter(createFilter(this.state.searchValue, KEYS_TO_FILTERS))
@@ -157,7 +115,7 @@ class orders extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'execs' 
 
                                                     <View style={{
                                                         // opacity: (ord.state === 'cancelled' || ord.state === 'done') ? 0.5 : 1,
-                                                        paddingVertical: 18, backgroundColor: MainBackground, width: '70%'
+                                                        paddingVertical: 18, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', width: '70%'
                                                     }}>
                                                         <View>
                                                             <Text style={{

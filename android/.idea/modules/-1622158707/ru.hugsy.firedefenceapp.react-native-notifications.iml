@@ -76,7 +76,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-notifications/lib/android/app/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-notifications/lib/android/app/src/test/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-notifications/lib/android/app/build/generated/source/buildConfig/reactNative60/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-notifications/lib/android/app/build/generated/ap_generated_sources/reactNative60Debug/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-notifications/lib/android/app/build/generated/ap_generated_sources/reactNative60Debug/out" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-notifications/lib/android/app/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-notifications/lib/android/app/build" />
     </content>

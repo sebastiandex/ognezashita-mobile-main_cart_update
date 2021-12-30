@@ -11,7 +11,6 @@ class PushNotificationsManager extends PureComponent {
 
 	componentDidMount() {
 		this.dispose = reaction(() => gstore.fullMe, (user => {
-			console.log('reaction to user: ', user);
 			if (user) {
 				this.registerDevice(user);
 				this.registerNotificationEvents();
@@ -32,23 +31,12 @@ class PushNotificationsManager extends PureComponent {
 
 	async registerDevice(user: { id: string; deviceToken: string | null }) {
 		const hasPermissions: boolean = await Notifications.isRegisteredForRemoteNotifications();
-		console.log('hasPermissions?')
-		console.log(hasPermissions)
 		Notifications.ios.checkPermissions().then((response) => {
-        console.log('Response:')
-        console.log(response)
-        console.info('=================================')
     })
     .catch(err => console.error(err));
 	Notifications.ios.getDeliveredNotifications().then((response) => {
-        console.log('getDeliveredNotifications:')
-        console.log(response)
-        console.info('=================================')
     });
 	Notifications.ios.getBadgeCount().then((response) => {
-        console.log('getBadgeCount:')
-        console.log(response)
-        console.info('=================================')
     });
 		// await gstore.api.log('registerDevice');
 		// await gstore.api.log('await Notifications.isRegisteredForRemoteNotifications(): ' + (await Notifications.isRegisteredForRemoteNotifications()));
@@ -68,27 +56,19 @@ class PushNotificationsManager extends PureComponent {
 
 	async registerNotificationEvents() {
 		Notifications.events().registerRemoteNotificationsRegistrationFailed((event) => {
-			console.log('registerRemoteNotificationsRegistrationFailed')
-  		console.log(event.code, event.localizedDescription, event.domain);
 });
-		console.log('PushManager registered');
 		Notifications.events().registerNotificationReceivedForeground(async (notification, completion) => {
-			console.log('Notification Received - Foreground', notification);
 			// Calling completion on iOS with `alert: true` will present the native iOS inApp notification.
 			const rr = await gstore.api.getNewOrders();
-			console.log('loggingResult')
-			console.log(rr)
 			if (rr.result) {
-				console.log('We have rr.result')
 				gstore.newOrdersCount = rr.data.newOrdersCount;
 				gstore.ordersInWorkCount = rr.data.ordersInWorkCount;
 			}
 			completion({ alert: true, sound: false, badge: false });
 		});
-	  
+
 		// User clicked on foreground or background notification
 		Notifications.events().registerNotificationOpened(async (notification, completion) => {
-			console.log('Notification opened by device user', notification);
 			gstore.notification = notification.payload;
 			const rr = await gstore.api.getNewOrders();
 			if (rr.result) {
@@ -97,9 +77,8 @@ class PushNotificationsManager extends PureComponent {
 			}
 			completion();
 		});
-	  
+
 		Notifications.events().registerNotificationReceivedBackground(async (notification, completion) => {
-			console.log('Notification Received - Background', notification);
 			// Calling completion on iOS with `alert: true` will present the native iOS inApp notification.
 			const rr = await gstore.api.getNewOrders();
 			if (rr.result) {
@@ -110,15 +89,13 @@ class PushNotificationsManager extends PureComponent {
 			completion({ alert: true, sound: true, badge: true });
 			// completion({ alert: true, sound: true, badge: false });
 		});
-	  
+
 		try {
 			const notification = await Notifications.getInitialNotification()
-			console.log('Initial notification was:', notification || 'N/A');
 			if (notification) {
 				gstore.notification = notification.payload;
 			}
-			
-			console.log('hey', notification);
+
 		} catch (err) {
 			console.log('getInitialNotifiation() failed', err);
 		}

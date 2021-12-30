@@ -1,12 +1,11 @@
 import {autobind} from "core-decorators";
-import {getObserverTree, observable} from "mobx";
+import {observable} from "mobx";
 import {observer} from "mobx-react";
 import React, {PureComponent} from "react";
 import {
-    ActivityIndicator,
     FlatList,
     Image,
-    ListRenderItemInfo, SafeAreaView, ScrollView,
+    ListRenderItemInfo,
     Text,
     TextInput,
     TouchableOpacity, TouchableWithoutFeedback,
@@ -14,15 +13,7 @@ import {
 } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import {
-    borderColor,
-    descriptionText, inputColor,
-    MainBackground,
-    MainHeader,
-    MainLight,
-    MainMuted,
-    MainOrange,
-    MainText,
-    searchBackGround
+    MainOrange
 } from "../colors";
 import FButton from "../controls/FButton";
 import Section from "../controls/Section";
@@ -38,7 +29,6 @@ class CartScreen extends PureComponent<{ navigation: any }> {
 
     @autobind
     renderItem({item, index}: ListRenderItemInfo<ICartItem>) {
-        const navigation = this.props.navigation;
         return (
             <TouchableWithoutFeedback onPress={() => {
             }}>
@@ -47,7 +37,7 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                     // marginHorizontal: 20,
                     paddingVertical: 18,
                     paddingHorizontal: 20,
-                    backgroundColor: MainBackground,
+                    backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white',
                     borderBottomColor: '#e0e0e0',
                     borderBottomWidth: 1
                 }}>
@@ -70,17 +60,17 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                     </View>
                     <View style={{flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start'}}>
                         <View><Text
-                            style={{fontSize: 14, fontWeight: '400', color: MainText,}}>{item.itemTitle}</Text></View>
+                            style={{fontSize: 14, fontWeight: '400', color: gstore.colorSheme === 'dark' ? 'white' : 'black',}}>{item.itemTitle}</Text></View>
 
                         <View style={{marginBottom: 18, marginTop: 8}}>
                             <Text
-                                style={{fontSize: 14, color: descriptionText}}>Количество: {item.amount}
+                                style={{fontSize: 14, color: gstore.colorSheme === 'dark' ? '#949494' : '#575757'}}>Количество: {item.amount}
                             </Text>
                         </View>
                         <View>
                             <Text style={{color: MainOrange}}>Адрес: {item.address}</Text>
                         </View>
-                        {/*<View><Text style={{ color: MainText }}>{item.description.substring(0, 100) + (item.description.length > 100 ? '...' : '')}</Text></View>*/}
+                        {/*<View><Text style={{ color: gstore.colorSheme === 'dark' ? 'white' : 'black' }}>{item.description.substring(0, 100) + (item.description.length > 100 ? '...' : '')}</Text></View>*/}
                     </View>
                     <View style={{
                         flexBasis: 85,
@@ -102,7 +92,7 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                         <Text style={{
                             justifyContent: 'flex-end',
                             alignItems: 'flex-end',
-                            color: MainText,
+                            color: gstore.colorSheme === 'dark' ? 'white' : 'black',
                             fontWeight: '600',
                             fontSize: 18,
                             marginTop: 15,
@@ -160,7 +150,7 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                         alignItems: 'center',
                         paddingTop: 45,
                         paddingBottom: 120,
-                        backgroundColor: MainBackground
+                        backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white'
                     }}>
                         <FButton onPress={() => {
                             this.mode = 'order';
@@ -171,7 +161,7 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                             justifyContent: 'center',
                             alignItems: 'center',
                             marginTop: 0,
-                            backgroundColor: MainBackground
+                            backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white'
                         }}>
                             <TouchableOpacity onPress={() => {
                                 gstore.cart = [];
@@ -180,7 +170,7 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                                     alignItems: 'center',
                                     justifyContent: 'center',
                                     borderRadius: 5,
-                                    backgroundColor: MainBackground
+                                    backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white'
                                 }}>
                                     <Text style={{fontWeight: '400', color: '#949494'}}>
                                         Очистить корзину
@@ -226,11 +216,11 @@ class CartScreen extends PureComponent<{ navigation: any }> {
         return (
 
             <View style={{
-                backgroundColor: MainBackground,
+                backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white',
                 paddingTop: 20,
                 flexGrow: 1
             }}>
-                <View style={{borderBottomColor: borderColor, borderBottomWidth: 1}}>
+                <View style={{borderBottomColor: gstore.colorSheme === 'dark' ? 'rgba(255, 255, 255, 0.1)' : '#E5E5E5', borderBottomWidth: 1}}>
                     <Section noBorder text="Название"
                              contentStyle={{
                                  fontSize: 15,
@@ -240,7 +230,7 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                                  paddingRight: 12,
                                  marginLeft: 20,
                                  marginRight: 20,
-                                 backgroundColor: inputColor,
+                                 backgroundColor: gstore.colorSheme === 'dark' ? '#262626' : '#E3E3E3',
                                  borderWidth: 0,
                                  borderRadius: 8,
                                  marginBottom: 20
@@ -251,23 +241,23 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                                 paddingTop: 5, textAlignVertical: 'center',
                                 alignItems: 'flex-start',
                                 justifyContent: 'flex-start',
-                                color: MainText
+                                color: gstore.colorSheme === 'dark' ? 'white' : 'black'
                             }}
                             // placeholder="Название заявки"
-                            placeholderTextColor={descriptionText}
+                            placeholderTextColor={gstore.colorSheme === 'dark' ? '#949494' : '#575757'}
                             value={this.title}
                             onChangeText={text => this.title = text}
                         />
                     </Section>
                 </View>
-                <View style={{borderBottomColor: borderColor, borderBottomWidth: 1, marginTop: 15}}>
+                <View style={{borderBottomColor: gstore.colorSheme === 'dark' ? 'rgba(255, 255, 255, 0.1)' : '#E5E5E5', borderBottomWidth: 1, marginTop: 15}}>
                 <Section noBorder text="Описание" contentStyle={{
                     paddingVertical: 10,
                     paddingLeft: 12,
                     paddingRight: 12,
                     marginLeft: 20,
                     marginRight: 20,
-                    backgroundColor: inputColor,
+                    backgroundColor: gstore.colorSheme === 'dark' ? '#262626' : '#E3E3E3',
                     borderRadius: 8,
                     marginBottom: 20
                 }}>
@@ -282,7 +272,7 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                             alignItems: 'flex-start',
                             justifyContent: 'flex-start',
                             textAlignVertical: 'top',
-                            color: MainText
+                            color: gstore.colorSheme === 'dark' ? 'white' : 'black'
                         }}
                         // placeholder="Описание"
                         multiline={true}

@@ -7,7 +7,7 @@ import gstore from "./stores/gstore";
 import Centroid from "./controls/Centroid";
 import AuthScreen from "./pages/AuthScreen";
 import MainScreen from "./pages/MainScreen";
-import {MainBackground, MainLight} from "./colors";
+import {MainLight} from "./colors";
 import PushNotificationsManager from "./controls/PushNotificationsManager";
 import {ThemeProvider} from "./providers/ThemeProvider";
 // import { useColorScheme } from 'react-native';
@@ -34,8 +34,7 @@ class App extends PureComponent {
 			<PushNotificationsManager>
 				<KeyboardAvoidingView behavior={Platform.OS === 'android' ? 'height' : 'padding'} style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch' }}>
 					<TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-						<ThemeProvider>
-						<SafeAreaView style={{ backgroundColor: MainBackground, flexGrow: 1, flexShrink: 1, alignItems: 'stretch' }}>
+						<SafeAreaView style={{ backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', flexGrow: 1, flexShrink: 1, alignItems: 'stretch' }}>
 							{this.loading ? (
 								<Centroid>
 									<ActivityIndicator color={MainLight} size="large" />
@@ -49,7 +48,6 @@ class App extends PureComponent {
 							)}
 							{gstore.globalModal}
 						</SafeAreaView>
-						</ThemeProvider>
 					</TouchableWithoutFeedback>
 				</KeyboardAvoidingView>
 			</PushNotificationsManager>

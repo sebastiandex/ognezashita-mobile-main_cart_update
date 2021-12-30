@@ -1,18 +1,13 @@
 import {observer} from "mobx-react";
-import React, {PureComponent, useState} from "react";
+import React, {PureComponent} from "react";
 import {ActivityIndicator, Image, ScrollView} from "react-native";
 import {TouchableOpacity} from "react-native";
 import {Text, View} from "react-native";
 import {
     MainLight,
-    MainBackground,
-    MainMuted,
-    MainHeader,
-    MainText,
     createdColor,
-    executingColor,
     doneColor,
-    cancelledColor, searchBackGround, descriptionText
+    cancelledColor
 } from "../colors";
 
 import moment from 'moment';
@@ -23,14 +18,14 @@ import {IOrdersListNavigation, IOrdersListRoute} from "./OrderRouterScreen";
 import FButton from "../controls/FButton";
 import {TextInput} from "react-native-gesture-handler";
 import Icon from "react-native-vector-icons/FontAwesome";
-import SearchInput, { createFilter } from 'react-native-search-filter';
+import { createFilter } from 'react-native-search-filter';
 
 const searchStyle = {
     searchSection: {
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: searchBackGround,
+        backgroundColor: gstore.colorSheme === 'dark' ? '#2B2B2B' : '#E5E5E5',
         width: '90%',
         marginLeft: '4%',
         marginTop: 10,
@@ -47,7 +42,7 @@ const searchStyle = {
         paddingBottom: 10,
         paddingLeft: 15,
         color: '#A3A3A3',
-            backgroundColor: searchBackGround,
+            backgroundColor: gstore.colorSheme === 'dark' ? '#2B2B2B' : '#E5E5E5',
             borderColor: '#e0e0e0',
             borderRadius: 8,
             height: 36,
@@ -81,7 +76,6 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
         const {mode} = this.props;
 
         this.loading = true;
-        console.log('onLoad mode: ', mode);
 
         if (mode === 'default') {
             if (gstore.me!.role === 'executor') {
@@ -156,23 +150,21 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                 case "Поиск исполнителя":
                     return createdColor;
                 case "В процессе выполнения":
-                    return executingColor;
+                    return gstore.colorSheme === 'dark' ? 'white' : 'black';
                 case "Завершена":
                     return doneColor;
                 case "Отменена":
                     return cancelledColor
                 default:
-                    return MainText;
+                    return gstore.colorSheme === 'dark' ? 'white' : 'black';
             }
         }
 
         const getPlaceImage = async (placeID: string) => {
                 const pRes = await gstore.api.getPlace(placeID)
                 if (pRes.result) {
-                    console.log('PLACE_RESULT22222', pRes.data.mainPhotoId);
                     return pRes.data.mainPhotoId
                 } else {
-                    console.log(423642378467823642384284)
                     return;
                 }
         }
@@ -183,7 +175,7 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
             this.setState({ searchValue: term })
         }
         return (
-            <View style={{flexGrow: 1, backgroundColor: MainBackground,}}>
+            <View style={{flexGrow: 1, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white',}}>
                 {/*{(gstore.me!.role === 'admin' && this.props.mode !== 'mine') ? (*/}
                 {/*    <View style={{*/}
                 {/*        paddingLeft: '6%',*/}
@@ -291,13 +283,13 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
 
                                                 <View style={{
                                                     // opacity: (ord.state === 'cancelled' || ord.state === 'done') ? 0.5 : 1,
-                                                    paddingVertical: 18, backgroundColor: MainBackground, width: '70%'
+                                                    paddingVertical: 18, backgroundColor: gstore.colorSheme === 'dark' ? '#191919' : 'white', width: '70%'
                                                 }}>
                                                     <View>
                                                         <Text style={{
                                                             fontSize: 16,
                                                             fontWeight: 'bold',
-                                                            color: MainText
+                                                            color: gstore.colorSheme === 'dark' ? 'white' : 'black'
                                                         }}
                                                         >
                                                             {ord.title}
@@ -307,7 +299,7 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                                                         <Text style={{
                                                             fontSize: 14,
                                                             fontWeight: 'normal',
-                                                            color: descriptionText
+                                                            color: gstore.colorSheme === 'dark' ? '#949494' : '#575757'
                                                         }}
                                                         >
                                                             {ord.content.description}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
-import {MainOrange, MainText} from "../colors";
+import {MainOrange} from "../colors";
+import gstore from "../stores/gstore";
 
 
 export default function FRadio({ text, cmp, selected, onPress, style }: { style?: any, text?: string, cmp?: any, selected: boolean, onPress: () => void, }) {
@@ -20,7 +21,7 @@ export default function FRadio({ text, cmp, selected, onPress, style }: { style?
 					backgroundColor: 'white' }, style ? style : {})}>
 					{selected ? (<View style={{ width: 12, height: 12, borderRadius: 6, backgroundColor: MainOrange }} />) : null}
 				</View>
-				{cmp || (<Text style={{fontSize: 16, color: selected ? MainText : '#949494'}}>{text}</Text>)}
+				{cmp || (<Text style={{fontSize: 16, color: selected ? gstore.colorSheme === 'dark' ? 'white' : 'black' : '#949494'}}>{text}</Text>)}
 			</View>
 		</TouchableOpacity>
 	);

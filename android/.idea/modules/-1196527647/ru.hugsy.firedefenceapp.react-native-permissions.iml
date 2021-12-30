@@ -32,8 +32,8 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../../node_modules/react-native-permissions/android">
       <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-permissions/android/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-permissions/android/build/generated/ap_generated_sources/debug/out" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-permissions/android/build/generated/source/buildConfig/debug" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-permissions/android/build/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-permissions/android/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-permissions/android/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-permissions/android/build" />
     </content>

@@ -10,10 +10,8 @@ export const ThemeContext = React.createContext({
 	setColorScheme: () => {},
 
 });
-export const userTheme = false;
-export const chosenTheme = '';
-export const colorScheme = userTheme ? chosenTheme : Appearance.getColorScheme();
-
+// export const colorScheme = Appearance.getColorScheme();
+console.log('COLORCHEMEGS1111', Appearance.getColorScheme())
 
 export interface ICartItem {
 	itemId: string;
@@ -115,7 +113,7 @@ class GlobalStore {
 
 	@observable globalError: string = '';
 	@observable me: null | { id: string; email: string; role: string; name: string } = null;
-
+	@observable colorSheme: null | undefined | string = Appearance.getColorScheme();
 	@observable fullMe: null | IFullUser = null;
 
 	@observable savedAddresses: string[] = [];
@@ -141,12 +139,10 @@ class GlobalStore {
 
 	selectedOrderId!: string;
 	ordersMode: 'default' | 'mine' | 'execs' | 'new' = 'default';
-	colorScheme: string | undefined;
-	userTheme: boolean | undefined;
-	chosenTheme: string | undefined;
+	// colorScheme: string | undefined;
 
 	constructor() {
-		this.loadCart();
+		this.loadCart().then(r => console.log(r));
 	}
 
 	@computed get selfAddresses() {
@@ -194,6 +190,9 @@ class GlobalStore {
 		this._globalModal = d;
 		this.globalModalId++;
 	}
+	changeTheme() {
+		this.colorSheme = this.colorSheme === 'dark' ? this.colorSheme = 'light' : this.colorSheme = 'dark'
+	}
 
 	async persistCart() {
 		await AsyncStorage.setItem('cart', JSON.stringify(this.cart));
@@ -239,11 +238,12 @@ class GlobalStore {
 					this.orders = initData.data.activeOrders;
 					this.unreadNotifications = initData.data.unreadNotifications;
 					this.savedAddresses = initData.data.savedAddresses;
-
 					await this.updateOrders();
 				}
 				this.me = meResult.data;
 				if (this.me?.role === 'admin') {
+					this.colorSheme = 'dark';
+					console.log('Был успех!')
 					const tt = await this.api.getAdminData();
 					if (tt.result) {
 						this.ordersInWorkCount = tt.data.ordersInWorkCount;
@@ -259,15 +259,18 @@ class GlobalStore {
 				this.fullMe = null;
 				// this.globalError = 'Server error';
 			}
-		} catch (err: any) {
+			console.log('CURRENT_SHEME', this.colorSheme)
+		} catch (err) {
 			Alert.alert(err.message);
 			Alert.alert(JSON.stringify(err));
 			throw err;
 		}
 	}
-
 }
 
 const gstore = new GlobalStore();
+
+console.log('gstore', gstore)
+
 
 export default gstore;

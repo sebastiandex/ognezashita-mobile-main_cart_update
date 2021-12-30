@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import { Appearance } from 'react-native';
 import gstore from "../stores/gstore";
 
@@ -7,11 +7,9 @@ export const ThemeContext = React.createContext({
     isDark: false,
     setColorScheme: () => {},
 });
-
 // провайдер
 export const ThemeProvider = ({ children }) => {
     const colorScheme = Appearance.getColorScheme();
-    console.log('COLORCHEME', colorScheme)
     // храним флаг isDark
     const [isDark, setIsDark] = useState(colorScheme === 'dark');
     const defaultTheme = {

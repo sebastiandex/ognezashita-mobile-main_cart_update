@@ -125,12 +125,14 @@
     <orderEntry type="module" module-name="ru.hugsy.firedefenceapp.react-native-notifications" />
     <orderEntry type="module" module-name="ru.hugsy.firedefenceapp.react-native-community_async-storage" />
     <orderEntry type="module" module-name="ru.hugsy.firedefenceapp.react-native-community_masked-view" />
+    <orderEntry type="module" module-name="ru.hugsy.firedefenceapp.react-native-appearance" />
     <orderEntry type="module" module-name="ru.hugsy.firedefenceapp.react-native-gesture-handler" />
     <orderEntry type="module" module-name="ru.hugsy.firedefenceapp.react-native-image-crop-picker" />
     <orderEntry type="module" module-name="ru.hugsy.firedefenceapp.react-native-permissions" />
     <orderEntry type="module" module-name="ru.hugsy.firedefenceapp.react-native-reanimated" />
     <orderEntry type="module" module-name="ru.hugsy.firedefenceapp.react-native-safe-area-context" />
     <orderEntry type="module" module-name="ru.hugsy.firedefenceapp.react-native-screens" />
+    <orderEntry type="module" module-name="ru.hugsy.firedefenceapp.react-native-svg" />
     <orderEntry type="module" module-name="ru.hugsy.firedefenceapp.react-native-vector-icons" />
   </component>
 </module>
