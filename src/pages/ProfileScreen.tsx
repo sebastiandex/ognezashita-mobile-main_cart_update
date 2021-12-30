@@ -7,7 +7,7 @@ import FButton from "../controls/FButton";
 import gstore from "../stores/gstore";
 //@ts-ignore
 import photoPlaceholder from '../user.png';
-import { pickImageAsync } from "../utils/mediaUtils";
+import {changeTheme, pickImageAsync} from "../utils/mediaUtils";
 
 //@ts-ignore
 import Prompt from 'react-native-input-prompt';
@@ -130,6 +130,14 @@ class ProfileScreen extends PureComponent {
 
 		return (
 			<>
+				<TouchableOpacity
+					style={{ alignItems: 'center', justifyContent: 'center', position: 'absolute', right: 20, top: 13, zIndex: 99999 }}
+					onPress={() => changeTheme()}
+				>
+					<Image source={gstore.colorScheme === 'dark' ? require('./../../assets/day.png') : require('./../../assets/night.png')}
+						   style={{width: 20, height: 20, resizeMode: 'contain'}}
+					/>
+				</TouchableOpacity>
 				<Prompt
 					title={this.promptTitle}
 					placeholder="Введите значение..."

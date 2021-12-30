@@ -12,7 +12,7 @@ import {
     createdColor,
     executingColor,
     doneColor,
-    cancelledColor, searchBackGround
+    cancelledColor, searchBackGround, descriptionText
 } from "../colors";
 
 import moment from 'moment';
@@ -307,7 +307,7 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                                                         <Text style={{
                                                             fontSize: 14,
                                                             fontWeight: 'normal',
-                                                            color: '#A3A3A3'
+                                                            color: descriptionText
                                                         }}
                                                         >
                                                             {ord.content.description}

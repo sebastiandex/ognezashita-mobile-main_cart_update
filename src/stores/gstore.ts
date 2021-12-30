@@ -10,7 +10,9 @@ export const ThemeContext = React.createContext({
 	setColorScheme: () => {},
 
 });
-export const colorScheme = Appearance.getColorScheme();
+export const userTheme = false;
+export const chosenTheme = '';
+export const colorScheme = userTheme ? chosenTheme : Appearance.getColorScheme();
 
 
 export interface ICartItem {
@@ -140,6 +142,8 @@ class GlobalStore {
 	selectedOrderId!: string;
 	ordersMode: 'default' | 'mine' | 'execs' | 'new' = 'default';
 	colorScheme: string | undefined;
+	userTheme: boolean | undefined;
+	chosenTheme: string | undefined;
 
 	constructor() {
 		this.loadCart();

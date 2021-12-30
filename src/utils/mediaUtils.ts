@@ -1,8 +1,9 @@
 import RNPermissions, { PERMISSIONS, RESULTS, Permission } from 'react-native-permissions';
 
-import { Alert, NativeModules } from 'react-native';
+import {Alert, Appearance, NativeModules} from 'react-native';
 import { Platform } from 'react-native';
 import {cancelledColor, createdColor, doneColor, executingColor, MainText} from "../colors";
+import gstore from "../stores/gstore";
 
 const ImagePicker = NativeModules.ImageCropPicker;
 
@@ -79,4 +80,15 @@ export const statusColor = (status: any) => {
 		default:
 			return MainText;
 	}
+}
+
+export const changeTheme = () => {
+	gstore.userTheme = true;
+	if (gstore.colorScheme === 'dark') {
+		gstore.chosenTheme = 'light'
+	} else {
+		gstore.chosenTheme = 'dark'
+	}
+	console.log('COLORTHEME', gstore.colorScheme)
+	console.log('SYSTEMTHEME', Appearance.getColorScheme())
 }

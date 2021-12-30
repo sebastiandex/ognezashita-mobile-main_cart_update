@@ -15,7 +15,16 @@ import {
 	TextInput,
 	TouchableHighlight
 } from "react-native";
-import {MainBackground, MainHeader, MainLight, MainMuted, MainOrange, MainText, searchBackGround} from "../colors";
+import {
+	descriptionText,
+	MainBackground,
+	MainHeader,
+	MainLight,
+	MainMuted,
+	MainOrange,
+	MainText,
+	searchBackGround
+} from "../colors";
 import AmountSelector from "../controls/AmountSelector";
 import FRadio from "../controls/FRadio";
 import { IServiceItem } from "../network/api";
@@ -50,31 +59,32 @@ class ItemModal extends PureComponent<{ item: IServiceItem, onCart: (amount: num
 		const desc = item.description;
 
 		return (
-			<ScrollView style={{ left: 0, top: 0, right: 0, bottom: 0, zIndex: 10, position: 'absolute', backgroundColor: 'rgba(0, 0, 0, 0.5)' }} contentContainerStyle={{ flexGrow: 1, flexShrink: 0, flexDirection: 'column', padding: 15, alignItems: 'stretch', justifyContent: 'center' }}>
+			<ScrollView style={{ left: 0, top: 0, right: 0, bottom: 0, zIndex: 10, position: 'absolute', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+						contentContainerStyle={{ flexGrow: 1, flexShrink: 0, flexDirection: 'column', padding: 15, alignItems: 'stretch', justifyContent: 'center' }}>
 				<View style={{ flexGrow: 1, flexShrink: 0, alignItems: 'stretch', justifyContent: 'center' }}>
-					<View style={{ alignItems: 'stretch', padding: 20, borderRadius: 18, backgroundColor: MainBackground }}>
+					<View style={{ alignItems: 'stretch', padding: 20, borderRadius: 18, backgroundColor: MainBackground, borderWidth: 1, borderColor: 'rgba(255, 255, 255, 0.2)' }}>
 						<View style={{ alignItems: 'center', justifyContent: 'center', position: 'absolute', left: 10, top: 10, zIndex: 30 }}>
 							<TouchableOpacity onPress={() => {
 								gstore.setGlobalModal(null);
 							}}>
 								<View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', marginLeft: 10, marginTop: 5 }}>
 									{/*<Text style={{ fontWeight: '600', fontSize: 16 }}>&lt;</Text>*/}
-									<Icon style={{fontWeight: '100', marginTop: 2}} name={'chevron-left'} size={15}/>
-									<Text style={{ fontWeight: '600', fontSize: 16, marginLeft: 5 }}>Назад</Text>
+									<Icon style={{fontWeight: '100', marginTop: 2}} color={MainText} name={'chevron-left'} size={15}/>
+									<Text style={{ fontWeight: '600', fontSize: 16, marginLeft: 5, color: MainText }}>Назад</Text>
 								</View>
 							</TouchableOpacity>
 						</View>
 						<View style={{ alignItems: 'center', justifyContent: 'center', flexBasis: '100%', flexGrow: 0, flexShrink: 0, marginBottom: 15, marginTop: 30, borderRadius: 8 }}>
-							<Image source={{ uri: gstore.api.fileLink(item.imageId) }} style={{ width: '100%', height: 220, borderRadius: 8, resizeMode: 'cover'}} />
+							<Image source={{ uri: gstore.api.fileLink(item.imageId) }} style={{ backgroundColor: '#E4E4E4', width: '100%', height: 220, borderRadius: 8, resizeMode: 'contain'}} />
 						</View>
 						<View style={{ flexGrow: 1, flexShrink: 1 }}>
 							<View style={{ alignItems: 'flex-start', justifyContent: 'flex-start' }}>
-								<Text style={{ textAlign: 'left', fontSize: 20, fontWeight: '600', color: MainHeader, }}>{item.title}</Text>
+								<Text style={{ textAlign: 'left', fontSize: 20, fontWeight: '600', color: MainText, }}>{item.title}</Text>
 							</View>
 
 							<View style={{ marginTop: 40 }}>
 								{desc.split("\n").map((t, idx) => (
-									<Text key={idx} style={{ fontSize: 14, fontWeight: '400', color: '#575757', marginBottom: 10 }}>
+									<Text key={idx} style={{ fontSize: 14, fontWeight: '400', color: descriptionText, marginBottom: 10 }}>
 										{t}
 									</Text>
 								))}
@@ -131,15 +141,15 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number, pric
 				}}
 				contentContainerStyle={{ flexGrow: 1, flexShrink: 0, flexDirection: 'column', padding: 15, alignItems: 'stretch', justifyContent: 'center' }}>
 				<View style={{ flexGrow: 1, flexShrink: 0, alignItems: 'stretch', justifyContent: 'center' }}>
-					<View style={{ alignItems: 'stretch', padding: 20, borderRadius: 20, backgroundColor: MainBackground }}>
+					<View style={{ alignItems: 'stretch', padding: 20, borderRadius: 20, backgroundColor: MainBackground , borderWidth: 1, borderColor: 'rgba(255, 255, 255, 0.2)'}}>
 						<View style={{ alignItems: 'center', justifyContent: 'center', position: 'absolute', left: 10, top: 10, zIndex: 30 }}>
 							<TouchableOpacity onPress={() => {
 								gstore.setGlobalModal(null);
 							}}>
 								<View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row', marginLeft: 10, marginTop: 5 }}>
 									{/*<Text style={{ fontWeight: '600', fontSize: 16 }}>&lt;</Text>*/}
-									<Icon style={{fontWeight: '100', marginTop: 2}} name={'chevron-left'} size={15}/>
-									<Text style={{ fontWeight: '600', fontSize: 16, marginLeft: 5 }}>Назад</Text>
+									<Icon style={{fontWeight: '100', marginTop: 2}} color={MainText} name={'chevron-left'} size={15}/>
+									<Text style={{ fontWeight: '600', fontSize: 16, marginLeft: 5, color: MainText }}>Назад</Text>
 								</View>
 							</TouchableOpacity>
 						</View>
@@ -149,7 +159,7 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number, pric
 							<Text style={{ fontSize: 14, fontWeight: '400', color: '#949494', marginTop: 10 }}>Количество:</Text>
 							<Text style={{ fontSize: 16, fontWeight: '600', color: MainText}}>{amount}</Text>
 							<View style={{marginTop: 20, marginBottom: 20, borderBottomWidth: 1, borderBottomColor: '#E5E5E5'}}/>
-							<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, marginBottom: 15 }}>Адрес самовывоза:</Text>
+							<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainText, marginBottom: 15 }}>Адрес самовывоза:</Text>
 							{gstore.selfAddresses.map((address, idx) => (
 								<FRadio
 									text={`${address}`}
@@ -157,7 +167,7 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number, pric
 									onPress={() => this.selectedIdx = idx}
 								/>
 							))}
-							<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, marginBottom: 15 }}>Адрес доставки</Text>
+							<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainText, marginBottom: 15 }}>Адрес доставки</Text>
 							{gstore.places.map((place, idx) => (
 								<FRadio
 									text={`${place.name}, ${place.address}`}
@@ -416,24 +426,27 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 											this.showModalItem(item);
 											// navigation.push('ServiceEntity', { title: item.key, description: item.description, date: item.date });
 										}}>
-										<View style={{ flexBasis: 72, height: 72, borderRadius: 18, borderWidth: 1, overflow: 'hidden', borderColor: '#e0e0e0', alignItems: 'center', justifyContent: 'center', flexGrow: 0, flexShrink: 0, marginRight: 15 }}>
-											<Image source={{ uri: gstore.api.fileLink(item.imageId) }} style={{ width: 72, height: 72, resizeMode: 'contain' }} />
+										<View style={{ flexBasis: 72, height: 72, borderRadius: 18, borderWidth: 1, overflow: 'hidden', borderColor: '#e0e0e0',
+											alignItems: 'center', justifyContent: 'center', flexGrow: 0, flexShrink: 0, marginRight: 15 }}
+										>
+											<Image source={{ uri: gstore.api.fileLink(item.imageId) }} style={{ backgroundColor: '#E4E4E4', width: 72, height: 72, resizeMode: 'contain' }} />
 										</View>
 										<View style={{ flexGrow: 1, flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start' }}>
 											<View style={{width: '80%'}}>
 												<Text style={{ fontSize: 14, fontWeight: '400', color: '#949494' }}>Наклейка</Text>
-												<Text style={{ fontSize: 14, fontWeight: '400', color: MainHeader, }}>{item.title}</Text>
+												<Text style={{ fontSize: 14, fontWeight: '400', color: MainText, }}>{item.title}</Text>
 											</View>
 
 											{/*<View><Text style={{ color: MainText }}>{item.description.substring(0, 100) + (item.description.length > 100 ? '...' : '')}</Text></View>*/}
 										</View>
 										</TouchableOpacity>
 										<View style={{ marginBottom: 12}}>
-											<Text style={{ textAlign: 'center', fontSize: 18, fontWeight: '600', color: MainMuted, justifyContent: 'center' }}><Text style={{ color: MainHeader, fontWeight: 'bold' }}>
+											<Text style={{ textAlign: 'center', fontSize: 18, fontWeight: '600', color: MainMuted, justifyContent: 'center' }}>
+												<Text style={{ color: MainText, fontWeight: 'bold' }}>
 												{parseFloat(String(item.price || 0)) ? `${parseFloat(String(item.price))}₽` : '-'}</Text>
 											</Text>
 											<TouchableHighlight onPress={() => {
-													this.handleCart(1);
+												this.showModalItem(item);
 											}}>
 												<View style={{backgroundColor: '#2A5EE4', width: 72, height: 36, borderRadius: 8, marginTop: 10, justifyContent: "center"}}>
 													<Image

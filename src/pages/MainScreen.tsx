@@ -10,7 +10,16 @@ import HomeScreen from "./HomeScreen";
 import PlacesScreen from "./PlacesScreen";
 import NotificationsScreen from "./NotificationsScreen";
 import ProfileScreen from "./ProfileScreen";
-import { MainOrange, MainBlack, MainWhite, MainBackgroundNav, IconGrey, MainBackground, MainText } from "../colors";
+import {
+	MainOrange,
+	MainBlack,
+	MainWhite,
+	MainBackgroundNav,
+	IconGrey,
+	MainBackground,
+	MainText,
+	cartColor
+} from "../colors";
 import ServicesScreen from "./ServicesScreen";
 import Icon from "react-native-vector-icons/FontAwesome";
 import CustomIcon from "../CustomIcon";
@@ -52,7 +61,9 @@ class HeaderRight extends PureComponent<{ navigation: any }> {
 						<View style={{ zIndex: 9999, position: "absolute", right: -8, top: -5, width: 20, height: 20, borderRadius: 10, backgroundColor: '#E73838', alignItems: 'center', justifyContent: 'center' }}>
 							<Text style={{ fontSize: 11, fontWeight: '600', color: '#FFFFFF' }}>{gstore.cart.length}</Text>
 						</View>
-					) : null}<Icon name="shopping-cart" size={24} color={gstore.cart.length ? '#A3A3A3' : '#d0d0d0'} />
+					) : null}
+					<Icon name="shopping-cart" size={24} color={cartColor} />
+					{/*<Icon name="shopping-cart" size={24} color={gstore.cart.length ? '#A3A3A3' : '#d0d0d0'} />*/}
 				</View>
 			</TouchableOpacity>
 			</>

@@ -13,7 +13,17 @@ import {
     View
 } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
-import {MainBackground, MainHeader, MainLight, MainMuted, MainOrange, MainText} from "../colors";
+import {
+    borderColor,
+    descriptionText, inputColor,
+    MainBackground,
+    MainHeader,
+    MainLight,
+    MainMuted,
+    MainOrange,
+    MainText,
+    searchBackGround
+} from "../colors";
 import FButton from "../controls/FButton";
 import Section from "../controls/Section";
 
@@ -60,11 +70,11 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                     </View>
                     <View style={{flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start'}}>
                         <View><Text
-                            style={{fontSize: 14, fontWeight: '400', color: MainHeader,}}>{item.itemTitle}</Text></View>
+                            style={{fontSize: 14, fontWeight: '400', color: MainText,}}>{item.itemTitle}</Text></View>
 
                         <View style={{marginBottom: 18, marginTop: 8}}>
                             <Text
-                                style={{fontSize: 14, color: '#585858'}}>Количество: {item.amount}
+                                style={{fontSize: 14, color: descriptionText}}>Количество: {item.amount}
                             </Text>
                         </View>
                         <View>
@@ -92,7 +102,7 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                         <Text style={{
                             justifyContent: 'flex-end',
                             alignItems: 'flex-end',
-                            color: '#585858',
+                            color: MainText,
                             fontWeight: '600',
                             fontSize: 18,
                             marginTop: 15,
@@ -108,7 +118,6 @@ class CartScreen extends PureComponent<{ navigation: any }> {
     }
 
     renderCart() {
-        console.log('CART_MAP', gstore.cart);
         const goods: ICartItem[] = [];
         const services: ICartItem[] = [];
         gstore.cart.map((item) => {
@@ -118,8 +127,6 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                 goods.push(item)
             }
         })
-        console.log('goods', goods)
-        console.log('services', services)
 
         return (
             //
@@ -148,6 +155,7 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                 ListFooterComponent={
                     <View style={{
                         width: '100%',
+                        height: '100%',
                         justifyContent: 'center',
                         alignItems: 'center',
                         paddingTop: 45,
@@ -218,44 +226,48 @@ class CartScreen extends PureComponent<{ navigation: any }> {
         return (
 
             <View style={{
-                backgroundColor: '#F5F5F5',
-                marginTop: 20,
+                backgroundColor: MainBackground,
+                paddingTop: 20,
                 flexGrow: 1
-            }
-            }>
-                <View style={{borderBottomColor: '#e0e0e0', borderBottomWidth: 1}}>
-                    <Section text="Название"
+            }}>
+                <View style={{borderBottomColor: borderColor, borderBottomWidth: 1}}>
+                    <Section noBorder text="Название"
                              contentStyle={{
                                  fontSize: 15,
                                  paddingVertical: 10,
-                                 paddingTop: 0,
+                                 // paddingTop: 0,
                                  paddingLeft: 12,
                                  paddingRight: 12,
                                  marginLeft: 20,
                                  marginRight: 20,
-                                 backgroundColor: '#E3E3E3',
+                                 backgroundColor: inputColor,
+                                 borderWidth: 0,
                                  borderRadius: 8,
                                  marginBottom: 20
                              }}>
                         <TextInput
-                            style={{height: 40, width: '100%', paddingVertical: 0, paddingLeft: 1,
-                                paddingTop: 5, textAlignVertical: 'top',
+                            style={{
+                                paddingVertical: 0, paddingLeft: 1,
+                                paddingTop: 5, textAlignVertical: 'center',
                                 alignItems: 'flex-start',
-                                justifyContent: 'flex-start'}}
-                            placeholder="Название заявки"
+                                justifyContent: 'flex-start',
+                                color: MainText
+                            }}
+                            // placeholder="Название заявки"
+                            placeholderTextColor={descriptionText}
                             value={this.title}
                             onChangeText={text => this.title = text}
                         />
                     </Section>
                 </View>
-                <View style={{borderBottomColor: '#e0e0e0', borderBottomWidth: 1, marginTop: 15}}>
-                <Section text="Описание" contentStyle={{
+                <View style={{borderBottomColor: borderColor, borderBottomWidth: 1, marginTop: 15}}>
+                <Section noBorder text="Описание" contentStyle={{
                     paddingVertical: 10,
                     paddingLeft: 12,
                     paddingRight: 12,
                     marginLeft: 20,
                     marginRight: 20,
-                    backgroundColor: '#E3E3E3',
+                    backgroundColor: inputColor,
                     borderRadius: 8,
                     marginBottom: 20
                 }}>
@@ -269,7 +281,8 @@ class CartScreen extends PureComponent<{ navigation: any }> {
                             paddingTop: 5,
                             alignItems: 'flex-start',
                             justifyContent: 'flex-start',
-                            textAlignVertical: 'top'
+                            textAlignVertical: 'top',
+                            color: MainText
                         }}
                         // placeholder="Описание"
                         multiline={true}

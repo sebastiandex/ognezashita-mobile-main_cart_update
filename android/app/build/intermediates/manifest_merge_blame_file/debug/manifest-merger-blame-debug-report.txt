@@ -70,256 +70,257 @@
 42-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:18:7-41
 43        android:label="@string/app_name"
 43-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:17:7-39
-44        android:theme="@style/AppTheme"
-44-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:20:7-38
-45        android:usesCleartextTraffic="true" >
-45-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:21:9-44
-46        <activity
-46-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:23:7-33:18
-47            android:name="ru.hugsy.firedefenceapp.MainActivity"
-47-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:24:9-37
-48            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-48-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:26:9-86
-49            android:label="@string/app_name"
-49-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:25:9-41
-50            android:launchMode="singleTask"
-50-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:27:9-40
-51            android:windowSoftInputMode="adjustResize" >
-51-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:28:9-51
-52            <intent-filter>
-52-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:29:9-32:25
-53                <action android:name="android.intent.action.MAIN" />
-53-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:30:13-65
-53-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:30:21-62
-54
-55                <category android:name="android.intent.category.LAUNCHER" />
-55-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:31:13-73
-55-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:31:23-70
-56            </intent-filter>
-57        </activity>
-58        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" /> <!-- A proxy-service that gives the library an opportunity to do some work before launching/resuming the actual application task. -->
-58-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:34:7-84
-58-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:34:17-81
-59        <service android:name="com.wix.reactnativenotifications.core.ProxyService" />
-59-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:14:9-86
-59-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:14:18-83
-60        <service android:name="com.wix.reactnativenotifications.fcm.FcmInstanceIdListenerService" >
-60-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:15:9-20:19
-60-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:15:18-98
-61            <intent-filter>
-61-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:16:13-19:29
-62                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-62-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:17:17-78
-62-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:17:25-75
-63                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-63-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:18:17-80
-63-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:18:25-77
-64            </intent-filter>
-65        </service>
-66        <service
-66-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:21:9-24:72
-67            android:name="com.wix.reactnativenotifications.fcm.FcmInstanceIdRefreshHandlerService"
-67-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:22:13-99
-68            android:exported="false"
-68-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:23:13-37
-69            android:permission="android.permission.BIND_JOB_SERVICE" />
-69-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:24:13-69
-70
-71        <meta-data
-71-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:36
-72            android:name="app_data_collection_default_enabled"
-72-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
-73            android:value="true" />
-73-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-33
-74
-75        <service
-75-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-20:19
-76            android:name="com.google.firebase.components.ComponentDiscoveryService"
-76-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-89
-77            android:directBootAware="true"
-77-->[com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
-78            android:exported="false" >
-78-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:51:13-37
-79            <meta-data
-79-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:85
-80                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
-80-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-120
-81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-82
-82            <meta-data
-82-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:52:13-54:85
-83                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-83-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:53:17-119
-84                android:value="com.google.firebase.components.ComponentRegistrar" />
-84-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:54:17-82
-85            <meta-data
-85-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
-86                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-86-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
-87                android:value="com.google.firebase.components.ComponentRegistrar" />
-87-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
-88            <meta-data
-88-->[com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
-89                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-89-->[com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
-90                android:value="com.google.firebase.components.ComponentRegistrar" />
-90-->[com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
-91        </service>
-92
-93        <provider
-93-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-26:38
-94            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
-94-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-88
-95            android:authorities="ru.hugsy.firedefenceapp.reactnativefirebaseappinitprovider"
-95-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-86
-96            android:exported="false"
-96-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-37
-97            android:initOrder="99" />
-97-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-35
-98        <provider
-98-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-27:20
-99            android:name="androidx.core.content.FileProvider"
-99-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-62
-100            android:authorities="ru.hugsy.firedefenceapp.provider"
-100-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-60
-101            android:exported="false"
-101-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-37
-102            android:grantUriPermissions="true" >
-102-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-47
-103            <meta-data
-103-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-26:58
-104                android:name="android.support.FILE_PROVIDER_PATHS"
-104-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:17-67
-105                android:resource="@xml/provider_paths" />
-105-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:17-55
-106        </provider>
-107
-108        <activity
-108-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:9-31:72
-109            android:name="com.yalantis.ucrop.UCropActivity"
-109-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-60
-110            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-110-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-69
-111
-112        <receiver
-112-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:28:9-35:20
-113            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-113-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:29:13-78
-114            android:exported="true"
-114-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:30:13-36
-115            android:permission="com.google.android.c2dm.permission.SEND" >
-115-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:31:13-73
-116            <intent-filter>
-116-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:32:13-34:29
-117                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-117-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:33:17-81
-117-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:33:25-78
-118            </intent-filter>
-119        </receiver>
-120        <!--
-121             FirebaseMessagingService performs security checks at runtime,
-122             but set to not exported to explicitly avoid allowing another app to call it.
-123        -->
-124        <service
-124-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:41:9-48:19
-125            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-125-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:42:13-82
-126            android:directBootAware="true"
-126-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:43:13-43
-127            android:exported="false" >
-127-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:44:13-37
-128            <intent-filter android:priority="-500" >
-128-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:45:13-47:29
-128-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:45:28-51
-129                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-129-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:17:17-78
-129-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:17:25-75
-130            </intent-filter>
-131        </service>
-132        <service
-132-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
-133            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-133-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
-134            android:exported="false" >
-134-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
-135            <meta-data
-135-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
-136                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-136-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
-137                android:value="cct" />
-137-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
-138        </service>
-139
-140        <provider
-140-->[com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
-141            android:name="com.google.firebase.provider.FirebaseInitProvider"
-141-->[com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
-142            android:authorities="ru.hugsy.firedefenceapp.firebaseinitprovider"
-142-->[com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
-143            android:directBootAware="true"
-143-->[com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
-144            android:exported="false"
-144-->[com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
-145            android:initOrder="100" />
-145-->[com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
-146
-147        <service
-147-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
-148            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-148-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
-149            android:exported="false"
-149-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
-150            android:permission="android.permission.BIND_JOB_SERVICE" >
-150-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
-151        </service>
-152
-153        <receiver
-153-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
-154            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-154-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
-155            android:exported="false" />
-155-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
-156
-157        <activity
-157-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:23:9-27:75
-158            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-158-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:24:13-93
-159            android:excludeFromRecents="true"
-159-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:25:13-46
-160            android:exported="false"
-160-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:26:13-37
-161            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-161-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:27:13-72
-162        <!--
-163            Service handling Google Sign-In user revocation. For apps that do not integrate with
-164            Google Sign-In, this service will never be started.
-165        -->
-166        <service
-166-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:33:9-37:51
-167            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-167-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:34:13-89
-168            android:exported="true"
-168-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:35:13-36
-169            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-169-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:36:13-107
-170            android:visibleToInstantApps="true" />
-170-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:37:13-48
-171
-172        <activity
-172-->[com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:23:9-26:75
-173            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-173-->[com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:24:13-79
-174            android:exported="false"
-174-->[com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:25:13-37
-175            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-175-->[com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:26:13-72
-176
-177        <meta-data
-177-->[com.google.android.gms:play-services-basement:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/033cae4819aa31af92f8000de6b27bdd/jetified-play-services-basement-17.5.0/AndroidManifest.xml:23:9-25:69
-178            android:name="com.google.android.gms.version"
-178-->[com.google.android.gms:play-services-basement:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/033cae4819aa31af92f8000de6b27bdd/jetified-play-services-basement-17.5.0/AndroidManifest.xml:24:13-58
-179            android:value="@integer/google_play_services_version" />
-179-->[com.google.android.gms:play-services-basement:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/033cae4819aa31af92f8000de6b27bdd/jetified-play-services-basement-17.5.0/AndroidManifest.xml:25:13-66
-180    </application>
-181
-182</manifest>
+44        android:testOnly="true"
+45        android:theme="@style/AppTheme"
+45-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:20:7-38
+46        android:usesCleartextTraffic="true" >
+46-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:21:9-44
+47        <activity
+47-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:23:7-33:18
+48            android:name="ru.hugsy.firedefenceapp.MainActivity"
+48-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:24:9-37
+49            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+49-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:26:9-86
+50            android:label="@string/app_name"
+50-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:25:9-41
+51            android:launchMode="singleTask"
+51-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:27:9-40
+52            android:windowSoftInputMode="adjustResize" >
+52-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:28:9-51
+53            <intent-filter>
+53-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:29:9-32:25
+54                <action android:name="android.intent.action.MAIN" />
+54-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:30:13-65
+54-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:30:21-62
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:31:13-73
+56-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:31:23-70
+57            </intent-filter>
+58        </activity>
+59        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" /> <!-- A proxy-service that gives the library an opportunity to do some work before launching/resuming the actual application task. -->
+59-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:34:7-84
+59-->/Users/fullmetal/WebstormProjects/ognezashita-mobile-main/android/app/src/main/AndroidManifest.xml:34:17-81
+60        <service android:name="com.wix.reactnativenotifications.core.ProxyService" />
+60-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:14:9-86
+60-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:14:18-83
+61        <service android:name="com.wix.reactnativenotifications.fcm.FcmInstanceIdListenerService" >
+61-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:15:9-20:19
+61-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:15:18-98
+62            <intent-filter>
+62-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:16:13-19:29
+63                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+63-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:17:17-78
+63-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:17:25-75
+64                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+64-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:18:17-80
+64-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:18:25-77
+65            </intent-filter>
+66        </service>
+67        <service
+67-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:21:9-24:72
+68            android:name="com.wix.reactnativenotifications.fcm.FcmInstanceIdRefreshHandlerService"
+68-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:22:13-99
+69            android:exported="false"
+69-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:23:13-37
+70            android:permission="android.permission.BIND_JOB_SERVICE" />
+70-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:24:13-69
+71
+72        <meta-data
+72-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:36
+73            android:name="app_data_collection_default_enabled"
+73-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
+74            android:value="true" />
+74-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-33
+75
+76        <service
+76-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-20:19
+77            android:name="com.google.firebase.components.ComponentDiscoveryService"
+77-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-89
+78            android:directBootAware="true"
+78-->[com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+79            android:exported="false" >
+79-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:51:13-37
+80            <meta-data
+80-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:85
+81                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+81-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-120
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-82
+83            <meta-data
+83-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:52:13-54:85
+84                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+84-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:53:17-119
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:54:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+87                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+87-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/ea3cf774bbf488c83355faf4e3c3bd12/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+89            <meta-data
+89-->[com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+90                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+90-->[com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.firebase:firebase-installations:17.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7d76ac839528d9f8725262b602d13907/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+92        </service>
+93
+94        <provider
+94-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-26:38
+95            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+95-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-88
+96            android:authorities="ru.hugsy.firedefenceapp.reactnativefirebaseappinitprovider"
+96-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-86
+97            android:exported="false"
+97-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-37
+98            android:initOrder="99" />
+98-->[:react-native-firebase_app] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-35
+99        <provider
+99-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-27:20
+100            android:name="androidx.core.content.FileProvider"
+100-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-62
+101            android:authorities="ru.hugsy.firedefenceapp.provider"
+101-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-60
+102            android:exported="false"
+102-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-37
+103            android:grantUriPermissions="true" >
+103-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-47
+104            <meta-data
+104-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-26:58
+105                android:name="android.support.FILE_PROVIDER_PATHS"
+105-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:17-67
+106                android:resource="@xml/provider_paths" />
+106-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:17-55
+107        </provider>
+108
+109        <activity
+109-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:9-31:72
+110            android:name="com.yalantis.ucrop.UCropActivity"
+110-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-60
+111            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+111-->[:react-native-image-crop-picker] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-image-crop-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-69
+112
+113        <receiver
+113-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:28:9-35:20
+114            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+114-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:29:13-78
+115            android:exported="true"
+115-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:30:13-36
+116            android:permission="com.google.android.c2dm.permission.SEND" >
+116-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:31:13-73
+117            <intent-filter>
+117-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:32:13-34:29
+118                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+118-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:33:17-81
+118-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:33:25-78
+119            </intent-filter>
+120        </receiver>
+121        <!--
+122             FirebaseMessagingService performs security checks at runtime,
+123             but set to not exported to explicitly avoid allowing another app to call it.
+124        -->
+125        <service
+125-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:41:9-48:19
+126            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+126-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:42:13-82
+127            android:directBootAware="true"
+127-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:43:13-43
+128            android:exported="false" >
+128-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:44:13-37
+129            <intent-filter android:priority="-500" >
+129-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:45:13-47:29
+129-->[com.google.firebase:firebase-messaging:23.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9fa571bd77431d68ca79d08ea61c56f7/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:45:28-51
+130                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+130-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:17:17-78
+130-->[:react-native-notifications] /Users/fullmetal/WebstormProjects/ognezashita-mobile-main/node_modules/react-native-notifications/lib/android/app/build/intermediates/library_manifest/reactNative60Debug/AndroidManifest.xml:17:25-75
+131            </intent-filter>
+132        </service>
+133        <service
+133-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+134            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+134-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+135            android:exported="false" >
+135-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+136            <meta-data
+136-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+137                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+137-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+138                android:value="cct" />
+138-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/7bb374ad57c5096e0084a3eb39b3e635/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+139        </service>
+140
+141        <provider
+141-->[com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+142            android:name="com.google.firebase.provider.FirebaseInitProvider"
+142-->[com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+143            android:authorities="ru.hugsy.firedefenceapp.firebaseinitprovider"
+143-->[com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+144            android:directBootAware="true"
+144-->[com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+145            android:exported="false"
+145-->[com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+146            android:initOrder="100" />
+146-->[com.google.firebase:firebase-common:20.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/2799a860d7ef68e48695e763457508d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+147
+148        <service
+148-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+149            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+149-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+150            android:exported="false"
+150-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+151            android:permission="android.permission.BIND_JOB_SERVICE" >
+151-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+152        </service>
+153
+154        <receiver
+154-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+155            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+155-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+156            android:exported="false" />
+156-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/9f4e72f26e3edf6530f75668dde66e49/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+157
+158        <activity
+158-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:23:9-27:75
+159            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+159-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:24:13-93
+160            android:excludeFromRecents="true"
+160-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:25:13-46
+161            android:exported="false"
+161-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:26:13-37
+162            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+162-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:27:13-72
+163        <!--
+164            Service handling Google Sign-In user revocation. For apps that do not integrate with
+165            Google Sign-In, this service will never be started.
+166        -->
+167        <service
+167-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:33:9-37:51
+168            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+168-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:34:13-89
+169            android:exported="true"
+169-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:35:13-36
+170            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+170-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:36:13-107
+171            android:visibleToInstantApps="true" />
+171-->[com.google.android.gms:play-services-auth:19.2.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/d70c80a0a1df3945f319c1ec41de2b50/jetified-play-services-auth-19.2.0/AndroidManifest.xml:37:13-48
+172
+173        <activity
+173-->[com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:23:9-26:75
+174            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+174-->[com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:24:13-79
+175            android:exported="false"
+175-->[com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:25:13-37
+176            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+176-->[com.google.android.gms:play-services-base:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/bf9090707642c7057afe6bb335d16873/jetified-play-services-base-17.5.0/AndroidManifest.xml:26:13-72
+177
+178        <meta-data
+178-->[com.google.android.gms:play-services-basement:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/033cae4819aa31af92f8000de6b27bdd/jetified-play-services-basement-17.5.0/AndroidManifest.xml:23:9-25:69
+179            android:name="com.google.android.gms.version"
+179-->[com.google.android.gms:play-services-basement:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/033cae4819aa31af92f8000de6b27bdd/jetified-play-services-basement-17.5.0/AndroidManifest.xml:24:13-58
+180            android:value="@integer/google_play_services_version" />
+180-->[com.google.android.gms:play-services-basement:17.5.0] /Users/fullmetal/.gradle/caches/transforms-2/files-2.1/033cae4819aa31af92f8000de6b27bdd/jetified-play-services-basement-17.5.0/AndroidManifest.xml:25:13-66
+181    </application>
+182
+183</manifest>
