@@ -24,7 +24,7 @@ import { FlatList } from "react-native-gesture-handler";
 import _ from 'lodash';
 import Icon from "react-native-vector-icons/FontAwesome";
 
-const Stack = createStackNavigator();
+// const Stack = createStackNavigator();
 
 type RootStackParamList = {
 	ServiceList: undefined;
@@ -33,11 +33,11 @@ type RootStackParamList = {
 
 type IListNavigation = StackNavigationProp<RootStackParamList, 'ServiceList'>;
 
-interface IServiceCategory {
-	id: any;
-	title: string;
-	data: IServiceItem[];
-}
+// interface IServiceCategory {
+// 	id: any;
+// 	title: string;
+// 	data: IServiceItem[];
+// }
 
 @observer
 class ItemModal extends PureComponent<{ item: IServiceItem, onCart: (amount: number) => void, }> {
@@ -473,7 +473,10 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 					{this.state.searchOpened ? (
 						<View style={{
 							// marginTop: 10,
-							width: '90%'
+							backgroundColor: searchBackGround,
+							borderRadius: 8,
+							width: '90%',
+							flexDirection: 'row'
 						}}>
 							<TextInput
 								value={this.search}
@@ -482,16 +485,28 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 								placeholderTextColor={'#A3A3A3'}
 								style={{
 									fontSize: 15,
-									borderWidth: 1,
-									borderColor: '#e0e0e0',
-									backgroundColor: '#E5E5E5',
+									// borderWidth: 1,
+									// borderColor: '#e0e0e0',
+									backgroundColor: searchBackGround,
 									borderRadius: 8,
 									height: 36,
-									width: '100%',
+									width: '87%',
 									paddingHorizontal: 20,
 									paddingVertical: 2
 								}}
 							/>
+							<Icon style={{
+								flex: 1,
+								paddingTop: 7,
+								paddingRight: 2,
+								paddingBottom: 10,
+								paddingLeft: 15,
+								color: '#A3A3A3',
+								borderColor: '#e0e0e0',
+								borderRadius: 8,
+								height: 36,
+								// paddingHorizontal: 10,
+							}} name="search" size={20} color="#A3A3A3"/>
 						</View>
 					) : (
 						<View style={{ backgroundColor: searchBackGround, flexDirection: 'row', width: '90%', borderRadius: 8, overflow: 'hidden', alignItems: 'stretch', justifyContent: 'center', height: 36, }}>
@@ -581,18 +596,18 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 	}
 }
 
-class ServicesScreen extends PureComponent {
-	render() {
-		return (
-			<Stack.Navigator>
-				<Stack.Screen
-					component={ServicesList}
-					name="ServiceList"
-					options={{ headerShown: false, title: 'Товары и услуги' }}
-				/>
-			</Stack.Navigator>
-		);
-	}
-}
+// class ServicesScreen extends PureComponent {
+// 	render() {
+// 		return (
+// 			<Stack.Navigator>
+// 				<Stack.Screen
+// 					component={ServicesList}
+// 					name="ServiceList"
+// 					options={{ headerShown: false, title: 'Товары и услуги' }}
+// 				/>
+// 			</Stack.Navigator>
+// 		);
+// 	}
+// }
 
 export default ServicesList;
