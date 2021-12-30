@@ -29,3 +29,4 @@ export const createdColor = '#F48E39';
 export const executingColor = MainText;
 export const doneColor = '#4CBD57';
 export const cancelledColor = '#E73838';
+export const searchBackGround = gstore.colorScheme === 'dark' ? '#2B2B2B' : '#E5E5E5';

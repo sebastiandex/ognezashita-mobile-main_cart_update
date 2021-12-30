@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import { Text, View } from "react-native";
 
-import { MainBackground, MainHeader } from "../colors";
+import {MainBackground, MainHeader, MainText} from "../colors";
 
 function Section({ text, children, contentStyle, noBorder }: { text?: string, children: ReactNode, contentStyle?: any, noBorder?: boolean }) {
 	return (
@@ -9,7 +9,7 @@ function Section({ text, children, contentStyle, noBorder }: { text?: string, ch
 			<View style={{ marginBottom: 10 }}>
 				{text ? (
 					<View style={{ paddingHorizontal: 20, paddingTop: 10, paddingBottom: 10 }}>
-						<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader }}>{text}</Text>
+						<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainText }}>{text}</Text>
 					</View>
 				) : null}
 				<View

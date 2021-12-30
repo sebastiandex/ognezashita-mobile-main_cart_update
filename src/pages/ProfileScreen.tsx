@@ -13,6 +13,7 @@ import { pickImageAsync } from "../utils/mediaUtils";
 import Prompt from 'react-native-input-prompt';
 import { observable } from "mobx";
 import { observer } from "mobx-react";
+import {MainBackground, MainText} from "../colors";
 
 @observer
 class ProfileScreen extends PureComponent {
@@ -145,11 +146,11 @@ class ProfileScreen extends PureComponent {
 						this.promptVisible = false;
 					}}
 				/>
-				<View style={{ alignItems: 'stretch', justifyContent: 'flex-start' }}>
+				<View style={{ height: '100%', alignItems: 'stretch', justifyContent: 'flex-start', backgroundColor: MainBackground }}>
 					{/*<View style={{ height: 120, backgroundColor: '#312D2C' }}>*/}
 
 					{/*</View>*/}
-					<View style={{ backgroundColor: 'transparent' }}>
+					<View style={{ backgroundColor: MainBackground }}>
 						<View style={{ alignItems: 'center' }}>
 							<View style={{ marginTop: 20,
 								alignItems: 'center',
@@ -159,7 +160,7 @@ class ProfileScreen extends PureComponent {
 								borderColor: 'white',
 								width: 160, height: 160,
 								borderRadius: 32,
-								backgroundColor: 'white' }}>
+								backgroundColor: MainBackground }}>
 								<TouchableOpacity onPress={this.openGallery}>
 									<Image
 										source={fm.photoId ? { uri: gstore.api.fileLink(fm.photoId) } : photoPlaceholder}
@@ -173,14 +174,14 @@ class ProfileScreen extends PureComponent {
 							</View>
 							<View style={{ marginTop: 15 }}>
 								<TouchableOpacity onPress={this.handleName}>
-									<Text style={{ fontSize: 24, fontWeight: '600', textAlign: 'center' }}>{fm.name || '[Нажмите для ввода имени]'}</Text>
+									<Text style={{ fontSize: 24, fontWeight: '600', textAlign: 'center', color: MainText }}>{fm.name || '[Нажмите для ввода имени]'}</Text>
 								</TouchableOpacity>
 							</View>
 						</View>
 						<ScrollView style={{ borderTopWidth: 1, borderTopColor: '#d0d0d0', marginTop: 25 }}>
 							<View style={{ height: 70, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#d0d0d0', paddingHorizontal: 30, paddingVertical: 10 }}>
 								<View>
-								<Text style={{ justifyContent: 'flex-start', fontWeight: 'normal', marginRight: 'auto' }}>{fm.phone || 'Номер телефона'}</Text>
+								<Text style={{ justifyContent: 'flex-start', fontWeight: 'normal', marginRight: 'auto', color: MainText  }}>{fm.phone || 'Номер телефона'}</Text>
 								</View>
 								<View style={{ alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row' }}>
 
@@ -195,7 +196,7 @@ class ProfileScreen extends PureComponent {
 							</View>
 							<View style={{ height: 60, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#d0d0d0', paddingHorizontal: 30, paddingVertical: 10 }}>
 								<View>
-									<Text style={{ justifyContent: 'flex-start', fontWeight: 'normal', marginRight: 'auto' }}>{fm.email || 'Эл. почта'}</Text>
+									<Text style={{ justifyContent: 'flex-start', fontWeight: 'normal', marginRight: 'auto', color: MainText  }}>{fm.email || 'Эл. почта'}</Text>
 								</View>
 								<View style={{ alignItems: 'center', justifyContent: 'flex-end', flexDirection: 'row' }}>
 									<FButton onPress={this.handleEmail} style={{ marginBottom: 0, marginLeft: 20, }} tiny>{fm.email ? 'Изменить' : 'Добавить'}</FButton>
@@ -203,7 +204,7 @@ class ProfileScreen extends PureComponent {
 							</View>
 							<View style={{ height: 60, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#d0d0d0', paddingHorizontal: 30, paddingVertical: 10 }}>
 								<View>
-									<Text style={{ justifyContent: 'flex-start', fontWeight: 'normal', marginRight: 'auto' }}>************{this.passChanged ? ' (изменён)' : ''}</Text>
+									<Text style={{ justifyContent: 'flex-start', fontWeight: 'normal', marginRight: 'auto', color: MainText  }}>************{this.passChanged ? ' (изменён)' : ''}</Text>
 								</View>
 								<View style={{ alignItems: 'center', justifyContent: 'flex-end', flexDirection: 'row' }}>
 									{/*<Text>*********{this.passChanged ? ' (изменён)' : ''}</Text>*/}

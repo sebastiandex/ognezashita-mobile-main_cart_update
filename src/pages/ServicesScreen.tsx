@@ -15,7 +15,7 @@ import {
 	TextInput,
 	TouchableHighlight
 } from "react-native";
-import {MainBackground, MainHeader, MainLight, MainMuted, MainOrange, MainText} from "../colors";
+import {MainBackground, MainHeader, MainLight, MainMuted, MainOrange, MainText, searchBackGround} from "../colors";
 import AmountSelector from "../controls/AmountSelector";
 import FRadio from "../controls/FRadio";
 import { IServiceItem } from "../network/api";
@@ -382,13 +382,25 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 					<Text style={{ fontSize: 24, fontWeight: '600', color: MainText }}>
 						{item.title}
 					</Text>
-						<Image
-							style={{ width: 20, height: 20, resizeMode: 'contain', marginTop: 5, marginRight: 5 }}
-							source={
-								_.findIndex(this.state.openedCategories, function (o) { return o === item.title }) !== -1 ?
-									require('./../../assets/crossIcon.png') : require('./../../assets/plusIcon.png')
-							}
-						/>
+						<Text
+							style={{
+								marginTop: _.findIndex(this.state.openedCategories, function (o) { return o === item.title }) !== -1 ? -8 : -10,
+								height: 35,
+								justifyContent: 'flex-start',
+								color: MainText,
+								fontSize: 36,
+								transform: _.findIndex(this.state.openedCategories, function (o) { return o === item.title }) !== -1 ? [{ rotate: "45deg" }] : [{ rotate: "0deg" }]
+								}}
+						>
+							+
+						</Text>
+						{/*<Image*/}
+						{/*	style={{ width: 20, height: 20, resizeMode: 'contain', marginTop: 5, marginRight: 5 }}*/}
+						{/*	source={*/}
+						{/*		_.findIndex(this.state.openedCategories, function (o) { return o === item.title }) !== -1 ?*/}
+						{/*			require('./../../assets/crossIcon.png') : require('./../../assets/plusIcon.png')*/}
+						{/*	}*/}
+						{/*/>*/}
 					</View>
 					{/* <Image source={require('./../../src/more_	')} style={{ width: 100, height: 100, resizeMode: 'contain' }} /> */}
 
@@ -482,15 +494,15 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 							/>
 						</View>
 					) : (
-						<View style={{ backgroundColor: MainBackground, flexDirection: 'row', width: '90%', borderRadius: 8, overflow: 'hidden', alignItems: 'stretch', justifyContent: 'center', height: 36, }}>
+						<View style={{ backgroundColor: searchBackGround, flexDirection: 'row', width: '90%', borderRadius: 8, overflow: 'hidden', alignItems: 'stretch', justifyContent: 'center', height: 36, }}>
 							<TouchableOpacity style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'goods'}>
 								<View style={{
 									flexGrow: 1,
 									flexShrink: 1,
 									alignItems: 'center',
 									justifyContent: 'center',
-									backgroundColor: this.type !== 'goods' ? MainBackground : MainOrange,
-									borderRightWidth: 1, borderRightColor: '#d0d0d0',
+									backgroundColor: this.type !== 'goods' ? searchBackGround : MainOrange,
+									// borderRightWidth: 1, borderRightColor: '#d0d0d0',
 									borderRadius: 8
 								}}>
 									<Text style={{color: this.type !== 'goods' ? MainText : 'white'}}>Товары</Text>
@@ -502,18 +514,23 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 									flexShrink: 1,
 									alignItems: 'center',
 									justifyContent: 'center',
-									backgroundColor: this.type !== 'services' ? MainBackground : 'MainOrange'
+									backgroundColor: this.type !== 'services' ? searchBackGround : 'MainOrange',
+									borderRightWidth: this.type !== 'services' ? 1 : 0,
+									borderLeftWidth: this.type !== 'goods' ? 1 : 0,
+									borderColor: '#5A5A5A',
+									marginVertical: 5
 								}}>
 									<Text style={{color: MainText}}>Товары от партнёров</Text>
 								</View>
 							</TouchableOpacity>
 							<TouchableOpacity style={{ flexGrow: 1, flexShrink: 1, alignItems: 'stretch', justifyContent: 'center' }} onPress={() => this.type = 'services'}>
 								<View style={{
+									borderRadius: 8,
 									flexGrow: 1,
 									flexShrink: 1,
 									alignItems: 'center',
 									justifyContent: 'center',
-									backgroundColor: this.type !== 'services' ? MainBackground : MainOrange
+									backgroundColor: this.type !== 'services' ? searchBackGround : MainOrange
 								}}>
 									<Text style={{color: this.type !== 'services' ? MainText : 'white'}}>Услуги</Text>
 								</View>

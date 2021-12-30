@@ -12,7 +12,7 @@ import {
     createdColor,
     executingColor,
     doneColor,
-    cancelledColor
+    cancelledColor, searchBackGround
 } from "../colors";
 
 import moment from 'moment';
@@ -30,11 +30,12 @@ const searchStyle = {
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#fff',
+        backgroundColor: searchBackGround,
         width: '90%',
         marginLeft: '4%',
         marginTop: 10,
-        borderTop: 1
+        borderTop: 1,
+        borderRadius: 8
     },
     searchIcon: {
         marginLeft: -30,
@@ -44,9 +45,9 @@ const searchStyle = {
         paddingTop: 10,
         paddingRight: 10,
         paddingBottom: 10,
-        paddingLeft: 10,
-        color: 'black',
-            backgroundColor: '#E5E5E5',
+        paddingLeft: 15,
+        color: '#A3A3A3',
+            backgroundColor: searchBackGround,
             borderColor: '#e0e0e0',
             borderRadius: 8,
             height: 36,
@@ -225,7 +226,7 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                                 onChangeText={e => {
                                     searchUpdated( e)
                                 }}
-                                placeholder="поиск"
+                                placeholder="Поиск"
                                 // style={{
                                 //     color: 'black',
                                 //     backgroundColor: '#E5E5E5',
@@ -296,7 +297,7 @@ class OrdersScreen extends PureComponent<{ mode: 'default' | 'new' | 'mine' | 'e
                                                         <Text style={{
                                                             fontSize: 16,
                                                             fontWeight: 'bold',
-                                                            color: MainHeader
+                                                            color: MainText
                                                         }}
                                                         >
                                                             {ord.title}

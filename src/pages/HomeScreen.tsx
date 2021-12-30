@@ -85,7 +85,7 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 					paddingTop: 20,
 					flexGrow: 1,
 					flexShrink: 1,
-					backgroundColor: gstore.me!.role === 'admin' ? MainBlack : MainBackground,
+					backgroundColor: MainBackground,
 				}}>
 					{gstore.unreadNotifications.length ? (
 						<TouchableOpacity onPress={() => {
@@ -111,7 +111,7 @@ class HomeScreen extends PureComponent<{ route: IHomeRoute, navigation: IHomeNav
 					{(gstore.me!.role === 'admin') ? (
 						<View style={{ marginBottom: 25 }}>
 							<View style={{ marginBottom: 5 }}>
-								<Text style={{ fontSize: 30, fontWeight: 'bold', color: gstore.me!.role === 'admin' ? MainWhite : MainLight }}>Состояние системы</Text>
+								<Text style={{ fontSize: 30, fontWeight: 'bold', color: MainText }}>Состояние системы</Text>
 							</View>
 							<TouchableOpacity onPress={() => {
 								//@ts-ignore

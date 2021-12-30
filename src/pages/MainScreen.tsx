@@ -84,7 +84,7 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 	}
 
 	return (
-		<DrawerContentScrollView {...props} style={{ width: 280, flexGrow: 1, backgroundColor: gstore.me!.role === 'admin' ? MainBackgroundNav : MainBackground }} contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-between' }}>
+		<DrawerContentScrollView {...props} style={{ width: 280, flexGrow: 1, backgroundColor: MainBackground }} contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-between' }}>
 			<View style={{ marginLeft: 0 }}>
 				<Image
 					source={gstore.colorScheme === 'dark' ? require('./../assets/mainLogo.png') : require('./../assets/mainLogoLight.png')}
@@ -155,7 +155,7 @@ class DrawerLabelBadge extends PureComponent<({ focused: boolean, color: TextSty
 						justifyContent: 'center'
 						// marginRight: -30,
 					}}>
-						<Text style={{ color: MainText }}>{c}</Text>
+						<Text style={{ color: 'white' }}>{c}</Text>
 					</View>
 				) : null}
 			</View>
@@ -193,7 +193,7 @@ class MainScreen extends PureComponent {
 
 		return (
 
-			<Animated.View style={{ zIndex: 0, flexGrow: 1, opacity: this.test, backgroundColor: 'white', width: '100%', height: '100%' }}>
+			<Animated.View style={{ zIndex: 0, flexGrow: 1, opacity: this.test, backgroundColor: MainBackground, width: '100%', height: '100%' }}>
 
 				<NavigationContainer>
 
@@ -203,7 +203,7 @@ class MainScreen extends PureComponent {
 						screenOptions={({ navigation }) => {
 							return {
 								headerShown: true,
-
+								backgroundColor: MainBackground,
 								headerTintColor: MainText,
 								headerStyle: {
 									backgroundColor: MainBackground,

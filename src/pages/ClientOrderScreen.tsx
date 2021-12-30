@@ -52,7 +52,7 @@ function UserRow({ text, user }: { text: string, user: { id: string; name: strin
 				<View style={{ flexGrow: 1, flexDirection: 'row', flexShrink: 1, alignItems: 'flex-start', justifyContent: 'flex-start' }}>
 					<View>
 						<Text style={{ color: '#949494', fontSize: 14  }}>{text}</Text>
-						<Text style={{ fontSize: 16, fontWeight: '600', color: MainHeader, }}>{user.name}</Text>
+						<Text style={{ fontSize: 16, fontWeight: '600', color: MainText, }}>{user.name}</Text>
 					</View>
 					{user.phone ? (
 						<View style={{marginLeft: 'auto', marginRight: 20, marginTop: 15, justifyContent: 'flex-end'}}>
@@ -445,7 +445,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 					{/*</View>) : null}*/}
 					<View style={{ flexDirection: 'column',  alignItems: 'flex-start' }}>
 						<View>
-							<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, marginBottom: 15 }}>Название объекта:</Text>
+							<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainText, marginBottom: 15 }}>Название объекта:</Text>
 							<Text style={{ fontSize: 16, color: '#A3A3A3', marginBottom: 15 }}>{p.name}</Text>
 						</View>
 						{/*<View style={{}}><Text style={{ fontSize: 14, color: MainHeader }}>Адрес: {p.address}</Text></View>*/}
@@ -505,7 +505,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 							<View style={{flexDirection: 'row'}}>
 								<Image source={{ uri: gstore.api.fileLink(item.itemImageId) }} style={{ borderRadius: 18, width: 72, height: 72, backgroundColor: '#E5E5E5', resizeMode: 'contain' }} />
 								<View style={{marginLeft: 15, width: '75%'}}>
-									<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainHeader, flexWrap: 'wrap'}}>{item.itemTitle}</Text>
+									<Text style={{ fontSize: 18, fontWeight: 'bold', color: MainText, flexWrap: 'wrap'}}>{item.itemTitle}</Text>
 									<Text style={{ fontSize: 12, color: MainMuted }}>Количество: {item.amount}</Text>
 									<Text style={{ color: MainText }}>Адрес: {item.address}</Text>
 								</View>
@@ -545,7 +545,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 
 	renderOrder() {
 		return (
-			<ScrollView style={{ backgroundColor: 'white', flexGrow: 1 }}>
+			<ScrollView style={{ backgroundColor: MainBackground, flexGrow: 1 }}>
 				<Modal visible={this.imagesForView.length !== 0} transparent={true}>
 					<ImageViewer
 						loadingRender={() => <ActivityIndicator size="large" />}
@@ -561,7 +561,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 					/>
 				</Modal>
 				{this.reportScreen ? (this.renderReportScreen()) : (
-					<View style={{backgroundColor: 'white'}}>
+					<View style={{backgroundColor: MainBackground}}>
 						<Section>
 							<Text style={{ color: '#949494', fontSize: 14 }}>Название:</Text>
 							<Text style={{ color: MainText, fontWeight: '600', fontSize: 16, marginBottom: 18 }}>{this.order.title}</Text>
@@ -572,7 +572,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 						{this.order.content.type === 'cart' ? this.renderCartContent() : null}
 
 
-						<Text style={{marginLeft: 20, marginTop: 20, fontSize: 18, fontWeight: '600', marginBottom: 10}}>Пользователи:</Text>
+						<Text style={{marginLeft: 20, marginTop: 20, fontSize: 18, fontWeight: '600', marginBottom: 10, color: MainText}}>Пользователи:</Text>
 						{((gstore.me!.role === 'user' || gstore.me!.role === 'admin') && this.order.activeExecutor) ? (
 							<UserRow text="Исполнитель" user={this.order.activeExecutor} />
 						) : null}
@@ -643,7 +643,7 @@ class ClientOrderScreen extends PureComponent<{ navigation: IOrderNavigation, ro
 						{(this.order.report && ((gstore.me!.role === 'executor' && this.order.activeExecutorId === gstore.me!.id) || gstore.me!.role === 'admin')) ? (
 							<>
 								<Section text="Текст отчёта о работах">
-									<Text>{this.order.report.text}</Text>
+									<Text style={{color: MainText}}>{this.order.report.text}</Text>
 								</Section>
 								<Section text="Фотографии отчёта">
 									{this.order.report.imageIds.map((id, idx) => (
