@@ -47,7 +47,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>Для аватарки и фотографий в отчётах о выполненных работах</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Для аватарки и фотографий в отчётах о выполненных работах</string>
 	<key>UIAppFonts</key>
