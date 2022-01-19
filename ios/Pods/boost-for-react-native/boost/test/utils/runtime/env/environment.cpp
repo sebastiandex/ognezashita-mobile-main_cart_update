@@ -12,7 +12,7 @@
 //  Description : implements offline model of program environment 
 // ***************************************************************************
 
-#include <boost/test/utils/runtime/config.hpp>
+
 
 #ifdef BOOST_MSVC
 # pragma warning(disable: 4127) // conditional expression is constant
@@ -20,4 +20,4 @@
 #endif
 
 #define BOOST_RT_PARAM_INLINE
-#include <boost/test/utils/runtime/env/environment.ipp>
+//#include <boost/test/utils/runtime/env/environment.ipp>

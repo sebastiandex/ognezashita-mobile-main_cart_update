@@ -57,6 +57,7 @@ class HeaderRight extends PureComponent<{ navigation: any }> {
 						</View>
 					) : null}
 					<Icon name="shopping-cart" size={24} color={gstore.colorSheme === 'dark' ? '#FFFFFF' : 'rgba(40, 40, 40, 0.4)'} />
+
 					{/*<Icon name="shopping-cart" size={24} color={gstore.cart.length ? '#A3A3A3' : '#d0d0d0'} />*/}
 				</View>
 			</TouchableOpacity>
@@ -97,7 +98,11 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 				<DrawerItemList {...props} state={newState} descriptors={newDescriptors} activeBackgroundColor={'transparent'} />
 				{gstore.me!.role === 'admin' ? (
 					<DrawerItem
-						icon={({ focused }) => <Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />}
+						icon={({ focused }) => <Image
+							source={focused ? require('./../../assets/licenses_active.png') : require('./../../assets/licenses.png')}
+							style={{ resizeMode: 'contain', height: 20, width: 20, marginRight: -15 }}
+						/>}
+						// icon={({ focused }) => <Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />}
 						label="Лицензии"
 						focused={descriptors[licenseKey].navigation.isFocused()}
 						onPress={() => navigation.jumpTo('License')}
@@ -113,7 +118,11 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 					// 	<Icon name="home" size={24} color={gstore.cart.length ? 'black' : '#d0d0d0'} />
 
 					<DrawerItem
-						icon={({ focused}) => <Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />}
+						icon={({ focused }) => <Image
+							source={focused ? require('./../../assets/licenses_active.png') : require('./../../assets/licenses.png')}
+							style={{ resizeMode: 'contain', height: 20, width: 20, marginRight: -15 }}
+						/>}
+						// icon={({ focused}) => <Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />}
 						label="Лицензии"
 						focused={descriptors[licenseKey].navigation.isFocused()}
 						onPress={() => navigation.jumpTo('License')}
@@ -125,7 +134,12 @@ function DrawerContent(props: DrawerContentComponentProps<DrawerContentOptions>)
 					// </View>
 				) : null}
 				<DrawerItem
-					icon={({ focused }) => <Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />}
+					icon={({ focused }) =>
+						<Image
+						source={focused ? require('../../assets/connect_us_active.png') : require('../../assets/connect_us.png')}
+						style={{ resizeMode: 'contain', height: 20, width: 20, marginRight: -15 }}
+					/>}
+					// icon={({ focused }) => <Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />}
 					label="Связаться с нами"
 					focused={descriptors[contactKey].navigation.isFocused()}
 					onPress={() => navigation.jumpTo('Contact')}
@@ -240,7 +254,11 @@ class MainScreen extends PureComponent {
 								<Text style={{ marginLeft: -20, color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Главная</Text>
 							),
 							drawerIcon: ({ focused }) => (
-								<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+								// <Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+							<Image
+							source={focused ? require('../../assets/home_active.png') : require('../../assets/home.png')}
+							style={{ resizeMode: 'contain', height: 20, width: 20 }}
+							/>
 							)
 						}} />
 
@@ -267,7 +285,10 @@ class MainScreen extends PureComponent {
 											</View>
 										),
 										drawerIcon: ({ focused }) => (
-											<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+											<Image
+												source={focused ? require('./../../assets/notifications_active.png') : require('./../../assets/notifications.png')}
+												style={{ resizeMode: 'contain', height: 20, width: 20 }}
+											/>
 										)
 									}}
 								/>
@@ -284,7 +305,10 @@ class MainScreen extends PureComponent {
 											</Text>
 										),
 										drawerIcon: ({ focused }) => (
-											<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+											<Image
+												source={focused ? require('./../../assets/goodsAndServices_active.png') : require('./../../assets/goodsAndServices.png')}
+												style={{ resizeMode: 'contain', height: 20, width: 20 }}
+											/>
 										)
 									}} />
 								<Drawer.Screen
@@ -300,7 +324,10 @@ class MainScreen extends PureComponent {
 											</Text>
 										),
 										drawerIcon: ({ focused }) => (
-											<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+											<Image
+												source={focused ? require('./../../assets/myobjects_active.png') : require('./../../assets/myobjects.png')}
+												style={{ resizeMode: 'contain', height: 20, width: 20 }}
+											/>
 										)
 									}}
 								/>
@@ -326,7 +353,11 @@ class MainScreen extends PureComponent {
 									</View>
 								),
 								drawerIcon: ({ focused }) => (
-									<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+									// <Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+								<Image
+								source={focused ? require('../../assets/orders_inwork_active.png') : require('../../assets/orders_inwork.png')}
+								style={{ resizeMode: 'contain', height: 20, width: 20 }}
+								/>
 								)
 								// drawerIcon: ({ focused }) => (
 								// 	<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
@@ -343,7 +374,11 @@ class MainScreen extends PureComponent {
 										<DrawerLabelBadge focused={focused} text="Новые заявки" count={() => gstore.newOrdersCount} color={color} />
 									),
 									drawerIcon: ({ focused }) => (
-										<Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+										// <Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+										<Image
+											source={focused ? require('../../assets/myorders_active.png') : require('../../assets/myorders.png')}
+											style={{ resizeMode: 'contain', height: 20, width: 20, marginRight: -20 }}
+										/>
 									)
 								}} />
 								<Drawer.Screen name="MyOrderRouter" component={MineOrdersScreen} options={{
@@ -352,7 +387,10 @@ class MainScreen extends PureComponent {
 										<Text style={{ marginLeft: -20, justifyContent: 'flex-start', color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Созданные мной заявки</Text>
 									),
 									drawerIcon: ({ focused }) => (
-										<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+										<Image
+											source={focused ? require('../../assets/myorders_active.png') : require('../../assets/myorders.png')}
+											style={{ resizeMode: 'contain', height: 20, width: 20 }}
+										/>
 									)
 								}} />
 							</>
@@ -364,7 +402,10 @@ class MainScreen extends PureComponent {
 										<DrawerLabelBadge focused={focused} text="Новые заявки" count={() => gstore.newOrdersCount} color={color} />
 									),
 									drawerIcon: ({ focused }) => (
-										<Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+										<Image
+											source={focused ? require('../../assets/myorders_active.png') : require('../../assets/myorders.png')}
+											style={{ resizeMode: 'contain', height: 20, width: 20, marginRight: -15 }}
+										/>
 									)
 								}} />
 								<Drawer.Screen name="ExecsOrderRouter" component={ExecsOrdersScreen} options={{
@@ -373,7 +414,11 @@ class MainScreen extends PureComponent {
 										<Text style={{ marginLeft: -20, justifyContent: 'flex-start', color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Заявки от исполнителей</Text>
 									),
 									drawerIcon: ({ focused }) => (
-										<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+										// <Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+										<Image
+											source={focused ? require('../../assets/myobjects_active.png') : require('../../assets/myobjects.png')}
+											style={{ resizeMode: 'contain', height: 20, width: 20 }}
+										/>
 									),
 								}} />
 								<Drawer.Screen name="FinishedOrderRouter" component={FinishedOrdersScreen} options={{
@@ -382,7 +427,10 @@ class MainScreen extends PureComponent {
 										<Text style={{ marginLeft: -20, color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Завершенные заявки</Text>
 									),
 									drawerIcon: ({ focused }) => (
-										<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+										<Image
+											source={focused ? require('../../assets/closed_orders_active.png') : require('../../assets/closed_orders.png')}
+											style={{ resizeMode: 'contain', height: 24, width: 24, marginLeft: -2 }}
+										/>
 									),
 								}} />
 							</>
@@ -395,7 +443,10 @@ class MainScreen extends PureComponent {
 									<Text style={{ color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Создать заявку</Text>
 								),
 								drawerIcon: ({ focused }) => (
-									<Icon style={{ marginRight: -20 }} color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+									<Image
+										source={focused ? require('../../assets/cart_active.png') : require('../../assets/cart.png')}
+										style={{ resizeMode: 'contain', height: 20, width: 20, marginRight: -18, marginLeft: -1 }}
+									/>
 								),
 							}} />
 						)}
@@ -406,7 +457,10 @@ class MainScreen extends PureComponent {
 								<Text style={{ marginLeft: -20, color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Профиль</Text>
 							),
 							drawerIcon: ({ focused }) => (
-								<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+								<Image
+									source={focused ? require('../../assets/profile_active.png') : require('../../assets/profile.png')}
+									style={{ resizeMode: 'contain', height: 20, width: 20 }}
+								/>
 							),
 						}} />
 						<Drawer.Screen name="License" component={LicenseScreen} options={{
@@ -415,7 +469,10 @@ class MainScreen extends PureComponent {
 								<Text style={{ marginLeft: -20, color: focused ? MainOrange : gstore.colorSheme === 'dark' ? 'white' : 'black' }}>Лицензии</Text>
 							),
 							drawerIcon: ({ focused }) => (
-								<Icon color={focused ? MainOrange : IconGrey} size={24} name={'home'} />
+								<Image
+									source={focused ? require('../../assets/licenses_active.png') : require('../../assets/licenses.png')}
+									style={{ resizeMode: 'contain', height: 20, width: 20 }}
+								/>
 							)
 						}} />
 						<Drawer.Screen name="Contact" component={ContactScreen} options={{

@@ -102,7 +102,7 @@ class ItemModal extends PureComponent<{ item: IServiceItem, onCart: (amount: num
 									<View style={{backgroundColor: '#2A5EE4', width: 72, height: 36, borderRadius: 8, justifyContent: "center"}}>
 										<Image
 											style={{ resizeMode: 'contain', justifyContent: 'center', alignSelf: 'center' }}
-											source={require('./../../assets/cartIcon.png')}
+											source={require('./../../assets/cart.png')}
 										/>
 									</View>
 								</TouchableHighlight>
@@ -223,7 +223,7 @@ class CartModal extends PureComponent<{ item: IServiceItem, amount: number, pric
 									<View style={{backgroundColor: '#2A5EE4', width: 72, height: 36, borderRadius: 8, justifyContent: "center"}}>
 										<Image
 											style={{ resizeMode: 'contain', justifyContent: 'center', alignSelf: 'center' }}
-											source={require('./../../assets/cartIcon.png')}
+											source={require('./../../assets/cart.png')}
 										/>
 									</View>
 								</TouchableHighlight>
@@ -445,7 +445,7 @@ class ServicesList extends PureComponent<{ navigation: IListNavigation, route: a
 												<View style={{backgroundColor: '#2A5EE4', width: 72, height: 36, borderRadius: 8, marginTop: 10, justifyContent: "center"}}>
 													<Image
 														style={{ resizeMode: 'contain', justifyContent: 'center', alignSelf: 'center' }}
-														source={require('./../../assets/cartIcon.png')}
+														source={require('./../../assets/cart.png')}
 													/>
 												</View>
 											</TouchableHighlight>

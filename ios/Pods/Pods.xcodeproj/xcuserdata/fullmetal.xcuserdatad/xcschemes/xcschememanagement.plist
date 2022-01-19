@@ -104,26 +104,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Permission-Camera.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Permission-MediaLibrary.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Permission-Notifications.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Permission-PhotoLibrary.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-mobile-mobileTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -345,6 +325,11 @@
 			<false/>
 		</dict>
 		<key>nanopb.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>react-native-appearance.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
